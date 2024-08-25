@@ -27,9 +27,10 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/fonts/
     - assets/icons/
     - assets/images/
+    - assets/fonts/Inter/
+    - assets/fonts/Urbanist/
 
   fonts:
     - family: Urbanist
