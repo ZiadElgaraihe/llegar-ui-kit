@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/utils/app_strings.dart';
 import 'package:llegar/utils/app_themes.dart';
 
 class Llegar extends StatelessWidget {
@@ -7,6 +8,7 @@ class Llegar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: AppStrings.appName,
       themeMode: ThemeMode.light,
       theme: AppThemes.lightTheme,
       darkTheme: AppThemes.darkTheme,
