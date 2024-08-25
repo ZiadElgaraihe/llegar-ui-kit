@@ -28,6 +28,9 @@ abstract class AppColors {
   ///#58B47F
   static const Color secondGreen = Color(0xFF58B47F);
 
+  ///#4C6FFF
+  static const Color ultramarineBlue = Color(0xFF4C6FFF);
+
   ///#FFFFFF
   static const Color white = Color(0xFFFFFFFF);
 
