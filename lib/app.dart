@@ -9,7 +9,7 @@ class Llegar extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: AppStrings.appName,
-      themeMode: ThemeMode.light,
+      themeMode: AppThemes.themeMode,
       theme: AppThemes.lightTheme,
       darkTheme: AppThemes.darkTheme,
     );

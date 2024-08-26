@@ -136,4 +136,9 @@ abstract class AppThemes {
       visualDensity: const VisualDensity(horizontal: -4, vertical: -4),
     ),
   );
+
+  /*This Section is used for debug mode you can remove it and use your own logic*/
+  static ThemeMode themeMode = ThemeMode.light;
+
+  static bool isLight() => themeMode == ThemeMode.light;
 }
