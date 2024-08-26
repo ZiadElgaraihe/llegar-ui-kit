@@ -1,8 +1,8 @@
 name: llegar
-description: "Llegar is a flexible and modern Flutter UI kit for building apps that cater
-  to diverse rental scenarios—real estate, equipment, and more. Featuring clean
-  code and modular design, it’s the perfect starting point for scalable and
-  customizable rental apps in any niche."
+description: "Llegar is a flexible and modern Flutter UI kit for building apps
+  that cater to diverse rental scenarios—real estate, equipment, and more.
+  Featuring clean code and modular design, it’s the perfect starting point for
+  scalable and customizable rental apps in any niche."
 
 publish_to: 'none'
 
@@ -17,6 +17,7 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
+  flutter_native_splash: ^2.4.1
   intl: any
 
 dev_dependencies:
