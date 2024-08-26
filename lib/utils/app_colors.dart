@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+///This class contains all app colors
 abstract class AppColors {
   ///#EDF2F7 (box)
   static const Color antiFlashWhite = Color(0xFFEDF2F7);

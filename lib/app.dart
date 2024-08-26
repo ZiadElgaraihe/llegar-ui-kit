@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/localization/generated/app_localizations.dart';
 import 'package:llegar/utils/app_strings.dart';
 import 'package:llegar/utils/app_themes.dart';
 
@@ -9,9 +10,12 @@ class Llegar extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: AppStrings.appName,
-      themeMode: ThemeMode.light,
+      themeMode: AppThemes.themeMode,
       theme: AppThemes.lightTheme,
       darkTheme: AppThemes.darkTheme,
+      locale: const Locale('en'),
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
     );
   }
 }
