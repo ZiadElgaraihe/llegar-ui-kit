@@ -14,6 +14,9 @@ abstract class AppColors {
   ///#27AE61 (success)
   static const Color green = Color(0xFF27AE61);
 
+  ///#7A828A
+  static const Color grey = Color(0xFF7A828A);
+
   ///#E1E8FF (second btn)
   static const Color lavender = Color(0xFFE1E8FF);
 
