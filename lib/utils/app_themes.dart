@@ -53,10 +53,10 @@ abstract class AppThemes {
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             elevation: 2,
-            fixedSize: Size.fromWidth(MediaQuery.sizeOf(context).width),
+            fixedSize: Size(MediaQuery.sizeOf(context).width, 58),
             shadowColor: AppColors.ultramarineBlue,
             backgroundColor: AppColors.prussianBlue,
-            padding: const EdgeInsets.symmetric(vertical: 16),
+            disabledBackgroundColor: AppColors.prussianBlue,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(100),
             ),
@@ -130,10 +130,10 @@ abstract class AppThemes {
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             elevation: 2,
-            fixedSize: Size.fromWidth(MediaQuery.sizeOf(context).width),
+            fixedSize: Size(MediaQuery.sizeOf(context).width, 58),
             shadowColor: AppColors.ultramarineBlue,
             backgroundColor: AppColors.orange,
-            padding: const EdgeInsets.symmetric(vertical: 16),
+            disabledBackgroundColor: AppColors.orange,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(100),
             ),

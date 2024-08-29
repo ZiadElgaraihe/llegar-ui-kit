@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
 import 'package:llegar/modules/auth/presentation/widgets/welcome_view_body.dart';
 import 'package:llegar/utils/app_colors.dart';
 import 'package:llegar/utils/app_icons.dart';
@@ -68,7 +69,7 @@ class _WelcomeViewState extends State<WelcomeView> {
             const EdgeInsets.only(top: 12, right: 16, bottom: 24, left: 16),
         child: ValueListenableBuilder(
           valueListenable: _currentPageIndex,
-          builder: (context, currentPageIndex, child) => ElevatedButton(
+          builder: (context, currentPageIndex, child) => CustomElevatedButton(
             onPressed: () {
               _pageController.animateToPage(
                 currentPageIndex + 1,
@@ -76,12 +77,7 @@ class _WelcomeViewState extends State<WelcomeView> {
                 curve: Curves.easeIn,
               );
             },
-            child: Text(
-              currentPageIndex == 0 ? 'Get Started' : 'Next',
-              style: AppTextStyles.bold20(context).copyWith(
-                color: AppColors.white,
-              ),
-            ),
+            title: currentPageIndex == 0 ? 'Get Started' : 'Next',
           ),
         ),
       ),
