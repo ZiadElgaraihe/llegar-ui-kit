@@ -39,6 +39,8 @@ flutter:
   assets:
     - assets/icons/
     - assets/images/
+    - assets/images/light/
+    - assets/images/dark/
     - assets/fonts/Inter/
     - assets/fonts/Urbanist/
 
