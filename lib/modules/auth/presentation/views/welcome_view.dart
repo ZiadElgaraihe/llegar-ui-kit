@@ -7,6 +7,7 @@ import 'package:llegar/utils/app_colors.dart';
 import 'package:llegar/utils/app_icons.dart';
 import 'package:llegar/utils/app_images.dart';
 import 'package:llegar/utils/app_text_styles.dart';
+import 'package:llegar/utils/functions/translate.dart';
 import 'package:llegar/utils/functions/value_based_on_locale.dart';
 import 'package:llegar/utils/functions/value_based_on_theme.dart';
 
@@ -37,43 +38,43 @@ class _WelcomeViewState extends State<WelcomeView> {
     _items = [
       WelcomePageViewItemEntity(
         description:
-            'The best rental app of the century to rent any thing rentable you want every day',
+            translate(context).theBestRentalApp,
         image: valueBasedOnTheme<String>(
           context,
           light: AppImages.welcomeToLlegar,
           dark: AppImages.welcomeToLlegarDark,
         )!,
-        title: 'Welcome to LLEGAR',
+        title: translate(context).welcomeToLlegar,
       ),
       WelcomePageViewItemEntity(
         description:
-            'Don’t worry about your data we have the best security system to safe your privacy',
+            translate(context).donotWorryAboutYourData,
         image: valueBasedOnTheme<String>(
           context,
           light: AppImages.secureApp,
           dark: AppImages.secureAppDark,
         )!,
-        title: 'Secure App',
+        title: translate(context).secureApp,
       ),
       WelcomePageViewItemEntity(
         description:
-            'We guarantee that the rental process will be completed successfully.\n“We Delivered trust“',
+            translate(context).weGuaranteeThatTheRentalProcess,
         image: valueBasedOnTheme<String>(
           context,
           light: AppImages.makeDeal,
           dark: AppImages.makeDealDark,
         )!,
-        title: 'Make a Deal',
+        title: translate(context).makeADeal,
       ),
       WelcomePageViewItemEntity(
         description:
-            'We provide a service Two factor authentication To ensure that your account is safe from hacking',
+            translate(context).weProvideAServiceTwoFactorAuthentication,
         image: valueBasedOnTheme<String>(
           context,
           light: AppImages.twoFactorAuth,
           dark: AppImages.twoFactorAuthDark,
         )!,
-        title: 'Two factor authentication',
+        title: translate(context).twoFactorAuthentication,
       ),
     ];
   }
@@ -99,7 +100,7 @@ class _WelcomeViewState extends State<WelcomeView> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                'Skip',
+                translate(context).skip,
                 style: AppTextStyles.bold24(context).copyWith(
                   color: valueBasedOnTheme<Color>(
                     context,
@@ -147,7 +148,9 @@ class _WelcomeViewState extends State<WelcomeView> {
                 curve: Curves.easeIn,
               );
             },
-            title: currentPageIndex == 0 ? 'Get Started' : 'Next',
+            title: currentPageIndex == 0
+                ? translate(context).getStarted
+                : translate(context).next,
           ),
         ),
       ),

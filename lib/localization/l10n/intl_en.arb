@@ -1,1 +1,13 @@
-{}
+{
+    "welcomeToLlegar": "Welcome to LLEGAR",
+    "theBestRentalApp": "The best rental app of the century to rent any thing rentable you want every day",
+    "secureApp": "Secure App",
+    "donotWorryAboutYourData": "Don’t worry about your data we have the best security system to safe your privacy",
+    "makeADeal": "Make a Deal",
+    "weGuaranteeThatTheRentalProcess": "We guarantee that the rental process will be completed successfully.\n“We Delivered trust“",
+    "twoFactorAuthentication": "Two factor authentication",
+    "weProvideAServiceTwoFactorAuthentication": "We provide a service Two factor authentication To ensure that your account is safe from hacking",
+    "skip": "Skip",
+    "getStarted": "Get Started",
+    "next": "Next"
+}

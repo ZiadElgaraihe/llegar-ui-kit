@@ -1,1 +1,13 @@
-{}
+{
+    "welcomeToLlegar": "مرحباً بك في للإيجار",
+    "theBestRentalApp": "أفضل تطبيق تأجير في القرن لتأجير أي شيء تريده كل يوم",
+    "secureApp": "تطبيق أمن",
+    "donotWorryAboutYourData": "لا تقلق بشأن بياناتك، فلدينا أفضل نظام أمان لتأمين خصوصيتك",
+    "makeADeal": "عقد صفقة",
+    "weGuaranteeThatTheRentalProcess": "نحن نضمن أن عملية التأجير ستتم بنجاح.\n“نحن نقدم الثقة“",
+    "twoFactorAuthentication": "المصادقة الثنائية",
+    "weProvideAServiceTwoFactorAuthentication": "نحن نقدم خدمة المصادقة الثنائية للتأكد من أن حسابك آمن من الاختراق",
+    "skip": "تخطى",
+    "getStarted": "إبدأ",
+    "next": "التالي"
+}
