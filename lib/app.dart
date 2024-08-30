@@ -21,19 +21,21 @@ class Llegar extends StatelessWidget {
           create: (context) => LocaleCubit()..setUpLocale(),
         ),
       ],
-      child: Builder(builder: (context) {
-        return MaterialApp(
-          title: AppStrings.appName,
-          debugShowCheckedModeBanner: false,
-          themeMode: BlocProvider.of<ThemeCubit>(context).themeMode,
-          theme: AppThemes.lightTheme(context),
-          darkTheme: AppThemes.darkTheme(context),
-          locale: BlocProvider.of<LocaleCubit>(context).locale,
-          localizationsDelegates: AppLocalizations.localizationsDelegates,
-          supportedLocales: AppLocalizations.supportedLocales,
-          home: const WelcomeView(),
-        );
-      }),
+      child: Builder(
+        builder: (context) {
+          return MaterialApp(
+            title: AppStrings.appName,
+            debugShowCheckedModeBanner: false,
+            themeMode: BlocProvider.of<ThemeCubit>(context).themeMode,
+            theme: AppThemes.lightTheme(context),
+            darkTheme: AppThemes.darkTheme(context),
+            locale: BlocProvider.of<LocaleCubit>(context).locale,
+            localizationsDelegates: AppLocalizations.localizationsDelegates,
+            supportedLocales: AppLocalizations.supportedLocales,
+            home: const WelcomeView(),
+          );
+        },
+      ),
     );
   }
 }
