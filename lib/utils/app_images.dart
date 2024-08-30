@@ -1,29 +1,5 @@
 ///This class contains all app images
 abstract class AppImages {
-  ///assets/images/light/ellipse_10.svg
-  static const String ellipse10 = 'assets/images/light/ellipse_10.svg';
-
-  ///assets/images/dark/ellipse_10_dark.svg
-  static const String ellipse10Dark = 'assets/images/dark/ellipse_10_dark.svg';
-
-  ///assets/images/light/ellipse_11.svg
-  static const String ellipse11 = 'assets/images/light/ellipse_11.svg';
-
-  ///assets/images/dark/ellipse_11_dark.svg
-  static const String ellipse11Dark = 'assets/images/dark/ellipse_11_dark.svg';
-
-  ///assets/images/light/ellipse_12.svg
-  static const String ellipse12 = 'assets/images/light/ellipse_12.svg';
-
-  ///assets/images/dark/ellipse_12_dark.svg
-  static const String ellipse12Dark = 'assets/images/dark/ellipse_12_dark.svg';
-
-  ///assets/images/light/ellipse_9.svg
-  static const String ellipse9 = 'assets/images/light/ellipse_9.svg';
-
-  ///assets/images/dark/ellipse_9_dark.svg
-  static const String ellipse9Dark = 'assets/images/dark/ellipse_9_dark.svg';
-
   ///assets/images/light/make_deal.svg
   static const String makeDeal = 'assets/images/light/make_deal.svg';
 
