@@ -14,6 +14,8 @@ import 'package:llegar/utils/functions/value_based_on_theme.dart';
 class WelcomeView extends StatefulWidget {
   const WelcomeView({super.key});
 
+  static const String id = '/WelcomeView';
+
   @override
   State<WelcomeView> createState() => _WelcomeViewState();
 }
@@ -37,8 +39,7 @@ class _WelcomeViewState extends State<WelcomeView> {
     super.didChangeDependencies();
     _items = [
       WelcomePageViewItemEntity(
-        description:
-            translate(context).theBestRentalApp,
+        description: translate(context).theBestRentalApp,
         image: valueBasedOnTheme<String>(
           context,
           light: AppImages.welcomeToLlegar,
@@ -47,8 +48,7 @@ class _WelcomeViewState extends State<WelcomeView> {
         title: translate(context).welcomeToLlegar,
       ),
       WelcomePageViewItemEntity(
-        description:
-            translate(context).donotWorryAboutYourData,
+        description: translate(context).donotWorryAboutYourData,
         image: valueBasedOnTheme<String>(
           context,
           light: AppImages.secureApp,
@@ -57,8 +57,7 @@ class _WelcomeViewState extends State<WelcomeView> {
         title: translate(context).secureApp,
       ),
       WelcomePageViewItemEntity(
-        description:
-            translate(context).weGuaranteeThatTheRentalProcess,
+        description: translate(context).weGuaranteeThatTheRentalProcess,
         image: valueBasedOnTheme<String>(
           context,
           light: AppImages.makeDeal,

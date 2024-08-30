@@ -4,6 +4,7 @@ import 'package:llegar/core/presentation/manager/cubits/locale_cubit/locale_cubi
 import 'package:llegar/core/presentation/manager/cubits/theme_cubit/theme_cubit.dart';
 import 'package:llegar/localization/generated/app_localizations.dart';
 import 'package:llegar/modules/splash/presentation/views/splash_view.dart';
+import 'package:llegar/utils/app_routes.dart';
 import 'package:llegar/utils/app_strings.dart';
 import 'package:llegar/utils/app_themes.dart';
 
@@ -32,6 +33,7 @@ class Llegar extends StatelessWidget {
             locale: BlocProvider.of<LocaleCubit>(context).locale,
             localizationsDelegates: AppLocalizations.localizationsDelegates,
             supportedLocales: AppLocalizations.supportedLocales,
+            onGenerateRoute: AppRoutes.generate,
             home: const SplashView(),
           );
         },
