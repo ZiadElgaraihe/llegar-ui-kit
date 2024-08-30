@@ -7,6 +7,7 @@ import 'package:llegar/utils/app_colors.dart';
 import 'package:llegar/utils/app_icons.dart';
 import 'package:llegar/utils/app_images.dart';
 import 'package:llegar/utils/app_text_styles.dart';
+import 'package:llegar/utils/functions/value_based_on_locale.dart';
 import 'package:llegar/utils/functions/value_based_on_theme.dart';
 
 class WelcomeView extends StatefulWidget {
@@ -110,7 +111,11 @@ class _WelcomeViewState extends State<WelcomeView> {
               IconButton(
                 onPressed: () {},
                 icon: SvgPicture.asset(
-                  AppIcons.arrowRight,
+                  valueBasedOnLocale<String>(
+                    context,
+                    ltr: AppIcons.arrowRight,
+                    rtl: AppIcons.arrowLeft,
+                  )!,
                   colorFilter: valueBasedOnTheme<ColorFilter>(
                     context,
                     dark: const ColorFilter.mode(

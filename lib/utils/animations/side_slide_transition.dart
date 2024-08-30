@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/utils/functions/value_based_on_locale.dart';
 
 class SideSlideTransition extends PageRouteBuilder {
   final Widget page;
@@ -7,7 +8,10 @@ class SideSlideTransition extends PageRouteBuilder {
           pageBuilder: (context, animation, secondaryAnimation) => page,
           transitionDuration: const Duration(milliseconds: 500),
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
-            Offset begin = const Offset(-1, 0);
+            Offset begin = Offset(
+              valueBasedOnLocale<double>(context, ltr: -1, rtl: 1)!,
+              0,
+            );
             Offset end = const Offset(0, 0);
             Tween<Offset> tween = Tween<Offset>(begin: begin, end: end);
             CurvedAnimation curvedAnimation = CurvedAnimation(
