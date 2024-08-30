@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:llegar/modules/auth/domain/entities/welcome_page_view_item_entity.dart';
+import 'package:llegar/modules/welcome/domain/entities/welcome_page_view_item_entity.dart';
 import 'package:llegar/utils/app_colors.dart';
 import 'package:llegar/utils/app_text_styles.dart';
 import 'package:llegar/utils/functions/value_based_on_theme.dart';

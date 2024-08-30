@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/config/preload_svg_images.dart';
-import 'package:llegar/modules/auth/presentation/views/welcome_view.dart';
+import 'package:llegar/modules/welcome/presentation/views/welcome_view.dart';
 import 'package:llegar/modules/splash/presentation/widgets/splash_view_body.dart';
 import 'package:llegar/utils/app_images.dart';
 import 'package:llegar/utils/functions/value_based_on_theme.dart';

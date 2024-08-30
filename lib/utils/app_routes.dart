@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:llegar/modules/auth/presentation/views/welcome_view.dart';
+import 'package:llegar/modules/welcome/presentation/views/welcome_view.dart';
 import 'package:llegar/utils/animations/opacity_transition.dart';
 
 ///This class contains all routes

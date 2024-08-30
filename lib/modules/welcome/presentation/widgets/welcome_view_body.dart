@@ -1,8 +1,8 @@
 import 'package:expandable_page_view/expandable_page_view.dart';
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/dots_indicator.dart';
-import 'package:llegar/modules/auth/domain/entities/welcome_page_view_item_entity.dart';
-import 'package:llegar/modules/auth/presentation/widgets/welcome_page_view_item.dart';
+import 'package:llegar/modules/welcome/domain/entities/welcome_page_view_item_entity.dart';
+import 'package:llegar/modules/welcome/presentation/widgets/welcome_page_view_item.dart';
 
 class WelcomeViewBody extends StatelessWidget {
   const WelcomeViewBody({

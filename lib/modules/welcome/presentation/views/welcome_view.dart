@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
-import 'package:llegar/modules/auth/domain/entities/welcome_page_view_item_entity.dart';
-import 'package:llegar/modules/auth/presentation/widgets/welcome_view_body.dart';
+import 'package:llegar/modules/welcome/domain/entities/welcome_page_view_item_entity.dart';
+import 'package:llegar/modules/welcome/presentation/widgets/welcome_view_body.dart';
 import 'package:llegar/utils/app_colors.dart';
 import 'package:llegar/utils/app_icons.dart';
 import 'package:llegar/utils/app_images.dart';
