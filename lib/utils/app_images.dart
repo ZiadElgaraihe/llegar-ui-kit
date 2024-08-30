@@ -1,5 +1,13 @@
 ///This class contains all app images
 abstract class AppImages {
+  ///assets/images/light/how_did_you_know_us.svg
+  static const String howDidYouKnowUs =
+      'assets/images/light/how_did_you_know_us.svg';
+
+  ///assets/images/dark/how_did_you_know_us_dark.svg
+  static const String howDidYouKnowUsDark =
+      'assets/images/dark/how_did_you_know_us_dark.svg';
+
   ///assets/images/light/make_deal.svg
   static const String makeDeal = 'assets/images/light/make_deal.svg';
 
