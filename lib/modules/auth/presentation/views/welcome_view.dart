@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
+import 'package:llegar/modules/auth/domain/entities/welcome_page_view_item_entity.dart';
 import 'package:llegar/modules/auth/presentation/widgets/welcome_view_body.dart';
 import 'package:llegar/utils/app_colors.dart';
 import 'package:llegar/utils/app_icons.dart';
+import 'package:llegar/utils/app_images.dart';
 import 'package:llegar/utils/app_text_styles.dart';
+import 'package:llegar/utils/functions/value_based_on_theme.dart';
 
 class WelcomeView extends StatefulWidget {
   const WelcomeView({super.key});
@@ -16,6 +19,7 @@ class WelcomeView extends StatefulWidget {
 class _WelcomeViewState extends State<WelcomeView> {
   late PageController _pageController;
   late ValueNotifier<int> _currentPageIndex;
+  late List<WelcomePageViewItemEntity> _items;
 
   @override
   void initState() {
@@ -24,6 +28,53 @@ class _WelcomeViewState extends State<WelcomeView> {
     _currentPageIndex = ValueNotifier<int>(0);
 
     _pageController.addListener(_listenerMethod);
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _items = [
+      WelcomePageViewItemEntity(
+        description:
+            'The best rental app of the century to rent any thing rentable you want every day',
+        image: valueBasedOnTheme<String>(
+          context,
+          light: AppImages.welcomeToLlegar,
+          dark: AppImages.welcomeToLlegarDark,
+        )!,
+        title: 'Welcome to LLEGAR',
+      ),
+      WelcomePageViewItemEntity(
+        description:
+            'Don’t worry about your data we have the best security system to safe your privacy',
+        image: valueBasedOnTheme<String>(
+          context,
+          light: AppImages.secureApp,
+          dark: AppImages.secureAppDark,
+        )!,
+        title: 'Secure App',
+      ),
+      WelcomePageViewItemEntity(
+        description:
+            'We guarantee that the rental process will be completed successfully.\n“We Delivered trust“',
+        image: valueBasedOnTheme<String>(
+          context,
+          light: AppImages.makeDeal,
+          dark: AppImages.makeDealDark,
+        )!,
+        title: 'Make a Deal',
+      ),
+      WelcomePageViewItemEntity(
+        description:
+            'We provide a service Two factor authentication To ensure that your account is safe from hacking',
+        image: valueBasedOnTheme<String>(
+          context,
+          light: AppImages.twoFactorAuth,
+          dark: AppImages.twoFactorAuthDark,
+        )!,
+        title: 'Two factor authentication',
+      ),
+    ];
   }
 
   @override
@@ -49,12 +100,25 @@ class _WelcomeViewState extends State<WelcomeView> {
               Text(
                 'Skip',
                 style: AppTextStyles.bold24(context).copyWith(
-                  color: AppColors.black,
+                  color: valueBasedOnTheme<Color>(
+                    context,
+                    light: AppColors.black,
+                    dark: AppColors.white,
+                  ),
                 ),
               ),
               IconButton(
                 onPressed: () {},
-                icon: SvgPicture.asset(AppIcons.arrowRight),
+                icon: SvgPicture.asset(
+                  AppIcons.arrowRight,
+                  colorFilter: valueBasedOnTheme<ColorFilter>(
+                    context,
+                    dark: const ColorFilter.mode(
+                      AppColors.white,
+                      BlendMode.srcATop,
+                    ),
+                  ),
+                ),
               ),
             ],
           )
@@ -62,6 +126,7 @@ class _WelcomeViewState extends State<WelcomeView> {
       ),
       body: WelcomeViewBody(
         currentPageIndexValueNotifier: _currentPageIndex,
+        items: _items,
         pageController: _pageController,
       ),
       bottomNavigationBar: Padding(

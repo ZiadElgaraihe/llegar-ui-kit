@@ -10,6 +10,10 @@ Future<void> preloadSvgImages() async {
     AppImages.secureApp,
     AppImages.makeDeal,
     AppImages.twoFactorAuth,
+    AppImages.welcomeToLlegarDark,
+    AppImages.secureAppDark,
+    AppImages.makeDealDark,
+    AppImages.twoFactorAuthDark,
   ];
 
   await Future.wait(svgImages.map((svgPath) {

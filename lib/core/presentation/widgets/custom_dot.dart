@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/utils/app_colors.dart';
+import 'package:llegar/utils/functions/value_based_on_theme.dart';
 
 class CustomDot extends StatelessWidget {
   const CustomDot({
@@ -18,7 +19,13 @@ class CustomDot extends StatelessWidget {
       height: size,
       width: isActive ? size * 4 : size,
       decoration: BoxDecoration(
-        color: isActive ? AppColors.prussianBlue : AppColors.lightGrey,
+        color: isActive
+            ? valueBasedOnTheme<Color>(
+                context,
+                light: AppColors.prussianBlue,
+                dark: AppColors.orange,
+              )
+            : AppColors.lightGrey,
         borderRadius: BorderRadius.circular(100),
       ),
     );
