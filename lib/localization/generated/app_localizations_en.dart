@@ -22,7 +22,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get makeADeal => 'Make a Deal';
 
   @override
-  String get weGuaranteeThatTheRentalProcess => 'We guarantee that the rental process will be completed successfully.\n“We Delivered trust“';
+  String get weGuaranteeThatTheRentalProcess => 'We guarantee that the rental process will be completed successfully.\n“We Delivere trust“';
 
   @override
   String get twoFactorAuthentication => 'Two factor authentication';
@@ -38,4 +38,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get next => 'Next';
+
+  @override
+  String get weDeliverTrust => 'We deliver trust';
 }

@@ -9,5 +9,6 @@
     "weProvideAServiceTwoFactorAuthentication": "نحن نقدم خدمة المصادقة الثنائية للتأكد من أن حسابك آمن من الاختراق",
     "skip": "تخطى",
     "getStarted": "إبدأ",
-    "next": "التالي"
+    "next": "التالي",
+    "weDeliverTrust": "نحن نقدم الثقة"
 }

@@ -4,10 +4,11 @@
     "secureApp": "Secure App",
     "donotWorryAboutYourData": "Don’t worry about your data we have the best security system to safe your privacy",
     "makeADeal": "Make a Deal",
-    "weGuaranteeThatTheRentalProcess": "We guarantee that the rental process will be completed successfully.\n“We Delivered trust“",
+    "weGuaranteeThatTheRentalProcess": "We guarantee that the rental process will be completed successfully.\n“We Delivere trust“",
     "twoFactorAuthentication": "Two factor authentication",
     "weProvideAServiceTwoFactorAuthentication": "We provide a service Two factor authentication To ensure that your account is safe from hacking",
     "skip": "Skip",
     "getStarted": "Get Started",
-    "next": "Next"
+    "next": "Next",
+    "weDeliverTrust": "We deliver trust"
 }

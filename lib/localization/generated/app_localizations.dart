@@ -128,7 +128,7 @@ abstract class AppLocalizations {
   /// No description provided for @weGuaranteeThatTheRentalProcess.
   ///
   /// In en, this message translates to:
-  /// **'We guarantee that the rental process will be completed successfully.\n“We Delivered trust“'**
+  /// **'We guarantee that the rental process will be completed successfully.\n“We Delivere trust“'**
   String get weGuaranteeThatTheRentalProcess;
 
   /// No description provided for @twoFactorAuthentication.
@@ -160,6 +160,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Next'**
   String get next;
+
+  /// No description provided for @weDeliverTrust.
+  ///
+  /// In en, this message translates to:
+  /// **'We deliver trust'**
+  String get weDeliverTrust;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

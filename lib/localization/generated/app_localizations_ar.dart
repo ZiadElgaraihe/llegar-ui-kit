@@ -38,4 +38,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get next => 'التالي';
+
+  @override
+  String get weDeliverTrust => 'نحن نقدم الثقة';
 }
