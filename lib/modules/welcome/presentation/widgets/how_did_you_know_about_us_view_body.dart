@@ -4,6 +4,7 @@ import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
 import 'package:llegar/modules/welcome/presentation/widgets/how_did_you_know_about_us_buttons_section.dart';
 import 'package:llegar/utils/app_colors.dart';
 import 'package:llegar/utils/app_images.dart';
+import 'package:llegar/utils/app_routes.dart';
 import 'package:llegar/utils/app_text_styles.dart';
 import 'package:llegar/utils/functions/translate.dart';
 import 'package:llegar/utils/functions/value_based_on_theme.dart';
@@ -41,7 +42,12 @@ class HowDidYouKnowUsViewBody extends StatelessWidget {
           const SizedBox(height: 24),
           CustomElevatedButton(
             title: translate(context).continueText,
-            onFuturePressed: () async {},
+            onFuturePressed: () async {
+              Navigator.pushReplacementNamed(
+                context,
+                AppRoutes.socialLogInView,
+              );
+            },
           ),
           const SizedBox(height: 24),
         ],

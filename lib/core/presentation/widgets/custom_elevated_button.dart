@@ -37,7 +37,8 @@ class _CustomElevatedButtonState extends State<CustomElevatedButton> {
                       //remove this
                       await Future.delayed(const Duration(seconds: 2));
 
-                      //await widget.onFuturePressed!(); <- uncomment this
+                      await widget.onFuturePressed!();
+                      
                       setState(() {
                         _isLoading = false;
                       });
