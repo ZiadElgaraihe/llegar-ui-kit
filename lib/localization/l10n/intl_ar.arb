@@ -10,5 +10,13 @@
     "skip": "تخطى",
     "getStarted": "إبدأ",
     "next": "التالي",
-    "weDeliverTrust": "نحن نقدم الثقة"
+    "weDeliverTrust": "نحن نقدم الثقة",
+    "back": "رجوع",
+    "howDidYouKnowUs": "كيف عرفتنا",
+    "facebook": "فيسبوك",
+    "googleSearch": "بحث جوجل",
+    "appStore": "متجر التطبيقات",
+    "youtube": "يوتيوب",
+    "tiktok": "تيك توك",
+    "continueText": "أكمل"
 }

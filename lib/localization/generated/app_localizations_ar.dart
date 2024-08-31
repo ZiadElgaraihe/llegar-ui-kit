@@ -41,4 +41,28 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get weDeliverTrust => 'نحن نقدم الثقة';
+
+  @override
+  String get back => 'رجوع';
+
+  @override
+  String get howDidYouKnowUs => 'كيف عرفتنا';
+
+  @override
+  String get facebook => 'فيسبوك';
+
+  @override
+  String get googleSearch => 'بحث جوجل';
+
+  @override
+  String get appStore => 'متجر التطبيقات';
+
+  @override
+  String get youtube => 'يوتيوب';
+
+  @override
+  String get tiktok => 'تيك توك';
+
+  @override
+  String get continueText => 'أكمل';
 }

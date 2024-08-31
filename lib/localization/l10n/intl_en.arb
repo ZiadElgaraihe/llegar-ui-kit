@@ -10,5 +10,13 @@
     "skip": "Skip",
     "getStarted": "Get Started",
     "next": "Next",
-    "weDeliverTrust": "We deliver trust"
+    "weDeliverTrust": "We deliver trust",
+    "back": "Back",
+    "howDidYouKnowUs": "How did You Know Us",
+    "facebook": "Facebook",
+    "googleSearch": "Google Search",
+    "appStore": "App Store",
+    "youtube": "Youtube",
+    "tiktok": "TikTok",
+    "continueText": "Continue"
 }

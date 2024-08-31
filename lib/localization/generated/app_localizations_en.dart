@@ -41,4 +41,28 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get weDeliverTrust => 'We deliver trust';
+
+  @override
+  String get back => 'Back';
+
+  @override
+  String get howDidYouKnowUs => 'How did You Know Us';
+
+  @override
+  String get facebook => 'Facebook';
+
+  @override
+  String get googleSearch => 'Google Search';
+
+  @override
+  String get appStore => 'App Store';
+
+  @override
+  String get youtube => 'Youtube';
+
+  @override
+  String get tiktok => 'TikTok';
+
+  @override
+  String get continueText => 'Continue';
 }

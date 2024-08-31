@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
 import 'package:llegar/modules/welcome/domain/entities/welcome_page_view_item_entity.dart';
+import 'package:llegar/modules/welcome/presentation/views/how_did_you_know_us_view.dart';
 import 'package:llegar/modules/welcome/presentation/widgets/welcome_view_body.dart';
 import 'package:llegar/utils/app_colors.dart';
 import 'package:llegar/utils/app_icons.dart';
@@ -109,7 +110,12 @@ class _WelcomeViewState extends State<WelcomeView> {
                 ),
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacementNamed(
+                    context,
+                    HowDidYouKnowUsView.id,
+                  );
+                },
                 icon: SvgPicture.asset(
                   valueBasedOnLocale<String>(
                     context,
@@ -141,11 +147,18 @@ class _WelcomeViewState extends State<WelcomeView> {
           valueListenable: _currentPageIndex,
           builder: (context, currentPageIndex, child) => CustomElevatedButton(
             onPressed: () {
-              _pageController.animateToPage(
-                currentPageIndex + 1,
-                duration: const Duration(milliseconds: 300),
-                curve: Curves.easeIn,
-              );
+              if (currentPageIndex == _items.length - 1) {
+                Navigator.pushReplacementNamed(
+                  context,
+                  HowDidYouKnowUsView.id,
+                );
+              } else {
+                _pageController.animateToPage(
+                  currentPageIndex + 1,
+                  duration: const Duration(milliseconds: 300),
+                  curve: Curves.easeIn,
+                );
+              }
             },
             title: currentPageIndex == 0
                 ? translate(context).getStarted

@@ -166,6 +166,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'We deliver trust'**
   String get weDeliverTrust;
+
+  /// No description provided for @back.
+  ///
+  /// In en, this message translates to:
+  /// **'Back'**
+  String get back;
+
+  /// No description provided for @howDidYouKnowUs.
+  ///
+  /// In en, this message translates to:
+  /// **'How did You Know Us'**
+  String get howDidYouKnowUs;
+
+  /// No description provided for @facebook.
+  ///
+  /// In en, this message translates to:
+  /// **'Facebook'**
+  String get facebook;
+
+  /// No description provided for @googleSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'Google Search'**
+  String get googleSearch;
+
+  /// No description provided for @appStore.
+  ///
+  /// In en, this message translates to:
+  /// **'App Store'**
+  String get appStore;
+
+  /// No description provided for @youtube.
+  ///
+  /// In en, this message translates to:
+  /// **'Youtube'**
+  String get youtube;
+
+  /// No description provided for @tiktok.
+  ///
+  /// In en, this message translates to:
+  /// **'TikTok'**
+  String get tiktok;
+
+  /// No description provided for @continueText.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get continueText;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
