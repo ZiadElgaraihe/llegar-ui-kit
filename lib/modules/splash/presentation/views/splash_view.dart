@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/config/preload_svg_images.dart';
-import 'package:llegar/modules/welcome/presentation/views/welcome_view.dart';
 import 'package:llegar/modules/splash/presentation/widgets/splash_view_body.dart';
 import 'package:llegar/utils/app_images.dart';
+import 'package:llegar/utils/app_routes.dart';
 import 'package:llegar/utils/functions/value_based_on_theme.dart';
 
 class SplashView extends StatefulWidget {
@@ -18,7 +18,7 @@ class _SplashViewState extends State<SplashView> {
     super.didChangeDependencies();
     await _preloadImagesAndDelay();
     if (!mounted) return;
-    Navigator.pushReplacementNamed(context, WelcomeView.id);
+    Navigator.pushReplacementNamed(context, AppRoutes.welcomeView);
   }
 
   /// Preloads SVG images based on the current theme and ensures that 

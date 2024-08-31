@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
 import 'package:llegar/modules/welcome/domain/entities/welcome_page_view_item_entity.dart';
-import 'package:llegar/modules/welcome/presentation/views/how_did_you_know_us_view.dart';
 import 'package:llegar/modules/welcome/presentation/widgets/welcome_view_body.dart';
 import 'package:llegar/utils/app_colors.dart';
 import 'package:llegar/utils/app_icons.dart';
 import 'package:llegar/utils/app_images.dart';
+import 'package:llegar/utils/app_routes.dart';
 import 'package:llegar/utils/app_text_styles.dart';
 import 'package:llegar/utils/functions/translate.dart';
 import 'package:llegar/utils/functions/value_based_on_locale.dart';
@@ -14,8 +14,6 @@ import 'package:llegar/utils/functions/value_based_on_theme.dart';
 
 class WelcomeView extends StatefulWidget {
   const WelcomeView({super.key});
-
-  static const String id = '/WelcomeView';
 
   @override
   State<WelcomeView> createState() => _WelcomeViewState();
@@ -113,7 +111,7 @@ class _WelcomeViewState extends State<WelcomeView> {
                 onPressed: () {
                   Navigator.pushReplacementNamed(
                     context,
-                    HowDidYouKnowUsView.id,
+                    AppRoutes.howDidYouKnowUsView,
                   );
                 },
                 icon: SvgPicture.asset(
@@ -150,7 +148,7 @@ class _WelcomeViewState extends State<WelcomeView> {
               if (currentPageIndex == _items.length - 1) {
                 Navigator.pushReplacementNamed(
                   context,
-                  HowDidYouKnowUsView.id,
+                  AppRoutes.howDidYouKnowUsView,
                 );
               } else {
                 _pageController.animateToPage(

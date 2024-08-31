@@ -5,8 +5,6 @@ import 'package:llegar/modules/welcome/presentation/widgets/how_did_you_know_abo
 class HowDidYouKnowUsView extends StatelessWidget {
   const HowDidYouKnowUsView({super.key});
 
-  static const String id = '/HowDidYouKnowUsView';
-
   @override
   Widget build(BuildContext context) {
     return const Scaffold(

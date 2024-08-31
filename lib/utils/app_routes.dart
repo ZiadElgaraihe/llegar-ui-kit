@@ -6,13 +6,16 @@ import 'package:llegar/utils/animations/opacity_transition.dart';
 
 ///This class contains all routes
 abstract class AppRoutes {
+  static const String welcomeView = '/WelcomeView';
+  static const String howDidYouKnowUsView = '/HowDidYouKnowUsView';
+
   static Route<dynamic>? generate(RouteSettings routeSettings) {
     switch (routeSettings.name) {
-      case WelcomeView.id:
+      case welcomeView:
         return OpacityTransition(
           page: const WelcomeView(),
         );
-      case HowDidYouKnowUsView.id:
+      case howDidYouKnowUsView:
         return BottomSlideTransition(
           page: const HowDidYouKnowUsView(),
         );
