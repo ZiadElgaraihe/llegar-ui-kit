@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:llegar/core/presentation/manager/cubits/locale_cubit/locale_cubit.dart';
+import 'package:llegar/core/presentation/manager/cubits/theme_cubit/theme_cubit.dart';
 import 'package:llegar/localization/generated/app_localizations.dart';
+import 'package:llegar/modules/splash/presentation/views/splash_view.dart';
+import 'package:llegar/utils/app_routes.dart';
 import 'package:llegar/utils/app_strings.dart';
 import 'package:llegar/utils/app_themes.dart';
 
@@ -8,14 +13,31 @@ class Llegar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: AppStrings.appName,
-      themeMode: AppThemes.themeMode,
-      theme: AppThemes.lightTheme,
-      darkTheme: AppThemes.darkTheme,
-      locale: const Locale('en'),
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
-      supportedLocales: AppLocalizations.supportedLocales,
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider<ThemeCubit>(
+          create: (context) => ThemeCubit()..setUpThemeMode(),
+        ),
+        BlocProvider<LocaleCubit>(
+          create: (context) => LocaleCubit()..setUpLocale(),
+        ),
+      ],
+      child: Builder(
+        builder: (context) {
+          return MaterialApp(
+            title: AppStrings.appName,
+            debugShowCheckedModeBanner: false,
+            themeMode: BlocProvider.of<ThemeCubit>(context).themeMode,
+            theme: AppThemes.lightTheme(context),
+            darkTheme: AppThemes.darkTheme(context),
+            locale: BlocProvider.of<LocaleCubit>(context).locale,
+            localizationsDelegates: AppLocalizations.localizationsDelegates,
+            supportedLocales: AppLocalizations.supportedLocales,
+            onGenerateRoute: AppRoutes.generate,
+            home: const SplashView(),
+          );
+        },
+      ),
     );
   }
 }

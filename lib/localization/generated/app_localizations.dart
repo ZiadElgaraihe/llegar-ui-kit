@@ -95,6 +95,125 @@ abstract class AppLocalizations {
     Locale('en')
   ];
 
+  /// No description provided for @welcomeToLlegar.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to LLEGAR'**
+  String get welcomeToLlegar;
+
+  /// No description provided for @theBestRentalApp.
+  ///
+  /// In en, this message translates to:
+  /// **'The best rental app of the century to rent any thing rentable you want every day'**
+  String get theBestRentalApp;
+
+  /// No description provided for @secureApp.
+  ///
+  /// In en, this message translates to:
+  /// **'Secure App'**
+  String get secureApp;
+
+  /// No description provided for @donotWorryAboutYourData.
+  ///
+  /// In en, this message translates to:
+  /// **'Don’t worry about your data we have the best security system to safe your privacy'**
+  String get donotWorryAboutYourData;
+
+  /// No description provided for @makeADeal.
+  ///
+  /// In en, this message translates to:
+  /// **'Make a Deal'**
+  String get makeADeal;
+
+  /// No description provided for @weGuaranteeThatTheRentalProcess.
+  ///
+  /// In en, this message translates to:
+  /// **'We guarantee that the rental process will be completed successfully.\n“We Delivere trust“'**
+  String get weGuaranteeThatTheRentalProcess;
+
+  /// No description provided for @twoFactorAuthentication.
+  ///
+  /// In en, this message translates to:
+  /// **'Two factor authentication'**
+  String get twoFactorAuthentication;
+
+  /// No description provided for @weProvideAServiceTwoFactorAuthentication.
+  ///
+  /// In en, this message translates to:
+  /// **'We provide a service Two factor authentication To ensure that your account is safe from hacking'**
+  String get weProvideAServiceTwoFactorAuthentication;
+
+  /// No description provided for @skip.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip'**
+  String get skip;
+
+  /// No description provided for @getStarted.
+  ///
+  /// In en, this message translates to:
+  /// **'Get Started'**
+  String get getStarted;
+
+  /// No description provided for @next.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get next;
+
+  /// No description provided for @weDeliverTrust.
+  ///
+  /// In en, this message translates to:
+  /// **'We deliver trust'**
+  String get weDeliverTrust;
+
+  /// No description provided for @back.
+  ///
+  /// In en, this message translates to:
+  /// **'Back'**
+  String get back;
+
+  /// No description provided for @howDidYouKnowUs.
+  ///
+  /// In en, this message translates to:
+  /// **'How did You Know Us'**
+  String get howDidYouKnowUs;
+
+  /// No description provided for @facebook.
+  ///
+  /// In en, this message translates to:
+  /// **'Facebook'**
+  String get facebook;
+
+  /// No description provided for @googleSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'Google Search'**
+  String get googleSearch;
+
+  /// No description provided for @appStore.
+  ///
+  /// In en, this message translates to:
+  /// **'App Store'**
+  String get appStore;
+
+  /// No description provided for @youtube.
+  ///
+  /// In en, this message translates to:
+  /// **'Youtube'**
+  String get youtube;
+
+  /// No description provided for @tiktok.
+  ///
+  /// In en, this message translates to:
+  /// **'TikTok'**
+  String get tiktok;
+
+  /// No description provided for @continueText.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get continueText;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

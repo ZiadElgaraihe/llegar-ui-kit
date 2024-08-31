@@ -13,15 +13,17 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.6
+  expandable_page_view: ^1.0.17
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.1.6
   flutter_localizations:
     sdk: flutter
-  flutter_native_splash: ^2.4.1
+  flutter_spinkit: ^5.2.1
+  flutter_svg: ^2.0.10+1
   intl: any
 
 dev_dependencies:
-  flutter_launcher_icons: ^0.13.1
   flutter_lints: ^3.0.0
   flutter_test:
     sdk: flutter
@@ -35,6 +37,8 @@ flutter:
   assets:
     - assets/icons/
     - assets/images/
+    - assets/images/light/
+    - assets/images/dark/
     - assets/fonts/Inter/
     - assets/fonts/Urbanist/
 
@@ -80,15 +84,5 @@ flutter:
         - asset: assets/fonts/Inter/Inter-Black.ttf
           weight: 900
 
-flutter_launcher_icons:
-  android: true
-  ios: true
-  remove_alpha_ios: true
-  image_path: "assets/images/launcher_icon.png"
-  background_color: "#FFFFFF"
-  web:
-    generate: true
-    image_path: "assets/images/launcher_icon.png"
-    background_color: "#FFFFFF"
 flutter_intl:
   enabled: true
