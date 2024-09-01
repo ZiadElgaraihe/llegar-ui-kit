@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/modules/auth/presentation/views/sign_up_view.dart';
 import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
 import 'package:llegar/modules/welcome/presentation/views/how_did_you_know_us_view.dart';
 import 'package:llegar/modules/welcome/presentation/views/welcome_view.dart';
@@ -10,6 +11,7 @@ abstract class AppRoutes {
   static const String welcomeView = '/WelcomeView';
   static const String howDidYouKnowUsView = '/HowDidYouKnowUsView';
   static const String socialLogInView = '/SocialLogInView';
+  static const String signUpView = '/SignUpView';
 
   static Route<dynamic>? generate(RouteSettings routeSettings) {
     switch (routeSettings.name) {
@@ -24,6 +26,10 @@ abstract class AppRoutes {
       case socialLogInView:
         return BottomSlideTransition(
           page: const SocialLogInView(),
+        );
+      case signUpView:
+        return BottomSlideTransition(
+          page: const SignUpView(),
         );
     }
     return null;
