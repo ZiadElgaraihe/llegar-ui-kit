@@ -10,6 +10,12 @@ abstract class AppThemes {
       ThemeData.light().copyWith(
         scaffoldBackgroundColor: AppColors.white,
         colorScheme: ColorScheme.fromSeed(seedColor: AppColors.prussianBlue),
+        dividerTheme: const DividerThemeData(
+          color: AppColors.black,
+          thickness: 1,
+          indent: 8,
+          endIndent: 8,
+        ),
         textTheme: const TextTheme(
           bodyMedium: TextStyle(
             color: AppColors.prussianBlue,
@@ -29,7 +35,7 @@ abstract class AppThemes {
           filled: true,
           fillColor: AppColors.antiFlashWhite,
           labelStyle: AppTextStyles.medium15(context).copyWith(
-            color: AppColors.grey,
+            color: AppColors.darkgrey,
           ),
           border: OutlineInputBorder(
             borderSide: BorderSide.none,
@@ -62,6 +68,28 @@ abstract class AppThemes {
             ),
           ),
         ),
+        outlinedButtonTheme: OutlinedButtonThemeData(
+          style: OutlinedButton.styleFrom(
+            fixedSize: Size(MediaQuery.sizeOf(context).width, 60),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+            side: const BorderSide(
+              color: AppColors.prussianBlue,
+              width: 2,
+            ),
+            textStyle: AppTextStyles.semiBold16(context),
+            foregroundColor: AppColors.prussianBlue,
+          ),
+        ),
+        textButtonTheme: TextButtonThemeData(
+          style: TextButton.styleFrom(
+            textStyle: AppTextStyles.bold14(context).copyWith(
+              color: AppColors.prussianBlue,
+            ),
+            foregroundColor: AppColors.prussianBlue,
+          ),
+        ),
         checkboxTheme: CheckboxThemeData(
           fillColor: WidgetStateProperty.resolveWith(
             (states) {
@@ -87,6 +115,12 @@ abstract class AppThemes {
   static ThemeData darkTheme(BuildContext context) => ThemeData.dark().copyWith(
         scaffoldBackgroundColor: AppColors.prussianBlue,
         colorScheme: ColorScheme.fromSeed(seedColor: AppColors.prussianBlue),
+        dividerTheme: const DividerThemeData(
+          color: AppColors.white,
+          thickness: 1,
+          indent: 8,
+          endIndent: 8,
+        ),
         textTheme: const TextTheme(
           bodyMedium: TextStyle(
             color: AppColors.white,
@@ -106,7 +140,7 @@ abstract class AppThemes {
           filled: true,
           fillColor: AppColors.antiFlashWhite,
           labelStyle: AppTextStyles.medium15(context).copyWith(
-            color: AppColors.grey,
+            color: AppColors.darkgrey,
           ),
           border: OutlineInputBorder(
             borderSide: BorderSide.none,
@@ -137,6 +171,28 @@ abstract class AppThemes {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(100),
             ),
+          ),
+        ),
+        outlinedButtonTheme: OutlinedButtonThemeData(
+          style: OutlinedButton.styleFrom(
+            fixedSize: Size(MediaQuery.sizeOf(context).width, 60),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+            side: const BorderSide(
+              color: AppColors.orange,
+              width: 2,
+            ),
+            textStyle: AppTextStyles.semiBold16(context),
+            foregroundColor: AppColors.orange,
+          ),
+        ),
+        textButtonTheme: TextButtonThemeData(
+          style: TextButton.styleFrom(
+            textStyle: AppTextStyles.bold14(context).copyWith(
+              color: AppColors.orange,
+            ),
+            foregroundColor: AppColors.orange,
           ),
         ),
         checkboxTheme: CheckboxThemeData(
