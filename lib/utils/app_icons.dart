@@ -6,6 +6,9 @@ abstract class AppIcons {
   ///assets/icons/apple.svg
   static const String apple = 'assets/icons/apple.svg';
 
+  ///assets/icons/apple_dark.svg
+  static const String appleDark = 'assets/icons/apple_dark.svg';
+
   ///assets/icons/arrow_left.svg
   static const String arrowLeft = 'assets/icons/arrow_left.svg';
 
