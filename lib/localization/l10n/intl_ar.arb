@@ -18,5 +18,13 @@
     "appStore": "متجر التطبيقات",
     "youtube": "يوتيوب",
     "tiktok": "تيك توك",
-    "continueText": "أكمل"
+    "continueText": "أكمل",
+    "letUsYouIn": "هيا بنا ندخل",
+    "continueWithFacebook": "استمر مع فيسبوك",
+    "continueWithGoogle": "استمر مع جوجل",
+    "continueWithApple": "استمر مع آبل",
+    "or": "أو",
+    "signInWithPassword": "تسجيل الدخول باستخدام كلمة المرور",
+    "signUp": "إنشاء حساب",
+    "doNotHaveAnAccount": "ليس لديك حساب؟"
 }
