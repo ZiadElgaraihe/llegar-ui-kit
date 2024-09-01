@@ -2,7 +2,7 @@ class SocialLogInButtonEntity {
   final String icon;
   final String? title;
 
-  SocialLogInButtonEntity({
+  const SocialLogInButtonEntity({
     required this.icon,
     this.title,
   });

@@ -66,6 +66,8 @@ abstract class AppThemes {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(100),
             ),
+            textStyle: AppTextStyles.bold20(context),
+            foregroundColor: AppColors.white,
           ),
         ),
         outlinedButtonTheme: OutlinedButtonThemeData(
@@ -171,6 +173,8 @@ abstract class AppThemes {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(100),
             ),
+            textStyle: AppTextStyles.bold20(context),
+            foregroundColor: AppColors.white,
           ),
         ),
         outlinedButtonTheme: OutlinedButtonThemeData(
