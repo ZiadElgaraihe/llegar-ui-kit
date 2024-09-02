@@ -18,5 +18,20 @@
     "appStore": "App Store",
     "youtube": "Youtube",
     "tiktok": "TikTok",
-    "continueText": "Continue"
+    "continueText": "Continue",
+    "letUsYouIn": "Let's You in",
+    "continueWithFacebook": "Continue with Facebook",
+    "continueWithGoogle": "Continue with Google",
+    "continueWithApple": "Continue with Apple",
+    "or": "or",
+    "signInWithPassword": "Sign in with password",
+    "signUp": "Sign Up",
+    "doNotHaveAnAccount": "Don’t have an account?",
+    "createYourAccount": "Create Your Account",
+    "email": "Email",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "orContinueWith": "or continue with",
+    "alreadyHaveAnAccount": "Already have an account?",
+    "logIn": "Log In"
 }

@@ -65,4 +65,49 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get continueText => 'أكمل';
+
+  @override
+  String get letUsYouIn => 'هيا بنا ندخل';
+
+  @override
+  String get continueWithFacebook => 'استمر مع فيسبوك';
+
+  @override
+  String get continueWithGoogle => 'استمر مع جوجل';
+
+  @override
+  String get continueWithApple => 'استمر مع آبل';
+
+  @override
+  String get or => 'أو';
+
+  @override
+  String get signInWithPassword => 'تسجيل الدخول باستخدام كلمة المرور';
+
+  @override
+  String get signUp => 'إنشاء حساب';
+
+  @override
+  String get doNotHaveAnAccount => 'ليس لديك حساب؟';
+
+  @override
+  String get createYourAccount => 'إنشاء حسابك';
+
+  @override
+  String get email => 'إيميل';
+
+  @override
+  String get password => 'كلمة المرور';
+
+  @override
+  String get rememberMe => 'تذكرنى';
+
+  @override
+  String get orContinueWith => 'أو استمر مع';
+
+  @override
+  String get alreadyHaveAnAccount => 'هل لديك حساب بالفعل؟';
+
+  @override
+  String get logIn => 'تسجيل الدخول';
 }

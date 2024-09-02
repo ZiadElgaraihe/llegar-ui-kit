@@ -65,4 +65,49 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get continueText => 'Continue';
+
+  @override
+  String get letUsYouIn => 'Let\'s You in';
+
+  @override
+  String get continueWithFacebook => 'Continue with Facebook';
+
+  @override
+  String get continueWithGoogle => 'Continue with Google';
+
+  @override
+  String get continueWithApple => 'Continue with Apple';
+
+  @override
+  String get or => 'or';
+
+  @override
+  String get signInWithPassword => 'Sign in with password';
+
+  @override
+  String get signUp => 'Sign Up';
+
+  @override
+  String get doNotHaveAnAccount => 'Don’t have an account?';
+
+  @override
+  String get createYourAccount => 'Create Your Account';
+
+  @override
+  String get email => 'Email';
+
+  @override
+  String get password => 'Password';
+
+  @override
+  String get rememberMe => 'Remember me';
+
+  @override
+  String get orContinueWith => 'or continue with';
+
+  @override
+  String get alreadyHaveAnAccount => 'Already have an account?';
+
+  @override
+  String get logIn => 'Log In';
 }

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:llegar/utils/app_colors.dart';
-import 'package:llegar/utils/app_text_styles.dart';
 import 'package:llegar/utils/functions/future_delayed_navigator.dart';
 
 class CustomElevatedButton extends StatefulWidget {
@@ -25,8 +24,9 @@ class _CustomElevatedButtonState extends State<CustomElevatedButton> {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: (!_isLoading)
-          ? (widget.onFuturePressed != null)
+      onPressed: (_isLoading)
+          ? null
+          : (widget.onFuturePressed != null)
               ? () {
                   futureDelayedNavigator(
                     () async {
@@ -34,10 +34,8 @@ class _CustomElevatedButtonState extends State<CustomElevatedButton> {
                         _isLoading = true;
                       });
 
-                      //remove this
-                      await Future.delayed(const Duration(seconds: 2));
+                      await widget.onFuturePressed!();
 
-                      //await widget.onFuturePressed!(); <- uncomment this
                       setState(() {
                         _isLoading = false;
                       });
@@ -48,19 +46,17 @@ class _CustomElevatedButtonState extends State<CustomElevatedButton> {
                   ? () {
                       futureDelayedNavigator(widget.onPressed!);
                     }
-                  : null
-          : null,
-      child: _isLoading
-          ? const SpinKitFadingCircle(
-              color: AppColors.white,
-              size: 35,
-            )
-          : Text(
-              widget.title,
-              style: AppTextStyles.bold20(context).copyWith(
-                color: AppColors.white,
-              ),
-            ),
+                  : null,
+      child: AnimatedCrossFade(
+        firstChild: Text(widget.title),
+        secondChild: const SpinKitFadingCircle(
+          color: AppColors.white,
+          size: 35,
+        ),
+        crossFadeState:
+            _isLoading ? CrossFadeState.showSecond : CrossFadeState.showFirst,
+        duration: const Duration(milliseconds: 300),
+      ),
     );
   }
 }

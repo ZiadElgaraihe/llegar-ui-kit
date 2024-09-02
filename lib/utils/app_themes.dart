@@ -10,6 +10,12 @@ abstract class AppThemes {
       ThemeData.light().copyWith(
         scaffoldBackgroundColor: AppColors.white,
         colorScheme: ColorScheme.fromSeed(seedColor: AppColors.prussianBlue),
+        dividerTheme: const DividerThemeData(
+          color: AppColors.black,
+          thickness: 1,
+          indent: 8,
+          endIndent: 8,
+        ),
         textTheme: const TextTheme(
           bodyMedium: TextStyle(
             color: AppColors.prussianBlue,
@@ -28,8 +34,13 @@ abstract class AppThemes {
         inputDecorationTheme: InputDecorationTheme(
           filled: true,
           fillColor: AppColors.antiFlashWhite,
-          labelStyle: AppTextStyles.medium15(context).copyWith(
-            color: AppColors.grey,
+          errorStyle: const TextStyle(
+            color: AppColors.red,
+            fontFamily: AppStrings.interFontFamily,
+          ),
+          hintStyle: AppTextStyles.medium15(context).copyWith(
+            color: AppColors.darkgrey,
+            fontFamily: AppStrings.interFontFamily,
           ),
           border: OutlineInputBorder(
             borderSide: BorderSide.none,
@@ -49,6 +60,13 @@ abstract class AppThemes {
             ),
             borderRadius: BorderRadius.circular(6),
           ),
+          focusedErrorBorder: OutlineInputBorder(
+            borderSide: const BorderSide(
+              color: AppColors.red,
+              width: 1,
+            ),
+            borderRadius: BorderRadius.circular(6),
+          ),
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
@@ -60,6 +78,30 @@ abstract class AppThemes {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(100),
             ),
+            textStyle: AppTextStyles.bold20(context),
+            foregroundColor: AppColors.white,
+          ),
+        ),
+        outlinedButtonTheme: OutlinedButtonThemeData(
+          style: OutlinedButton.styleFrom(
+            fixedSize: Size(MediaQuery.sizeOf(context).width, 60),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+            side: const BorderSide(
+              color: AppColors.prussianBlue,
+              width: 2,
+            ),
+            textStyle: AppTextStyles.semiBold16(context),
+            foregroundColor: AppColors.prussianBlue,
+          ),
+        ),
+        textButtonTheme: TextButtonThemeData(
+          style: TextButton.styleFrom(
+            textStyle: AppTextStyles.bold14(context).copyWith(
+              color: AppColors.prussianBlue,
+            ),
+            foregroundColor: AppColors.prussianBlue,
           ),
         ),
         checkboxTheme: CheckboxThemeData(
@@ -87,6 +129,12 @@ abstract class AppThemes {
   static ThemeData darkTheme(BuildContext context) => ThemeData.dark().copyWith(
         scaffoldBackgroundColor: AppColors.prussianBlue,
         colorScheme: ColorScheme.fromSeed(seedColor: AppColors.prussianBlue),
+        dividerTheme: const DividerThemeData(
+          color: AppColors.white,
+          thickness: 1,
+          indent: 8,
+          endIndent: 8,
+        ),
         textTheme: const TextTheme(
           bodyMedium: TextStyle(
             color: AppColors.white,
@@ -105,8 +153,13 @@ abstract class AppThemes {
         inputDecorationTheme: InputDecorationTheme(
           filled: true,
           fillColor: AppColors.antiFlashWhite,
-          labelStyle: AppTextStyles.medium15(context).copyWith(
-            color: AppColors.grey,
+          errorStyle: TextStyle(
+            color: Colors.red.shade300,
+            fontFamily: AppStrings.interFontFamily,
+          ),
+          hintStyle: AppTextStyles.medium15(context).copyWith(
+            color: AppColors.darkgrey,
+            fontFamily: AppStrings.interFontFamily,
           ),
           border: OutlineInputBorder(
             borderSide: BorderSide.none,
@@ -120,6 +173,13 @@ abstract class AppThemes {
             borderRadius: BorderRadius.circular(6),
           ),
           errorBorder: OutlineInputBorder(
+            borderSide: BorderSide(
+              color: Colors.red.shade300,
+              width: 1,
+            ),
+            borderRadius: BorderRadius.circular(6),
+          ),
+          focusedErrorBorder: OutlineInputBorder(
             borderSide: const BorderSide(
               color: AppColors.red,
               width: 1,
@@ -137,6 +197,30 @@ abstract class AppThemes {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(100),
             ),
+            textStyle: AppTextStyles.bold20(context),
+            foregroundColor: AppColors.white,
+          ),
+        ),
+        outlinedButtonTheme: OutlinedButtonThemeData(
+          style: OutlinedButton.styleFrom(
+            fixedSize: Size(MediaQuery.sizeOf(context).width, 60),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+            side: const BorderSide(
+              color: AppColors.orange,
+              width: 2,
+            ),
+            textStyle: AppTextStyles.semiBold16(context),
+            foregroundColor: AppColors.orange,
+          ),
+        ),
+        textButtonTheme: TextButtonThemeData(
+          style: TextButton.styleFrom(
+            textStyle: AppTextStyles.bold14(context).copyWith(
+              color: AppColors.orange,
+            ),
+            foregroundColor: AppColors.orange,
           ),
         ),
         checkboxTheme: CheckboxThemeData(
