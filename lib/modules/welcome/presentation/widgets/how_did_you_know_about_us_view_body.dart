@@ -31,7 +31,8 @@ class HowDidYouKnowUsViewBody extends StatelessWidget {
           AppSizes.height24,
           CustomElevatedButton(
             title: translate(context).continueText,
-            onFuturePressed: () async {
+            
+            onPressed: () {
               Navigator.pushReplacementNamed(
                 context,
                 AppRoutes.socialLogInView,

@@ -30,12 +30,7 @@ class WelcomePageViewItem extends StatelessWidget {
           fit: BoxFit.scaleDown,
           child: Text(
             welcomePageViewItemEntity.title,
-            style: AppTextStyles.bold40(context).copyWith(
-              color: valueBasedOnTheme<Color>(
-                context,
-                dark: AppColors.orange,
-              ),
-            ),
+            style: AppTextStyles.bold40(context),
           ),
         ),
         const SizedBox(height: 16),
@@ -45,6 +40,7 @@ class WelcomePageViewItem extends StatelessWidget {
             color: valueBasedOnTheme<Color>(
               context,
               light: AppColors.black,
+              dark: AppColors.white,
             ),
           ),
           textAlign: TextAlign.center,

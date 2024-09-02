@@ -5,7 +5,7 @@ import 'package:llegar/utils/app_sizes.dart';
 import 'package:llegar/utils/app_text_styles.dart';
 import 'package:llegar/utils/functions/value_based_on_theme.dart';
 
-///this stateless widget is used in welcome and auth modules 
+///this stateless widget is used in welcome and auth modules
 ///in how did you know us, social log in, sign up and log in views bodies
 ///
 ///contains image and title vertically
@@ -32,6 +32,7 @@ class WelcomeAndAuthHeader extends StatelessWidget {
             color: valueBasedOnTheme(
               context,
               light: AppColors.black,
+              dark: AppColors.white,
             ),
           ),
         ),

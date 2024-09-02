@@ -17,7 +17,7 @@ class ThemeCubit extends Cubit<ThemeState> {
 
   //Add here your logic to get the app theme mode
   void setUpThemeMode() {
-    themeMode = ThemeMode.light;
+    themeMode = ThemeMode.dark;
   }
 
   bool isLight() => themeMode == ThemeMode.light;

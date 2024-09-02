@@ -50,13 +50,7 @@ class HowDidYouKnowUsButton extends StatelessWidget {
             Text(
               howDidYouKnowUsItemEntity.title,
               style: AppTextStyles.bold20(context).copyWith(
-                color: isActive
-                    ? AppColors.white
-                    : valueBasedOnTheme<Color>(
-                        context,
-                        light: AppColors.prussianBlue,
-                        dark: AppColors.orange,
-                      )!,
+                color: isActive ? AppColors.white : null,
               ),
             ),
           ],

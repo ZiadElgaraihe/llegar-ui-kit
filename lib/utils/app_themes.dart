@@ -137,7 +137,7 @@ abstract class AppThemes {
         ),
         textTheme: const TextTheme(
           bodyMedium: TextStyle(
-            color: AppColors.white,
+            color: AppColors.orange,
             fontFamily: AppStrings.urbanistFontFamily,
           ),
         ),
