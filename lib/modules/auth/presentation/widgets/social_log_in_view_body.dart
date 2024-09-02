@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
-import 'package:llegar/modules/auth/domain/entities/social_log_in_button_entity.dart';
+import 'package:llegar/modules/auth/domain/entities/social_auth_entity.dart';
 import 'package:llegar/modules/auth/presentation/widgets/auth_toggle_row.dart';
 import 'package:llegar/modules/auth/presentation/widgets/or_divider_row.dart';
 import 'package:llegar/modules/auth/presentation/widgets/social_log_in_outlined_button.dart';
@@ -44,24 +44,33 @@ class SocialLogInViewBody extends StatelessWidget {
           ),
           const SizedBox(height: 24),
           SocialLogInOutlinedButton(
-            onFuturePressed: () async {},
-            socialLogInButtonEntity: SocialLogInButtonEntity(
+            onFuturePressed: () async {
+              //remove this & add your logic
+              await Future.delayed(const Duration(seconds: 2));
+            },
+            socialLogInButtonEntity: SocialAuthEntity(
               icon: AppIcons.facebook,
               title: translate(context).continueWithFacebook,
             ),
           ),
           const SizedBox(height: 12),
           SocialLogInOutlinedButton(
-            onFuturePressed: () async {},
-            socialLogInButtonEntity: SocialLogInButtonEntity(
+            onFuturePressed: () async {
+              //remove this
+              await Future.delayed(const Duration(seconds: 2));
+            },
+            socialLogInButtonEntity: SocialAuthEntity(
               icon: AppIcons.google,
               title: translate(context).continueWithGoogle,
             ),
           ),
           const SizedBox(height: 12),
           SocialLogInOutlinedButton(
-            onFuturePressed: () async {},
-            socialLogInButtonEntity: SocialLogInButtonEntity(
+            onFuturePressed: () async {
+              //remove this
+              await Future.delayed(const Duration(seconds: 2));
+            },
+            socialLogInButtonEntity: SocialAuthEntity(
               icon: valueBasedOnTheme<String>(
                 context,
                 light: AppIcons.apple,

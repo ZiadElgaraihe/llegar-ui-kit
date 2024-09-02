@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:llegar/modules/auth/domain/entities/social_log_in_button_entity.dart';
+import 'package:llegar/modules/auth/domain/entities/social_auth_entity.dart';
 import 'package:llegar/utils/app_colors.dart';
 import 'package:llegar/utils/functions/future_delayed_navigator.dart';
 import 'package:llegar/utils/functions/value_based_on_theme.dart';
@@ -13,7 +13,7 @@ class SocialLogInOutlinedButton extends StatefulWidget {
     required this.onFuturePressed,
   });
 
-  final SocialLogInButtonEntity socialLogInButtonEntity;
+  final SocialAuthEntity socialLogInButtonEntity;
   final Future<void> Function() onFuturePressed;
 
   @override
@@ -36,10 +36,7 @@ class _SocialLogInOutlinedButtonState extends State<SocialLogInOutlinedButton> {
                     _isLoading = true;
                   });
 
-                  //remove this
-                  await Future.delayed(const Duration(seconds: 2));
-
-                  widget.onFuturePressed();
+                  await widget.onFuturePressed();
 
                   setState(() {
                     _isLoading = false;

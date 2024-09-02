@@ -1,8 +1,8 @@
-class SocialLogInButtonEntity {
+class SocialAuthEntity {
   final String icon;
   final String? title;
 
-  const SocialLogInButtonEntity({
+  const SocialAuthEntity({
     required this.icon,
     this.title,
   });
