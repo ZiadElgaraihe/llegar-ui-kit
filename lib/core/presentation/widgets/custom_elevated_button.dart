@@ -34,9 +34,6 @@ class _CustomElevatedButtonState extends State<CustomElevatedButton> {
                         _isLoading = true;
                       });
 
-                      //remove this
-                      await Future.delayed(const Duration(seconds: 2));
-
                       await widget.onFuturePressed!();
 
                       setState(() {

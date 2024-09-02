@@ -26,5 +26,12 @@
     "or": "أو",
     "signInWithPassword": "تسجيل الدخول باستخدام كلمة المرور",
     "signUp": "إنشاء حساب",
-    "doNotHaveAnAccount": "ليس لديك حساب؟"
+    "doNotHaveAnAccount": "ليس لديك حساب؟",
+    "createYourAccount": "إنشاء حسابك",
+    "email": "إيميل",
+    "password": "كلمة المرور",
+    "rememberMe": "تذكرنى",
+    "orContinueWith": "أو استمر مع",
+    "alreadyHaveAnAccount": "هل لديك حساب بالفعل؟",
+    "logIn": "تسجيل الدخول"
 }

@@ -15,11 +15,17 @@ abstract class AppIcons {
   ///assets/icons/arrow_right.svg
   static const String arrowRight = 'assets/icons/arrow_right.svg';
 
+  ///assets/icons/email.svg
+  static const String email = 'assets/icons/email.svg';
+
   ///assets/icons/facebook.svg
   static const String facebook = 'assets/icons/facebook.svg';
 
   ///assets/icons/google.svg
   static const String google = 'assets/icons/google.svg';
+
+  ///assets/icons/password.svg
+  static const String password = 'assets/icons/password.svg';
 
   ///assets/icons/tiktok.svg
   static const String tiktok = 'assets/icons/tiktok.svg';

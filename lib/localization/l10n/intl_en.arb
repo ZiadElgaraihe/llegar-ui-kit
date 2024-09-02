@@ -26,5 +26,12 @@
     "or": "or",
     "signInWithPassword": "Sign in with password",
     "signUp": "Sign Up",
-    "doNotHaveAnAccount": "Don’t have an account?"
+    "doNotHaveAnAccount": "Don’t have an account?",
+    "createYourAccount": "Create Your Account",
+    "email": "Email",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "orContinueWith": "or continue with",
+    "alreadyHaveAnAccount": "Already have an account?",
+    "logIn": "Log In"
 }

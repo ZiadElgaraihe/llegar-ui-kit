@@ -34,8 +34,13 @@ abstract class AppThemes {
         inputDecorationTheme: InputDecorationTheme(
           filled: true,
           fillColor: AppColors.antiFlashWhite,
-          labelStyle: AppTextStyles.medium15(context).copyWith(
+          errorStyle: const TextStyle(
+            color: AppColors.red,
+            fontFamily: AppStrings.interFontFamily,
+          ),
+          hintStyle: AppTextStyles.medium15(context).copyWith(
             color: AppColors.darkgrey,
+            fontFamily: AppStrings.interFontFamily,
           ),
           border: OutlineInputBorder(
             borderSide: BorderSide.none,
@@ -49,6 +54,13 @@ abstract class AppThemes {
             borderRadius: BorderRadius.circular(6),
           ),
           errorBorder: OutlineInputBorder(
+            borderSide: const BorderSide(
+              color: AppColors.red,
+              width: 1,
+            ),
+            borderRadius: BorderRadius.circular(6),
+          ),
+          focusedErrorBorder: OutlineInputBorder(
             borderSide: const BorderSide(
               color: AppColors.red,
               width: 1,
@@ -141,8 +153,13 @@ abstract class AppThemes {
         inputDecorationTheme: InputDecorationTheme(
           filled: true,
           fillColor: AppColors.antiFlashWhite,
-          labelStyle: AppTextStyles.medium15(context).copyWith(
+          errorStyle: TextStyle(
+            color: Colors.red.shade300,
+            fontFamily: AppStrings.interFontFamily,
+          ),
+          hintStyle: AppTextStyles.medium15(context).copyWith(
             color: AppColors.darkgrey,
+            fontFamily: AppStrings.interFontFamily,
           ),
           border: OutlineInputBorder(
             borderSide: BorderSide.none,
@@ -156,6 +173,13 @@ abstract class AppThemes {
             borderRadius: BorderRadius.circular(6),
           ),
           errorBorder: OutlineInputBorder(
+            borderSide: BorderSide(
+              color: Colors.red.shade300,
+              width: 1,
+            ),
+            borderRadius: BorderRadius.circular(6),
+          ),
+          focusedErrorBorder: OutlineInputBorder(
             borderSide: const BorderSide(
               color: AppColors.red,
               width: 1,
