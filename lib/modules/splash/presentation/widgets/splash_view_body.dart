@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:llegar/modules/splash/presentation/widgets/splash_logo.dart';
 import 'package:llegar/utils/app_colors.dart';
+import 'package:llegar/utils/app_sizes.dart';
 import 'package:llegar/utils/functions/value_based_on_theme.dart';
 
 class SplashViewBody extends StatelessWidget {
@@ -19,7 +20,7 @@ class SplashViewBody extends StatelessWidget {
             fit: BoxFit.scaleDown,
             child: SplashLogo(),
           ),
-          const SizedBox(height: 48),
+          AppSizes.height48,
           SpinKitCircle(
             color: valueBasedOnTheme<Color>(
               context,

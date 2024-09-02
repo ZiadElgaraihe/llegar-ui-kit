@@ -25,7 +25,7 @@ class SocialLogInViewBody extends StatelessWidget {
       padding: AppSizes.bodyHorizontalPadding(context),
       child: Column(
         children: [
-          const SizedBox(height: 12),
+          AppSizes.height12,
           SvgPicture.asset(
             valueBasedOnTheme<String>(
               context,
@@ -33,7 +33,7 @@ class SocialLogInViewBody extends StatelessWidget {
               dark: AppImages.letUsYouInDark,
             )!,
           ),
-          const SizedBox(height: 12),
+          AppSizes.height12,
           Text(
             translate(context).letUsYouIn,
             style: AppTextStyles.bold32(context).copyWith(
@@ -43,7 +43,7 @@ class SocialLogInViewBody extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 24),
+          AppSizes.height24,
           SocialLogInOutlinedButton(
             onFuturePressed: () async {
               //remove this & add your logic
@@ -54,7 +54,7 @@ class SocialLogInViewBody extends StatelessWidget {
               title: translate(context).continueWithFacebook,
             ),
           ),
-          const SizedBox(height: 12),
+          AppSizes.height12,
           SocialLogInOutlinedButton(
             onFuturePressed: () async {
               //remove this
@@ -65,7 +65,7 @@ class SocialLogInViewBody extends StatelessWidget {
               title: translate(context).continueWithGoogle,
             ),
           ),
-          const SizedBox(height: 12),
+          AppSizes.height12,
           SocialLogInOutlinedButton(
             onFuturePressed: () async {
               //remove this
@@ -80,14 +80,14 @@ class SocialLogInViewBody extends StatelessWidget {
               title: translate(context).continueWithApple,
             ),
           ),
-          const SizedBox(height: 24),
+          AppSizes.height24,
           OrDividerRow(title: translate(context).or),
-          const SizedBox(height: 24),
+          AppSizes.height24,
           CustomElevatedButton(
             title: translate(context).signInWithPassword,
             onPressed: () {},
           ),
-          const SizedBox(height: 12),
+          AppSizes.height12,
           AuthToggleRow(
             buttonTitle: translate(context).signUp,
             onPressed: () {
@@ -95,7 +95,7 @@ class SocialLogInViewBody extends StatelessWidget {
             },
             title: translate(context).doNotHaveAnAccount,
           ),
-          const SizedBox(height: 24),
+          AppSizes.height24,
         ],
       ),
     );

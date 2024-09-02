@@ -4,6 +4,7 @@ import 'package:llegar/core/presentation/widgets/custom_text_form_field.dart';
 import 'package:llegar/modules/auth/presentation/widgets/auth_password_text_form_field.dart';
 import 'package:llegar/modules/auth/presentation/widgets/remember_me_row.dart';
 import 'package:llegar/utils/app_icons.dart';
+import 'package:llegar/utils/app_sizes.dart';
 import 'package:llegar/utils/functions/translate.dart';
 
 class SignUpForm extends StatefulWidget {
@@ -48,7 +49,7 @@ class _SignUpFormState extends State<SignUpForm> {
                   keyboardType: TextInputType.emailAddress,
                   icon: AppIcons.email,
                 ),
-                const SizedBox(height: 12),
+                AppSizes.height12,
                 AuthPasswordTextFormField(
                   hintText: translate(context).password,
                 ),

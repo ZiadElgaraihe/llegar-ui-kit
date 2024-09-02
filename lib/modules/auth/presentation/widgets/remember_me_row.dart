@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/utils/app_colors.dart';
+import 'package:llegar/utils/app_sizes.dart';
 import 'package:llegar/utils/app_strings.dart';
 import 'package:llegar/utils/app_text_styles.dart';
 import 'package:llegar/utils/functions/translate.dart';
@@ -47,7 +48,7 @@ class _RememberMeRowState extends State<RememberMeRow> {
             },
           ),
         ),
-        const SizedBox(width: 8),
+        AppSizes.width8,
         Text(
           translate(context).rememberMe,
           style: AppTextStyles.medium15(context).copyWith(

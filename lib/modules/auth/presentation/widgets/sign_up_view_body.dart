@@ -22,7 +22,7 @@ class SignUpViewBody extends StatelessWidget {
       padding: AppSizes.bodyHorizontalPadding(context),
       child: Column(
         children: [
-          const SizedBox(height: 12),
+          AppSizes.height12,
           SvgPicture.asset(
             valueBasedOnTheme<String>(
               context,
@@ -30,7 +30,7 @@ class SignUpViewBody extends StatelessWidget {
               dark: AppImages.logoDark,
             )!,
           ),
-          const SizedBox(height: 12),
+          AppSizes.height12,
           Text(
             translate(context).createYourAccount,
             style: AppTextStyles.bold32(context).copyWith(
@@ -40,11 +40,11 @@ class SignUpViewBody extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 24),
+          AppSizes.height24,
           const SignUpForm(),
-          const SizedBox(height: 24),
+          AppSizes.height24,
           OrDividerRow(title: translate(context).orContinueWith),
-          const SizedBox(height: 24),
+          AppSizes.height24,
           SocialAuthCardButtonsRow(
             onAppleTap: () async {
               //remove this & add your logic
@@ -59,13 +59,13 @@ class SignUpViewBody extends StatelessWidget {
               await Future.delayed(const Duration(seconds: 2));
             },
           ),
-          const SizedBox(height: 4),
+          AppSizes.height4,
           AuthToggleRow(
             buttonTitle: translate(context).logIn,
             onPressed: () {},
             title: translate(context).alreadyHaveAnAccount,
           ),
-          const SizedBox(height: 24),
+          AppSizes.height24,
         ],
       ),
     );

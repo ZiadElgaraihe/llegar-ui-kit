@@ -21,6 +21,7 @@ class HowDidYouKnowUsViewBody extends StatelessWidget {
       padding: AppSizes.bodyHorizontalPadding(context),
       child: Column(
         children: [
+          AppSizes.height12,
           SvgPicture.asset(
             valueBasedOnTheme<String>(
               context,
@@ -28,7 +29,7 @@ class HowDidYouKnowUsViewBody extends StatelessWidget {
               dark: AppImages.howDidYouKnowUsDark,
             )!,
           ),
-          const SizedBox(height: 12),
+          AppSizes.height12,
           Text(
             translate(context).howDidYouKnowUs,
             style: AppTextStyles.bold32(context).copyWith(
@@ -38,9 +39,9 @@ class HowDidYouKnowUsViewBody extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 24),
+          AppSizes.height24,
           const HowDidYouKnowUsButtonsSection(),
-          const SizedBox(height: 24),
+          AppSizes.height24,
           CustomElevatedButton(
             title: translate(context).continueText,
             onFuturePressed: () async {
@@ -50,7 +51,7 @@ class HowDidYouKnowUsViewBody extends StatelessWidget {
               );
             },
           ),
-          const SizedBox(height: 24),
+          AppSizes.height24,
         ],
       ),
     );
