@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
+import 'package:llegar/core/presentation/widgets/welcome_and_auth_header.dart';
 import 'package:llegar/modules/welcome/presentation/widgets/how_did_you_know_about_us_buttons_section.dart';
-import 'package:llegar/utils/app_colors.dart';
 import 'package:llegar/utils/app_images.dart';
 import 'package:llegar/utils/app_routes.dart';
-import 'package:llegar/utils/app_text_styles.dart';
+import 'package:llegar/utils/app_sizes.dart';
 import 'package:llegar/utils/functions/translate.dart';
 import 'package:llegar/utils/functions/value_based_on_theme.dart';
 
@@ -17,39 +16,30 @@ class HowDidYouKnowUsViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+      padding: AppSizes.bodyHorizontalPadding(context),
       child: Column(
         children: [
-          SvgPicture.asset(
-            valueBasedOnTheme<String>(
+          WelcomeAndAuthHeader(
+            headerImage: valueBasedOnTheme<String>(
               context,
               light: AppImages.howDidYouKnowUs,
               dark: AppImages.howDidYouKnowUsDark,
             )!,
+            headerTitle: translate(context).howDidYouKnowUs,
           ),
-          const SizedBox(height: 12),
-          Text(
-            translate(context).howDidYouKnowUs,
-            style: AppTextStyles.bold32(context).copyWith(
-              color: valueBasedOnTheme(
-                context,
-                light: AppColors.black,
-              ),
-            ),
-          ),
-          const SizedBox(height: 24),
           const HowDidYouKnowUsButtonsSection(),
-          const SizedBox(height: 24),
+          AppSizes.height24,
           CustomElevatedButton(
             title: translate(context).continueText,
-            onFuturePressed: () async {
+            
+            onPressed: () {
               Navigator.pushReplacementNamed(
                 context,
                 AppRoutes.socialLogInView,
               );
             },
           ),
-          const SizedBox(height: 24),
+          AppSizes.height24,
         ],
       ),
     );

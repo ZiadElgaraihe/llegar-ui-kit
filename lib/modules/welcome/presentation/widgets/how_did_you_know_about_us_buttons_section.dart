@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:llegar/modules/welcome/domain/entities/how_did_you_know_us_item_entity.dart';
 import 'package:llegar/modules/welcome/presentation/widgets/how_did_you_know_about_us_button.dart';
 import 'package:llegar/utils/app_icons.dart';
+import 'package:llegar/utils/app_sizes.dart';
 import 'package:llegar/utils/functions/translate.dart';
 
 class HowDidYouKnowUsButtonsSection extends StatefulWidget {
@@ -60,7 +61,7 @@ class _HowDidYouKnowUsButtonsSectionState
               });
             },
           ),
-          if (index < _items.length - 1) const SizedBox(height: 12),
+          if (index < _items.length - 1) AppSizes.height12,
         ],
       ],
     );

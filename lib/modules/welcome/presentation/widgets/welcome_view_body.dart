@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/dots_indicator.dart';
 import 'package:llegar/modules/welcome/domain/entities/welcome_page_view_item_entity.dart';
 import 'package:llegar/modules/welcome/presentation/widgets/welcome_page_view_item.dart';
+import 'package:llegar/utils/app_sizes.dart';
 
 class WelcomeViewBody extends StatelessWidget {
   const WelcomeViewBody({
@@ -19,7 +20,7 @@ class WelcomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+      padding: AppSizes.bodyHorizontalPadding(context),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

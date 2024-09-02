@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:llegar/utils/app_colors.dart';
 import 'package:llegar/utils/app_images.dart';
 import 'package:llegar/utils/app_text_styles.dart';
 import 'package:llegar/utils/functions/translate.dart';
@@ -25,13 +24,7 @@ class SplashLogo extends StatelessWidget {
         ),
         Text(
           translate(context).weDeliverTrust,
-          style:
-              AppTextStyles.bold28(context, responsive: false).copyWith(
-            color: valueBasedOnTheme<Color>(
-              context,
-              dark: AppColors.orange,
-            ),
-          ),
+          style: AppTextStyles.bold28(context, responsive: false),
         ),
       ],
     );

@@ -22,6 +22,7 @@ class OrDividerRow extends StatelessWidget {
             color: valueBasedOnTheme<Color>(
               context,
               light: AppColors.black,
+              dark: AppColors.white,
             ),
           ),
         ),

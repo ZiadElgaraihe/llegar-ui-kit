@@ -3,6 +3,7 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:llegar/modules/auth/domain/entities/social_auth_entity.dart';
 import 'package:llegar/utils/app_colors.dart';
+import 'package:llegar/utils/app_sizes.dart';
 import 'package:llegar/utils/functions/future_delayed_navigator.dart';
 import 'package:llegar/utils/functions/value_based_on_theme.dart';
 
@@ -49,7 +50,7 @@ class _SocialLogInOutlinedButtonState extends State<SocialLogInOutlinedButton> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SvgPicture.asset(widget.socialLogInButtonEntity.icon),
-            const SizedBox(width: 8),
+            AppSizes.width8,
             Text(widget.socialLogInButtonEntity.title!),
           ],
         ),

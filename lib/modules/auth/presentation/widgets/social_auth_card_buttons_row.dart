@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:llegar/modules/auth/domain/entities/social_auth_entity.dart';
 import 'package:llegar/modules/auth/presentation/widgets/social_auth_card_button.dart';
 import 'package:llegar/utils/app_icons.dart';
+import 'package:llegar/utils/app_sizes.dart';
 
 class SocialAuthCardButtonsRow extends StatelessWidget {
   const SocialAuthCardButtonsRow({
@@ -24,12 +25,12 @@ class SocialAuthCardButtonsRow extends StatelessWidget {
           socialAuthEntity: const SocialAuthEntity(icon: AppIcons.google),
           onTap: onGoogleTap,
         ),
-        const SizedBox(width: 8),
+        AppSizes.width8,
         SocialAuthCardButton(
           socialAuthEntity: const SocialAuthEntity(icon: AppIcons.apple),
           onTap: onAppleTap,
         ),
-        const SizedBox(width: 8),
+        AppSizes.width8,
         SocialAuthCardButton(
           socialAuthEntity: const SocialAuthEntity(icon: AppIcons.facebook),
           onTap: onFacebookTap,
