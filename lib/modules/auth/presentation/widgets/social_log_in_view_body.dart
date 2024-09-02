@@ -9,6 +9,7 @@ import 'package:llegar/utils/app_colors.dart';
 import 'package:llegar/utils/app_icons.dart';
 import 'package:llegar/utils/app_images.dart';
 import 'package:llegar/utils/app_routes.dart';
+import 'package:llegar/utils/app_sizes.dart';
 import 'package:llegar/utils/app_text_styles.dart';
 import 'package:llegar/utils/functions/translate.dart';
 import 'package:llegar/utils/functions/value_based_on_theme.dart';
@@ -21,7 +22,7 @@ class SocialLogInViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+      padding: AppSizes.bodyHorizontalPadding(context),
       child: Column(
         children: [
           const SizedBox(height: 12),

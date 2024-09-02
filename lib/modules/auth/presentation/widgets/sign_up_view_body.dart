@@ -6,6 +6,7 @@ import 'package:llegar/modules/auth/presentation/widgets/sign_up_form.dart';
 import 'package:llegar/modules/auth/presentation/widgets/social_auth_card_buttons_row.dart';
 import 'package:llegar/utils/app_colors.dart';
 import 'package:llegar/utils/app_images.dart';
+import 'package:llegar/utils/app_sizes.dart';
 import 'package:llegar/utils/app_text_styles.dart';
 import 'package:llegar/utils/functions/translate.dart';
 import 'package:llegar/utils/functions/value_based_on_theme.dart';
@@ -18,7 +19,7 @@ class SignUpViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+      padding: AppSizes.bodyHorizontalPadding(context),
       child: Column(
         children: [
           const SizedBox(height: 12),
