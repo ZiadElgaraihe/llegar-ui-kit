@@ -8,7 +8,7 @@ class LogInView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => FocusManager.instance.primaryFocus!.unfocus,
+      onTap: () => FocusManager.instance.primaryFocus!.unfocus(),
       child: const Scaffold(
         appBar: CustomAppBar(toolbarHeight: 0),
         body: LogInViewBody(),
