@@ -5,6 +5,7 @@ import 'package:llegar/modules/auth/presentation/widgets/or_divider_row.dart';
 import 'package:llegar/modules/auth/presentation/widgets/sign_up_form.dart';
 import 'package:llegar/modules/auth/presentation/widgets/social_auth_card_buttons_row.dart';
 import 'package:llegar/utils/app_images.dart';
+import 'package:llegar/utils/app_routes.dart';
 import 'package:llegar/utils/app_sizes.dart';
 import 'package:llegar/utils/functions/translate.dart';
 import 'package:llegar/utils/functions/value_based_on_theme.dart';
@@ -49,7 +50,9 @@ class SignUpViewBody extends StatelessWidget {
           AppSizes.height4,
           AuthToggleRow(
             buttonTitle: translate(context).logIn,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushReplacementNamed(context, AppRoutes.logInView);
+            },
             title: translate(context).alreadyHaveAnAccount,
           ),
           AppSizes.height24,

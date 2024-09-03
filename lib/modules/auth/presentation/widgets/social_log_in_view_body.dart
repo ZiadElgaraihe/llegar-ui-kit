@@ -72,7 +72,9 @@ class SocialLogInViewBody extends StatelessWidget {
           AppSizes.height24,
           CustomElevatedButton(
             title: translate(context).signInWithPassword,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushReplacementNamed(context, AppRoutes.logInView);
+            },
           ),
           AppSizes.height12,
           AuthToggleRow(
