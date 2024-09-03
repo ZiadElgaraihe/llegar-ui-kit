@@ -33,5 +33,7 @@
     "rememberMe": "Remember me",
     "orContinueWith": "or continue with",
     "alreadyHaveAnAccount": "Already have an account?",
-    "logIn": "Log In"
+    "logIn": "Log In",
+    "logInToYourAccount": "Login to Your Account",
+    "forgetThePassword": "Forget the password?"
 }

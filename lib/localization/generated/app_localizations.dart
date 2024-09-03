@@ -304,6 +304,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Log In'**
   String get logIn;
+
+  /// No description provided for @logInToYourAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Login to Your Account'**
+  String get logInToYourAccount;
+
+  /// No description provided for @forgetThePassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Forget the password?'**
+  String get forgetThePassword;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
