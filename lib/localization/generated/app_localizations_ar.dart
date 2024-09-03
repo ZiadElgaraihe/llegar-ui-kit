@@ -110,4 +110,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get logIn => 'تسجيل الدخول';
+
+  @override
+  String get logInToYourAccount => 'تسجيل الدخول إلى حسابك';
+
+  @override
+  String get forgetThePassword => 'هل نسيت كلمة المرور؟';
 }

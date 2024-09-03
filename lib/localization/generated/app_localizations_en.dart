@@ -110,4 +110,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get logIn => 'Log In';
+
+  @override
+  String get logInToYourAccount => 'Login to Your Account';
+
+  @override
+  String get forgetThePassword => 'Forget the password?';
 }

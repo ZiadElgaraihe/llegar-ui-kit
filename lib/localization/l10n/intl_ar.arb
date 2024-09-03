@@ -33,5 +33,7 @@
     "rememberMe": "تذكرنى",
     "orContinueWith": "أو استمر مع",
     "alreadyHaveAnAccount": "هل لديك حساب بالفعل؟",
-    "logIn": "تسجيل الدخول"
+    "logIn": "تسجيل الدخول",
+    "logInToYourAccount": "تسجيل الدخول إلى حسابك",
+    "forgetThePassword": "هل نسيت كلمة المرور؟"
 }
