@@ -33,7 +33,9 @@ class LogInViewBody extends StatelessWidget {
           const LogInForm(),
           AppSizes.height8,
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, AppRoutes.forgetPasswordView);
+            },
             style: TextButton.styleFrom(
               textStyle: AppTextStyles.medium14(context).copyWith(
                 fontFamily: AppStrings.interFontFamily,
