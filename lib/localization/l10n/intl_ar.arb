@@ -35,5 +35,7 @@
     "alreadyHaveAnAccount": "هل لديك حساب بالفعل؟",
     "logIn": "تسجيل الدخول",
     "logInToYourAccount": "تسجيل الدخول إلى حسابك",
-    "forgetThePassword": "هل نسيت كلمة المرور؟"
+    "forgetThePassword": "هل نسيت كلمة المرور؟",
+    "forgetPassword": "نسيت كلمة المرور",
+    "enterYourEmailAddress": "أدخل عنوان بريدك الإلكتروني للحصول على رمز OTP لإعادة تعيين كلمة المرور الخاصة بك"
 }

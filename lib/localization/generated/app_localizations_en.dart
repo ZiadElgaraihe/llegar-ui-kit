@@ -116,4 +116,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get forgetThePassword => 'Forget the password?';
+
+  @override
+  String get forgetPassword => 'Forget Password';
+
+  @override
+  String get enterYourEmailAddress => 'Enter your email address to get an OTP Code to reset your Password';
 }

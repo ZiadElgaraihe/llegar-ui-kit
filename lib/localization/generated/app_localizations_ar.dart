@@ -116,4 +116,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get forgetThePassword => 'هل نسيت كلمة المرور؟';
+
+  @override
+  String get forgetPassword => 'نسيت كلمة المرور';
+
+  @override
+  String get enterYourEmailAddress => 'أدخل عنوان بريدك الإلكتروني للحصول على رمز OTP لإعادة تعيين كلمة المرور الخاصة بك';
 }

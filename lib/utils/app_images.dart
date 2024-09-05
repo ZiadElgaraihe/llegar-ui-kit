@@ -1,5 +1,11 @@
 ///This class contains all app images
 abstract class AppImages {
+  ///assets/images/create_new_password.svg
+  static const String createNewPassword = 'assets/images/create_new_password.svg';
+
+  ///assets/images/forget_password.svg
+  static const String forgetPassword = 'assets/images/forget_password.svg';
+
   ///assets/images/light/how_did_you_know_us.svg
   static const String howDidYouKnowUs =
       'assets/images/light/how_did_you_know_us.svg';
@@ -9,18 +15,17 @@ abstract class AppImages {
       'assets/images/dark/how_did_you_know_us_dark.svg';
 
   ///assets/images/light/let_us_you_in.svg
-  static const String letUsYouIn =
-      'assets/images/light/let_us_you_in.svg';
+  static const String letUsYouIn = 'assets/images/light/let_us_you_in.svg';
 
   ///assets/images/dark/let_us_you_in_dark.svg
   static const String letUsYouInDark =
       'assets/images/dark/let_us_you_in_dark.svg';
 
   ///assets/images/light/logo.svg
-  static const String logo ='assets/images/light/logo.svg';
+  static const String logo = 'assets/images/light/logo.svg';
 
   ///assets/images/dark/logo_dark.svg
-  static const String logoDark ='assets/images/dark/logo_dark.svg';
+  static const String logoDark = 'assets/images/dark/logo_dark.svg';
 
   ///assets/images/light/make_deal.svg
   static const String makeDeal = 'assets/images/light/make_deal.svg';
@@ -62,4 +67,7 @@ abstract class AppImages {
   ///assets/images/dark/welcome_to_llegar_dark.svg
   static const String welcomeToLlegarDark =
       'assets/images/dark/welcome_to_llegar_dark.svg';
+
+  ///assets/images/you_have_got_mail.svg
+  static const String youHaveGotMail = 'assets/images/you_have_got_mail.svg';
 }

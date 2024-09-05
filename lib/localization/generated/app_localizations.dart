@@ -316,6 +316,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Forget the password?'**
   String get forgetThePassword;
+
+  /// No description provided for @forgetPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Forget Password'**
+  String get forgetPassword;
+
+  /// No description provided for @enterYourEmailAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your email address to get an OTP Code to reset your Password'**
+  String get enterYourEmailAddress;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

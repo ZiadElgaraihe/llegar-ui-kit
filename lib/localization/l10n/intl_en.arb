@@ -35,5 +35,7 @@
     "alreadyHaveAnAccount": "Already have an account?",
     "logIn": "Log In",
     "logInToYourAccount": "Login to Your Account",
-    "forgetThePassword": "Forget the password?"
+    "forgetThePassword": "Forget the password?",
+    "forgetPassword": "Forget Password",
+    "enterYourEmailAddress": "Enter your email address to get an OTP Code to reset your Password"
 }
