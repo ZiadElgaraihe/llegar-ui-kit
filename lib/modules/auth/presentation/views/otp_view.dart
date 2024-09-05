@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_app_bar.dart';
+import 'package:llegar/modules/auth/presentation/widgets/otp_view_body.dart';
 import 'package:llegar/utils/functions/translate.dart';
 
 class OtpView extends StatelessWidget {
@@ -13,6 +14,7 @@ class OtpView extends StatelessWidget {
         appBar: CustomAppBar(
           title: translate(context).back,
         ),
+        body: const OtpViewBody(),
       ),
     );
   }

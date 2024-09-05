@@ -122,4 +122,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get enterYourEmailAddress => 'أدخل عنوان بريدك الإلكتروني للحصول على رمز OTP لإعادة تعيين كلمة المرور الخاصة بك';
+
+  @override
+  String get youHaveGotMail => 'وصلك بريد';
+
+  @override
+  String get weHaveSentTheOtpVerificationCode => 'لقد أرسلنا رمز التحقق OTP إلى عنوان بريدك الإلكتروني. تحقق من بريدك الإلكتروني وأدخل الرمز أدناه';
 }

@@ -328,6 +328,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Enter your email address to get an OTP Code to reset your Password'**
   String get enterYourEmailAddress;
+
+  /// No description provided for @youHaveGotMail.
+  ///
+  /// In en, this message translates to:
+  /// **'You’ve got mail'**
+  String get youHaveGotMail;
+
+  /// No description provided for @weHaveSentTheOtpVerificationCode.
+  ///
+  /// In en, this message translates to:
+  /// **'We have sent the OTP verification code to your email address. Check your email and enter the code below'**
+  String get weHaveSentTheOtpVerificationCode;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

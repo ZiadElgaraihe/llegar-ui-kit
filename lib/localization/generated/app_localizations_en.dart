@@ -122,4 +122,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get enterYourEmailAddress => 'Enter your email address to get an OTP Code to reset your Password';
+
+  @override
+  String get youHaveGotMail => 'You’ve got mail';
+
+  @override
+  String get weHaveSentTheOtpVerificationCode => 'We have sent the OTP verification code to your email address. Check your email and enter the code below';
 }
