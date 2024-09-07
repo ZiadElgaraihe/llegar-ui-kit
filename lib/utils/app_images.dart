@@ -1,7 +1,8 @@
 ///This class contains all app images
 abstract class AppImages {
   ///assets/images/create_new_password.svg
-  static const String createNewPassword = 'assets/images/create_new_password.svg';
+  static const String createNewPassword =
+      'assets/images/create_new_password.svg';
 
   ///assets/images/forget_password.svg
   static const String forgetPassword = 'assets/images/forget_password.svg';
@@ -32,6 +33,12 @@ abstract class AppImages {
 
   ///assets/images/dark/make_deal_dark.svg
   static const String makeDealDark = 'assets/images/dark/make_deal_dark.svg';
+
+  ///assets/images/light/ok_amico.svg
+  static const String okAmico = 'assets/images/light/ok_amico.svg';
+
+  ///assets/images/dark/ok_amico_dark.svg
+  static const String okAmicoDark = 'assets/images/dark/ok_amico_dark.svg';
 
   ///assets/images/light/secure_app.svg
   static const String secureApp = 'assets/images/light/secure_app.svg';
