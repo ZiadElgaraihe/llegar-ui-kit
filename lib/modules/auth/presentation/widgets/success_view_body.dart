@@ -1,0 +1,57 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
+import 'package:llegar/modules/auth/domain/entities/success_view_entity.dart';
+import 'package:llegar/utils/app_colors.dart';
+import 'package:llegar/utils/app_images.dart';
+import 'package:llegar/utils/app_sizes.dart';
+import 'package:llegar/utils/app_text_styles.dart';
+import 'package:llegar/utils/functions/translate.dart';
+import 'package:llegar/utils/functions/value_based_on_theme.dart';
+
+class SuccessViewBody extends StatelessWidget {
+  const SuccessViewBody({
+    super.key,
+    required this.successViewEntity,
+  });
+
+  final SuccessViewEntity successViewEntity;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: AppSizes.bodyHorizontalPadding(context),
+      child: Column(
+        children: [
+          const Expanded(child: AppSizes.height24),
+          SvgPicture.asset(AppImages.okAmico),
+          AppSizes.height48,
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              successViewEntity.title,
+              style: AppTextStyles.bold40(context),
+            ),
+          ),
+          AppSizes.height12,
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              successViewEntity.subTitle,
+              style: AppTextStyles.medium18(context).copyWith(
+                color: valueBasedOnTheme<Color>(
+                  context,
+                  light: AppColors.black,
+                  dark: AppColors.white,
+                ),
+              ),
+            ),
+          ),
+          AppSizes.height24,
+          CustomElevatedButton(title: translate(context).getStarted),
+          AppSizes.height24
+        ],
+      ),
+    );
+  }
+}

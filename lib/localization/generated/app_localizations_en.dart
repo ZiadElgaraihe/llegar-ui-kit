@@ -116,4 +116,46 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get forgetThePassword => 'Forget the password?';
+
+  @override
+  String get forgetPassword => 'Forget Password';
+
+  @override
+  String get enterYourEmailAddress => 'Enter your email address to get an OTP Code to reset your Password';
+
+  @override
+  String get youHaveGotMail => 'You’ve got mail';
+
+  @override
+  String get weHaveSentTheOtpVerificationCode => 'We have sent the OTP verification code to your email address. Check your email and enter the code below';
+
+  @override
+  String get pleaseEnterValidFourDigitOtp => 'Please enter a valid 4-digit OTP';
+
+  @override
+  String get didNotReceiveEmail => 'Didn’t receive email?';
+
+  @override
+  String get resendCode => 'Resend code';
+
+  @override
+  String get youCanResendCodeIn => 'You can resend code in';
+
+  @override
+  String get second => 's';
+
+  @override
+  String get createNewPassword => 'Create new password';
+
+  @override
+  String get saveTheNewPasswordInSafePlace => 'Save the new password in a safe place, if you forget it then you have to do a forgot password again.';
+
+  @override
+  String get confirmTheNewPassword => 'Confirm the new password';
+
+  @override
+  String get yourPasswordHasBeenUpdated => 'Your password has been updated';
+
+  @override
+  String get passwordChangedSuccessfully => 'Password Changed Successfully';
 }

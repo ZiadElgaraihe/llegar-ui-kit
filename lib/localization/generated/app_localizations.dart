@@ -316,6 +316,90 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Forget the password?'**
   String get forgetThePassword;
+
+  /// No description provided for @forgetPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Forget Password'**
+  String get forgetPassword;
+
+  /// No description provided for @enterYourEmailAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your email address to get an OTP Code to reset your Password'**
+  String get enterYourEmailAddress;
+
+  /// No description provided for @youHaveGotMail.
+  ///
+  /// In en, this message translates to:
+  /// **'You’ve got mail'**
+  String get youHaveGotMail;
+
+  /// No description provided for @weHaveSentTheOtpVerificationCode.
+  ///
+  /// In en, this message translates to:
+  /// **'We have sent the OTP verification code to your email address. Check your email and enter the code below'**
+  String get weHaveSentTheOtpVerificationCode;
+
+  /// No description provided for @pleaseEnterValidFourDigitOtp.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid 4-digit OTP'**
+  String get pleaseEnterValidFourDigitOtp;
+
+  /// No description provided for @didNotReceiveEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Didn’t receive email?'**
+  String get didNotReceiveEmail;
+
+  /// No description provided for @resendCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Resend code'**
+  String get resendCode;
+
+  /// No description provided for @youCanResendCodeIn.
+  ///
+  /// In en, this message translates to:
+  /// **'You can resend code in'**
+  String get youCanResendCodeIn;
+
+  /// No description provided for @second.
+  ///
+  /// In en, this message translates to:
+  /// **'s'**
+  String get second;
+
+  /// No description provided for @createNewPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Create new password'**
+  String get createNewPassword;
+
+  /// No description provided for @saveTheNewPasswordInSafePlace.
+  ///
+  /// In en, this message translates to:
+  /// **'Save the new password in a safe place, if you forget it then you have to do a forgot password again.'**
+  String get saveTheNewPasswordInSafePlace;
+
+  /// No description provided for @confirmTheNewPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm the new password'**
+  String get confirmTheNewPassword;
+
+  /// No description provided for @yourPasswordHasBeenUpdated.
+  ///
+  /// In en, this message translates to:
+  /// **'Your password has been updated'**
+  String get yourPasswordHasBeenUpdated;
+
+  /// No description provided for @passwordChangedSuccessfully.
+  ///
+  /// In en, this message translates to:
+  /// **'Password Changed Successfully'**
+  String get passwordChangedSuccessfully;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -7,18 +7,18 @@ import 'package:llegar/utils/app_text_styles.dart';
 class CustomTextFormField extends StatelessWidget {
   const CustomTextFormField({
     super.key,
-    required this.hintText,
-    this.keyboardType = TextInputType.name,
-    this.readOnly = false,
     this.controller,
+    this.hintText,
     this.icon,
+    this.keyboardType = TextInputType.name,
     this.onSaved,
+    this.readOnly = false,
     this.suffixIcon,
     this.validator,
   });
 
   final TextEditingController? controller;
-  final String hintText;
+  final String? hintText;
   final String? icon;
   final TextInputType keyboardType;
   final void Function(String? newValue)? onSaved;
@@ -42,10 +42,12 @@ class CustomTextFormField extends StatelessWidget {
       validator: validator,
       decoration: InputDecoration(
         hintText: hintText,
-        prefixIcon: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: (icon != null) ? SvgPicture.asset(icon!) : null,
-        ),
+        prefixIcon: (icon != null)
+            ? Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: SvgPicture.asset(icon!),
+              )
+            : null,
         suffixIcon: suffixIcon,
       ),
     );

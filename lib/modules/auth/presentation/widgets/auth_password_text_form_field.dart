@@ -8,14 +8,16 @@ import 'package:llegar/utils/app_text_styles.dart';
 class AuthPasswordTextFormField extends StatefulWidget {
   const AuthPasswordTextFormField({
     super.key,
-    required this.hintText,
+    this.appearPrefixIcon = true,
     this.controller,
+    this.hintText,
     this.onSaved,
     this.validator,
   });
 
+  final bool appearPrefixIcon;
   final TextEditingController? controller;
-  final String hintText;
+  final String? hintText;
   final void Function(String? newValue)? onSaved;
   final String? Function(String? value)? validator;
 
@@ -42,10 +44,12 @@ class _AuthPasswordTextFormFieldState extends State<AuthPasswordTextFormField> {
       validator: widget.validator,
       decoration: InputDecoration(
         hintText: widget.hintText,
-        prefixIcon: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: SvgPicture.asset(AppIcons.password),
-        ),
+        prefixIcon: widget.appearPrefixIcon
+            ? Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: SvgPicture.asset(AppIcons.password),
+              )
+            : null,
         suffixIcon: IconButton(
           onPressed: () {
             setState(() {

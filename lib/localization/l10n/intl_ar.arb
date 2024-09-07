@@ -35,5 +35,19 @@
     "alreadyHaveAnAccount": "هل لديك حساب بالفعل؟",
     "logIn": "تسجيل الدخول",
     "logInToYourAccount": "تسجيل الدخول إلى حسابك",
-    "forgetThePassword": "هل نسيت كلمة المرور؟"
+    "forgetThePassword": "هل نسيت كلمة المرور؟",
+    "forgetPassword": "نسيت كلمة المرور",
+    "enterYourEmailAddress": "أدخل عنوان بريدك الإلكتروني للحصول على رمز OTP لإعادة تعيين كلمة المرور الخاصة بك",
+    "youHaveGotMail": "وصلك بريد",
+    "weHaveSentTheOtpVerificationCode": "لقد أرسلنا رمز التحقق OTP إلى عنوان بريدك الإلكتروني. تحقق من بريدك الإلكتروني وأدخل الرمز أدناه",
+    "pleaseEnterValidFourDigitOtp": "الرجاء إدخال كلمة مرور صالحة مكونة من 4 أرقام",
+    "didNotReceiveEmail": "لم تتلق بريد إلكتروني؟",
+    "resendCode": "إعادة إرسال الرمز",
+    "youCanResendCodeIn": "يمكنك إعادة إرسال الرمز خلال",
+    "second": "ث",
+    "createNewPassword": "إنشاء كلمة مرور جديدة",
+    "saveTheNewPasswordInSafePlace": "احفظ كلمة المرور الجديدة في مكان آمن، إذا نسيتها، عليك أن تفعل كلمة المرور المنسية مرة أخرى.",
+    "confirmTheNewPassword": "تأكيد كلمة المرور الجديدة",
+    "yourPasswordHasBeenUpdated": "لقد تم تحديث كلمة المرور الخاصة بك",
+    "passwordChangedSuccessfully": "تم تغيير كلمة المرور بنجاح"
 }

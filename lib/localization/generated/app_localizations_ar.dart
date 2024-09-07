@@ -116,4 +116,46 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get forgetThePassword => 'هل نسيت كلمة المرور؟';
+
+  @override
+  String get forgetPassword => 'نسيت كلمة المرور';
+
+  @override
+  String get enterYourEmailAddress => 'أدخل عنوان بريدك الإلكتروني للحصول على رمز OTP لإعادة تعيين كلمة المرور الخاصة بك';
+
+  @override
+  String get youHaveGotMail => 'وصلك بريد';
+
+  @override
+  String get weHaveSentTheOtpVerificationCode => 'لقد أرسلنا رمز التحقق OTP إلى عنوان بريدك الإلكتروني. تحقق من بريدك الإلكتروني وأدخل الرمز أدناه';
+
+  @override
+  String get pleaseEnterValidFourDigitOtp => 'الرجاء إدخال كلمة مرور صالحة مكونة من 4 أرقام';
+
+  @override
+  String get didNotReceiveEmail => 'لم تتلق بريد إلكتروني؟';
+
+  @override
+  String get resendCode => 'إعادة إرسال الرمز';
+
+  @override
+  String get youCanResendCodeIn => 'يمكنك إعادة إرسال الرمز خلال';
+
+  @override
+  String get second => 'ث';
+
+  @override
+  String get createNewPassword => 'إنشاء كلمة مرور جديدة';
+
+  @override
+  String get saveTheNewPasswordInSafePlace => 'احفظ كلمة المرور الجديدة في مكان آمن، إذا نسيتها، عليك أن تفعل كلمة المرور المنسية مرة أخرى.';
+
+  @override
+  String get confirmTheNewPassword => 'تأكيد كلمة المرور الجديدة';
+
+  @override
+  String get yourPasswordHasBeenUpdated => 'لقد تم تحديث كلمة المرور الخاصة بك';
+
+  @override
+  String get passwordChangedSuccessfully => 'تم تغيير كلمة المرور بنجاح';
 }
