@@ -143,4 +143,13 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get second => 'ث';
+
+  @override
+  String get createNewPassword => 'إنشاء كلمة مرور جديدة';
+
+  @override
+  String get saveTheNewPasswordInSafePlace => 'احفظ كلمة المرور الجديدة في مكان آمن، إذا نسيتها، عليك أن تفعل كلمة المرور المنسية مرة أخرى.';
+
+  @override
+  String get confirmTheNewPassword => 'تأكيد كلمة المرور الجديدة';
 }

@@ -143,4 +143,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get second => 's';
+
+  @override
+  String get createNewPassword => 'Create new password';
+
+  @override
+  String get saveTheNewPasswordInSafePlace => 'Save the new password in a safe place, if you forget it then you have to do a forgot password again.';
+
+  @override
+  String get confirmTheNewPassword => 'Confirm the new password';
 }

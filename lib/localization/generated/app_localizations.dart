@@ -370,6 +370,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'s'**
   String get second;
+
+  /// No description provided for @createNewPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Create new password'**
+  String get createNewPassword;
+
+  /// No description provided for @saveTheNewPasswordInSafePlace.
+  ///
+  /// In en, this message translates to:
+  /// **'Save the new password in a safe place, if you forget it then you have to do a forgot password again.'**
+  String get saveTheNewPasswordInSafePlace;
+
+  /// No description provided for @confirmTheNewPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm the new password'**
+  String get confirmTheNewPassword;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

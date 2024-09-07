@@ -44,5 +44,8 @@
     "didNotReceiveEmail": "لم تتلق بريد إلكتروني؟",
     "resendCode": "إعادة إرسال الرمز",
     "youCanResendCodeIn": "يمكنك إعادة إرسال الرمز خلال",
-    "second": "ث"
+    "second": "ث",
+    "createNewPassword": "إنشاء كلمة مرور جديدة",
+    "saveTheNewPasswordInSafePlace": "احفظ كلمة المرور الجديدة في مكان آمن، إذا نسيتها، عليك أن تفعل كلمة المرور المنسية مرة أخرى.",
+    "confirmTheNewPassword": "تأكيد كلمة المرور الجديدة"
 }
