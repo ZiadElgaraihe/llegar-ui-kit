@@ -5,6 +5,7 @@ import 'package:llegar/modules/auth/presentation/views/otp_view.dart';
 import 'package:llegar/modules/auth/presentation/views/reset_password_view.dart';
 import 'package:llegar/modules/auth/presentation/views/sign_up_view.dart';
 import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
+import 'package:llegar/modules/auth/presentation/views/success_view.dart';
 import 'package:llegar/modules/welcome/presentation/views/how_did_you_know_us_view.dart';
 import 'package:llegar/modules/welcome/presentation/views/welcome_view.dart';
 import 'package:llegar/utils/animations/bottom_slide_transition.dart';
@@ -21,6 +22,7 @@ abstract class AppRoutes {
   static const String forgetPasswordView = '/ForgetPasswordView';
   static const String otpView = '/OtpView';
   static const String resetPasswordView = '/ResetPasswordView';
+  static const String successView = '/SuccessView';
 
   static Route<dynamic>? generate(RouteSettings routeSettings) {
     switch (routeSettings.name) {
@@ -55,6 +57,10 @@ abstract class AppRoutes {
       case resetPasswordView:
         return SideSlideTransition(
           page: const ResetPasswordView(),
+        );
+      case successView:
+        return BottomSlideTransition(
+          page: const SuccessView(),
         );
     }
     return null;
