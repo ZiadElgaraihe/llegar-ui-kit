@@ -346,6 +346,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Please enter a valid 4-digit OTP'**
   String get pleaseEnterValidFourDigitOtp;
+
+  /// No description provided for @didNotReceiveEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Didn’t receive email?'**
+  String get didNotReceiveEmail;
+
+  /// No description provided for @resendCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Resend code'**
+  String get resendCode;
+
+  /// No description provided for @youCanResendCodeIn.
+  ///
+  /// In en, this message translates to:
+  /// **'You can resend code in'**
+  String get youCanResendCodeIn;
+
+  /// No description provided for @second.
+  ///
+  /// In en, this message translates to:
+  /// **'s'**
+  String get second;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

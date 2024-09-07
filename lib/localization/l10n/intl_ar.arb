@@ -40,5 +40,9 @@
     "enterYourEmailAddress": "أدخل عنوان بريدك الإلكتروني للحصول على رمز OTP لإعادة تعيين كلمة المرور الخاصة بك",
     "youHaveGotMail": "وصلك بريد",
     "weHaveSentTheOtpVerificationCode": "لقد أرسلنا رمز التحقق OTP إلى عنوان بريدك الإلكتروني. تحقق من بريدك الإلكتروني وأدخل الرمز أدناه",
-    "pleaseEnterValidFourDigitOtp": "الرجاء إدخال كلمة مرور صالحة مكونة من 4 أرقام"
+    "pleaseEnterValidFourDigitOtp": "الرجاء إدخال كلمة مرور صالحة مكونة من 4 أرقام",
+    "didNotReceiveEmail": "لم تتلق بريد إلكتروني؟",
+    "resendCode": "إعادة إرسال الرمز",
+    "youCanResendCodeIn": "يمكنك إعادة إرسال الرمز خلال",
+    "second": "ث"
 }

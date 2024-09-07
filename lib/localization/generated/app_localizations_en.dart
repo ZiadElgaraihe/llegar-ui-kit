@@ -131,4 +131,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get pleaseEnterValidFourDigitOtp => 'Please enter a valid 4-digit OTP';
+
+  @override
+  String get didNotReceiveEmail => 'Didn’t receive email?';
+
+  @override
+  String get resendCode => 'Resend code';
+
+  @override
+  String get youCanResendCodeIn => 'You can resend code in';
+
+  @override
+  String get second => 's';
 }

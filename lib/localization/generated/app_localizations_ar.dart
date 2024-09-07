@@ -131,4 +131,16 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get pleaseEnterValidFourDigitOtp => 'الرجاء إدخال كلمة مرور صالحة مكونة من 4 أرقام';
+
+  @override
+  String get didNotReceiveEmail => 'لم تتلق بريد إلكتروني؟';
+
+  @override
+  String get resendCode => 'إعادة إرسال الرمز';
+
+  @override
+  String get youCanResendCodeIn => 'يمكنك إعادة إرسال الرمز خلال';
+
+  @override
+  String get second => 'ث';
 }
