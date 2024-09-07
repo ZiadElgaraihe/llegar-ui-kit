@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
 import 'package:llegar/modules/auth/presentation/widgets/forget_password_view_body.dart';
 import 'package:llegar/modules/auth/presentation/widgets/otp_form.dart';
 import 'package:llegar/modules/auth/presentation/widgets/resend_code_section.dart';
@@ -36,7 +37,23 @@ class OtpViewBody extends StatelessWidget {
                 ),
               ],
             ),
-          )
+          ),
+          SliverFillRemaining(
+            hasScrollBody: false,
+            child: Column(
+              children: [
+                const Expanded(child: AppSizes.height24),
+                CustomElevatedButton(
+                  title: translate(context).continueText,
+                  onFuturePressed: () async {
+                    //remove this & add your logic
+                    await Future.delayed(const Duration(seconds: 2));
+                  },
+                ),
+                AppSizes.height24,
+              ],
+            ),
+          ),
         ],
       ),
     );
