@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:llegar/modules/auth/presentation/views/forget_password_view.dart';
 import 'package:llegar/modules/auth/presentation/views/log_in_view.dart';
 import 'package:llegar/modules/auth/presentation/views/otp_view.dart';
+import 'package:llegar/modules/auth/presentation/views/reset_password_view.dart';
 import 'package:llegar/modules/auth/presentation/views/sign_up_view.dart';
 import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
 import 'package:llegar/modules/welcome/presentation/views/how_did_you_know_us_view.dart';
@@ -19,6 +20,7 @@ abstract class AppRoutes {
   static const String logInView = '/LogInView';
   static const String forgetPasswordView = '/ForgetPasswordView';
   static const String otpView = '/OtpView';
+  static const String resetPasswordView = '/ResetPasswordView';
 
   static Route<dynamic>? generate(RouteSettings routeSettings) {
     switch (routeSettings.name) {
@@ -49,6 +51,10 @@ abstract class AppRoutes {
       case otpView:
         return SideSlideTransition(
           page: const OtpView(),
+        );
+      case resetPasswordView:
+        return SideSlideTransition(
+          page: const ResetPasswordView(),
         );
     }
     return null;

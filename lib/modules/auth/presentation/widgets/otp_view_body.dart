@@ -4,6 +4,7 @@ import 'package:llegar/modules/auth/presentation/widgets/forget_password_view_bo
 import 'package:llegar/modules/auth/presentation/widgets/otp_form.dart';
 import 'package:llegar/modules/auth/presentation/widgets/resend_code_section.dart';
 import 'package:llegar/utils/app_images.dart';
+import 'package:llegar/utils/app_routes.dart';
 import 'package:llegar/utils/app_sizes.dart';
 import 'package:llegar/utils/functions/translate.dart';
 
@@ -48,6 +49,9 @@ class OtpViewBody extends StatelessWidget {
                   onFuturePressed: () async {
                     //remove this & add your logic
                     await Future.delayed(const Duration(seconds: 2));
+
+                    if (!context.mounted) return;
+                    Navigator.pushNamed(context, AppRoutes.resetPasswordView);
                   },
                 ),
                 AppSizes.height24,
