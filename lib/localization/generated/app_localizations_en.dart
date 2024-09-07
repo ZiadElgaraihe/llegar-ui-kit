@@ -152,4 +152,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get confirmTheNewPassword => 'Confirm the new password';
+
+  @override
+  String get yourPasswordHasBeenUpdated => 'Your password has been updated';
+
+  @override
+  String get passwordChangedSuccessfully => 'Password Changed Successfully';
 }

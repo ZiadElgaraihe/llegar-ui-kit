@@ -47,5 +47,7 @@
     "second": "s",
     "createNewPassword": "Create new password",
     "saveTheNewPasswordInSafePlace": "Save the new password in a safe place, if you forget it then you have to do a forgot password again.",
-    "confirmTheNewPassword": "Confirm the new password"
+    "confirmTheNewPassword": "Confirm the new password",
+    "yourPasswordHasBeenUpdated": "Your password has been updated",
+    "passwordChangedSuccessfully": "Password Changed Successfully"
 }

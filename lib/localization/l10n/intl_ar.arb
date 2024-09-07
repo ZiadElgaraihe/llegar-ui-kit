@@ -47,5 +47,7 @@
     "second": "ث",
     "createNewPassword": "إنشاء كلمة مرور جديدة",
     "saveTheNewPasswordInSafePlace": "احفظ كلمة المرور الجديدة في مكان آمن، إذا نسيتها، عليك أن تفعل كلمة المرور المنسية مرة أخرى.",
-    "confirmTheNewPassword": "تأكيد كلمة المرور الجديدة"
+    "confirmTheNewPassword": "تأكيد كلمة المرور الجديدة",
+    "yourPasswordHasBeenUpdated": "لقد تم تحديث كلمة المرور الخاصة بك",
+    "passwordChangedSuccessfully": "تم تغيير كلمة المرور بنجاح"
 }

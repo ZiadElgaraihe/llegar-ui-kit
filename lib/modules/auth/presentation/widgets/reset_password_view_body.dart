@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
+import 'package:llegar/modules/auth/domain/entities/success_view_entity.dart';
 import 'package:llegar/modules/auth/presentation/widgets/forget_password_process_header.dart';
 import 'package:llegar/modules/auth/presentation/widgets/reset_password_form.dart';
 import 'package:llegar/utils/app_images.dart';
@@ -48,6 +49,10 @@ class ResetPasswordViewBody extends StatelessWidget {
                       context,
                       AppRoutes.successView,
                       (route) => false,
+                      arguments: SuccessViewEntity(
+                        subTitle: translate(context).yourPasswordHasBeenUpdated,
+                        title: translate(context).passwordChangedSuccessfully,
+                      ),
                     );
                   },
                 ),

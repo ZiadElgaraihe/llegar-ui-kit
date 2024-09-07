@@ -388,6 +388,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Confirm the new password'**
   String get confirmTheNewPassword;
+
+  /// No description provided for @yourPasswordHasBeenUpdated.
+  ///
+  /// In en, this message translates to:
+  /// **'Your password has been updated'**
+  String get yourPasswordHasBeenUpdated;
+
+  /// No description provided for @passwordChangedSuccessfully.
+  ///
+  /// In en, this message translates to:
+  /// **'Password Changed Successfully'**
+  String get passwordChangedSuccessfully;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

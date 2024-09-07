@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/modules/auth/domain/entities/success_view_entity.dart';
 import 'package:llegar/modules/auth/presentation/views/forget_password_view.dart';
 import 'package:llegar/modules/auth/presentation/views/log_in_view.dart';
 import 'package:llegar/modules/auth/presentation/views/otp_view.dart';
@@ -60,7 +61,9 @@ abstract class AppRoutes {
         );
       case successView:
         return BottomSlideTransition(
-          page: const SuccessView(),
+          page: SuccessView(
+            successViewEntity: routeSettings.arguments as SuccessViewEntity,
+          ),
         );
     }
     return null;

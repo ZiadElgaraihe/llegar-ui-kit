@@ -152,4 +152,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get confirmTheNewPassword => 'تأكيد كلمة المرور الجديدة';
+
+  @override
+  String get yourPasswordHasBeenUpdated => 'لقد تم تحديث كلمة المرور الخاصة بك';
+
+  @override
+  String get passwordChangedSuccessfully => 'تم تغيير كلمة المرور بنجاح';
 }
