@@ -102,6 +102,7 @@ abstract class AppThemes {
               color: AppColors.prussianBlue,
             ),
             foregroundColor: AppColors.prussianBlue,
+            disabledForegroundColor: AppColors.grey,
           ),
         ),
         checkboxTheme: CheckboxThemeData(
@@ -221,6 +222,7 @@ abstract class AppThemes {
               color: AppColors.orange,
             ),
             foregroundColor: AppColors.orange,
+            disabledForegroundColor: AppColors.grey,
           ),
         ),
         checkboxTheme: CheckboxThemeData(
