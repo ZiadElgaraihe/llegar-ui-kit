@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
-import 'package:llegar/modules/auth/presentation/widgets/forget_password_view_body.dart';
+import 'package:llegar/modules/auth/presentation/widgets/forget_password_process_header.dart';
 import 'package:llegar/modules/auth/presentation/widgets/otp_form.dart';
 import 'package:llegar/modules/auth/presentation/widgets/resend_code_section.dart';
 import 'package:llegar/utils/app_images.dart';
