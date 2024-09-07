@@ -128,4 +128,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get weHaveSentTheOtpVerificationCode => 'لقد أرسلنا رمز التحقق OTP إلى عنوان بريدك الإلكتروني. تحقق من بريدك الإلكتروني وأدخل الرمز أدناه';
+
+  @override
+  String get pleaseEnterValidFourDigitOtp => 'الرجاء إدخال كلمة مرور صالحة مكونة من 4 أرقام';
 }

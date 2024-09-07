@@ -39,5 +39,6 @@
     "forgetPassword": "Forget Password",
     "enterYourEmailAddress": "Enter your email address to get an OTP Code to reset your Password",
     "youHaveGotMail": "You’ve got mail",
-    "weHaveSentTheOtpVerificationCode": "We have sent the OTP verification code to your email address. Check your email and enter the code below"
+    "weHaveSentTheOtpVerificationCode": "We have sent the OTP verification code to your email address. Check your email and enter the code below",
+    "pleaseEnterValidFourDigitOtp": "Please enter a valid 4-digit OTP"
 }

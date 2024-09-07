@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/modules/auth/presentation/widgets/forget_password_view_body.dart';
+import 'package:llegar/modules/auth/presentation/widgets/otp_form.dart';
 import 'package:llegar/utils/app_images.dart';
 import 'package:llegar/utils/app_sizes.dart';
 import 'package:llegar/utils/functions/translate.dart';
@@ -24,6 +25,7 @@ class OtpViewBody extends StatelessWidget {
                   title: translate(context).youHaveGotMail,
                 ),
                 AppSizes.height24,
+                const OtpForm(),
               ],
             ),
           )

@@ -340,6 +340,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'We have sent the OTP verification code to your email address. Check your email and enter the code below'**
   String get weHaveSentTheOtpVerificationCode;
+
+  /// No description provided for @pleaseEnterValidFourDigitOtp.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid 4-digit OTP'**
+  String get pleaseEnterValidFourDigitOtp;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

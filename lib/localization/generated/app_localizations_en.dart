@@ -128,4 +128,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get weHaveSentTheOtpVerificationCode => 'We have sent the OTP verification code to your email address. Check your email and enter the code below';
+
+  @override
+  String get pleaseEnterValidFourDigitOtp => 'Please enter a valid 4-digit OTP';
 }
