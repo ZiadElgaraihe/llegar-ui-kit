@@ -49,5 +49,10 @@
     "saveTheNewPasswordInSafePlace": "احفظ كلمة المرور الجديدة في مكان آمن، إذا نسيتها، عليك أن تفعل كلمة المرور المنسية مرة أخرى.",
     "confirmTheNewPassword": "تأكيد كلمة المرور الجديدة",
     "yourPasswordHasBeenUpdated": "لقد تم تحديث كلمة المرور الخاصة بك",
-    "passwordChangedSuccessfully": "تم تغيير كلمة المرور بنجاح"
+    "passwordChangedSuccessfully": "تم تغيير كلمة المرور بنجاح",
+    "fullName": "الاسم بالكامل",
+    "userName": "اسم المستخدم",
+    "birthdayDate": "تاريخ الميلاد",
+    "gender": "الجنس",
+    "city": "المدينة"
 }

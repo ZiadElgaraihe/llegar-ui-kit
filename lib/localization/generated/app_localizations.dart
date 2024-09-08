@@ -400,6 +400,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Password Changed Successfully'**
   String get passwordChangedSuccessfully;
+
+  /// No description provided for @fullName.
+  ///
+  /// In en, this message translates to:
+  /// **'Full Name'**
+  String get fullName;
+
+  /// No description provided for @userName.
+  ///
+  /// In en, this message translates to:
+  /// **'User Name'**
+  String get userName;
+
+  /// No description provided for @birthdayDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Birthday Date'**
+  String get birthdayDate;
+
+  /// No description provided for @gender.
+  ///
+  /// In en, this message translates to:
+  /// **'Gender'**
+  String get gender;
+
+  /// No description provided for @city.
+  ///
+  /// In en, this message translates to:
+  /// **'City'**
+  String get city;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

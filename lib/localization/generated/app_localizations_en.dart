@@ -158,4 +158,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get passwordChangedSuccessfully => 'Password Changed Successfully';
+
+  @override
+  String get fullName => 'Full Name';
+
+  @override
+  String get userName => 'User Name';
+
+  @override
+  String get birthdayDate => 'Birthday Date';
+
+  @override
+  String get gender => 'Gender';
+
+  @override
+  String get city => 'City';
 }

@@ -158,4 +158,19 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get passwordChangedSuccessfully => 'تم تغيير كلمة المرور بنجاح';
+
+  @override
+  String get fullName => 'الاسم بالكامل';
+
+  @override
+  String get userName => 'اسم المستخدم';
+
+  @override
+  String get birthdayDate => 'تاريخ الميلاد';
+
+  @override
+  String get gender => 'الجنس';
+
+  @override
+  String get city => 'المدينة';
 }
