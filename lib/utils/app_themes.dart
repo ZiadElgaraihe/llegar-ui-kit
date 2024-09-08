@@ -125,6 +125,49 @@ abstract class AppThemes {
           materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
           visualDensity: const VisualDensity(horizontal: -4, vertical: -4),
         ),
+        datePickerTheme: DatePickerThemeData(
+          backgroundColor: AppColors.white,
+          cancelButtonStyle: TextButton.styleFrom(
+            textStyle: AppTextStyles.bold14(context),
+            foregroundColor: AppColors.prussianBlue,
+          ),
+          confirmButtonStyle: TextButton.styleFrom(
+            textStyle: AppTextStyles.bold14(context),
+            foregroundColor: AppColors.prussianBlue,
+          ),
+          dayStyle: AppTextStyles.bold14(context),
+          dayForegroundColor: WidgetStateProperty.resolveWith(
+            (states) {
+              if (states.contains(WidgetState.selected)) {
+                return AppColors.white;
+              }
+              return AppColors.black;
+            },
+          ),
+          dayBackgroundColor: WidgetStateProperty.resolveWith(
+            (states) {
+              if (states.contains(WidgetState.selected)) {
+                return AppColors.prussianBlue;
+              }
+              return Colors.transparent;
+            },
+          ),
+          weekdayStyle: AppTextStyles.bold14(context).copyWith(
+            color: AppColors.black,
+          ),
+          headerHelpStyle: AppTextStyles.medium14(context),
+          headerHeadlineStyle: AppTextStyles.bold32(context),
+          headerForegroundColor: AppColors.prussianBlue,
+          yearStyle: AppTextStyles.bold16(context),
+          yearForegroundColor: WidgetStateProperty.resolveWith(
+            (states) {
+              if (states.contains(WidgetState.selected)) {
+                return AppColors.white;
+              }
+              return AppColors.prussianBlue;
+            },
+          ),
+        ),
       );
 
   static ThemeData darkTheme(BuildContext context) => ThemeData.dark().copyWith(
@@ -244,6 +287,49 @@ abstract class AppThemes {
           ),
           materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
           visualDensity: const VisualDensity(horizontal: -4, vertical: -4),
+        ),
+        datePickerTheme: DatePickerThemeData(
+          backgroundColor: AppColors.prussianBlue,
+          cancelButtonStyle: TextButton.styleFrom(
+            textStyle: AppTextStyles.bold14(context),
+            foregroundColor: AppColors.orange,
+          ),
+          confirmButtonStyle: TextButton.styleFrom(
+            textStyle: AppTextStyles.bold14(context),
+            foregroundColor: AppColors.orange,
+          ),
+          dayStyle: AppTextStyles.bold14(context),
+          dayForegroundColor: WidgetStateProperty.resolveWith(
+            (states) {
+              if (states.contains(WidgetState.selected)) {
+                return AppColors.prussianBlue;
+              }
+              return AppColors.white;
+            },
+          ),
+          dayBackgroundColor: WidgetStateProperty.resolveWith(
+            (states) {
+              if (states.contains(WidgetState.selected)) {
+                return AppColors.orange;
+              }
+              return Colors.transparent;
+            },
+          ),
+          weekdayStyle: AppTextStyles.bold14(context).copyWith(
+            color: AppColors.white,
+          ),
+          headerHelpStyle: AppTextStyles.medium14(context),
+          headerHeadlineStyle: AppTextStyles.bold32(context),
+          headerForegroundColor: AppColors.orange,
+          yearStyle: AppTextStyles.bold16(context),
+          yearForegroundColor: WidgetStateProperty.resolveWith(
+            (states) {
+              if (states.contains(WidgetState.selected)) {
+                return AppColors.prussianBlue;
+              }
+              return AppColors.lightGrey;
+            },
+          ),
         ),
       );
 }
