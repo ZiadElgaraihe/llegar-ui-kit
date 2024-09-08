@@ -4,6 +4,7 @@ import 'package:llegar/core/presentation/widgets/custom_text_form_field.dart';
 import 'package:llegar/modules/auth/presentation/widgets/auth_password_text_form_field.dart';
 import 'package:llegar/modules/auth/presentation/widgets/remember_me_row.dart';
 import 'package:llegar/utils/app_icons.dart';
+import 'package:llegar/utils/app_routes.dart';
 import 'package:llegar/utils/app_sizes.dart';
 import 'package:llegar/utils/functions/translate.dart';
 
@@ -62,13 +63,13 @@ class _SignUpFormState extends State<SignUpForm> {
         const SizedBox(height: 16),
         CustomElevatedButton(
           title: translate(context).signUp,
-          onFuturePressed: () async {
+          onPressed: () {
             if (_formKey.currentState!.validate()) {
               if (_autoValidateMode.value != AutovalidateMode.disabled) {
                 _autoValidateMode.value = AutovalidateMode.disabled;
               }
-              //remove this & add your logic
-              await Future.delayed(const Duration(seconds: 2));
+              
+              Navigator.pushNamed(context, AppRoutes.signUpProfileInfoView);
             } else {
               _autoValidateMode.value = AutovalidateMode.always;
             }
