@@ -173,4 +173,25 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get city => 'City';
+
+  @override
+  String get male => 'Male';
+
+  @override
+  String get female => 'Female';
+
+  @override
+  String get jerusalem => 'Jerusalem';
+
+  @override
+  String get baghdad => 'Baghdad';
+
+  @override
+  String get damascus => 'Damascus';
+
+  @override
+  String get cairo => 'Cairo';
+
+  @override
+  String get rabat => 'Rabat';
 }

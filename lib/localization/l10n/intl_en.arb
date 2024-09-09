@@ -54,5 +54,12 @@
     "userName": "User Name",
     "birthdayDate": "Birthday Date",
     "gender": "Gender",
-    "city": "City"
+    "city": "City",
+    "male": "Male",
+    "female": "Female",
+    "jerusalem": "Jerusalem",
+    "baghdad": "Baghdad",
+    "damascus": "Damascus",
+    "cairo": "Cairo",
+    "rabat": "Rabat"
 }

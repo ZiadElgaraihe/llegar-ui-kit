@@ -173,4 +173,25 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get city => 'المدينة';
+
+  @override
+  String get male => 'ذكر';
+
+  @override
+  String get female => 'أنثي';
+
+  @override
+  String get jerusalem => 'القدس';
+
+  @override
+  String get baghdad => 'بغداد';
+
+  @override
+  String get damascus => 'دمشق';
+
+  @override
+  String get cairo => 'القاهرة';
+
+  @override
+  String get rabat => 'الرباط';
 }

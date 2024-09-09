@@ -54,5 +54,12 @@
     "userName": "اسم المستخدم",
     "birthdayDate": "تاريخ الميلاد",
     "gender": "الجنس",
-    "city": "المدينة"
+    "city": "المدينة",
+    "male": "ذكر",
+    "female": "أنثي",
+    "jerusalem": "القدس",
+    "baghdad": "بغداد",
+    "damascus": "دمشق",
+    "cairo": "القاهرة",
+    "rabat": "الرباط"
 }

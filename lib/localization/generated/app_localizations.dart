@@ -430,6 +430,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'City'**
   String get city;
+
+  /// No description provided for @male.
+  ///
+  /// In en, this message translates to:
+  /// **'Male'**
+  String get male;
+
+  /// No description provided for @female.
+  ///
+  /// In en, this message translates to:
+  /// **'Female'**
+  String get female;
+
+  /// No description provided for @jerusalem.
+  ///
+  /// In en, this message translates to:
+  /// **'Jerusalem'**
+  String get jerusalem;
+
+  /// No description provided for @baghdad.
+  ///
+  /// In en, this message translates to:
+  /// **'Baghdad'**
+  String get baghdad;
+
+  /// No description provided for @damascus.
+  ///
+  /// In en, this message translates to:
+  /// **'Damascus'**
+  String get damascus;
+
+  /// No description provided for @cairo.
+  ///
+  /// In en, this message translates to:
+  /// **'Cairo'**
+  String get cairo;
+
+  /// No description provided for @rabat.
+  ///
+  /// In en, this message translates to:
+  /// **'Rabat'**
+  String get rabat;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
