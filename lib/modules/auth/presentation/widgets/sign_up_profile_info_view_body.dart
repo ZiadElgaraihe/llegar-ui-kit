@@ -3,6 +3,7 @@ import 'package:llegar/core/presentation/widgets/custom_animated_dropdown.dart';
 import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
 import 'package:llegar/core/presentation/widgets/custom_text_form_field.dart';
 import 'package:llegar/modules/auth/presentation/widgets/birth_date_text_form_field.dart';
+import 'package:llegar/utils/app_routes.dart';
 import 'package:llegar/utils/app_sizes.dart';
 import 'package:llegar/utils/functions/translate.dart';
 
@@ -57,7 +58,12 @@ class SignUpProfileInfoViewBody extends StatelessWidget {
                 const Expanded(child: AppSizes.height24),
                 CustomElevatedButton(
                   title: translate(context).continueText,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(
+                      context,
+                      AppRoutes.signUpIdentificationView,
+                    );
+                  },
                 ),
                 AppSizes.height24,
               ],
