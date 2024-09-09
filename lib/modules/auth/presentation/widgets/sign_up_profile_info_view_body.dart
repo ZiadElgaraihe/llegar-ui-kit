@@ -51,6 +51,7 @@ class SignUpProfileInfoViewBody extends StatelessWidget {
             ),
           ),
           SliverFillRemaining(
+            hasScrollBody: false,
             child: Column(
               children: [
                 const Expanded(child: AppSizes.height24),
