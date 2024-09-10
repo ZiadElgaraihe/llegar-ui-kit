@@ -22,10 +22,13 @@ abstract class AppThemes {
             fontFamily: AppStrings.urbanistFontFamily,
           ),
         ),
-        appBarTheme: const AppBarTheme(
+        appBarTheme: AppBarTheme(
           backgroundColor: AppColors.white,
           elevation: 0,
-          systemOverlayStyle: SystemUiOverlayStyle(
+          titleTextStyle: AppTextStyles.bold24(context).copyWith(
+            color: AppColors.black,
+          ),
+          systemOverlayStyle: const SystemUiOverlayStyle(
             statusBarColor: AppColors.white,
             statusBarBrightness: Brightness.light,
             statusBarIconBrightness: Brightness.dark,
@@ -73,6 +76,7 @@ abstract class AppThemes {
             elevation: 2,
             fixedSize: Size(MediaQuery.sizeOf(context).width, 58),
             shadowColor: AppColors.ultramarineBlue,
+            overlayColor: AppColors.white,
             backgroundColor: AppColors.prussianBlue,
             disabledBackgroundColor: AppColors.prussianBlue,
             shape: RoundedRectangleBorder(
@@ -103,6 +107,11 @@ abstract class AppThemes {
             ),
             foregroundColor: AppColors.prussianBlue,
             disabledForegroundColor: AppColors.grey,
+          ),
+        ),
+        iconButtonTheme: IconButtonThemeData(
+          style: IconButton.styleFrom(
+            overlayColor: AppColors.darkgrey,
           ),
         ),
         checkboxTheme: CheckboxThemeData(
@@ -185,10 +194,13 @@ abstract class AppThemes {
             fontFamily: AppStrings.urbanistFontFamily,
           ),
         ),
-        appBarTheme: const AppBarTheme(
+        appBarTheme: AppBarTheme(
           backgroundColor: AppColors.prussianBlue,
           elevation: 0,
-          systemOverlayStyle: SystemUiOverlayStyle(
+          titleTextStyle: AppTextStyles.bold24(context).copyWith(
+            color: AppColors.white,
+          ),
+          systemOverlayStyle: const SystemUiOverlayStyle(
             statusBarColor: AppColors.prussianBlue,
             statusBarBrightness: Brightness.dark,
             statusBarIconBrightness: Brightness.light,
@@ -237,6 +249,7 @@ abstract class AppThemes {
             fixedSize: Size(MediaQuery.sizeOf(context).width, 58),
             shadowColor: AppColors.ultramarineBlue,
             backgroundColor: AppColors.orange,
+            overlayColor: AppColors.black,
             disabledBackgroundColor: AppColors.orange,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(100),
@@ -266,6 +279,11 @@ abstract class AppThemes {
             ),
             foregroundColor: AppColors.orange,
             disabledForegroundColor: AppColors.grey,
+          ),
+        ),
+        iconButtonTheme: IconButtonThemeData(
+          style: IconButton.styleFrom(
+            overlayColor: AppColors.lightGrey,
           ),
         ),
         checkboxTheme: CheckboxThemeData(

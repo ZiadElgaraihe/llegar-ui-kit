@@ -11,7 +11,7 @@ class SignUpIdentificationView extends StatelessWidget {
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus!.unfocus(),
       child: Scaffold(
-        appBar: CustomAppBar(title: translate(context).back),
+        appBar: CustomAppBar(title: translate(context).back, titleSpacing: 0),
         body: const SignUpIdentificationViewBody(),
       ),
     );
