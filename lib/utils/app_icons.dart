@@ -30,6 +30,9 @@ abstract class AppIcons {
   ///assets/icons/password.svg
   static const String password = 'assets/icons/password.svg';
 
+  ///assets/icons/pen.svg
+  static const String pen = 'assets/icons/pen.svg';
+
   ///assets/icons/tiktok.svg
   static const String tiktok = 'assets/icons/tiktok.svg';
 

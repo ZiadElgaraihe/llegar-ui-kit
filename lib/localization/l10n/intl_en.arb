@@ -61,5 +61,8 @@
     "baghdad": "Baghdad",
     "damascus": "Damascus",
     "cairo": "Cairo",
-    "rabat": "Rabat"
+    "rabat": "Rabat",
+    "phoneNumber": "Phone Number",
+    "livePhoto": "Live Photo",
+    "idPhoto": "ID Photo"
 }

@@ -194,4 +194,13 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get rabat => 'الرباط';
+
+  @override
+  String get phoneNumber => 'رقم الهاتف';
+
+  @override
+  String get livePhoto => 'صورة شخصية';
+
+  @override
+  String get idPhoto => 'صورة الهوية';
 }

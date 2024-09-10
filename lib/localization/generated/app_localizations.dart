@@ -472,6 +472,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Rabat'**
   String get rabat;
+
+  /// No description provided for @phoneNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone Number'**
+  String get phoneNumber;
+
+  /// No description provided for @livePhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Live Photo'**
+  String get livePhoto;
+
+  /// No description provided for @idPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'ID Photo'**
+  String get idPhoto;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

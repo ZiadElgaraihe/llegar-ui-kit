@@ -194,4 +194,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get rabat => 'Rabat';
+
+  @override
+  String get phoneNumber => 'Phone Number';
+
+  @override
+  String get livePhoto => 'Live Photo';
+
+  @override
+  String get idPhoto => 'ID Photo';
 }

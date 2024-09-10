@@ -61,5 +61,8 @@
     "baghdad": "بغداد",
     "damascus": "دمشق",
     "cairo": "القاهرة",
-    "rabat": "الرباط"
+    "rabat": "الرباط",
+    "phoneNumber": "رقم الهاتف",
+    "livePhoto": "صورة شخصية",
+    "idPhoto": "صورة الهوية"
 }
