@@ -24,7 +24,13 @@ class SuccessViewBody extends StatelessWidget {
       child: Column(
         children: [
           const Expanded(child: AppSizes.height24),
-          SvgPicture.asset(AppImages.okAmico),
+          SvgPicture.asset(
+            valueBasedOnTheme<String>(
+              context,
+              light: AppImages.okAmico,
+              dark: AppImages.okAmicoDark,
+            )!,
+          ),
           AppSizes.height48,
           FittedBox(
             fit: BoxFit.scaleDown,

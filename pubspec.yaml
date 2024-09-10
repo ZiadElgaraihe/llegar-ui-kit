@@ -12,6 +12,7 @@ environment:
   sdk: '>=3.3.4 <4.0.0'
 
 dependencies:
+  animated_custom_dropdown: ^3.1.1
   cupertino_icons: ^1.0.6
   expandable_page_view: ^1.0.17
   flutter:

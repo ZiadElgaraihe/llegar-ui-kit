@@ -15,12 +15,18 @@ abstract class AppImages {
   static const String howDidYouKnowUsDark =
       'assets/images/dark/how_did_you_know_us_dark.svg';
 
+  ///assets/images/id_photo.webp
+  static const String idPhoto ='assets/images/id_photo.webp';
+
   ///assets/images/light/let_us_you_in.svg
   static const String letUsYouIn = 'assets/images/light/let_us_you_in.svg';
 
   ///assets/images/dark/let_us_you_in_dark.svg
   static const String letUsYouInDark =
       'assets/images/dark/let_us_you_in_dark.svg';
+
+  ///assets/images/live_photo.webp
+  static const String livePhoto ='assets/images/live_photo.webp';
 
   ///assets/images/light/logo.svg
   static const String logo = 'assets/images/light/logo.svg';

@@ -158,4 +158,52 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get passwordChangedSuccessfully => 'Password Changed Successfully';
+
+  @override
+  String get fullName => 'Full Name';
+
+  @override
+  String get userName => 'User Name';
+
+  @override
+  String get birthdayDate => 'Birthday Date';
+
+  @override
+  String get gender => 'Gender';
+
+  @override
+  String get city => 'City';
+
+  @override
+  String get male => 'Male';
+
+  @override
+  String get female => 'Female';
+
+  @override
+  String get jerusalem => 'Jerusalem';
+
+  @override
+  String get baghdad => 'Baghdad';
+
+  @override
+  String get damascus => 'Damascus';
+
+  @override
+  String get cairo => 'Cairo';
+
+  @override
+  String get rabat => 'Rabat';
+
+  @override
+  String get phoneNumber => 'Phone Number';
+
+  @override
+  String get livePhoto => 'Live Photo';
+
+  @override
+  String get idPhoto => 'ID Photo';
+
+  @override
+  String get successfulSignUp => 'Successful Sign Up';
 }

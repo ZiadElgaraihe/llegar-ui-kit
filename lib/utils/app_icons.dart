@@ -15,6 +15,9 @@ abstract class AppIcons {
   ///assets/icons/arrow_right.svg
   static const String arrowRight = 'assets/icons/arrow_right.svg';
 
+  ///assets/icons/calendar.svg
+  static const String calendar = 'assets/icons/calendar.svg';
+
   ///assets/icons/email.svg
   static const String email = 'assets/icons/email.svg';
 
@@ -26,6 +29,9 @@ abstract class AppIcons {
 
   ///assets/icons/password.svg
   static const String password = 'assets/icons/password.svg';
+
+  ///assets/icons/pen.svg
+  static const String pen = 'assets/icons/pen.svg';
 
   ///assets/icons/tiktok.svg
   static const String tiktok = 'assets/icons/tiktok.svg';

@@ -4,6 +4,8 @@ import 'package:llegar/modules/auth/presentation/views/forget_password_view.dart
 import 'package:llegar/modules/auth/presentation/views/log_in_view.dart';
 import 'package:llegar/modules/auth/presentation/views/otp_view.dart';
 import 'package:llegar/modules/auth/presentation/views/reset_password_view.dart';
+import 'package:llegar/modules/auth/presentation/views/sign_up_identification_view.dart';
+import 'package:llegar/modules/auth/presentation/views/sign_up_profile_info_view.dart';
 import 'package:llegar/modules/auth/presentation/views/sign_up_view.dart';
 import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
 import 'package:llegar/modules/auth/presentation/views/success_view.dart';
@@ -24,6 +26,8 @@ abstract class AppRoutes {
   static const String otpView = '/OtpView';
   static const String resetPasswordView = '/ResetPasswordView';
   static const String successView = '/SuccessView';
+  static const String signUpProfileInfoView = '/SignUpProfileInfoView';
+  static const String signUpIdentificationView = '/SignUpIdentificationView';
 
   static Route<dynamic>? generate(RouteSettings routeSettings) {
     switch (routeSettings.name) {
@@ -64,6 +68,14 @@ abstract class AppRoutes {
           page: SuccessView(
             successViewEntity: routeSettings.arguments as SuccessViewEntity,
           ),
+        );
+      case signUpProfileInfoView:
+        return SideSlideTransition(
+          page: const SignUpProfileInfoView(),
+        );
+      case signUpIdentificationView:
+        return SideSlideTransition(
+          page: const SignUpIdentificationView(),
         );
     }
     return null;

@@ -49,5 +49,21 @@
     "saveTheNewPasswordInSafePlace": "Save the new password in a safe place, if you forget it then you have to do a forgot password again.",
     "confirmTheNewPassword": "Confirm the new password",
     "yourPasswordHasBeenUpdated": "Your password has been updated",
-    "passwordChangedSuccessfully": "Password Changed Successfully"
+    "passwordChangedSuccessfully": "Password Changed Successfully",
+    "fullName": "Full Name",
+    "userName": "User Name",
+    "birthdayDate": "Birthday Date",
+    "gender": "Gender",
+    "city": "City",
+    "male": "Male",
+    "female": "Female",
+    "jerusalem": "Jerusalem",
+    "baghdad": "Baghdad",
+    "damascus": "Damascus",
+    "cairo": "Cairo",
+    "rabat": "Rabat",
+    "phoneNumber": "Phone Number",
+    "livePhoto": "Live Photo",
+    "idPhoto": "ID Photo",
+    "successfulSignUp": "Successful Sign Up"
 }

@@ -158,4 +158,52 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get passwordChangedSuccessfully => 'تم تغيير كلمة المرور بنجاح';
+
+  @override
+  String get fullName => 'الاسم بالكامل';
+
+  @override
+  String get userName => 'اسم المستخدم';
+
+  @override
+  String get birthdayDate => 'تاريخ الميلاد';
+
+  @override
+  String get gender => 'الجنس';
+
+  @override
+  String get city => 'المدينة';
+
+  @override
+  String get male => 'ذكر';
+
+  @override
+  String get female => 'أنثي';
+
+  @override
+  String get jerusalem => 'القدس';
+
+  @override
+  String get baghdad => 'بغداد';
+
+  @override
+  String get damascus => 'دمشق';
+
+  @override
+  String get cairo => 'القاهرة';
+
+  @override
+  String get rabat => 'الرباط';
+
+  @override
+  String get phoneNumber => 'رقم الهاتف';
+
+  @override
+  String get livePhoto => 'صورة شخصية';
+
+  @override
+  String get idPhoto => 'صورة الهوية';
+
+  @override
+  String get successfulSignUp => 'إنشاء حساب ناجح';
 }

@@ -400,6 +400,102 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Password Changed Successfully'**
   String get passwordChangedSuccessfully;
+
+  /// No description provided for @fullName.
+  ///
+  /// In en, this message translates to:
+  /// **'Full Name'**
+  String get fullName;
+
+  /// No description provided for @userName.
+  ///
+  /// In en, this message translates to:
+  /// **'User Name'**
+  String get userName;
+
+  /// No description provided for @birthdayDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Birthday Date'**
+  String get birthdayDate;
+
+  /// No description provided for @gender.
+  ///
+  /// In en, this message translates to:
+  /// **'Gender'**
+  String get gender;
+
+  /// No description provided for @city.
+  ///
+  /// In en, this message translates to:
+  /// **'City'**
+  String get city;
+
+  /// No description provided for @male.
+  ///
+  /// In en, this message translates to:
+  /// **'Male'**
+  String get male;
+
+  /// No description provided for @female.
+  ///
+  /// In en, this message translates to:
+  /// **'Female'**
+  String get female;
+
+  /// No description provided for @jerusalem.
+  ///
+  /// In en, this message translates to:
+  /// **'Jerusalem'**
+  String get jerusalem;
+
+  /// No description provided for @baghdad.
+  ///
+  /// In en, this message translates to:
+  /// **'Baghdad'**
+  String get baghdad;
+
+  /// No description provided for @damascus.
+  ///
+  /// In en, this message translates to:
+  /// **'Damascus'**
+  String get damascus;
+
+  /// No description provided for @cairo.
+  ///
+  /// In en, this message translates to:
+  /// **'Cairo'**
+  String get cairo;
+
+  /// No description provided for @rabat.
+  ///
+  /// In en, this message translates to:
+  /// **'Rabat'**
+  String get rabat;
+
+  /// No description provided for @phoneNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone Number'**
+  String get phoneNumber;
+
+  /// No description provided for @livePhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Live Photo'**
+  String get livePhoto;
+
+  /// No description provided for @idPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'ID Photo'**
+  String get idPhoto;
+
+  /// No description provided for @successfulSignUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Successful Sign Up'**
+  String get successfulSignUp;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
