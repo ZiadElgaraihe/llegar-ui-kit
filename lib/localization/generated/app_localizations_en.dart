@@ -203,4 +203,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get idPhoto => 'ID Photo';
+
+  @override
+  String get successfulSignUp => 'Successful Sign Up';
 }

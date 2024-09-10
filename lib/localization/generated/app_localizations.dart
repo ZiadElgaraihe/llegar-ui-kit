@@ -490,6 +490,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'ID Photo'**
   String get idPhoto;
+
+  /// No description provided for @successfulSignUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Successful Sign Up'**
+  String get successfulSignUp;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

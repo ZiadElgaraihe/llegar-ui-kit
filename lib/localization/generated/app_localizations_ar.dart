@@ -203,4 +203,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get idPhoto => 'صورة الهوية';
+
+  @override
+  String get successfulSignUp => 'إنشاء حساب ناجح';
 }

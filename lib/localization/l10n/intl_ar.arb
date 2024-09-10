@@ -64,5 +64,6 @@
     "rabat": "الرباط",
     "phoneNumber": "رقم الهاتف",
     "livePhoto": "صورة شخصية",
-    "idPhoto": "صورة الهوية"
+    "idPhoto": "صورة الهوية",
+    "successfulSignUp": "إنشاء حساب ناجح"
 }
