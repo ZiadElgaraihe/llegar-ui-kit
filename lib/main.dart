@@ -1,3 +1,4 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
@@ -10,16 +11,19 @@ void main() {
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
   runApp(
-    MultiBlocProvider(
-      providers: [
-        BlocProvider<ThemeCubit>(
-          create: (context) => ThemeCubit()..setUpThemeMode(),
-        ),
-        BlocProvider<LocaleCubit>(
-          create: (context) => LocaleCubit()..setUpLocale(),
-        ),
-      ],
-      child: const Llegar(),
+    DevicePreview(
+      enabled: false,
+      builder: (context) => MultiBlocProvider(
+        providers: [
+          BlocProvider<ThemeCubit>(
+            create: (context) => ThemeCubit()..setUpThemeMode(),
+          ),
+          BlocProvider<LocaleCubit>(
+            create: (context) => LocaleCubit()..setUpLocale(),
+          ),
+        ],
+        child: const Llegar(),
+      ),
     ),
   );
 }
