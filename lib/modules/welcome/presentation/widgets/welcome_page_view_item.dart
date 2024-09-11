@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:llegar/modules/welcome/domain/entities/welcome_page_view_item_entity.dart';
 import 'package:llegar/utils/app_colors.dart';
+import 'package:llegar/utils/app_sizes.dart';
 import 'package:llegar/utils/app_text_styles.dart';
 import 'package:llegar/utils/functions/value_based_on_theme.dart';
 
@@ -15,6 +16,8 @@ class WelcomePageViewItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.sizeOf(context).height;
+    double width = MediaQuery.sizeOf(context).width;
     return Column(
       children: [
         RepaintBoundary(
@@ -22,21 +25,27 @@ class WelcomePageViewItem extends StatelessWidget {
             fit: BoxFit.scaleDown,
             child: SvgPicture.asset(
               welcomePageViewItemEntity.image,
+              height: (width < AppSizes.tabletBreakpoint) ? height * 0.4 : null,
             ),
           ),
         ),
-        const SizedBox(height: 16),
+        AppSizes.height16,
         FittedBox(
           fit: BoxFit.scaleDown,
           child: Text(
             welcomePageViewItemEntity.title,
-            style: AppTextStyles.bold40(context),
+            style: (width < AppSizes.tabletBreakpoint)
+                ? AppTextStyles.bold32(context, responsive: false)
+                : AppTextStyles.bold40(context, responsive: false),
           ),
         ),
-        const SizedBox(height: 16),
+        AppSizes.height16,
         Text(
           welcomePageViewItemEntity.description,
-          style: AppTextStyles.medium18(context).copyWith(
+          style: (width < AppSizes.tabletBreakpoint
+                  ? AppTextStyles.medium14(context, responsive: false)
+                  : AppTextStyles.medium18(context, responsive: false))
+              .copyWith(
             color: valueBasedOnTheme<Color>(
               context,
               light: AppColors.black,
@@ -45,7 +54,7 @@ class WelcomePageViewItem extends StatelessWidget {
           ),
           textAlign: TextAlign.center,
         ),
-        const SizedBox(height: 16),
+        AppSizes.height16,
       ],
     );
   }

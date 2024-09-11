@@ -1,3 +1,4 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
@@ -44,6 +45,7 @@ class _LlegarState extends State<Llegar> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: AppStrings.appName,
+      builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
       themeMode: BlocProvider.of<ThemeCubit>(context).themeMode,
       theme: AppThemes.lightTheme(context),
