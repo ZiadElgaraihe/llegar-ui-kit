@@ -15,31 +15,43 @@ class HowDidYouKnowUsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return Padding(
       padding: AppSizes.bodyHorizontalPadding(context),
-      child: Column(
-        children: [
-          WelcomeAndAuthHeader(
-            headerImage: valueBasedOnTheme<String>(
-              context,
-              light: AppImages.howDidYouKnowUs,
-              dark: AppImages.howDidYouKnowUsDark,
-            )!,
-            headerTitle: translate(context).howDidYouKnowUs,
+      child: CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(
+            child: Column(
+              children: [
+                WelcomeAndAuthHeader(
+                  headerImage: valueBasedOnTheme<String>(
+                    context,
+                    light: AppImages.howDidYouKnowUs,
+                    dark: AppImages.howDidYouKnowUsDark,
+                  )!,
+                  headerTitle: translate(context).howDidYouKnowUs,
+                ),
+                const HowDidYouKnowUsButtonsSection(),
+              ],
+            ),
           ),
-          const HowDidYouKnowUsButtonsSection(),
-          AppSizes.height24,
-          CustomElevatedButton(
-            title: translate(context).continueText,
-            
-            onPressed: () {
-              Navigator.pushReplacementNamed(
-                context,
-                AppRoutes.socialLogInView,
-              );
-            },
+          SliverFillRemaining(
+            hasScrollBody: false,
+            child: Column(
+              children: [
+                const Expanded(child: AppSizes.height24),
+                CustomElevatedButton(
+                  title: translate(context).continueText,
+                  onPressed: () {
+                    Navigator.pushReplacementNamed(
+                      context,
+                      AppRoutes.socialLogInView,
+                    );
+                  },
+                ),
+                AppSizes.height24,
+              ],
+            ),
           ),
-          AppSizes.height24,
         ],
       ),
     );
