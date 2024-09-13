@@ -3,17 +3,23 @@ import 'package:flutter/material.dart';
 ///This class contains all sizes like breakpoints, padding, sizedBox & more
 abstract class AppSizes {
   ///600
-  static const double tabletBreakpoint = 600;
+  static const double mediumtBreakpoint = 600;
 
-  ///900
-  static const double webBreakpoint = 900;
+  ///840
+  static const double expandedBreakpoint = 840;
+
+  ///1200
+  static const double largeBreakpoint = 1200;
+
+  ///1600
+  static const double extraLargeBreakpoint = 1600; 
 
   ///if width < 600 then padding is 16 horizontally
   ///else then padding is 24 horizontally
   static EdgeInsets bodyHorizontalPadding(BuildContext context) =>
       EdgeInsets.symmetric(
         horizontal:
-            MediaQuery.sizeOf(context).width < tabletBreakpoint ? 16 : 24,
+            MediaQuery.sizeOf(context).width < mediumtBreakpoint ? 16 : 24,
       );
 
   ///SizedBox(height: 4)
