@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
-import 'package:llegar/core/presentation/widgets/custom_text_form_field.dart';
 import 'package:llegar/modules/auth/domain/entities/success_view_entity.dart';
-import 'package:llegar/modules/auth/presentation/widgets/id_photo_section.dart';
-import 'package:llegar/modules/auth/presentation/widgets/live_photo_section.dart';
+import 'package:llegar/modules/auth/presentation/widgets/sign_up_identification_form.dart';
 import 'package:llegar/utils/app_routes.dart';
 import 'package:llegar/utils/app_sizes.dart';
 import 'package:llegar/utils/functions/translate.dart';
@@ -19,20 +17,8 @@ class SignUpIdentificationViewBody extends StatelessWidget {
       padding: AppSizes.bodyHorizontalPadding(context),
       child: CustomScrollView(
         slivers: [
-          SliverToBoxAdapter(
-            child: Column(
-              children: [
-                AppSizes.height24,
-                CustomTextFormField(
-                  hintText: translate(context).phoneNumber,
-                  keyboardType: TextInputType.phone,
-                ),
-                AppSizes.height12,
-                const LivePhotoSection(),
-                AppSizes.height12,
-                const IdPhotoSection(),
-              ],
-            ),
+          const SliverToBoxAdapter(
+            child: SignUpIdentificationForm(),
           ),
           SliverFillRemaining(
             hasScrollBody: false,
