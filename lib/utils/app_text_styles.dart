@@ -30,7 +30,7 @@ abstract class AppTextStyles {
             responsive ? _getResponsiveFontSize(context, fontSize: 16) : 16,
         fontWeight: FontWeight.w500,
       );
-  
+
   static TextStyle semiBold16(BuildContext context, {bool responsive = true}) =>
       TextStyle(
         fontSize:
@@ -42,7 +42,7 @@ abstract class AppTextStyles {
       TextStyle(
         fontSize:
             responsive ? _getResponsiveFontSize(context, fontSize: 16) : 16,
-      fontWeight: FontWeight.w700,
+        fontWeight: FontWeight.w700,
       );
 
   static TextStyle medium18(BuildContext context, {bool responsive = true}) =>
@@ -58,7 +58,7 @@ abstract class AppTextStyles {
             responsive ? _getResponsiveFontSize(context, fontSize: 20) : 20,
         fontWeight: FontWeight.w400,
       );
-  
+
   static TextStyle bold20(BuildContext context, {bool responsive = true}) =>
       TextStyle(
         fontSize:
@@ -107,12 +107,25 @@ abstract class AppTextStyles {
 
   static double _getScaleFactor(BuildContext context) {
     double width = MediaQuery.sizeOf(context).width;
-    if (width <= AppSizes.tabletBreakpoint) {
+    //width < 600
+    if (width < AppSizes.mediumtBreakpoint) {
       return width / 400;
-    } else if (width <= AppSizes.webBreakpoint) {
-      return width / 700;
-    } else {
-      return width / 1000;
+    } 
+    //600 ≤ width < 840
+    else if (width < AppSizes.expandedBreakpoint) {
+      return width / 720;
+    } 
+    //840 ≤ width < 1200
+    else if (width < AppSizes.largeBreakpoint) {
+      return width / 1020;
+    } 
+    //1200 ≤ width < 1600
+    else if (width < AppSizes.extraLargeBreakpoint) {
+      return width / 1400;
+    } 
+    //1600 ≤ width
+    else {
+      return width / 1750;
     }
   }
 }

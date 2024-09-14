@@ -25,7 +25,8 @@ class WelcomePageViewItem extends StatelessWidget {
             fit: BoxFit.scaleDown,
             child: SvgPicture.asset(
               welcomePageViewItemEntity.image,
-              height: (width < AppSizes.tabletBreakpoint) ? height * 0.4 : null,
+              height:
+                  (width < AppSizes.mediumtBreakpoint) ? height * 0.4 : null,
             ),
           ),
         ),
@@ -34,7 +35,7 @@ class WelcomePageViewItem extends StatelessWidget {
           fit: BoxFit.scaleDown,
           child: Text(
             welcomePageViewItemEntity.title,
-            style: (width < AppSizes.tabletBreakpoint)
+            style: (width < AppSizes.mediumtBreakpoint)
                 ? AppTextStyles.bold32(context, responsive: false)
                 : AppTextStyles.bold40(context, responsive: false),
           ),
@@ -42,7 +43,7 @@ class WelcomePageViewItem extends StatelessWidget {
         AppSizes.height16,
         Text(
           welcomePageViewItemEntity.description,
-          style: (width < AppSizes.tabletBreakpoint
+          style: (width < AppSizes.mediumtBreakpoint
                   ? AppTextStyles.medium14(context, responsive: false)
                   : AppTextStyles.medium18(context, responsive: false))
               .copyWith(
