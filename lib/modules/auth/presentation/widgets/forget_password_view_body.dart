@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
-import 'package:llegar/core/presentation/widgets/custom_text_form_field.dart';
+import 'package:llegar/modules/auth/presentation/widgets/forget_password_form.dart';
 import 'package:llegar/modules/auth/presentation/widgets/forget_password_process_header.dart';
 import 'package:llegar/utils/app_colors.dart';
 import 'package:llegar/utils/app_images.dart';
@@ -40,9 +40,7 @@ class ForgetPasswordViewBody extends StatelessWidget {
                   ),
                 ),
                 AppSizes.height8,
-                const CustomTextFormField(
-                  keyboardType: TextInputType.emailAddress,
-                ),
+                const ForgetPasswordForm(),
               ],
             ),
           ),

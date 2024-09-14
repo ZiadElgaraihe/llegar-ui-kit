@@ -31,7 +31,7 @@ class IdPhotoSection extends StatelessWidget {
           ),
         ),
         AppSizes.height8,
-        IdPhoto(),
+        const IdPhoto(),
       ],
     );
   }

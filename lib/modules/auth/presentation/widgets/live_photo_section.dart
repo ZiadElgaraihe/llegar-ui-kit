@@ -31,7 +31,7 @@ class LivePhotoSection extends StatelessWidget {
           ),
         ),
         AppSizes.height8,
-        LivePhoto(),
+        const LivePhoto(),
       ],
     );
   }
