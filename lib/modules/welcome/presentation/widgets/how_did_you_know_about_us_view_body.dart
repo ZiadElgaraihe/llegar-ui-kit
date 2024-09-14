@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
 import 'package:llegar/core/presentation/widgets/welcome_and_auth_header.dart';
 import 'package:llegar/modules/welcome/domain/entities/how_did_you_know_us_item_entity.dart';
-import 'package:llegar/modules/welcome/presentation/widgets/how_did_you_know__about_us_tablet_layout_buttons_section.dart';
-import 'package:llegar/modules/welcome/presentation/widgets/how_did_you_know_about_us_mobile_layout_buttons_section.dart';
+import 'package:llegar/modules/welcome/presentation/widgets/how_did_you_know_about_us_buttons_section.dart';
 import 'package:llegar/utils/app_icons.dart';
 import 'package:llegar/utils/app_images.dart';
 import 'package:llegar/utils/app_routes.dart';
@@ -77,7 +76,6 @@ class _HowDidYouKnowUsViewBodyState extends State<HowDidYouKnowUsViewBody> {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.sizeOf(context).width;
     return Padding(
       padding: AppSizes.bodyHorizontalPadding(context),
       child: CustomScrollView(
@@ -93,20 +91,10 @@ class _HowDidYouKnowUsViewBodyState extends State<HowDidYouKnowUsViewBody> {
                   )!,
                   headerTitle: translate(context).howDidYouKnowUs,
                 ),
-                ValueListenableBuilder(
-                  valueListenable: _currentIndex,
-                  builder: (context, currentIndex, child) =>
-                      (width < AppSizes.expandedBreakpoint)
-                          ? HowDidYouKnowUsMobileLayoutButtonsSection(
-                              currentIndex: currentIndex,
-                              items: _items,
-                              onTap: _onItemSelected,
-                            )
-                          : HowDidYouKnowUsTabletLayoutButtonsSection(
-                              currentIndex: currentIndex,
-                              items: _items,
-                              onTap: _onItemSelected,
-                            ),
+                HowDidYouKnowAboutUsButtonsSection(
+                  currentIndexValueNotifier: _currentIndex,
+                  items: _items,
+                  onItemSelected: _onItemSelected,
                 ),
               ],
             ),
