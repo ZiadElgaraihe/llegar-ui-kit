@@ -22,9 +22,9 @@ class WelcomeView extends StatefulWidget {
 }
 
 class _WelcomeViewState extends State<WelcomeView> {
-  late PageController _pageController;
   late ValueNotifier<int> _currentPageIndex;
   late List<WelcomePageViewItemEntity> _items;
+  late PageController _pageController;
 
   @override
   void initState() {
@@ -91,6 +91,30 @@ class _WelcomeViewState extends State<WelcomeView> {
     _currentPageIndex.value = _pageController.page!.round();
   }
 
+  void _onSkipPressed(BuildContext context) {
+    futureDelayedNavigator(() {
+      Navigator.pushReplacementNamed(
+        context,
+        AppRoutes.howDidYouKnowUsView,
+      );
+    });
+  }
+
+  void _onNextPressed(BuildContext context, int currentPageIndex) {
+    if (currentPageIndex == _items.length - 1) {
+      Navigator.pushReplacementNamed(
+        context,
+        AppRoutes.howDidYouKnowUsView,
+      );
+    } else {
+      _pageController.animateToPage(
+        currentPageIndex + 1,
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeIn,
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -111,12 +135,7 @@ class _WelcomeViewState extends State<WelcomeView> {
               ),
               IconButton(
                 onPressed: () {
-                  futureDelayedNavigator(() {
-                    Navigator.pushReplacementNamed(
-                      context,
-                      AppRoutes.howDidYouKnowUsView,
-                    );
-                  });
+                  _onSkipPressed(context);
                 },
                 icon: SvgPicture.asset(
                   valueBasedOnLocale<String>(
@@ -149,18 +168,7 @@ class _WelcomeViewState extends State<WelcomeView> {
           valueListenable: _currentPageIndex,
           builder: (context, currentPageIndex, child) => CustomElevatedButton(
             onPressed: () {
-              if (currentPageIndex == _items.length - 1) {
-                Navigator.pushReplacementNamed(
-                  context,
-                  AppRoutes.howDidYouKnowUsView,
-                );
-              } else {
-                _pageController.animateToPage(
-                  currentPageIndex + 1,
-                  duration: const Duration(milliseconds: 300),
-                  curve: Curves.easeIn,
-                );
-              }
+              _onNextPressed(context, currentPageIndex);
             },
             title: currentPageIndex == 0
                 ? translate(context).getStarted

@@ -1,69 +1,38 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/modules/welcome/domain/entities/how_did_you_know_us_item_entity.dart';
-import 'package:llegar/modules/welcome/presentation/widgets/how_did_you_know_about_us_button.dart';
-import 'package:llegar/utils/app_icons.dart';
+import 'package:llegar/modules/welcome/presentation/widgets/how_did_you_know__about_us_tablet_layout_buttons_section.dart';
+import 'package:llegar/modules/welcome/presentation/widgets/how_did_you_know_about_us_mobile_layout_buttons_section.dart';
 import 'package:llegar/utils/app_sizes.dart';
-import 'package:llegar/utils/functions/translate.dart';
 
-class HowDidYouKnowUsButtonsSection extends StatefulWidget {
-  const HowDidYouKnowUsButtonsSection({
+class HowDidYouKnowAboutUsButtonsSection extends StatelessWidget {
+  const HowDidYouKnowAboutUsButtonsSection({
     super.key,
+    required this.currentIndexValueNotifier,
+    required this.items,
+    required this.onItemSelected,
   });
 
-  @override
-  State<HowDidYouKnowUsButtonsSection> createState() =>
-      _HowDidYouKnowUsButtonsSectionState();
-}
+  final ValueNotifier<int?> currentIndexValueNotifier;
+  final List<HowDidYouKnowUsItemEntity> items;
+  final void Function(int index) onItemSelected;
 
-class _HowDidYouKnowUsButtonsSectionState
-    extends State<HowDidYouKnowUsButtonsSection> {
-  late final List<HowDidYouKnowUsItemEntity> _items;
-
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    _items = [
-      HowDidYouKnowUsItemEntity(
-        title: translate(context).facebook,
-        icon: AppIcons.facebook,
-      ),
-      HowDidYouKnowUsItemEntity(
-        title: translate(context).googleSearch,
-        icon: AppIcons.google,
-      ),
-      HowDidYouKnowUsItemEntity(
-        title: translate(context).appStore,
-        icon: AppIcons.appStore,
-      ),
-      HowDidYouKnowUsItemEntity(
-        title: translate(context).youtube,
-        icon: AppIcons.youtube,
-      ),
-      HowDidYouKnowUsItemEntity(
-        title: translate(context).tiktok,
-        icon: AppIcons.tiktok,
-      ),
-    ];
-  }
-
-  int? currentIndex;
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        for (int index = 0; index < _items.length; index++) ...[
-          HowDidYouKnowUsButton(
-            howDidYouKnowUsItemEntity: _items[index],
-            isActive: currentIndex == index,
-            onTap: () {
-              setState(() {
-                currentIndex = index;
-              });
-            },
-          ),
-          if (index < _items.length - 1) AppSizes.height12,
-        ],
-      ],
+    double width = MediaQuery.sizeOf(context).width;
+    return ValueListenableBuilder(
+      valueListenable: currentIndexValueNotifier,
+      builder: (context, currentIndex, child) =>
+          (width < AppSizes.expandedBreakpoint)
+              ? HowDidYouKnowUsMobileLayoutButtonsSection(
+                  currentIndex: currentIndex,
+                  items: items,
+                  onTap: onItemSelected,
+                )
+              : HowDidYouKnowUsTabletLayoutButtonsSection(
+                  currentIndex: currentIndex,
+                  items: items,
+                  onTap: onItemSelected,
+                ),
     );
   }
 }
