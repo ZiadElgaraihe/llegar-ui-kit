@@ -12,7 +12,7 @@ abstract class AppColors {
   static const Color blue = Color(0xFF2F80EC);
 
   ///#7A828A
-  static const Color darkgrey = Color(0xFF7A828A);
+  static const Color darkGrey = Color(0xFF7A828A);
 
   ///#27AE61 (success)
   static const Color green = Color(0xFF27AE61);
@@ -25,6 +25,9 @@ abstract class AppColors {
 
   ///#E0E0E0
   static const Color lightGrey = Color(0xFFE0E0E0);
+
+  ///#E57373
+  static const Color lightRed = Color(0xFFE57373);
 
   ///#F39A4A (orange text)
   static const Color orange = Color(0xFFF39A4A);
