@@ -37,12 +37,12 @@ abstract class AppThemes {
         inputDecorationTheme: InputDecorationTheme(
           filled: true,
           fillColor: AppColors.antiFlashWhite,
-          errorStyle: const TextStyle(
+          errorStyle: AppTextStyles.medium10(context).copyWith(
             color: AppColors.red,
             fontFamily: AppStrings.interFontFamily,
           ),
           hintStyle: AppTextStyles.medium15(context).copyWith(
-            color: AppColors.darkgrey,
+            color: AppColors.darkGrey,
             fontFamily: AppStrings.interFontFamily,
           ),
           border: OutlineInputBorder(
@@ -111,7 +111,7 @@ abstract class AppThemes {
         ),
         iconButtonTheme: IconButtonThemeData(
           style: IconButton.styleFrom(
-            overlayColor: AppColors.darkgrey,
+            overlayColor: AppColors.darkGrey,
           ),
         ),
         checkboxTheme: CheckboxThemeData(
@@ -209,12 +209,12 @@ abstract class AppThemes {
         inputDecorationTheme: InputDecorationTheme(
           filled: true,
           fillColor: AppColors.antiFlashWhite,
-          errorStyle: TextStyle(
-            color: Colors.red.shade300,
+          errorStyle: AppTextStyles.medium10(context).copyWith(
+            color: AppColors.lightRed,
             fontFamily: AppStrings.interFontFamily,
           ),
           hintStyle: AppTextStyles.medium15(context).copyWith(
-            color: AppColors.darkgrey,
+            color: AppColors.darkGrey,
             fontFamily: AppStrings.interFontFamily,
           ),
           border: OutlineInputBorder(

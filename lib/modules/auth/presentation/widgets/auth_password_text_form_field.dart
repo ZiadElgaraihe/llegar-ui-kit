@@ -61,7 +61,7 @@ class _AuthPasswordTextFormFieldState extends State<AuthPasswordTextFormField> {
                 ? Icons.visibility_rounded
                 : Icons.visibility_off_rounded,
             size: 18,
-            color: AppColors.darkgrey,
+            color: AppColors.darkGrey,
           ),
         ),
       ),

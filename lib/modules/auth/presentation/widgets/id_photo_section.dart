@@ -31,7 +31,15 @@ class IdPhotoSection extends StatelessWidget {
           ),
         ),
         AppSizes.height8,
-        IdPhoto(),
+        /*
+          Optionally, a FormField can be used to implement validation 
+          for id photo, similar to how it's done with TextFormField. 
+          However, in this UI Kit, FormField is not utilized for image selection 
+          since there's no image picker functionality provided.
+  
+          For reference, you can check the implementation in otp_form.dart.
+        */
+        const IdPhoto(),
       ],
     );
   }

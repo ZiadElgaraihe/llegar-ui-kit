@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_text_form_field.dart';
-import 'package:llegar/modules/auth/presentation/widgets/auth_password_text_form_field.dart';
-import 'package:llegar/utils/app_icons.dart';
+import 'package:llegar/modules/auth/presentation/widgets/id_photo_section.dart';
+import 'package:llegar/modules/auth/presentation/widgets/live_photo_section.dart';
 import 'package:llegar/utils/app_sizes.dart';
 import 'package:llegar/utils/functions/translate.dart';
 
-class SignUpForm extends StatelessWidget {
-  const SignUpForm({
+class SignUpIdentificationForm extends StatelessWidget {
+  const SignUpIdentificationForm({
     super.key,
     this.autovalidateMode,
     this.formKey,
@@ -22,15 +22,15 @@ class SignUpForm extends StatelessWidget {
       autovalidateMode: autovalidateMode,
       child: Column(
         children: [
+          AppSizes.height24,
           CustomTextFormField(
-            hintText: translate(context).email,
-            keyboardType: TextInputType.emailAddress,
-            icon: AppIcons.email,
+            hintText: translate(context).phoneNumber,
+            keyboardType: TextInputType.phone,
           ),
           AppSizes.height12,
-          AuthPasswordTextFormField(
-            hintText: translate(context).password,
-          ),
+          const LivePhotoSection(),
+          AppSizes.height12,
+          const IdPhotoSection(),
         ],
       ),
     );

@@ -11,12 +11,14 @@ class CustomAnimatedDropdown<ItemsType> extends StatelessWidget {
     required this.hintText,
     required this.items,
     this.onChanged,
+    this.validator,
     this.visibility,
   });
 
   final String hintText;
   final List<ItemsType> items;
   final void Function(ItemsType? newValue)? onChanged;
+  final String? Function(ItemsType? value)? validator;
   final void Function(bool isListOpened)? visibility;
 
   @override
@@ -29,6 +31,7 @@ class CustomAnimatedDropdown<ItemsType> extends StatelessWidget {
         items: items,
         hintText: hintText,
         onChanged: onChanged,
+        validator: validator,
         closedHeaderPadding: const EdgeInsets.symmetric(
           horizontal: 12,
           vertical: 8,
@@ -40,6 +43,14 @@ class CustomAnimatedDropdown<ItemsType> extends StatelessWidget {
         visibility: visibility,
         decoration: CustomDropdownDecoration(
           closedFillColor: AppColors.white,
+          errorStyle: AppTextStyles.medium10(context).copyWith(
+            color: valueBasedOnTheme<Color>(
+              context,
+              light: AppColors.red,
+              dark: AppColors.lightRed,
+            ),
+            fontFamily: AppStrings.interFontFamily,
+          ),
           hintStyle: AppTextStyles.medium14(context).copyWith(
             fontFamily: AppStrings.interFontFamily,
             color: AppColors.grey,
@@ -70,8 +81,10 @@ class CustomAnimatedDropdown<ItemsType> extends StatelessWidget {
           ),
           closedBorderRadius: BorderRadius.circular(8),
           expandedBorderRadius: BorderRadius.circular(8),
+          closedErrorBorderRadius: BorderRadius.circular(8),
           closedBorder: Border.all(color: AppColors.grey),
           expandedBorder: Border.all(color: AppColors.yellow),
+          closedErrorBorder: Border.all(color: AppColors.red),
         ),
       ),
     );
