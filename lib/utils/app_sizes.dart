@@ -43,6 +43,9 @@ abstract class AppSizes {
   ///SizedBox(width: 8)
   static const width8 = SizedBox(width: 8);
 
+  ///SizedBox(width: 12)
+  static const width12 = SizedBox(width: 12);
+  
   ///SizedBox(width: 16)
   static const width16 = SizedBox(width: 16);
 }
