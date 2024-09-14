@@ -19,74 +19,72 @@ class SocialLogInViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return ListView(
       padding: AppSizes.bodyHorizontalPadding(context),
-      child: Column(
-        children: [
-          WelcomeAndAuthHeader(
-            headerImage: valueBasedOnTheme<String>(
+      children: [
+        WelcomeAndAuthHeader(
+          headerImage: valueBasedOnTheme<String>(
+            context,
+            light: AppImages.letUsYouIn,
+            dark: AppImages.letUsYouInDark,
+          )!,
+          headerTitle: translate(context).letUsYouIn,
+        ),
+        SocialLogInOutlinedButton(
+          onFuturePressed: () async {
+            //remove this & add your logic
+            await Future.delayed(const Duration(seconds: 2));
+          },
+          socialLogInButtonEntity: SocialAuthEntity(
+            icon: AppIcons.facebook,
+            title: translate(context).continueWithFacebook,
+          ),
+        ),
+        AppSizes.height12,
+        SocialLogInOutlinedButton(
+          onFuturePressed: () async {
+            //remove this
+            await Future.delayed(const Duration(seconds: 2));
+          },
+          socialLogInButtonEntity: SocialAuthEntity(
+            icon: AppIcons.google,
+            title: translate(context).continueWithGoogle,
+          ),
+        ),
+        AppSizes.height12,
+        SocialLogInOutlinedButton(
+          onFuturePressed: () async {
+            //remove this
+            await Future.delayed(const Duration(seconds: 2));
+          },
+          socialLogInButtonEntity: SocialAuthEntity(
+            icon: valueBasedOnTheme<String>(
               context,
-              light: AppImages.letUsYouIn,
-              dark: AppImages.letUsYouInDark,
+              light: AppIcons.apple,
+              dark: AppIcons.appleDark,
             )!,
-            headerTitle: translate(context).letUsYouIn,
+            title: translate(context).continueWithApple,
           ),
-          SocialLogInOutlinedButton(
-            onFuturePressed: () async {
-              //remove this & add your logic
-              await Future.delayed(const Duration(seconds: 2));
-            },
-            socialLogInButtonEntity: SocialAuthEntity(
-              icon: AppIcons.facebook,
-              title: translate(context).continueWithFacebook,
-            ),
-          ),
-          AppSizes.height12,
-          SocialLogInOutlinedButton(
-            onFuturePressed: () async {
-              //remove this
-              await Future.delayed(const Duration(seconds: 2));
-            },
-            socialLogInButtonEntity: SocialAuthEntity(
-              icon: AppIcons.google,
-              title: translate(context).continueWithGoogle,
-            ),
-          ),
-          AppSizes.height12,
-          SocialLogInOutlinedButton(
-            onFuturePressed: () async {
-              //remove this
-              await Future.delayed(const Duration(seconds: 2));
-            },
-            socialLogInButtonEntity: SocialAuthEntity(
-              icon: valueBasedOnTheme<String>(
-                context,
-                light: AppIcons.apple,
-                dark: AppIcons.appleDark,
-              )!,
-              title: translate(context).continueWithApple,
-            ),
-          ),
-          AppSizes.height24,
-          OrDividerRow(title: translate(context).or),
-          AppSizes.height24,
-          CustomElevatedButton(
-            title: translate(context).signInWithPassword,
-            onPressed: () {
-              Navigator.pushReplacementNamed(context, AppRoutes.logInView);
-            },
-          ),
-          AppSizes.height12,
-          AuthToggleRow(
-            buttonTitle: translate(context).signUp,
-            onPressed: () {
-              Navigator.pushReplacementNamed(context, AppRoutes.signUpView);
-            },
-            title: translate(context).doNotHaveAnAccount,
-          ),
-          AppSizes.height24,
-        ],
-      ),
+        ),
+        AppSizes.height24,
+        OrDividerRow(title: translate(context).or),
+        AppSizes.height24,
+        CustomElevatedButton(
+          title: translate(context).signInWithPassword,
+          onPressed: () {
+            Navigator.pushReplacementNamed(context, AppRoutes.logInView);
+          },
+        ),
+        AppSizes.height12,
+        AuthToggleRow(
+          buttonTitle: translate(context).signUp,
+          onPressed: () {
+            Navigator.pushReplacementNamed(context, AppRoutes.signUpView);
+          },
+          title: translate(context).doNotHaveAnAccount,
+        ),
+        AppSizes.height24,
+      ],
     );
   }
 }

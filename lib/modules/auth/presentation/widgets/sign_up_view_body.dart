@@ -17,47 +17,45 @@ class SignUpViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return ListView(
       padding: AppSizes.bodyHorizontalPadding(context),
-      child: Column(
-        children: [
-          WelcomeAndAuthHeader(
-            headerImage: valueBasedOnTheme<String>(
-              context,
-              light: AppImages.logo,
-              dark: AppImages.logoDark,
-            )!,
-            headerTitle: translate(context).createYourAccount,
-          ),
-          const SignUpForm(),
-          AppSizes.height24,
-          OrDividerRow(title: translate(context).orContinueWith),
-          AppSizes.height24,
-          SocialAuthCardButtonsRow(
-            onAppleTap: () async {
-              //remove this & add your logic
-              await Future.delayed(const Duration(seconds: 2));
-            },
-            onFacebookTap: () async {
-              //remove this & add your logic
-              await Future.delayed(const Duration(seconds: 2));
-            },
-            onGoogleTap: () async {
-              //remove this & add your logic
-              await Future.delayed(const Duration(seconds: 2));
-            },
-          ),
-          AppSizes.height4,
-          AuthToggleRow(
-            buttonTitle: translate(context).logIn,
-            onPressed: () {
-              Navigator.pushReplacementNamed(context, AppRoutes.logInView);
-            },
-            title: translate(context).alreadyHaveAnAccount,
-          ),
-          AppSizes.height24,
-        ],
-      ),
+      children: [
+        WelcomeAndAuthHeader(
+          headerImage: valueBasedOnTheme<String>(
+            context,
+            light: AppImages.logo,
+            dark: AppImages.logoDark,
+          )!,
+          headerTitle: translate(context).createYourAccount,
+        ),
+        const SignUpForm(),
+        AppSizes.height24,
+        OrDividerRow(title: translate(context).orContinueWith),
+        AppSizes.height24,
+        SocialAuthCardButtonsRow(
+          onAppleTap: () async {
+            //remove this & add your logic
+            await Future.delayed(const Duration(seconds: 2));
+          },
+          onFacebookTap: () async {
+            //remove this & add your logic
+            await Future.delayed(const Duration(seconds: 2));
+          },
+          onGoogleTap: () async {
+            //remove this & add your logic
+            await Future.delayed(const Duration(seconds: 2));
+          },
+        ),
+        AppSizes.height4,
+        AuthToggleRow(
+          buttonTitle: translate(context).logIn,
+          onPressed: () {
+            Navigator.pushReplacementNamed(context, AppRoutes.logInView);
+          },
+          title: translate(context).alreadyHaveAnAccount,
+        ),
+        AppSizes.height24,
+      ],
     );
   }
 }
