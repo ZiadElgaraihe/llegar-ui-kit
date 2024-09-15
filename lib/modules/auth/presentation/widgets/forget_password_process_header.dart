@@ -20,20 +20,23 @@ class ForgetPasswordProcessHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         AppSizes.height12,
-        FittedBox(
-          fit: BoxFit.scaleDown,
-          child: Row(
-            children: [
-              Text(
-                title,
-                style: AppTextStyles.bold32(context),
-              ),
-              AppSizes.width4,
-              SvgPicture.asset(icon),
-            ],
+        Align(
+          alignment: AlignmentDirectional.centerStart,
+          child: FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Row(
+              children: [
+                Text(
+                  title,
+                  style: AppTextStyles.bold32(context),
+                ),
+                AppSizes.width4,
+                SvgPicture.asset(icon),
+              ],
+            ),
           ),
         ),
         AppSizes.height12,
