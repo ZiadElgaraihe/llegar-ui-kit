@@ -31,7 +31,7 @@ class ForgetPasswordProcessHeader extends StatelessWidget {
                 title,
                 style: AppTextStyles.bold32(context),
               ),
-              const SizedBox(width: 4),
+              AppSizes.width4,
               SvgPicture.asset(icon),
             ],
           ),
