@@ -22,31 +22,36 @@ class CustomElevatedButton extends StatefulWidget {
 
 class _CustomElevatedButtonState extends State<CustomElevatedButton> {
   bool _isLoading = false;
+
+  void _onPressed() {
+    futureDelayedNavigator(widget.onPressed!);
+  }
+
+  void _onFuturePressed() {
+    futureDelayedNavigator(
+      () async {
+        setState(() {
+          _isLoading = true;
+        });
+
+        await widget.onFuturePressed!();
+
+        setState(() {
+          _isLoading = false;
+        });
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: (_isLoading)
           ? null
           : (widget.onFuturePressed != null)
-              ? () {
-                  futureDelayedNavigator(
-                    () async {
-                      setState(() {
-                        _isLoading = true;
-                      });
-
-                      await widget.onFuturePressed!();
-
-                      setState(() {
-                        _isLoading = false;
-                      });
-                    },
-                  );
-                }
+              ? _onFuturePressed
               : (widget.onPressed != null)
-                  ? () {
-                      futureDelayedNavigator(widget.onPressed!);
-                    }
+                  ? _onPressed
                   : null,
       child: AnimatedCrossFade(
         firstChild: Text(

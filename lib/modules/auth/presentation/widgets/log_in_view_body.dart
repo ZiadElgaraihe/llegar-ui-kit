@@ -45,9 +45,9 @@ class LogInViewBody extends StatelessWidget {
           headerTitle: translate(context).logInToYourAccount,
         ),
         const LogInForm(),
-        const SizedBox(height: 16),
+        AppSizes.height16,
         const RememberMeRow(),
-        const SizedBox(height: 16),
+        AppSizes.height16,
         CustomElevatedButton(
           title: translate(context).logIn,
           onFuturePressed: () async {

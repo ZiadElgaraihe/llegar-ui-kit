@@ -23,15 +23,25 @@ class _SocialAuthCardButtonState extends State<SocialAuthCardButton> {
   late ValueNotifier<bool> _isLoading;
 
   @override
+  void dispose() {
+    _isLoading.dispose();
+    super.dispose();
+  }
+
+  @override
   void initState() {
     super.initState();
     _isLoading = ValueNotifier<bool>(false);
   }
 
-  @override
-  void dispose() {
-    _isLoading.dispose();
-    super.dispose();
+  void _onButtonTapped() {
+    futureDelayedNavigator(() async {
+      _isLoading.value = true;
+
+      await widget.onTap();
+
+      _isLoading.value = false;
+    });
   }
 
   @override
@@ -45,17 +55,7 @@ class _SocialAuthCardButtonState extends State<SocialAuthCardButton> {
       child: ValueListenableBuilder(
         valueListenable: _isLoading,
         builder: (context, isLoading, child) => InkWell(
-          onTap: isLoading
-              ? null
-              : () {
-                  futureDelayedNavigator(() async {
-                    _isLoading.value = true;
-
-                    await widget.onTap();
-
-                    _isLoading.value = false;
-                  });
-                },
+          onTap: isLoading ? null : _onButtonTapped,
           borderRadius: BorderRadius.circular(12),
           child: Padding(
             padding: const EdgeInsets.all(16.0),

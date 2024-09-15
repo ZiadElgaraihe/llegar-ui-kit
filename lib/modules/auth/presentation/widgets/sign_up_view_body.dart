@@ -39,9 +39,9 @@ class SignUpViewBody extends StatelessWidget {
           headerTitle: translate(context).createYourAccount,
         ),
         const SignUpForm(),
-        const SizedBox(height: 16),
+        AppSizes.height16,
         const RememberMeRow(),
-        const SizedBox(height: 16),
+        AppSizes.height16,
         CustomElevatedButton(
           title: translate(context).signUp,
           onPressed: () {

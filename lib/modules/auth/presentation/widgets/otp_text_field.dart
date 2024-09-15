@@ -40,6 +40,24 @@ class _OtpTextFieldState extends State<OtpTextField> {
     super.dispose();
   }
 
+  void _onChanged(String value, int index) {
+    if (value.length == 1) {
+      if (index != widget.numberOfFields - 1) {
+        _focusNodes[index].nextFocus();
+      } else {
+        _focusNodes[index].unfocus();
+      }
+    } else if (value.isEmpty) {
+      if (index != 0) {
+        _focusNodes[index].previousFocus();
+      } else {
+        _focusNodes[index].unfocus();
+      }
+    }
+    String otp = _controllers.map((controller) => controller.text).join();
+    widget.onChanged(otp);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -54,22 +72,7 @@ class _OtpTextFieldState extends State<OtpTextField> {
               maxLength: 1,
               focusNode: _focusNodes[index],
               onChanged: (value) {
-                if (value.length == 1) {
-                  if (index != widget.numberOfFields - 1) {
-                    _focusNodes[index].nextFocus();
-                  } else {
-                    _focusNodes[index].unfocus();
-                  }
-                } else if (value.isEmpty) {
-                  if (index != 0) {
-                    _focusNodes[index].previousFocus();
-                  } else {
-                    _focusNodes[index].unfocus();
-                  }
-                }
-                String otp =
-                    _controllers.map((controller) => controller.text).join();
-                widget.onChanged(otp);
+                _onChanged(value, index);
               },
               textAlign: TextAlign.center,
               style: AppTextStyles.bold20(context).copyWith(

@@ -22,15 +22,20 @@ class _RememberMeRowState extends State<RememberMeRow> {
   late ValueNotifier<bool> _rememberMe;
 
   @override
+  void dispose() {
+    _rememberMe.dispose();
+    super.dispose();
+  }
+
+  @override
   void initState() {
     super.initState();
     _rememberMe = ValueNotifier<bool>(false);
   }
 
-  @override
-  void dispose() {
-    _rememberMe.dispose();
-    super.dispose();
+  void _onChanged(value) {
+    _rememberMe.value = value!;
+    if (widget.onChanged != null) widget.onChanged!(value);
   }
 
   @override
@@ -42,10 +47,7 @@ class _RememberMeRowState extends State<RememberMeRow> {
           valueListenable: _rememberMe,
           builder: (context, rememberMe, child) => Checkbox(
             value: rememberMe,
-            onChanged: (value) {
-              _rememberMe.value = value!;
-              if (widget.onChanged != null) widget.onChanged!(value);
-            },
+            onChanged: _onChanged,
           ),
         ),
         AppSizes.width8,
