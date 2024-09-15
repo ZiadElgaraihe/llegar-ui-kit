@@ -16,18 +16,12 @@ class WelcomePageViewItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.sizeOf(context).height;
-    double width = MediaQuery.sizeOf(context).width;
     return Column(
       children: [
         RepaintBoundary(
           child: FittedBox(
             fit: BoxFit.scaleDown,
-            child: SvgPicture.asset(
-              welcomePageViewItemEntity.image,
-              height:
-                  (width < AppSizes.mediumtBreakpoint) ? height * 0.4 : null,
-            ),
+            child: SvgPicture.asset(welcomePageViewItemEntity.image),
           ),
         ),
         AppSizes.height16,
@@ -35,18 +29,13 @@ class WelcomePageViewItem extends StatelessWidget {
           fit: BoxFit.scaleDown,
           child: Text(
             welcomePageViewItemEntity.title,
-            style: (width < AppSizes.mediumtBreakpoint)
-                ? AppTextStyles.bold32(context, responsive: false)
-                : AppTextStyles.bold40(context, responsive: false),
+            style: AppTextStyles.bold40(context, responsive: false),
           ),
         ),
         AppSizes.height16,
         Text(
           welcomePageViewItemEntity.description,
-          style: (width < AppSizes.mediumtBreakpoint
-                  ? AppTextStyles.medium14(context, responsive: false)
-                  : AppTextStyles.medium18(context, responsive: false))
-              .copyWith(
+          style: AppTextStyles.medium18(context, responsive: false).copyWith(
             color: valueBasedOnTheme<Color>(
               context,
               light: AppColors.black,
