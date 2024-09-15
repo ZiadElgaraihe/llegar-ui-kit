@@ -60,36 +60,39 @@ class _OtpTextFieldState extends State<OtpTextField> {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: List.generate(
-        widget.numberOfFields,
-        (index) => Flexible(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 4),
-            child: TextField(
-              controller: _controllers[index],
-              maxLength: 1,
-              focusNode: _focusNodes[index],
-              onChanged: (value) {
-                _onChanged(value, index);
-              },
-              textAlign: TextAlign.center,
-              style: AppTextStyles.bold20(context).copyWith(
-                color: AppColors.black,
-              ),
-              showCursor: true,
-              cursorColor: AppColors.prussianBlue,
-              keyboardType: TextInputType.number,
-              inputFormatters: [
-                FilteringTextInputFormatter.digitsOnly,
-              ],
-              decoration: const InputDecoration(
-                constraints: BoxConstraints(
-                  maxWidth: 85,
-                  maxHeight: 60,
+    return Directionality(
+      textDirection: TextDirection.ltr,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: List.generate(
+          widget.numberOfFields,
+          (index) => Flexible(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              child: TextField(
+                controller: _controllers[index],
+                maxLength: 1,
+                focusNode: _focusNodes[index],
+                onChanged: (value) {
+                  _onChanged(value, index);
+                },
+                textAlign: TextAlign.center,
+                style: AppTextStyles.bold20(context).copyWith(
+                  color: AppColors.black,
                 ),
-                counterText: '',
+                showCursor: true,
+                cursorColor: AppColors.prussianBlue,
+                keyboardType: TextInputType.number,
+                inputFormatters: [
+                  FilteringTextInputFormatter.digitsOnly,
+                ],
+                decoration: const InputDecoration(
+                  constraints: BoxConstraints(
+                    maxWidth: 85,
+                    maxHeight: 60,
+                  ),
+                  counterText: '',
+                ),
               ),
             ),
           ),
