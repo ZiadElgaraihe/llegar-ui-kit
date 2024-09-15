@@ -14,8 +14,8 @@ class SocialLogInOutlinedButton extends StatefulWidget {
     required this.onFuturePressed,
   });
 
-  final SocialAuthEntity socialLogInButtonEntity;
   final Future<void> Function() onFuturePressed;
+  final SocialAuthEntity socialLogInButtonEntity;
 
   @override
   State<SocialLogInOutlinedButton> createState() =>
@@ -25,26 +25,26 @@ class SocialLogInOutlinedButton extends StatefulWidget {
 class _SocialLogInOutlinedButtonState extends State<SocialLogInOutlinedButton> {
   bool _isLoading = false;
 
+  void _onFuturePressed() {
+    futureDelayedNavigator(
+      () async {
+        setState(() {
+          _isLoading = true;
+        });
+
+        await widget.onFuturePressed();
+
+        setState(() {
+          _isLoading = false;
+        });
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return OutlinedButton(
-      onPressed: _isLoading
-          ? null
-          : () {
-              futureDelayedNavigator(
-                () async {
-                  setState(() {
-                    _isLoading = true;
-                  });
-
-                  await widget.onFuturePressed();
-
-                  setState(() {
-                    _isLoading = false;
-                  });
-                },
-              );
-            },
+      onPressed: _isLoading ? null : _onFuturePressed,
       child: AnimatedCrossFade(
         firstChild: Row(
           mainAxisAlignment: MainAxisAlignment.center,

@@ -17,6 +17,14 @@ class SocialLogInViewBody extends StatelessWidget {
     super.key,
   });
 
+  void _onAuthTogglePressed(BuildContext context) {
+    Navigator.pushReplacementNamed(context, AppRoutes.signUpView);
+  }
+
+  void _onSignInWithPasswordPressed(BuildContext context) {
+    Navigator.pushReplacementNamed(context, AppRoutes.logInView);
+  }
+
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -72,14 +80,14 @@ class SocialLogInViewBody extends StatelessWidget {
         CustomElevatedButton(
           title: translate(context).signInWithPassword,
           onPressed: () {
-            Navigator.pushReplacementNamed(context, AppRoutes.logInView);
+            _onSignInWithPasswordPressed(context);
           },
         ),
         AppSizes.height12,
         AuthToggleRow(
           buttonTitle: translate(context).signUp,
           onPressed: () {
-            Navigator.pushReplacementNamed(context, AppRoutes.signUpView);
+            _onAuthTogglePressed(context);
           },
           title: translate(context).doNotHaveAnAccount,
         ),

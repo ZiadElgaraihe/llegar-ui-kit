@@ -15,6 +15,14 @@ class AuthToggleRow extends StatelessWidget {
   final VoidCallback onPressed;
   final String title;
 
+  void _onPressed() {
+    futureDelayedNavigator(
+      () {
+        onPressed();
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -27,13 +35,7 @@ class AuthToggleRow extends StatelessWidget {
           ),
         ),
         TextButton(
-          onPressed: () {
-            futureDelayedNavigator(
-              () {
-                onPressed();
-              },
-            );
-          },
+          onPressed: _onPressed,
           child: Text(buttonTitle),
         ),
       ],

@@ -21,41 +21,48 @@ class SuccessViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: AppSizes.bodyHorizontalPadding(context),
-      child: Column(
-        children: [
-          const Expanded(child: AppSizes.height24),
-          SvgPicture.asset(
-            valueBasedOnTheme<String>(
-              context,
-              light: AppImages.okAmico,
-              dark: AppImages.okAmicoDark,
-            )!,
-          ),
-          AppSizes.height48,
-          FittedBox(
-            fit: BoxFit.scaleDown,
-            child: Text(
-              successViewEntity.title,
-              style: AppTextStyles.bold40(context),
-            ),
-          ),
-          AppSizes.height12,
-          FittedBox(
-            fit: BoxFit.scaleDown,
-            child: Text(
-              successViewEntity.subTitle,
-              style: AppTextStyles.medium18(context).copyWith(
-                color: valueBasedOnTheme<Color>(
-                  context,
-                  light: AppColors.black,
-                  dark: AppColors.white,
+      child: CustomScrollView(
+        slivers: [
+          SliverFillRemaining(
+            hasScrollBody: false,
+            child: Column(
+              children: [
+                const Expanded(child: AppSizes.height24),
+                SvgPicture.asset(
+                  valueBasedOnTheme<String>(
+                    context,
+                    light: AppImages.okAmico,
+                    dark: AppImages.okAmicoDark,
+                  )!,
                 ),
-              ),
+                AppSizes.height48,
+                FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text(
+                    successViewEntity.title,
+                    style: AppTextStyles.bold40(context),
+                  ),
+                ),
+                AppSizes.height12,
+                FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text(
+                    successViewEntity.subTitle,
+                    style: AppTextStyles.medium18(context).copyWith(
+                      color: valueBasedOnTheme<Color>(
+                        context,
+                        light: AppColors.black,
+                        dark: AppColors.white,
+                      ),
+                    ),
+                  ),
+                ),
+                const Expanded(child: AppSizes.height24),
+                CustomElevatedButton(title: translate(context).getStarted),
+                AppSizes.height24
+              ],
             ),
           ),
-          AppSizes.height24,
-          CustomElevatedButton(title: translate(context).getStarted),
-          AppSizes.height24
         ],
       ),
     );

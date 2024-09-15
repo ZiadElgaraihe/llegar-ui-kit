@@ -15,25 +15,24 @@ class ResendCodeButton extends StatelessWidget {
     required this.currentResendCodeState,
   });
 
-  final ResendCodeManager resendCodeManager;
-  final Future<void> Function() onResendCode;
   final ResendCodeState currentResendCodeState;
+  final Future<void> Function() onResendCode;
+  final ResendCodeManager resendCodeManager;
+
+  _onPressed() {
+    futureDelayedNavigator(() async {
+      resendCodeManager.resendCodeState.value = ResendCodeState.resending;
+      await onResendCode();
+      resendCodeManager.resetResendCodeTimer();
+      resendCodeManager.resendCodeState.value = ResendCodeState.waiting;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: currentResendCodeState == ResendCodeState.ready
-          ? () {
-              futureDelayedNavigator(() async {
-                resendCodeManager.resendCodeState.value =
-                    ResendCodeState.resending;
-                await onResendCode();
-                resendCodeManager.resetResendCodeTimer();
-                resendCodeManager.resendCodeState.value =
-                    ResendCodeState.waiting;
-              });
-            }
-          : null,
+      onPressed:
+          currentResendCodeState == ResendCodeState.ready ? _onPressed : null,
       style: TextButton.styleFrom(
         foregroundColor: AppColors.green,
       ),
