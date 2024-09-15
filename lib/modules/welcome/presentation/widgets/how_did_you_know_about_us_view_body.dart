@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
+import 'package:llegar/core/presentation/widgets/custom_sliver_fill_remaining_footer.dart';
 import 'package:llegar/core/presentation/widgets/welcome_and_auth_header.dart';
 import 'package:llegar/modules/welcome/domain/entities/how_did_you_know_us_item_entity.dart';
 import 'package:llegar/modules/welcome/presentation/widgets/how_did_you_know_about_us_buttons_section.dart';
@@ -99,18 +99,9 @@ class _HowDidYouKnowUsViewBodyState extends State<HowDidYouKnowUsViewBody> {
               ],
             ),
           ),
-          SliverFillRemaining(
-            hasScrollBody: false,
-            child: Column(
-              children: [
-                const Expanded(child: AppSizes.height24),
-                CustomElevatedButton(
-                  title: translate(context).continueText,
-                  onPressed: _onContinuePressed,
-                ),
-                AppSizes.height24,
-              ],
-            ),
+          CustomSliverFillRemainingFooter(
+            buttonTitle: translate(context).continueText,
+            onPressed: _onContinuePressed,
           ),
         ],
       ),

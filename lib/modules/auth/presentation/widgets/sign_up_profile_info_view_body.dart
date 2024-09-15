@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
+import 'package:llegar/core/presentation/widgets/custom_sliver_fill_remaining_footer.dart';
 import 'package:llegar/modules/auth/presentation/widgets/sign_up_profile_info_form.dart';
 import 'package:llegar/utils/app_routes.dart';
 import 'package:llegar/utils/app_sizes.dart';
@@ -10,6 +10,13 @@ class SignUpProfileInfoViewBody extends StatelessWidget {
     super.key,
   });
 
+  void _onPressed(BuildContext context) {
+    Navigator.pushNamed(
+      context,
+      AppRoutes.signUpIdentificationView,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -19,23 +26,11 @@ class SignUpProfileInfoViewBody extends StatelessWidget {
           const SliverToBoxAdapter(
             child: SignUpProfileInfoForm(),
           ),
-          SliverFillRemaining(
-            hasScrollBody: false,
-            child: Column(
-              children: [
-                const Expanded(child: AppSizes.height24),
-                CustomElevatedButton(
-                  title: translate(context).continueText,
-                  onPressed: () {
-                    Navigator.pushNamed(
-                      context,
-                      AppRoutes.signUpIdentificationView,
-                    );
-                  },
-                ),
-                AppSizes.height24,
-              ],
-            ),
+          CustomSliverFillRemainingFooter(
+            buttonTitle: translate(context).continueText,
+            onPressed: () {
+              _onPressed(context);
+            },
           )
         ],
       ),
