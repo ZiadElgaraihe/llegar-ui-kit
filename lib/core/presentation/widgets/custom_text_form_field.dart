@@ -14,6 +14,7 @@ class CustomTextFormField extends StatelessWidget {
     this.onSaved,
     this.readOnly = false,
     this.suffixIcon,
+    this.textDirection,
     this.validator,
   });
 
@@ -24,6 +25,7 @@ class CustomTextFormField extends StatelessWidget {
   final void Function(String? newValue)? onSaved;
   final bool readOnly;
   final Widget? suffixIcon;
+  final TextDirection? textDirection;
   final String? Function(String? value)? validator;
 
   @override
@@ -32,6 +34,7 @@ class CustomTextFormField extends StatelessWidget {
       controller: controller,
       readOnly: readOnly,
       keyboardType: keyboardType,
+      textDirection: textDirection,
       obscureText: false,
       cursorColor: AppColors.prussianBlue,
       style: AppTextStyles.medium15(context).copyWith(

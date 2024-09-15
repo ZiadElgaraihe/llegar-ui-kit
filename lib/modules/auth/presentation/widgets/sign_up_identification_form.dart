@@ -26,6 +26,7 @@ class SignUpIdentificationForm extends StatelessWidget {
           CustomTextFormField(
             hintText: translate(context).phoneNumber,
             keyboardType: TextInputType.phone,
+            textDirection: TextDirection.ltr,
           ),
           AppSizes.height12,
           const LivePhotoSection(),
