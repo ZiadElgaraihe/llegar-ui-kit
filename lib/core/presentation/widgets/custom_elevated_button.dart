@@ -45,28 +45,33 @@ class _CustomElevatedButtonState extends State<CustomElevatedButton> {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: (_isLoading)
-          ? null
-          : (widget.onFuturePressed != null)
-              ? _onFuturePressed
-              : (widget.onPressed != null)
-                  ? _onPressed
-                  : null,
-      child: AnimatedCrossFade(
-        firstChild: Text(
-          widget.title,
-          style: AppTextStyles.bold20(context).copyWith(
-            color: AppColors.white,
+    return ConstrainedBox(
+      constraints: const BoxConstraints(
+        maxWidth: 840,
+      ),
+      child: ElevatedButton(
+        onPressed: (_isLoading)
+            ? null
+            : (widget.onFuturePressed != null)
+                ? _onFuturePressed
+                : (widget.onPressed != null)
+                    ? _onPressed
+                    : null,
+        child: AnimatedCrossFade(
+          firstChild: Text(
+            widget.title,
+            style: AppTextStyles.bold20(context).copyWith(
+              color: AppColors.white,
+            ),
           ),
+          secondChild: const SpinKitFadingCircle(
+            color: AppColors.white,
+            size: 35,
+          ),
+          crossFadeState:
+              _isLoading ? CrossFadeState.showSecond : CrossFadeState.showFirst,
+          duration: const Duration(milliseconds: 300),
         ),
-        secondChild: const SpinKitFadingCircle(
-          color: AppColors.white,
-          size: 35,
-        ),
-        crossFadeState:
-            _isLoading ? CrossFadeState.showSecond : CrossFadeState.showFirst,
-        duration: const Duration(milliseconds: 300),
       ),
     );
   }
