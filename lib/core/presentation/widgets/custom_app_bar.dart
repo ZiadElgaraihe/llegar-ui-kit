@@ -31,6 +31,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: actions,
       title: (title != null) ? Text(title!) : null,
       titleSpacing: titleSpacing ?? 8,
+      centerTitle: false,
       leading: Navigator.canPop(context)
           ? IconButton(
               onPressed: () {
