@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
 import 'package:llegar/core/presentation/widgets/welcome_and_auth_header.dart';
-import 'package:llegar/modules/auth/domain/entities/social_auth_entity.dart';
 import 'package:llegar/modules/auth/presentation/widgets/auth_toggle_row.dart';
 import 'package:llegar/modules/auth/presentation/widgets/or_divider_row.dart';
-import 'package:llegar/modules/auth/presentation/widgets/social_log_in_outlined_button.dart';
-import 'package:llegar/utils/app_icons.dart';
+import 'package:llegar/modules/auth/presentation/widgets/social_log_in_buttons_section.dart';
 import 'package:llegar/utils/app_images.dart';
 import 'package:llegar/utils/app_routes.dart';
 import 'package:llegar/utils/app_sizes.dart';
@@ -38,41 +36,19 @@ class SocialLogInViewBody extends StatelessWidget {
           )!,
           headerTitle: translate(context).letUsYouIn,
         ),
-        SocialLogInOutlinedButton(
-          onFuturePressed: () async {
+        SocialLogInButtonsSection(
+          onContinueWithApple: () async {
             //remove this & add your logic
             await Future.delayed(const Duration(seconds: 2));
           },
-          socialLogInButtonEntity: SocialAuthEntity(
-            icon: AppIcons.facebook,
-            title: translate(context).continueWithFacebook,
-          ),
-        ),
-        AppSizes.height12,
-        SocialLogInOutlinedButton(
-          onFuturePressed: () async {
-            //remove this
+          onContinueWithFacebook: () async {
+            //remove this & add your logic
             await Future.delayed(const Duration(seconds: 2));
           },
-          socialLogInButtonEntity: SocialAuthEntity(
-            icon: AppIcons.google,
-            title: translate(context).continueWithGoogle,
-          ),
-        ),
-        AppSizes.height12,
-        SocialLogInOutlinedButton(
-          onFuturePressed: () async {
-            //remove this
+          onContinueWithGoogle: () async {
+            //remove this & add your logic
             await Future.delayed(const Duration(seconds: 2));
           },
-          socialLogInButtonEntity: SocialAuthEntity(
-            icon: valueBasedOnTheme<String>(
-              context,
-              light: AppIcons.apple,
-              dark: AppIcons.appleDark,
-            )!,
-            title: translate(context).continueWithApple,
-          ),
         ),
         AppSizes.height24,
         OrDividerRow(title: translate(context).or),
