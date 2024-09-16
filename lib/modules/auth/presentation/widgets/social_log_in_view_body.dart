@@ -77,11 +77,14 @@ class SocialLogInViewBody extends StatelessWidget {
         AppSizes.height24,
         OrDividerRow(title: translate(context).or),
         AppSizes.height24,
-        CustomElevatedButton(
-          title: translate(context).signInWithPassword,
-          onPressed: () {
-            _onSignInWithPasswordPressed(context);
-          },
+        //wrap custom elevated button with center to apply the max width
+        Center(
+          child: CustomElevatedButton(
+            title: translate(context).signInWithPassword,
+            onPressed: () {
+              _onSignInWithPasswordPressed(context);
+            },
+          ),
         ),
         AppSizes.height12,
         AuthToggleRow(

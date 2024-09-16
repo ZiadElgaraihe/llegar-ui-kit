@@ -48,12 +48,15 @@ class LogInViewBody extends StatelessWidget {
         AppSizes.height16,
         const RememberMeRow(),
         AppSizes.height16,
-        CustomElevatedButton(
-          title: translate(context).logIn,
-          onFuturePressed: () async {
-            //remove this & add your logic
-            await Future.delayed(const Duration(seconds: 2));
-          },
+        //wrap custom elevated button with center to apply the max width
+        Center(
+          child: CustomElevatedButton(
+            title: translate(context).logIn,
+            onFuturePressed: () async {
+              //remove this & add your logic
+              await Future.delayed(const Duration(seconds: 2));
+            },
+          ),
         ),
         AppSizes.height8,
         Center(

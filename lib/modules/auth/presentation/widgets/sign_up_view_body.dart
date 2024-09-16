@@ -42,11 +42,14 @@ class SignUpViewBody extends StatelessWidget {
         AppSizes.height16,
         const RememberMeRow(),
         AppSizes.height16,
-        CustomElevatedButton(
-          title: translate(context).signUp,
-          onPressed: () {
-            _onSignUpPressed(context);
-          },
+        //wrap custom elevated button with center to apply the max width
+        Center(
+          child: CustomElevatedButton(
+            title: translate(context).signUp,
+            onPressed: () {
+              _onSignUpPressed(context);
+            },
+          ),
         ),
         AppSizes.height24,
         OrDividerRow(title: translate(context).orContinueWith),
