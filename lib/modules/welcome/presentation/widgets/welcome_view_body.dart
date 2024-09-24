@@ -4,11 +4,11 @@ import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
 import 'package:llegar/core/presentation/widgets/dots_indicator.dart';
 import 'package:llegar/modules/welcome/domain/entities/welcome_page_view_item_entity.dart';
 import 'package:llegar/modules/welcome/presentation/widgets/welcome_page_view_item.dart';
-import 'package:llegar/utils/app_images.dart';
-import 'package:llegar/utils/app_routes.dart';
-import 'package:llegar/utils/app_sizes.dart';
-import 'package:llegar/utils/functions/translate.dart';
-import 'package:llegar/utils/functions/value_based_on_theme.dart';
+import 'package:llegar/shared/constants/app_images.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
+import 'package:llegar/shared/constants/app_sizes.dart';
+import 'package:llegar/shared/utils/functions/translate.dart';
+import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class WelcomeViewBody extends StatefulWidget {
   const WelcomeViewBody({

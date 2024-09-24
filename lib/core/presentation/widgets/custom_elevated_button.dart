@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:llegar/utils/app_colors.dart';
-import 'package:llegar/utils/app_text_styles.dart';
-import 'package:llegar/utils/functions/future_delayed_navigator.dart';
+import 'package:llegar/shared/constants/app_colors.dart';
+import 'package:llegar/shared/constants/app_text_styles.dart';
+import 'package:llegar/shared/utils/functions/future_delayed_navigator.dart';
 
 class CustomElevatedButton extends StatefulWidget {
   const CustomElevatedButton({

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
-import 'package:llegar/utils/app_sizes.dart';
+import 'package:llegar/shared/constants/app_sizes.dart';
 
 class CustomSliverFillRemainingFooter extends StatelessWidget {
   const CustomSliverFillRemainingFooter({

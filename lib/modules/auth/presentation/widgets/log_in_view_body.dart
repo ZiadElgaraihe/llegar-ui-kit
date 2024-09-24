@@ -6,15 +6,15 @@ import 'package:llegar/modules/auth/presentation/widgets/log_in_form.dart';
 import 'package:llegar/modules/auth/presentation/widgets/or_divider_row.dart';
 import 'package:llegar/modules/auth/presentation/widgets/remember_me_row.dart';
 import 'package:llegar/modules/auth/presentation/widgets/social_auth_card_buttons_row.dart';
-import 'package:llegar/utils/app_colors.dart';
-import 'package:llegar/utils/app_images.dart';
-import 'package:llegar/utils/app_routes.dart';
-import 'package:llegar/utils/app_sizes.dart';
-import 'package:llegar/utils/app_strings.dart';
-import 'package:llegar/utils/app_text_styles.dart';
-import 'package:llegar/utils/functions/future_delayed_navigator.dart';
-import 'package:llegar/utils/functions/translate.dart';
-import 'package:llegar/utils/functions/value_based_on_theme.dart';
+import 'package:llegar/shared/constants/app_colors.dart';
+import 'package:llegar/shared/constants/app_images.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
+import 'package:llegar/shared/constants/app_sizes.dart';
+import 'package:llegar/shared/constants/app_strings.dart';
+import 'package:llegar/shared/constants/app_text_styles.dart';
+import 'package:llegar/shared/utils/functions/future_delayed_navigator.dart';
+import 'package:llegar/shared/utils/functions/translate.dart';
+import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class LogInViewBody extends StatelessWidget {
   const LogInViewBody({super.key});

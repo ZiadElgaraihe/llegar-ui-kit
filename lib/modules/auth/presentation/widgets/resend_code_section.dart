@@ -3,9 +3,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:llegar/modules/auth/presentation/manager/logic/resend_code_manager.dart';
 import 'package:llegar/modules/auth/presentation/widgets/resend_code_button.dart';
-import 'package:llegar/utils/app_sizes.dart';
-import 'package:llegar/utils/app_text_styles.dart';
-import 'package:llegar/utils/functions/translate.dart';
+import 'package:llegar/shared/constants/app_sizes.dart';
+import 'package:llegar/shared/constants/app_text_styles.dart';
+import 'package:llegar/shared/utils/functions/translate.dart';
 
 class ResendCodeSection extends StatefulWidget {
   const ResendCodeSection({

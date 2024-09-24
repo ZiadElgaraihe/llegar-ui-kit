@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:llegar/utils/enums/resend_code_state.dart';
+import 'package:llegar/shared/utils/enums/resend_code_state.dart';
 
 class ResendCodeManager {
   late final ValueNotifier<int> seconds;

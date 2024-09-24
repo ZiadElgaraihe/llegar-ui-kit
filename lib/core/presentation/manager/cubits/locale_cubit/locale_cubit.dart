@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:llegar/utils/app_strings.dart';
+import 'package:llegar/shared/constants/app_strings.dart';
 
 part 'locale_state.dart';
 
+//Using flutter_bloc to handle app locale
+//you can remove flutter_bloc and use your own way
 class LocaleCubit extends Cubit<LocaleState> {
   LocaleCubit() : super(LocaleInitial());
 

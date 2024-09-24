@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:llegar/utils/functions/value_based_on_locale.dart';
+import 'package:llegar/shared/utils/functions/value_based_on_locale.dart';
 
 class SideSlideTransition extends PageRouteBuilder {
   final Widget page;

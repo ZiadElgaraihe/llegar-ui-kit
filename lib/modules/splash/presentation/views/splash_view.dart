@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:llegar/config/preload_svg_images.dart';
+import 'package:llegar/shared/utils/functions/preload_svg_images.dart';
 import 'package:llegar/modules/splash/presentation/widgets/splash_view_body.dart';
-import 'package:llegar/utils/app_images.dart';
-import 'package:llegar/utils/app_routes.dart';
-import 'package:llegar/utils/functions/value_based_on_theme.dart';
+import 'package:llegar/shared/constants/app_images.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
+import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});

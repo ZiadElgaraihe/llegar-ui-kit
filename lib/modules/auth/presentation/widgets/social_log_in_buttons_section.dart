@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:llegar/modules/auth/domain/entities/social_auth_entity.dart';
 import 'package:llegar/modules/auth/presentation/widgets/social_log_in_outlined_button.dart';
 import 'package:llegar/modules/auth/presentation/widgets/vertical_social_log_in_outlined_button.dart';
-import 'package:llegar/utils/app_icons.dart';
-import 'package:llegar/utils/app_sizes.dart';
-import 'package:llegar/utils/functions/translate.dart';
-import 'package:llegar/utils/functions/value_based_on_theme.dart';
+import 'package:llegar/shared/constants/app_icons.dart';
+import 'package:llegar/shared/constants/app_sizes.dart';
+import 'package:llegar/shared/utils/functions/translate.dart';
+import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class SocialLogInButtonsSection extends StatelessWidget {
   const SocialLogInButtonsSection({

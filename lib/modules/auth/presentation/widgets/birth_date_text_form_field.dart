@@ -4,11 +4,11 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intl/intl.dart';
 import 'package:llegar/core/presentation/manager/cubits/locale_cubit/locale_cubit.dart';
 import 'package:llegar/core/presentation/widgets/custom_text_form_field.dart';
-import 'package:llegar/utils/app_colors.dart';
-import 'package:llegar/utils/app_icons.dart';
-import 'package:llegar/utils/functions/future_delayed_navigator.dart';
-import 'package:llegar/utils/functions/translate.dart';
-import 'package:llegar/utils/functions/value_based_on_theme.dart';
+import 'package:llegar/shared/constants/app_colors.dart';
+import 'package:llegar/shared/constants/app_icons.dart';
+import 'package:llegar/shared/utils/functions/future_delayed_navigator.dart';
+import 'package:llegar/shared/utils/functions/translate.dart';
+import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class BirthDateTextFormField extends StatefulWidget {
   const BirthDateTextFormField({
