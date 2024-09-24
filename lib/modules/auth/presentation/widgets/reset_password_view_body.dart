@@ -3,10 +3,10 @@ import 'package:llegar/core/presentation/widgets/custom_sliver_fill_remaining_fo
 import 'package:llegar/modules/auth/domain/entities/success_view_entity.dart';
 import 'package:llegar/modules/auth/presentation/widgets/forget_password_process_header.dart';
 import 'package:llegar/modules/auth/presentation/widgets/reset_password_form.dart';
-import 'package:llegar/utils/app_images.dart';
-import 'package:llegar/utils/app_routes.dart';
-import 'package:llegar/utils/app_sizes.dart';
-import 'package:llegar/utils/functions/translate.dart';
+import 'package:llegar/shared/constants/app_images.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
+import 'package:llegar/shared/constants/app_sizes.dart';
+import 'package:llegar/shared/utils/functions/translate.dart';
 
 class ResetPasswordViewBody extends StatelessWidget {
   const ResetPasswordViewBody({

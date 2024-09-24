@@ -2,16 +2,16 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:llegar/config/preload_svg_images.dart';
+import 'package:llegar/shared/utils/functions/preload_svg_images.dart';
 import 'package:llegar/core/presentation/manager/cubits/locale_cubit/locale_cubit.dart';
 import 'package:llegar/core/presentation/manager/cubits/theme_cubit/theme_cubit.dart';
 import 'package:llegar/localization/generated/app_localizations.dart';
 import 'package:llegar/modules/splash/presentation/views/splash_view.dart';
-import 'package:llegar/utils/app_images.dart';
-import 'package:llegar/utils/app_routes.dart';
-import 'package:llegar/utils/app_strings.dart';
-import 'package:llegar/utils/app_themes.dart';
-import 'package:llegar/utils/functions/value_based_on_theme.dart';
+import 'package:llegar/shared/constants/app_images.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
+import 'package:llegar/shared/constants/app_strings.dart';
+import 'package:llegar/shared/constants/app_themes.dart';
+import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class Llegar extends StatefulWidget {
   const Llegar({super.key});

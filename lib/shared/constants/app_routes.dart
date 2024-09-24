@@ -11,9 +11,9 @@ import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
 import 'package:llegar/modules/auth/presentation/views/success_view.dart';
 import 'package:llegar/modules/welcome/presentation/views/how_did_you_know_us_view.dart';
 import 'package:llegar/modules/welcome/presentation/views/welcome_view.dart';
-import 'package:llegar/utils/animations/bottom_slide_transition.dart';
-import 'package:llegar/utils/animations/opacity_transition.dart';
-import 'package:llegar/utils/animations/side_slide_transition.dart';
+import 'package:llegar/shared/animations/bottom_slide_transition.dart';
+import 'package:llegar/shared/animations/opacity_transition.dart';
+import 'package:llegar/shared/animations/side_slide_transition.dart';
 
 ///This class contains all routes
 abstract class AppRoutes {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/modules/auth/domain/entities/social_auth_entity.dart';
 import 'package:llegar/modules/auth/presentation/widgets/social_auth_card_button.dart';
-import 'package:llegar/utils/app_icons.dart';
-import 'package:llegar/utils/app_sizes.dart';
+import 'package:llegar/shared/constants/app_icons.dart';
+import 'package:llegar/shared/constants/app_sizes.dart';
 
 class SocialAuthCardButtonsRow extends StatelessWidget {
   const SocialAuthCardButtonsRow({

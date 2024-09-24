@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/modules/auth/presentation/widgets/otp_text_field.dart';
-import 'package:llegar/utils/functions/translate.dart';
+import 'package:llegar/shared/utils/functions/translate.dart';
 
 class OtpForm extends StatelessWidget {
   const OtpForm({

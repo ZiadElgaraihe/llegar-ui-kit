@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:llegar/utils/app_colors.dart';
-import 'package:llegar/utils/app_text_styles.dart';
+import 'package:llegar/shared/constants/app_colors.dart';
+import 'package:llegar/shared/constants/app_text_styles.dart';
 
 class OtpTextField extends StatefulWidget {
   const OtpTextField({

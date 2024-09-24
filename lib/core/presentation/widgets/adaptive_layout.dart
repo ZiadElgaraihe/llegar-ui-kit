@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:llegar/utils/app_sizes.dart';
+import 'package:llegar/shared/constants/app_sizes.dart';
 
 ///This class's values are taken from material website
 ///

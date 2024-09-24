@@ -3,6 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 part 'theme_state.dart';
 
+//Using flutter_bloc to handle app theme
+//you can remove flutter_bloc and use your own way
 class ThemeCubit extends Cubit<ThemeState> {
   ThemeCubit() : super(ThemeInitial());
 
