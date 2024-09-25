@@ -19,14 +19,14 @@ class VerticalSocialLogInOutlinedButton extends StatefulWidget {
 
   @override
   State<VerticalSocialLogInOutlinedButton> createState() =>
-      _SocialLogInOutlinedButtonState();
+      _VerticalSocialLogInOutlinedButtonState();
 }
 
-class _SocialLogInOutlinedButtonState
+class _VerticalSocialLogInOutlinedButtonState
     extends State<VerticalSocialLogInOutlinedButton> {
   bool _isLoading = false;
 
-  void _onFuturePressed() {
+  Future<void> _onFuturePressed() async{
     futureDelayedNavigator(
       () async {
         setState(() {
@@ -35,6 +35,7 @@ class _SocialLogInOutlinedButtonState
 
         await widget.onFuturePressed();
 
+        if (!mounted) return;
         setState(() {
           _isLoading = false;
         });

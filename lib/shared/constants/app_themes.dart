@@ -177,6 +177,21 @@ abstract class AppThemes {
             },
           ),
         ),
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          elevation: 0,
+          backgroundColor: Colors.transparent,
+          showSelectedLabels: true,
+          showUnselectedLabels: true,
+          selectedLabelStyle: AppTextStyles.regular11(context).copyWith(
+            fontFamily: AppStrings.interFontFamily,
+          ),
+          unselectedLabelStyle: AppTextStyles.regular11(context).copyWith(
+            fontFamily: AppStrings.interFontFamily,
+          ),
+          selectedItemColor: AppColors.prussianBlue,
+          unselectedItemColor: AppColors.prussianBlue,
+          type: BottomNavigationBarType.fixed,
+        ),
       );
 
   static ThemeData darkTheme(BuildContext context) => ThemeData.dark().copyWith(
@@ -348,6 +363,21 @@ abstract class AppThemes {
               return AppColors.lightGrey;
             },
           ),
+        ),
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          elevation: 0,
+          backgroundColor: Colors.transparent,
+          showSelectedLabels: true,
+          showUnselectedLabels: true,
+          selectedLabelStyle: AppTextStyles.regular11(context).copyWith(
+            fontFamily: AppStrings.interFontFamily,
+          ),
+          unselectedLabelStyle: AppTextStyles.regular11(context).copyWith(
+            fontFamily: AppStrings.interFontFamily,
+          ),
+          selectedItemColor: AppColors.orange,
+          unselectedItemColor: AppColors.orange,
+          type: BottomNavigationBarType.fixed,
         ),
       );
 }

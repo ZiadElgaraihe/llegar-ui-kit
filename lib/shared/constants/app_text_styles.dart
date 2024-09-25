@@ -10,6 +10,13 @@ abstract class AppTextStyles {
         fontWeight: FontWeight.w500,
       );
 
+  static TextStyle regular11(BuildContext context, {bool responsive = true}) =>
+      TextStyle(
+        fontSize:
+            responsive ? _getResponsiveFontSize(context, fontSize: 11) : 11,
+        fontWeight: FontWeight.w400,
+      );
+
   static TextStyle medium14(BuildContext context, {bool responsive = true}) =>
       TextStyle(
         fontSize:
