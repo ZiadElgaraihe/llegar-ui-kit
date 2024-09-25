@@ -65,5 +65,10 @@
     "phoneNumber": "رقم الهاتف",
     "livePhoto": "صورة شخصية",
     "idPhoto": "صورة الهوية",
-    "successfulSignUp": "إنشاء حساب ناجح"
+    "successfulSignUp": "إنشاء حساب ناجح",
+    "home": "الرئيسية",
+    "orders": "الطلبات",
+    "inbox": "الوارد",
+    "wallet": "المحفظة",
+    "profile": "الحساب"
 }

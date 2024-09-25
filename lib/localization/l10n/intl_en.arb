@@ -65,5 +65,10 @@
     "phoneNumber": "Phone Number",
     "livePhoto": "Live Photo",
     "idPhoto": "ID Photo",
-    "successfulSignUp": "Successful Sign Up"
+    "successfulSignUp": "Successful Sign Up",
+    "home": "Home",
+    "orders": "Orders",
+    "inbox": "Inbox",
+    "wallet": "Wallet",
+    "profile": "Profile"
 }

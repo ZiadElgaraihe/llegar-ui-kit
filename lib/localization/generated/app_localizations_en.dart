@@ -206,4 +206,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get successfulSignUp => 'Successful Sign Up';
+
+  @override
+  String get home => 'Home';
+
+  @override
+  String get orders => 'Orders';
+
+  @override
+  String get inbox => 'Inbox';
+
+  @override
+  String get wallet => 'Wallet';
+
+  @override
+  String get profile => 'Profile';
 }

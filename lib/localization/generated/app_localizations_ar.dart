@@ -206,4 +206,19 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get successfulSignUp => 'إنشاء حساب ناجح';
+
+  @override
+  String get home => 'الرئيسية';
+
+  @override
+  String get orders => 'الطلبات';
+
+  @override
+  String get inbox => 'الوارد';
+
+  @override
+  String get wallet => 'المحفظة';
+
+  @override
+  String get profile => 'الحساب';
 }
