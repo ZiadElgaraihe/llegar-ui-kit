@@ -34,12 +34,13 @@ class _SocialAuthCardButtonState extends State<SocialAuthCardButton> {
     _isLoading = ValueNotifier<bool>(false);
   }
 
-  void _onButtonTapped() {
+  Future<void> _onButtonTapped() async {
     futureDelayedNavigator(() async {
       _isLoading.value = true;
 
       await widget.onTap();
 
+      if (!mounted) return;
       _isLoading.value = false;
     });
   }

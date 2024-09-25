@@ -27,7 +27,7 @@ class _CustomElevatedButtonState extends State<CustomElevatedButton> {
     futureDelayedNavigator(widget.onPressed!);
   }
 
-  void _onFuturePressed() {
+  Future<void> _onFuturePressed() async {
     futureDelayedNavigator(
       () async {
         setState(() {
@@ -36,6 +36,7 @@ class _CustomElevatedButtonState extends State<CustomElevatedButton> {
 
         await widget.onFuturePressed!();
 
+        if (!mounted) return;
         setState(() {
           _isLoading = false;
         });

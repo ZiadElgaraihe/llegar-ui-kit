@@ -25,7 +25,7 @@ class SocialLogInOutlinedButton extends StatefulWidget {
 class _SocialLogInOutlinedButtonState extends State<SocialLogInOutlinedButton> {
   bool _isLoading = false;
 
-  void _onFuturePressed() {
+  Future<void> _onFuturePressed() async{
     futureDelayedNavigator(
       () async {
         setState(() {
@@ -34,6 +34,7 @@ class _SocialLogInOutlinedButtonState extends State<SocialLogInOutlinedButton> {
 
         await widget.onFuturePressed();
 
+        if (!mounted) return;
         setState(() {
           _isLoading = false;
         });
