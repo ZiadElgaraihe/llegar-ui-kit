@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/core/presentation/views/nav_bar_view.dart';
 import 'package:llegar/modules/auth/domain/entities/success_view_entity.dart';
 import 'package:llegar/modules/auth/presentation/views/forget_password_view.dart';
 import 'package:llegar/modules/auth/presentation/views/log_in_view.dart';
@@ -28,6 +29,7 @@ abstract class AppRoutes {
   static const String successView = '/SuccessView';
   static const String signUpProfileInfoView = '/SignUpProfileInfoView';
   static const String signUpIdentificationView = '/SignUpIdentificationView';
+  static const String navBarView = '/NavBarView';
 
   static Route<dynamic>? generate(RouteSettings routeSettings) {
     switch (routeSettings.name) {
@@ -76,6 +78,10 @@ abstract class AppRoutes {
       case signUpIdentificationView:
         return SideSlideTransition(
           page: const SignUpIdentificationView(),
+        );
+      case navBarView:
+        return BottomSlideTransition(
+          page: const NavBarView(),
         );
     }
     return null;
