@@ -221,4 +221,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get profile => 'Profile';
+
+  @override
+  String get joinPremium => 'Join Premium!';
+
+  @override
+  String get enjoyTheBestDealsWithGreatFeatures => 'Enjoy the best deals with great features.';
 }

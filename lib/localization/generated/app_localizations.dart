@@ -526,6 +526,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Profile'**
   String get profile;
+
+  /// No description provided for @joinPremium.
+  ///
+  /// In en, this message translates to:
+  /// **'Join Premium!'**
+  String get joinPremium;
+
+  /// No description provided for @enjoyTheBestDealsWithGreatFeatures.
+  ///
+  /// In en, this message translates to:
+  /// **'Enjoy the best deals with great features.'**
+  String get enjoyTheBestDealsWithGreatFeatures;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

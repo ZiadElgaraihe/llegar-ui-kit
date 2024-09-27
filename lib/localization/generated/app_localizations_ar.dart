@@ -221,4 +221,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get profile => 'الحساب';
+
+  @override
+  String get joinPremium => 'انضم إلى العضوية المميزة!';
+
+  @override
+  String get enjoyTheBestDealsWithGreatFeatures => 'استمتع بأفضل العروض مع الميزات الرائعة.';
 }
