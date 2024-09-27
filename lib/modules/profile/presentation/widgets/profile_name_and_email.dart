@@ -66,6 +66,7 @@ class _ProfileNameAndEmailState extends State<ProfileNameAndEmail> {
             style: AppTextStyles.medium16(context).copyWith(
               color: valueBasedOnTheme<Color>(
                 context,
+                listen:true,
                 light: AppColors.black,
                 dark: AppColors.white,
               ),

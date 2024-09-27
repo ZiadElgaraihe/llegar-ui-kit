@@ -24,6 +24,7 @@ class ProfilePhoto extends StatelessWidget {
               BorderSide(
                 color: valueBasedOnTheme<Color>(
                   context,
+                  listen: true,
                   light: AppColors.prussianBlue,
                   dark: AppColors.orange,
                 )!,
