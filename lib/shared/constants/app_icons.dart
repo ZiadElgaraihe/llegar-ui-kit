@@ -93,6 +93,9 @@ abstract class AppIcons {
   ///assets/icons/profile_outlined.svg
   static const String profileOutlined = 'assets/icons/profile_outlined.svg';
 
+  ///assets/icons/security.svg
+  static const String security = 'assets/icons/security.svg';
+
   ///assets/icons/tiktok.svg
   static const String tiktok = 'assets/icons/tiktok.svg';
 
