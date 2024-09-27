@@ -192,6 +192,17 @@ abstract class AppThemes {
           unselectedItemColor: AppColors.prussianBlue,
           type: BottomNavigationBarType.fixed,
         ),
+        switchTheme: SwitchThemeData(
+          materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+          thumbColor: const WidgetStatePropertyAll(AppColors.white),
+          trackColor: WidgetStateProperty.resolveWith((states) {
+            if (states.contains(WidgetState.selected)) {
+              return AppColors.green;
+            }
+            return AppColors.lavender;
+          }),
+          trackOutlineColor: const WidgetStatePropertyAll(Colors.transparent),
+        ),
       );
 
   static ThemeData darkTheme(BuildContext context) => ThemeData.dark().copyWith(
@@ -378,6 +389,17 @@ abstract class AppThemes {
           selectedItemColor: AppColors.orange,
           unselectedItemColor: AppColors.orange,
           type: BottomNavigationBarType.fixed,
+        ),
+        switchTheme: SwitchThemeData(
+          materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+          thumbColor: const WidgetStatePropertyAll(AppColors.white),
+          trackColor: WidgetStateProperty.resolveWith((states) {
+            if (states.contains(WidgetState.selected)) {
+              return AppColors.green;
+            }
+            return AppColors.lavender;
+          }),
+          trackOutlineColor: const WidgetStatePropertyAll(Colors.transparent),
         ),
       );
 }
