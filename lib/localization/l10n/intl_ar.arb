@@ -70,5 +70,18 @@
     "orders": "الطلبات",
     "inbox": "الوارد",
     "wallet": "المحفظة",
-    "profile": "الحساب"
+    "profile": "الحساب",
+    "joinPremium": "انضم إلى العضوية المميزة!",
+    "enjoyTheBestDealsWithGreatFeatures": "استمتع بأفضل العروض مع الميزات الرائعة.",
+    "editProfile": "تعديل الملف الشخصي",
+    "myActivities": "أنشطتي",
+    "notification": "الإشعار",
+    "security": "الأمان والحماية",
+    "language": "اللغة",
+    "helpCenter": "مركز الدعم",
+    "privacyPolicy": "سياسة الخصوصية",
+    "contactUs": "تواصل معنا",
+    "darkMode": "الوضع الداكن",
+    "location": "الموقع الجغرافي",
+    "logOut": "تسجيل الخروج"
 }

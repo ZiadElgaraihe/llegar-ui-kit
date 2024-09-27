@@ -221,4 +221,43 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get profile => 'Profile';
+
+  @override
+  String get joinPremium => 'Join Premium!';
+
+  @override
+  String get enjoyTheBestDealsWithGreatFeatures => 'Enjoy the best deals with great features.';
+
+  @override
+  String get editProfile => 'Edit Profile';
+
+  @override
+  String get myActivities => 'My Activities';
+
+  @override
+  String get notification => 'Notification';
+
+  @override
+  String get security => 'Security';
+
+  @override
+  String get language => 'Language';
+
+  @override
+  String get helpCenter => 'Help Center';
+
+  @override
+  String get privacyPolicy => 'Privacy Policy';
+
+  @override
+  String get contactUs => 'Contact Us';
+
+  @override
+  String get darkMode => 'Dark Mode';
+
+  @override
+  String get location => 'Location';
+
+  @override
+  String get logOut => 'Log Out';
 }

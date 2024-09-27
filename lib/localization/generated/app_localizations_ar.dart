@@ -221,4 +221,43 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get profile => 'الحساب';
+
+  @override
+  String get joinPremium => 'انضم إلى العضوية المميزة!';
+
+  @override
+  String get enjoyTheBestDealsWithGreatFeatures => 'استمتع بأفضل العروض مع الميزات الرائعة.';
+
+  @override
+  String get editProfile => 'تعديل الملف الشخصي';
+
+  @override
+  String get myActivities => 'أنشطتي';
+
+  @override
+  String get notification => 'الإشعار';
+
+  @override
+  String get security => 'الأمان والحماية';
+
+  @override
+  String get language => 'اللغة';
+
+  @override
+  String get helpCenter => 'مركز الدعم';
+
+  @override
+  String get privacyPolicy => 'سياسة الخصوصية';
+
+  @override
+  String get contactUs => 'تواصل معنا';
+
+  @override
+  String get darkMode => 'الوضع الداكن';
+
+  @override
+  String get location => 'الموقع الجغرافي';
+
+  @override
+  String get logOut => 'تسجيل الخروج';
 }
