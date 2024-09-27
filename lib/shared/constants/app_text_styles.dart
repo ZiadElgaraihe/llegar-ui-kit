@@ -3,105 +3,106 @@ import 'package:llegar/shared/constants/app_sizes.dart';
 
 ///This class contains all text styles depending on font size and weight
 abstract class AppTextStyles {
-  static TextStyle medium10(BuildContext context, {bool responsive = true}) =>
+  static TextStyle medium10(BuildContext context, {bool responsive = false}) =>
       TextStyle(
         fontSize:
             responsive ? _getResponsiveFontSize(context, fontSize: 10) : 10,
         fontWeight: FontWeight.w500,
       );
 
-  static TextStyle regular11(BuildContext context, {bool responsive = true}) =>
+  static TextStyle regular11(BuildContext context, {bool responsive = false}) =>
       TextStyle(
         fontSize:
             responsive ? _getResponsiveFontSize(context, fontSize: 11) : 11,
         fontWeight: FontWeight.w400,
       );
 
-  static TextStyle medium14(BuildContext context, {bool responsive = true}) =>
+  static TextStyle medium14(BuildContext context, {bool responsive = false}) =>
       TextStyle(
         fontSize:
             responsive ? _getResponsiveFontSize(context, fontSize: 14) : 14,
         fontWeight: FontWeight.w500,
       );
 
-  static TextStyle bold14(BuildContext context, {bool responsive = true}) =>
+  static TextStyle bold14(BuildContext context, {bool responsive = false}) =>
       TextStyle(
         fontSize:
             responsive ? _getResponsiveFontSize(context, fontSize: 14) : 14,
         fontWeight: FontWeight.w700,
       );
 
-  static TextStyle medium15(BuildContext context, {bool responsive = true}) =>
+  static TextStyle medium15(BuildContext context, {bool responsive = false}) =>
       TextStyle(
         fontSize:
             responsive ? _getResponsiveFontSize(context, fontSize: 15) : 15,
         fontWeight: FontWeight.w500,
       );
 
-  static TextStyle medium16(BuildContext context, {bool responsive = true}) =>
+  static TextStyle medium16(BuildContext context, {bool responsive = false}) =>
       TextStyle(
         fontSize:
             responsive ? _getResponsiveFontSize(context, fontSize: 16) : 16,
         fontWeight: FontWeight.w500,
       );
 
-  static TextStyle semiBold16(BuildContext context, {bool responsive = true}) =>
+  static TextStyle semiBold16(BuildContext context,
+          {bool responsive = false}) =>
       TextStyle(
         fontSize:
             responsive ? _getResponsiveFontSize(context, fontSize: 16) : 16,
         fontWeight: FontWeight.w600,
       );
 
-  static TextStyle bold16(BuildContext context, {bool responsive = true}) =>
+  static TextStyle bold16(BuildContext context, {bool responsive = false}) =>
       TextStyle(
         fontSize:
             responsive ? _getResponsiveFontSize(context, fontSize: 16) : 16,
         fontWeight: FontWeight.w700,
       );
 
-  static TextStyle medium18(BuildContext context, {bool responsive = true}) =>
+  static TextStyle medium18(BuildContext context, {bool responsive = false}) =>
       TextStyle(
         fontSize:
             responsive ? _getResponsiveFontSize(context, fontSize: 18) : 18,
         fontWeight: FontWeight.w500,
       );
 
-  static TextStyle regular20(BuildContext context, {bool responsive = true}) =>
+  static TextStyle regular20(BuildContext context, {bool responsive = false}) =>
       TextStyle(
         fontSize:
             responsive ? _getResponsiveFontSize(context, fontSize: 20) : 20,
         fontWeight: FontWeight.w400,
       );
 
-  static TextStyle bold20(BuildContext context, {bool responsive = true}) =>
+  static TextStyle bold20(BuildContext context, {bool responsive = false}) =>
       TextStyle(
         fontSize:
             responsive ? _getResponsiveFontSize(context, fontSize: 20) : 20,
         fontWeight: FontWeight.w700,
       );
 
-  static TextStyle bold24(BuildContext context, {bool responsive = true}) =>
+  static TextStyle bold24(BuildContext context, {bool responsive = false}) =>
       TextStyle(
         fontSize:
             responsive ? _getResponsiveFontSize(context, fontSize: 24) : 24,
         fontWeight: FontWeight.w700,
       );
 
-  static TextStyle bold28(BuildContext context, {bool responsive = true}) =>
+  static TextStyle bold28(BuildContext context, {bool responsive = false}) =>
       TextStyle(
         fontSize:
             responsive ? _getResponsiveFontSize(context, fontSize: 28) : 28,
         fontWeight: FontWeight.w700,
       );
 
-  static TextStyle bold32(BuildContext context, {bool responsive = true}) =>
+  static TextStyle bold32(BuildContext context, {bool responsive = false}) =>
       TextStyle(
         fontSize:
             responsive ? _getResponsiveFontSize(context, fontSize: 32) : 32,
         fontWeight: FontWeight.w700,
       );
 
-  static TextStyle bold40(BuildContext context, {bool responsive = true}) =>
+  static TextStyle bold40(BuildContext context, {bool responsive = false}) =>
       TextStyle(
         fontSize:
             responsive ? _getResponsiveFontSize(context, fontSize: 40) : 40,
