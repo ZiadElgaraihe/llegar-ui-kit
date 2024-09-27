@@ -41,6 +41,7 @@ class NavBar extends StatelessWidget {
                     width: 22,
                     colorFilter: valueBasedOnTheme<ColorFilter>(
                       context,
+                      listen: true,
                       dark: const ColorFilter.mode(
                         AppColors.orange,
                         BlendMode.srcATop,
@@ -56,6 +57,7 @@ class NavBar extends StatelessWidget {
                     width: 22,
                     colorFilter: valueBasedOnTheme<ColorFilter>(
                       context,
+                      listen: true,
                       dark: const ColorFilter.mode(
                         AppColors.orange,
                         BlendMode.srcATop,
