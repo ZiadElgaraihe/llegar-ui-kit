@@ -12,10 +12,14 @@ abstract class AppSizes {
   static const double largeBreakpoint = 1200;
 
   ///1600
-  static const double extraLargeBreakpoint = 1600; 
+  static const double extraLargeBreakpoint = 1600;
 
   ///if width < 600 then padding is 16 horizontally
   ///else then padding is 24 horizontally
+  ///
+  ///For more information, see the spacing section:
+  ///
+  ///https://m3.material.io/foundations/layout/applying-layout/compact
   static EdgeInsets bodyHorizontalPadding(BuildContext context) =>
       EdgeInsets.symmetric(
         horizontal:
@@ -42,13 +46,16 @@ abstract class AppSizes {
 
   ///SizedBox(width: 4)
   static const width4 = SizedBox(width: 4);
-  
+
   ///SizedBox(width: 8)
   static const width8 = SizedBox(width: 8);
 
   ///SizedBox(width: 12)
   static const width12 = SizedBox(width: 12);
-  
+
   ///SizedBox(width: 16)
   static const width16 = SizedBox(width: 16);
+
+  ///SizedBox(width: 24)
+  static const width24 = SizedBox(width: 24);
 }
