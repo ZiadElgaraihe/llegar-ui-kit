@@ -72,5 +72,15 @@
     "wallet": "Wallet",
     "profile": "Profile",
     "joinPremium": "Join Premium!",
-    "enjoyTheBestDealsWithGreatFeatures": "Enjoy the best deals with great features."
+    "enjoyTheBestDealsWithGreatFeatures": "Enjoy the best deals with great features.",
+    "editProfile": "Edit Profile",
+    "myActivities": "My Activities",
+    "notification": "Notification",
+    "security": "Security",
+    "helpCenter": "Help Center",
+    "privacyPolicy": "Privacy Policy",
+    "contactUs": "Contact Us",
+    "darkMode": "Dark Mode",
+    "location": "Location",
+    "logOut": "Log Out"
 }
