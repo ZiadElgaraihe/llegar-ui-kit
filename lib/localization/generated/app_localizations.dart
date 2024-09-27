@@ -563,6 +563,12 @@ abstract class AppLocalizations {
   /// **'Security'**
   String get security;
 
+  /// No description provided for @language.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get language;
+
   /// No description provided for @helpCenter.
   ///
   /// In en, this message translates to:

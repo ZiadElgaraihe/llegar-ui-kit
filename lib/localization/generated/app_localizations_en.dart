@@ -241,6 +241,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get security => 'Security';
 
   @override
+  String get language => 'Language';
+
+  @override
   String get helpCenter => 'Help Center';
 
   @override

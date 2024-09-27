@@ -241,6 +241,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get security => 'الأمان والحماية';
 
   @override
+  String get language => 'اللغة';
+
+  @override
   String get helpCenter => 'مركز الدعم';
 
   @override
