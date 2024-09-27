@@ -14,12 +14,14 @@ class ProfileAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      forceMaterialTransparency: true,
       leadingWidth: 54,
       leading: Padding(
         padding: const EdgeInsetsDirectional.only(start: 16.0),
         child: SvgPicture.asset(
           valueBasedOnTheme<String>(
             context,
+            listen: true,
             light: AppImages.logo,
             dark: AppImages.logoDark,
           )!,
@@ -30,6 +32,7 @@ class ProfileAppBar extends StatelessWidget implements PreferredSizeWidget {
         style: AppTextStyles.bold24(context, responsive: false).copyWith(
           color: valueBasedOnTheme<Color>(
             context,
+            listen: true,
             light: AppColors.prussianBlue,
             dark: AppColors.orange,
           )!,
