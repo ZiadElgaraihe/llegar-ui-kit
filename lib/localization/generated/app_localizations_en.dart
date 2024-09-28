@@ -260,4 +260,79 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get logOut => 'Log Out';
+
+  @override
+  String get introduction => 'Introduction';
+
+  @override
+  String get llegarIsCommittedToProtectingYourPrivacy => 'Llegar is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your information when you use our application. By using the Services, you agree to the collection and use of information as outlined in this policy.';
+
+  @override
+  String get typesOfDataWeCollect => 'Types of Data We Collect';
+
+  @override
+  String get weMayCollectTheFollowingTypesOfInformation => 'We may collect the following types of information:\n\n• Personal Information: Your name, email address, phone number, postal address, IP address, and other similar identifiers.\n\n• Usage Data: Information about how you interact with our Services, such as app usage statistics, device information, and browsing behavior.\n\n• Location Data: With your consent, we may collect information about your location to enhance your experience with location-based services.\n\n• Payment Information: If applicable, we collect payment details necessary to process transactions.';
+
+  @override
+  String get useOfYourPersonalData => 'Use of Your Personal Data';
+
+  @override
+  String get weUseTheInformationWeCollectTo => 'We use the information we collect to:\n\n• Provide, operate, and maintain our Services.\n\n• Process transactions and manage your account.\n\n• Personalize user experience.\n\n• Improve and develop our Services.\n\n• Communicate with you regarding updates, promotions, and customer service inquiries.\n\n• Comply with legal obligations.';
+
+  @override
+  String get disclosureOfYourPersonalData => 'Disclosure of Your Personal Data';
+
+  @override
+  String get weMayShareYourInformationWith => 'We may share your information with:\n\n• Service Providers: To help us provide and maintain our Services, we may share your information with trusted third-party service providers.\n\n• Legal Compliance: We may disclose your information if required by law or to protect our legal rights.\n\n• Business Transfers: If we are involved in a merger, acquisition, or sale of assets, your information may be transferred.';
+
+  @override
+  String get dataSecurity => 'Data Security';
+
+  @override
+  String get weTakeDataSecuritySeriously => 'We take data security seriously and implement reasonable measures to protect your information. However, no method of transmission over the internet or electronic storage is completely secure, and we cannot guarantee absolute security.';
+
+  @override
+  String get childrenPrivacy => 'Children’s Privacy';
+
+  @override
+  String get ourServicesAreNotIntendedForUseByIndividuals => 'Our Services are not intended for use by individuals under the age of 16. We do not knowingly collect personal data from children under 16.';
+
+  @override
+  String get changesToThisPolicy => 'Changes to this Policy';
+
+  @override
+  String get weMayUpdateThisPrivacyPolicy => 'We may update this Privacy Policy from time to time. Any changes will be posted on this page.';
+
+  @override
+  String get ifYouHaveAnyQuestions => 'If you have any questions about this Privacy Policy, please contact us.';
+
+  @override
+  String get faceId => 'Face Id';
+
+  @override
+  String get changePassword => 'Change Password';
+
+  @override
+  String get areYouSureYouWantToLogOut => 'Are you sure you want to log out?';
+
+  @override
+  String get cancel => 'Cancel';
+
+  @override
+  String get yes => 'Yes';
+
+  @override
+  String get customerService => 'Customer Service';
+
+  @override
+  String get whatsApp => 'WhatsApp';
+
+  @override
+  String get website => 'Website';
+
+  @override
+  String get twitter => 'Twitter';
+
+  @override
+  String get instagram => 'Instagram';
 }

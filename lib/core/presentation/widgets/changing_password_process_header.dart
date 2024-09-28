@@ -5,8 +5,8 @@ import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
-class ForgetPasswordProcessHeader extends StatelessWidget {
-  const ForgetPasswordProcessHeader({
+class ChangingPasswordProcessHeader extends StatelessWidget {
+  const ChangingPasswordProcessHeader({
     super.key,
     required this.icon,
     required this.subTitle,

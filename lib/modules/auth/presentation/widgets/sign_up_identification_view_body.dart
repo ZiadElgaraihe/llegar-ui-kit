@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_sliver_fill_remaining_footer.dart';
-import 'package:llegar/modules/auth/domain/entities/success_view_entity.dart';
+import 'package:llegar/core/domain/entities/success_view_entity.dart';
 import 'package:llegar/modules/auth/presentation/widgets/sign_up_identification_form.dart';
 import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';

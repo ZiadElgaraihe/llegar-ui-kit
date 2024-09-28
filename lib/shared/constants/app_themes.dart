@@ -203,6 +203,18 @@ abstract class AppThemes {
           }),
           trackOutlineColor: const WidgetStatePropertyAll(Colors.transparent),
         ),
+        bottomSheetTheme: const BottomSheetThemeData(
+          backgroundColor: AppColors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(40),
+              topRight: Radius.circular(40),
+            ),
+          ),
+          showDragHandle: true,
+          dragHandleColor: AppColors.lightGrey,
+          dragHandleSize: Size(100, 3.5),
+        ),
       );
 
   static ThemeData darkTheme(BuildContext context) => ThemeData.dark().copyWith(
@@ -400,6 +412,18 @@ abstract class AppThemes {
             return AppColors.lavender;
           }),
           trackOutlineColor: const WidgetStatePropertyAll(Colors.transparent),
+        ),
+        bottomSheetTheme: const BottomSheetThemeData(
+          backgroundColor: AppColors.prussianBlue,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(40),
+              topRight: Radius.circular(40),
+            ),
+          ),
+          showDragHandle: true,
+          dragHandleColor: AppColors.lightGrey,
+          dragHandleSize: Size(100, 3.5),
         ),
       );
 }

@@ -33,20 +33,22 @@ class ProfileItemListTile extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
       ),
-      leading: SvgPicture.asset(
-        profileItemEntity.icon,
-        colorFilter:
-            (profileItemEntity.profileItemType == ProfileItemType.logOut)
-                ? null
-                : valueBasedOnTheme<ColorFilter>(
-                    context,
-                    listen: true,
-                    dark: const ColorFilter.mode(
-                      AppColors.white,
-                      BlendMode.srcATop,
-                    ),
-                  ),
-      ),
+      leading: (profileItemEntity.icon != null)
+          ? SvgPicture.asset(
+              profileItemEntity.icon!,
+              colorFilter:
+                  (profileItemEntity.profileItemType == ProfileItemType.logOut)
+                      ? null
+                      : valueBasedOnTheme<ColorFilter>(
+                          context,
+                          listen: true,
+                          dark: const ColorFilter.mode(
+                            AppColors.white,
+                            BlendMode.srcATop,
+                          ),
+                        ),
+            )
+          : null,
       title: Text(
         profileItemEntity.title,
         style: AppTextStyles.semiBold20(context).copyWith(

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/core/domain/entities/success_view_entity.dart';
+import 'package:llegar/core/presentation/widgets/changing_password_process_header.dart';
 import 'package:llegar/core/presentation/widgets/custom_sliver_fill_remaining_footer.dart';
-import 'package:llegar/modules/auth/domain/entities/success_view_entity.dart';
-import 'package:llegar/modules/auth/presentation/widgets/forget_password_process_header.dart';
-import 'package:llegar/modules/auth/presentation/widgets/reset_password_form.dart';
+import 'package:llegar/core/presentation/widgets/reset_password_form.dart';
 import 'package:llegar/shared/constants/app_images.dart';
 import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
@@ -23,7 +23,7 @@ class ResetPasswordViewBody extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                ForgetPasswordProcessHeader(
+                ChangingPasswordProcessHeader(
                   icon: AppImages.createNewPassword,
                   subTitle: translate(context).saveTheNewPasswordInSafePlace,
                   title: translate(context).createNewPassword,

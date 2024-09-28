@@ -604,6 +604,156 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Log Out'**
   String get logOut;
+
+  /// No description provided for @introduction.
+  ///
+  /// In en, this message translates to:
+  /// **'Introduction'**
+  String get introduction;
+
+  /// No description provided for @llegarIsCommittedToProtectingYourPrivacy.
+  ///
+  /// In en, this message translates to:
+  /// **'Llegar is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your information when you use our application. By using the Services, you agree to the collection and use of information as outlined in this policy.'**
+  String get llegarIsCommittedToProtectingYourPrivacy;
+
+  /// No description provided for @typesOfDataWeCollect.
+  ///
+  /// In en, this message translates to:
+  /// **'Types of Data We Collect'**
+  String get typesOfDataWeCollect;
+
+  /// No description provided for @weMayCollectTheFollowingTypesOfInformation.
+  ///
+  /// In en, this message translates to:
+  /// **'We may collect the following types of information:\n\n• Personal Information: Your name, email address, phone number, postal address, IP address, and other similar identifiers.\n\n• Usage Data: Information about how you interact with our Services, such as app usage statistics, device information, and browsing behavior.\n\n• Location Data: With your consent, we may collect information about your location to enhance your experience with location-based services.\n\n• Payment Information: If applicable, we collect payment details necessary to process transactions.'**
+  String get weMayCollectTheFollowingTypesOfInformation;
+
+  /// No description provided for @useOfYourPersonalData.
+  ///
+  /// In en, this message translates to:
+  /// **'Use of Your Personal Data'**
+  String get useOfYourPersonalData;
+
+  /// No description provided for @weUseTheInformationWeCollectTo.
+  ///
+  /// In en, this message translates to:
+  /// **'We use the information we collect to:\n\n• Provide, operate, and maintain our Services.\n\n• Process transactions and manage your account.\n\n• Personalize user experience.\n\n• Improve and develop our Services.\n\n• Communicate with you regarding updates, promotions, and customer service inquiries.\n\n• Comply with legal obligations.'**
+  String get weUseTheInformationWeCollectTo;
+
+  /// No description provided for @disclosureOfYourPersonalData.
+  ///
+  /// In en, this message translates to:
+  /// **'Disclosure of Your Personal Data'**
+  String get disclosureOfYourPersonalData;
+
+  /// No description provided for @weMayShareYourInformationWith.
+  ///
+  /// In en, this message translates to:
+  /// **'We may share your information with:\n\n• Service Providers: To help us provide and maintain our Services, we may share your information with trusted third-party service providers.\n\n• Legal Compliance: We may disclose your information if required by law or to protect our legal rights.\n\n• Business Transfers: If we are involved in a merger, acquisition, or sale of assets, your information may be transferred.'**
+  String get weMayShareYourInformationWith;
+
+  /// No description provided for @dataSecurity.
+  ///
+  /// In en, this message translates to:
+  /// **'Data Security'**
+  String get dataSecurity;
+
+  /// No description provided for @weTakeDataSecuritySeriously.
+  ///
+  /// In en, this message translates to:
+  /// **'We take data security seriously and implement reasonable measures to protect your information. However, no method of transmission over the internet or electronic storage is completely secure, and we cannot guarantee absolute security.'**
+  String get weTakeDataSecuritySeriously;
+
+  /// No description provided for @childrenPrivacy.
+  ///
+  /// In en, this message translates to:
+  /// **'Children’s Privacy'**
+  String get childrenPrivacy;
+
+  /// No description provided for @ourServicesAreNotIntendedForUseByIndividuals.
+  ///
+  /// In en, this message translates to:
+  /// **'Our Services are not intended for use by individuals under the age of 16. We do not knowingly collect personal data from children under 16.'**
+  String get ourServicesAreNotIntendedForUseByIndividuals;
+
+  /// No description provided for @changesToThisPolicy.
+  ///
+  /// In en, this message translates to:
+  /// **'Changes to this Policy'**
+  String get changesToThisPolicy;
+
+  /// No description provided for @weMayUpdateThisPrivacyPolicy.
+  ///
+  /// In en, this message translates to:
+  /// **'We may update this Privacy Policy from time to time. Any changes will be posted on this page.'**
+  String get weMayUpdateThisPrivacyPolicy;
+
+  /// No description provided for @ifYouHaveAnyQuestions.
+  ///
+  /// In en, this message translates to:
+  /// **'If you have any questions about this Privacy Policy, please contact us.'**
+  String get ifYouHaveAnyQuestions;
+
+  /// No description provided for @faceId.
+  ///
+  /// In en, this message translates to:
+  /// **'Face Id'**
+  String get faceId;
+
+  /// No description provided for @changePassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Change Password'**
+  String get changePassword;
+
+  /// No description provided for @areYouSureYouWantToLogOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to log out?'**
+  String get areYouSureYouWantToLogOut;
+
+  /// No description provided for @cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancel;
+
+  /// No description provided for @yes.
+  ///
+  /// In en, this message translates to:
+  /// **'Yes'**
+  String get yes;
+
+  /// No description provided for @customerService.
+  ///
+  /// In en, this message translates to:
+  /// **'Customer Service'**
+  String get customerService;
+
+  /// No description provided for @whatsApp.
+  ///
+  /// In en, this message translates to:
+  /// **'WhatsApp'**
+  String get whatsApp;
+
+  /// No description provided for @website.
+  ///
+  /// In en, this message translates to:
+  /// **'Website'**
+  String get website;
+
+  /// No description provided for @twitter.
+  ///
+  /// In en, this message translates to:
+  /// **'Twitter'**
+  String get twitter;
+
+  /// No description provided for @instagram.
+  ///
+  /// In en, this message translates to:
+  /// **'Instagram'**
+  String get instagram;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

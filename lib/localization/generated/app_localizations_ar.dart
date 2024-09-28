@@ -260,4 +260,79 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get logOut => 'تسجيل الخروج';
+
+  @override
+  String get introduction => 'المقدمة';
+
+  @override
+  String get llegarIsCommittedToProtectingYourPrivacy => 'Llegar ملتزمون بحماية خصوصيتك. توضح سياسة الخصوصية هذه كيفية جمع معلوماتك واستخدامها والإفصاح عنها وحمايتها عند استخدامك لتطبيقنا. باستخدام الخدمات، فإنك توافق على جمع المعلومات واستخدامها كما هو موضح في هذه السياسة.';
+
+  @override
+  String get typesOfDataWeCollect => 'أنواع البيانات التي نجمعها';
+
+  @override
+  String get weMayCollectTheFollowingTypesOfInformation => 'قد نقوم بجمع الأنواع التالية من المعلومات:\n\n• المعلومات الشخصية: اسمك، عنوان بريدك الإلكتروني، رقم هاتفك، عنوانك البريدي، عنوان IP، ومعرفات أخرى مشابهة.\n\n• بيانات الاستخدام: معلومات حول كيفية تفاعلك مع خدماتنا، مثل إحصائيات استخدام التطبيق ومعلومات الجهاز وسلوك التصفح.\n\n• بيانات الموقع: بموافقتك، قد نجمع معلومات عن موقعك الجغرافي لتعزيز تجربتك باستخدام الخدمات المعتمدة على الموقع.\n\n• معلومات الدفع: إذا لزم الأمر، نقوم بجمع تفاصيل الدفع اللازمة لمعالجة المعاملات.';
+
+  @override
+  String get useOfYourPersonalData => 'استخدام بياناتك الشخصية';
+
+  @override
+  String get weUseTheInformationWeCollectTo => 'نستخدم المعلومات التي نجمعها من أجل:\n\n• توفير وتشغيل وصيانة خدماتنا.\n\n• معالجة المعاملات وإدارة حسابك.\n\n• تخصيص تجربة المستخدم.\n\n• تحسين وتطوير خدماتنا.\n\n• التواصل معك بخصوص التحديثات والعروض الترويجية واستفسارات خدمة العملاء.\n\n• الامتثال للالتزامات القانونية.';
+
+  @override
+  String get disclosureOfYourPersonalData => 'الكشف عن بياناتك الشخصية';
+
+  @override
+  String get weMayShareYourInformationWith => 'قد نشارك معلوماتك مع:\n\n• مقدمي الخدمات: لمساعدتنا في تقديم خدماتنا والحفاظ عليها، قد نشارك معلوماتك مع مقدمي خدمات موثوق بهم.\n\n• الامتثال القانوني: قد نفصح عن معلوماتك إذا كان ذلك مطلوبًا بموجب القانون أو لحماية حقوقنا القانونية.\n\n• نقل الأعمال: في حالة اندماج أو استحواذ أو بيع أصول، قد يتم نقل معلوماتك.';
+
+  @override
+  String get dataSecurity => 'أمن البيانات';
+
+  @override
+  String get weTakeDataSecuritySeriously => 'نحن نتعامل مع أمن البيانات بجدية ونقوم بتنفيذ تدابير معقولة لحماية معلوماتك. ومع ذلك، لا توجد طريقة نقل عبر الإنترنت أو تخزين إلكتروني آمنة تمامًا، ولا يمكننا ضمان الأمان الكامل.';
+
+  @override
+  String get childrenPrivacy => 'خصوصية الأطفال';
+
+  @override
+  String get ourServicesAreNotIntendedForUseByIndividuals => 'الخدمات ليست مخصصة للاستخدام من قبل الأفراد دون سن 16 عامًا. لا نقوم عن عمد بجمع بيانات شخصية من الأطفال دون سن 16.';
+
+  @override
+  String get changesToThisPolicy => 'التغييرات في هذه السياسة';
+
+  @override
+  String get weMayUpdateThisPrivacyPolicy => 'قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. سيتم نشر أي تغييرات على هذه الصفحة.';
+
+  @override
+  String get ifYouHaveAnyQuestions => 'إذا كانت لديك أي أسئلة بخصوص سياسة الخصوصية هذه، يرجى التواصل معنا.';
+
+  @override
+  String get faceId => 'معرف الوجه';
+
+  @override
+  String get changePassword => 'تغيير كلمة المرور';
+
+  @override
+  String get areYouSureYouWantToLogOut => 'هل أنت متأكد من أنك تريد تسجيل الخروج؟';
+
+  @override
+  String get cancel => 'إلغاء';
+
+  @override
+  String get yes => 'نعم';
+
+  @override
+  String get customerService => 'خدمة العملاء';
+
+  @override
+  String get whatsApp => 'واتساب';
+
+  @override
+  String get website => 'موقع الويب';
+
+  @override
+  String get twitter => 'تويتر';
+
+  @override
+  String get instagram => 'إنستغرام';
 }
