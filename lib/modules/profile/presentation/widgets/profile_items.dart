@@ -74,7 +74,9 @@ class _ProfileItemsState extends State<ProfileItems> {
       ),
       ProfileItemEntity(
         icon: AppIcons.contactUs,
-        onTap: () {},
+        onTap: () {
+          Navigator.pushNamed(context, AppRoutes.contactUsView);
+        },
         profileItemType: ProfileItemType.button,
         title: translate(context).contactUs,
       ),
