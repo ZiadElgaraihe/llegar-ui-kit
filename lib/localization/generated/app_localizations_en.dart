@@ -320,4 +320,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get yes => 'Yes';
+
+  @override
+  String get customerService => 'Customer Service';
+
+  @override
+  String get whatsApp => 'WhatsApp';
+
+  @override
+  String get website => 'Website';
+
+  @override
+  String get twitter => 'Twitter';
+
+  @override
+  String get instagram => 'Instagram';
 }

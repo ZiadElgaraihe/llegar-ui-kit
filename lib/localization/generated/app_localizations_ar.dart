@@ -320,4 +320,19 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get yes => 'نعم';
+
+  @override
+  String get customerService => 'خدمة العملاء';
+
+  @override
+  String get whatsApp => 'واتساب';
+
+  @override
+  String get website => 'موقع الويب';
+
+  @override
+  String get twitter => 'تويتر';
+
+  @override
+  String get instagram => 'إنستغرام';
 }

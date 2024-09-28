@@ -103,5 +103,10 @@
     "changePassword": "Change Password",
     "areYouSureYouWantToLogOut": "Are you sure you want to log out?",
     "cancel": "Cancel",
-    "yes": "Yes"
+    "yes": "Yes",
+    "customerService": "Customer Service",
+    "whatsApp": "WhatsApp",
+    "website": "Website",
+    "twitter": "Twitter",
+    "instagram": "Instagram"
 }

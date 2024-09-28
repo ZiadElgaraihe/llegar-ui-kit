@@ -103,5 +103,10 @@
     "changePassword": "تغيير كلمة المرور",
     "areYouSureYouWantToLogOut": "هل أنت متأكد من أنك تريد تسجيل الخروج؟",
     "cancel": "إلغاء",
-    "yes": "نعم"
+    "yes": "نعم",
+    "customerService": "خدمة العملاء",
+    "whatsApp": "واتساب",
+    "website": "موقع الويب",
+    "twitter": "تويتر",
+    "instagram": "إنستغرام"
 }
