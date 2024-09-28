@@ -48,7 +48,7 @@ class _ProfileItemsState extends State<ProfileItems> {
         title: translate(context).security,
       ),
       ProfileItemEntity(
-        icon: 'assets/icons/language-svgrepo-com.svg',
+        icon: AppIcons.translate,
         onTap: () {},
         profileItemType: ProfileItemType.button,
         title: translate(context).language,
