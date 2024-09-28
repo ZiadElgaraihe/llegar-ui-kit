@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:llegar/shared/utils/enums/profile_item_type.dart';
 
 class ProfileItemEntity {
-  final String icon;
+  final String? icon;
   ///This property is set only if profileItemType is switchButton
   final bool? initialValue;
   ///This property is set only if profileItemType is switchButton
@@ -13,9 +13,9 @@ class ProfileItemEntity {
   final String title;
 
   ProfileItemEntity({
-    required this.icon,
     required this.profileItemType,
     required this.title,
+    this.icon,
     this.initialValue,
     this.onChanged,
     this.onTap,
