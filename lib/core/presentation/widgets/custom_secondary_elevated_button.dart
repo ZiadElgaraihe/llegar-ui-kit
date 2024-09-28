@@ -28,7 +28,9 @@ class CustomSecondaryElevatedButton extends StatelessWidget {
         onPressed: _onPressed,
         style: ElevatedButton.styleFrom(
           elevation: 0,
+          shadowColor: Colors.transparent,
           backgroundColor: AppColors.lavender,
+          foregroundColor: AppColors.prussianBlue,
         ),
         child: Text(
           title,
