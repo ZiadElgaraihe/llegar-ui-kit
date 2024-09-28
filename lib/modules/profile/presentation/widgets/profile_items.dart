@@ -44,7 +44,9 @@ class _ProfileItemsState extends State<ProfileItems> {
       ),
       ProfileItemEntity(
         icon: AppIcons.security,
-        onTap: () {},
+        onTap: () {
+          Navigator.pushNamed(context, AppRoutes.securityView);
+        },
         profileItemType: ProfileItemType.button,
         title: translate(context).security,
       ),
