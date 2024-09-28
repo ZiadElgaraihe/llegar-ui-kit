@@ -100,5 +100,8 @@
     "weMayUpdateThisPrivacyPolicy": "We may update this Privacy Policy from time to time. Any changes will be posted on this page.",
     "ifYouHaveAnyQuestions": "If you have any questions about this Privacy Policy, please contact us.",
     "faceId": "Face Id",
-    "changePassword": "Change Password"
+    "changePassword": "Change Password",
+    "areYouSureYouWantToLogOut": "Are you sure you want to log out?",
+    "cancel": "Cancel",
+    "yes": "Yes"
 }

@@ -100,5 +100,8 @@
     "weMayUpdateThisPrivacyPolicy": "قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. سيتم نشر أي تغييرات على هذه الصفحة.",
     "ifYouHaveAnyQuestions": "إذا كانت لديك أي أسئلة بخصوص سياسة الخصوصية هذه، يرجى التواصل معنا.",
     "faceId": "معرف الوجه",
-    "changePassword": "تغيير كلمة المرور"
+    "changePassword": "تغيير كلمة المرور",
+    "areYouSureYouWantToLogOut": "هل أنت متأكد من أنك تريد تسجيل الخروج؟",
+    "cancel": "إلغاء",
+    "yes": "نعم"
 }

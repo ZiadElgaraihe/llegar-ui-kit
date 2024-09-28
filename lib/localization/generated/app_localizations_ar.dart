@@ -311,4 +311,13 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get changePassword => 'تغيير كلمة المرور';
+
+  @override
+  String get areYouSureYouWantToLogOut => 'هل أنت متأكد من أنك تريد تسجيل الخروج؟';
+
+  @override
+  String get cancel => 'إلغاء';
+
+  @override
+  String get yes => 'نعم';
 }
