@@ -694,6 +694,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'If you have any questions about this Privacy Policy, please contact us.'**
   String get ifYouHaveAnyQuestions;
+
+  /// No description provided for @faceId.
+  ///
+  /// In en, this message translates to:
+  /// **'Face Id'**
+  String get faceId;
+
+  /// No description provided for @changePassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Change Password'**
+  String get changePassword;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

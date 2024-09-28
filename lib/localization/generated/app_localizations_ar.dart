@@ -305,4 +305,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get ifYouHaveAnyQuestions => 'إذا كانت لديك أي أسئلة بخصوص سياسة الخصوصية هذه، يرجى التواصل معنا.';
+
+  @override
+  String get faceId => 'معرف الوجه';
+
+  @override
+  String get changePassword => 'تغيير كلمة المرور';
 }

@@ -305,4 +305,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get ifYouHaveAnyQuestions => 'If you have any questions about this Privacy Policy, please contact us.';
+
+  @override
+  String get faceId => 'Face Id';
+
+  @override
+  String get changePassword => 'Change Password';
 }
