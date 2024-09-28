@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:llegar/modules/profile/domain/entities/contact_us_entity.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
@@ -8,24 +9,20 @@ import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 class ContactUsOutlinedButton extends StatelessWidget {
   const ContactUsOutlinedButton({
     super.key,
-    required this.icon,
-    required this.onPressed,
-    required this.title,
+    required this.contactUsEntity,
   });
 
-  final String icon;
-  final VoidCallback onPressed;
-  final String title;
+  final ContactUsEntity contactUsEntity;
 
   @override
   Widget build(BuildContext context) {
     return OutlinedButton(
-      onPressed: onPressed,
+      onPressed: contactUsEntity.onPressed,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SvgPicture.asset(
-            icon,
+            contactUsEntity.icon,
             colorFilter: valueBasedOnTheme<ColorFilter>(
               context,
               dark: const ColorFilter.mode(
@@ -36,7 +33,7 @@ class ContactUsOutlinedButton extends StatelessWidget {
           ),
           AppSizes.width16,
           Text(
-            title,
+            contactUsEntity.title(context),
             style: AppTextStyles.bold20(context).copyWith(
               color: valueBasedOnTheme<Color>(
                 context,
