@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/core/presentation/widgets/custom_password_text_form_field.dart';
 import 'package:llegar/core/presentation/widgets/custom_text_form_field.dart';
-import 'package:llegar/modules/auth/presentation/widgets/auth_password_text_form_field.dart';
 import 'package:llegar/shared/constants/app_icons.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
@@ -28,7 +28,7 @@ class SignUpForm extends StatelessWidget {
             icon: AppIcons.email,
           ),
           AppSizes.height12,
-          AuthPasswordTextFormField(
+          CustomPasswordTextFormField(
             hintText: translate(context).password,
           ),
         ],

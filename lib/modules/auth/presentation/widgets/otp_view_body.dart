@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/core/presentation/widgets/changing_password_process_header.dart';
 import 'package:llegar/core/presentation/widgets/custom_sliver_fill_remaining_footer.dart';
-import 'package:llegar/modules/auth/presentation/widgets/forget_password_process_header.dart';
 import 'package:llegar/modules/auth/presentation/widgets/otp_form.dart';
 import 'package:llegar/modules/auth/presentation/widgets/resend_code_section.dart';
 import 'package:llegar/shared/constants/app_images.dart';
@@ -22,7 +22,7 @@ class OtpViewBody extends StatelessWidget {
           SliverToBoxAdapter(
             child: Column(
               children: [
-                ForgetPasswordProcessHeader(
+                ChangingPasswordProcessHeader(
                   icon: AppImages.youHaveGotMail,
                   subTitle: translate(context).weHaveSentTheOtpVerificationCode,
                   title: translate(context).youHaveGotMail,

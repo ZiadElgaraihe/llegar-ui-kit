@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:llegar/modules/auth/presentation/widgets/auth_password_text_form_field.dart';
+import 'package:llegar/core/presentation/widgets/custom_password_text_form_field.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
@@ -35,7 +35,7 @@ class ResetPasswordForm extends StatelessWidget {
             ),
           ),
           AppSizes.height8,
-          const AuthPasswordTextFormField(appearPrefixIcon: false),
+          const CustomPasswordTextFormField(appearPrefixIcon: false),
           AppSizes.height8,
           Text(
             translate(context).confirmTheNewPassword,
@@ -48,7 +48,7 @@ class ResetPasswordForm extends StatelessWidget {
             ),
           ),
           AppSizes.height8,
-          const AuthPasswordTextFormField(appearPrefixIcon: false),
+          const CustomPasswordTextFormField(appearPrefixIcon: false),
         ],
       ),
     );

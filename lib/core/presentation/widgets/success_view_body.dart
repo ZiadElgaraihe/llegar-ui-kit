@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
-import 'package:llegar/modules/auth/domain/entities/success_view_entity.dart';
+import 'package:llegar/core/domain/entities/success_view_entity.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_images.dart';
 import 'package:llegar/shared/constants/app_routes.dart';

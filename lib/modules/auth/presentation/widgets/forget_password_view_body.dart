@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_sliver_fill_remaining_footer.dart';
 import 'package:llegar/modules/auth/presentation/widgets/forget_password_form.dart';
-import 'package:llegar/modules/auth/presentation/widgets/forget_password_process_header.dart';
+import 'package:llegar/core/presentation/widgets/changing_password_process_header.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_images.dart';
 import 'package:llegar/shared/constants/app_routes.dart';
@@ -23,7 +23,7 @@ class ForgetPasswordViewBody extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                ForgetPasswordProcessHeader(
+                ChangingPasswordProcessHeader(
                   icon: AppImages.forgetPassword,
                   subTitle: translate(context).enterYourEmailAddress,
                   title: translate(context).forgetPassword,

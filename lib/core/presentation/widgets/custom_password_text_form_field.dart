@@ -5,8 +5,8 @@ import 'package:llegar/shared/constants/app_icons.dart';
 import 'package:llegar/shared/constants/app_strings.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 
-class AuthPasswordTextFormField extends StatefulWidget {
-  const AuthPasswordTextFormField({
+class CustomPasswordTextFormField extends StatefulWidget {
+  const CustomPasswordTextFormField({
     super.key,
     this.appearPrefixIcon = true,
     this.controller,
@@ -22,11 +22,12 @@ class AuthPasswordTextFormField extends StatefulWidget {
   final String? Function(String? value)? validator;
 
   @override
-  State<AuthPasswordTextFormField> createState() =>
-      _AuthPasswordTextFormFieldState();
+  State<CustomPasswordTextFormField> createState() =>
+      _CustomPasswordTextFormFieldState();
 }
 
-class _AuthPasswordTextFormFieldState extends State<AuthPasswordTextFormField> {
+class _CustomPasswordTextFormFieldState
+    extends State<CustomPasswordTextFormField> {
   bool _isVisible = false;
   @override
   Widget build(BuildContext context) {
