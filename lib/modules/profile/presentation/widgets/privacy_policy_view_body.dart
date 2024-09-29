@@ -4,54 +4,46 @@ import 'package:llegar/modules/profile/presentation/widgets/privacy_policy_secti
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
-class PrivacyPolicyViewBody extends StatefulWidget {
+class PrivacyPolicyViewBody extends StatelessWidget {
   const PrivacyPolicyViewBody({super.key});
 
-  @override
-  State<PrivacyPolicyViewBody> createState() => _PrivacyPolicyViewBodyState();
-}
-
-class _PrivacyPolicyViewBodyState extends State<PrivacyPolicyViewBody> {
-  late List<PrivacyPolicyEntity> _items;
-
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    _items = <PrivacyPolicyEntity>[
-      PrivacyPolicyEntity(
-        title: translate(context).introduction,
-        details: translate(context).llegarIsCommittedToProtectingYourPrivacy,
-      ),
-      PrivacyPolicyEntity(
-        title: translate(context).typesOfDataWeCollect,
-        details: translate(context).weMayCollectTheFollowingTypesOfInformation,
-      ),
-      PrivacyPolicyEntity(
-        title: translate(context).useOfYourPersonalData,
-        details: translate(context).weUseTheInformationWeCollectTo,
-      ),
-      PrivacyPolicyEntity(
-        title: translate(context).disclosureOfYourPersonalData,
-        details: translate(context).weMayShareYourInformationWith,
-      ),
-      PrivacyPolicyEntity(
-        title: translate(context).dataSecurity,
-        details: translate(context).weTakeDataSecuritySeriously,
-      ),
-      PrivacyPolicyEntity(
-        title: translate(context).childrenPrivacy,
-        details: translate(context).ourServicesAreNotIntendedForUseByIndividuals,
-      ),
-      PrivacyPolicyEntity(
-        title: translate(context).changesToThisPolicy,
-        details: translate(context).weMayUpdateThisPrivacyPolicy,
-      ),
-      PrivacyPolicyEntity(
-        title: translate(context).contactUs,
-        details: translate(context).ifYouHaveAnyQuestions,
-      ),
-    ];
-  }
+  static final List<PrivacyPolicyEntity> _items = <PrivacyPolicyEntity>[
+    PrivacyPolicyEntity(
+      title: (context) => translate(context).introduction,
+      details: (context) =>
+          translate(context).llegarIsCommittedToProtectingYourPrivacy,
+    ),
+    PrivacyPolicyEntity(
+      title: (context) => translate(context).typesOfDataWeCollect,
+      details: (context) =>
+          translate(context).weMayCollectTheFollowingTypesOfInformation,
+    ),
+    PrivacyPolicyEntity(
+      title: (context) => translate(context).useOfYourPersonalData,
+      details: (context) => translate(context).weUseTheInformationWeCollectTo,
+    ),
+    PrivacyPolicyEntity(
+      title: (context) => translate(context).disclosureOfYourPersonalData,
+      details: (context) => translate(context).weMayShareYourInformationWith,
+    ),
+    PrivacyPolicyEntity(
+      title: (context) => translate(context).dataSecurity,
+      details: (context) => translate(context).weTakeDataSecuritySeriously,
+    ),
+    PrivacyPolicyEntity(
+      title: (context) => translate(context).childrenPrivacy,
+      details: (context) =>
+          translate(context).ourServicesAreNotIntendedForUseByIndividuals,
+    ),
+    PrivacyPolicyEntity(
+      title: (context) => translate(context).changesToThisPolicy,
+      details: (context) => translate(context).weMayUpdateThisPrivacyPolicy,
+    ),
+    PrivacyPolicyEntity(
+      title: (context) => translate(context).contactUs,
+      details: (context) => translate(context).ifYouHaveAnyQuestions,
+    ),
+  ];
 
   @override
   Widget build(BuildContext context) {

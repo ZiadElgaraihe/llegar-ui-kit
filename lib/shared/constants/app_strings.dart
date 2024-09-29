@@ -4,12 +4,18 @@ abstract class AppStrings {
   ///Llegar
   static const String appName = 'Llegar';
 
+  ///العربية
+  static const String arabic = 'العربية';
+
+  ///English
+  static const String english = 'English';
+
   /******************************language codes******************************/
   ///ar
-  static const String arabic = 'ar';
+  static const String arabicLanguageCode = 'ar';
 
   ///en
-  static const String english = 'en';
+  static const String englishLanguageCode = 'en';
 
   /******************************font families******************************/
   ///Inter

@@ -54,13 +54,17 @@ class _ProfileItemsState extends State<ProfileItems> {
       ),
       ProfileItemEntity(
         icon: AppIcons.translate,
-        onTap: () {},
+        onTap: () {
+          Navigator.pushNamed(context, AppRoutes.languageView);
+        },
         profileItemType: ProfileItemType.button,
         title: translate(context).language,
       ),
       ProfileItemEntity(
         icon: AppIcons.helpCenter,
-        onTap: () {},
+        onTap: () {
+          Navigator.pushNamed(context, AppRoutes.helpCenterView);
+        },
         profileItemType: ProfileItemType.button,
         title: translate(context).helpCenter,
       ),

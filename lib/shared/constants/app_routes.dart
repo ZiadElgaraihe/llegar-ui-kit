@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:llegar/core/presentation/views/nav_bar_view.dart';
 import 'package:llegar/core/domain/entities/success_view_entity.dart';
+import 'package:llegar/core/presentation/views/nav_bar_view.dart';
+import 'package:llegar/core/presentation/views/reset_password_view.dart';
+import 'package:llegar/core/presentation/views/success_view.dart';
 import 'package:llegar/modules/auth/presentation/views/forget_password_view.dart';
 import 'package:llegar/modules/auth/presentation/views/log_in_view.dart';
 import 'package:llegar/modules/auth/presentation/views/otp_view.dart';
-import 'package:llegar/core/presentation/views/reset_password_view.dart';
 import 'package:llegar/modules/auth/presentation/views/sign_up_identification_view.dart';
 import 'package:llegar/modules/auth/presentation/views/sign_up_profile_info_view.dart';
 import 'package:llegar/modules/auth/presentation/views/sign_up_view.dart';
 import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
-import 'package:llegar/core/presentation/views/success_view.dart';
 import 'package:llegar/modules/profile/presentation/views/contact_us_view.dart';
+import 'package:llegar/modules/profile/presentation/views/help_center_view.dart';
+import 'package:llegar/modules/profile/presentation/views/language_view.dart';
 import 'package:llegar/modules/profile/presentation/views/privacy_policy_view.dart';
 import 'package:llegar/modules/profile/presentation/views/security_view.dart';
 import 'package:llegar/modules/welcome/presentation/views/how_did_you_know_us_view.dart';
@@ -36,6 +38,8 @@ abstract class AppRoutes {
   static const String securityView = '/SecurityView';
   static const String privacyPolicyView = '/PrivacyPolicyView';
   static const String contactUsView = '/ContactUsView';
+  static const String languageView = '/LanguageView';
+  static const String helpCenterView = '/HelpCenterView';
 
   static Route<dynamic>? generate(RouteSettings routeSettings) {
     switch (routeSettings.name) {
@@ -100,6 +104,14 @@ abstract class AppRoutes {
       case contactUsView:
         return SideSlideTransition(
           page: const ContactUsView(),
+        );
+      case languageView:
+        return SideSlideTransition(
+          page: const LanguageView(),
+        );
+      case helpCenterView:
+        return SideSlideTransition(
+          page: const HelpCenterView(),
         );
     }
     return null;

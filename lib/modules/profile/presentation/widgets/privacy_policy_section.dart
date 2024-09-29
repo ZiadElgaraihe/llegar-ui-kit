@@ -19,12 +19,12 @@ class PrivacyPolicySection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          '$pointNumber. ${privacyPolicyEntity.title}',
+          '$pointNumber. ${privacyPolicyEntity.title(context)}',
           style: AppTextStyles.bold20(context),
         ),
         AppSizes.height16,
         Text(
-          privacyPolicyEntity.details,
+          privacyPolicyEntity.details(context),
           style: AppTextStyles.medium14(context),
         ),
       ],
