@@ -215,6 +215,11 @@ abstract class AppThemes {
           dragHandleColor: AppColors.lightGrey,
           dragHandleSize: Size(100, 3.5),
         ),
+        radioTheme: const RadioThemeData(
+          fillColor: WidgetStatePropertyAll(AppColors.prussianBlue),
+          materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+          visualDensity: VisualDensity(horizontal: -4, vertical: -4),
+        ),
       );
 
   static ThemeData darkTheme(BuildContext context) => ThemeData.dark().copyWith(
@@ -424,6 +429,11 @@ abstract class AppThemes {
           showDragHandle: true,
           dragHandleColor: AppColors.lightGrey,
           dragHandleSize: Size(100, 3.5),
+        ),
+        radioTheme: const RadioThemeData(
+          fillColor: WidgetStatePropertyAll(AppColors.orange),
+          materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+          visualDensity: VisualDensity(horizontal: -4, vertical: -4),
         ),
       );
 }
