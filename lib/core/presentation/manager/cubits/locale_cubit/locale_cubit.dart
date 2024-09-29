@@ -20,10 +20,10 @@ class LocaleCubit extends Cubit<LocaleState> {
 
   //Add here your logic to get the app locale
   void setUpLocale() {
-    locale = const Locale(AppStrings.english);
+    locale = const Locale(AppStrings.englishLanguageCode);
   }
 
   //In this condition add all supported languages
   //that is written from right to left (Arabic, Persian, ...)
-  bool isRightToLeft() => locale.languageCode == AppStrings.arabic;
+  bool isRightToLeft() => locale.languageCode == AppStrings.arabicLanguageCode;
 }
