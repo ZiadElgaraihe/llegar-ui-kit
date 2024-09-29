@@ -754,6 +754,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Instagram'**
   String get instagram;
+
+  /// No description provided for @typeYourMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Type Your Message'**
+  String get typeYourMessage;
+
+  /// No description provided for @faq.
+  ///
+  /// In en, this message translates to:
+  /// **'FAQ'**
+  String get faq;
+
+  /// No description provided for @ans.
+  ///
+  /// In en, this message translates to:
+  /// **'ANS'**
+  String get ans;
+
+  /// No description provided for @send.
+  ///
+  /// In en, this message translates to:
+  /// **'Send'**
+  String get send;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

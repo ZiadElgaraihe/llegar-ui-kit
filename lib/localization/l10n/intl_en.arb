@@ -108,5 +108,9 @@
     "whatsApp": "WhatsApp",
     "website": "Website",
     "twitter": "Twitter",
-    "instagram": "Instagram"
+    "instagram": "Instagram",
+    "typeYourMessage":"Type Your Message",
+    "faq": "FAQ",
+    "ans": "ANS",
+    "send": "Send"
 }

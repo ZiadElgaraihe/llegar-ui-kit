@@ -335,4 +335,16 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get instagram => 'إنستغرام';
+
+  @override
+  String get typeYourMessage => 'اكتب رسالتك';
+
+  @override
+  String get faq => 'الأسئلة';
+
+  @override
+  String get ans => 'الإجابات';
+
+  @override
+  String get send => 'إرسال';
 }

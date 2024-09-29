@@ -335,4 +335,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get instagram => 'Instagram';
+
+  @override
+  String get typeYourMessage => 'Type Your Message';
+
+  @override
+  String get faq => 'FAQ';
+
+  @override
+  String get ans => 'ANS';
+
+  @override
+  String get send => 'Send';
 }
