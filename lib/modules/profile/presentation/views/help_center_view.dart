@@ -8,11 +8,14 @@ class HelpCenterView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: CustomAppBar(
-        title: translate(context).helpCenter,
+    return GestureDetector(
+      onTap: () => FocusManager.instance.primaryFocus!.unfocus(),
+      child: Scaffold(
+        appBar: CustomAppBar(
+          title: translate(context).helpCenter,
+        ),
+        body: const HelpCenterViewBody(),
       ),
-      body: const HelpCenterViewBody(),
     );
   }
 }
