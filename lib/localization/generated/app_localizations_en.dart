@@ -347,4 +347,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get send => 'Send';
+
+  @override
+  String get update => 'Update';
 }
