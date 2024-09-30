@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_app_bar.dart';
-import 'package:llegar/modules/profile/presentation/widgets/help_center_view_body.dart';
+import 'package:llegar/modules/profile/presentation/widgets/edit_profile_view_body.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
-class HelpCenterView extends StatelessWidget {
-  const HelpCenterView({super.key});
+class EditProfileView extends StatelessWidget {
+  const EditProfileView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,9 +12,9 @@ class HelpCenterView extends StatelessWidget {
       onTap: () => FocusManager.instance.primaryFocus!.unfocus(),
       child: Scaffold(
         appBar: CustomAppBar(
-          title: translate(context).helpCenter,
+          title: translate(context).editProfile,
         ),
-        body: const HelpCenterViewBody(),
+        body: const EditProfileViewBody(),
       ),
     );
   }

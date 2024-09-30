@@ -8,7 +8,8 @@ class HelpCenterTabBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  TabBar(
+    return TabBar(
+      padding: const EdgeInsets.only(bottom: 8),
       indicatorPadding: const EdgeInsets.symmetric(horizontal: 24),
       tabs: [
         Tab(

@@ -27,7 +27,9 @@ class _ProfileItemsState extends State<ProfileItems> {
     _items = <ProfileItemEntity>[
       ProfileItemEntity(
         icon: AppIcons.editProfile,
-        onTap: () {},
+        onTap: () {
+          Navigator.pushNamed(context, AppRoutes.editProfileView);
+        },
         profileItemType: ProfileItemType.button,
         title: translate(context).editProfile,
       ),
