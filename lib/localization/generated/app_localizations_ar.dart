@@ -350,4 +350,13 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get update => 'تحديث';
+
+  @override
+  String get myItems => 'عناصري';
+
+  @override
+  String get myRentedItems => 'عناصري المستأجرة';
+
+  @override
+  String get addItem => 'إضافة عنصر';
 }
