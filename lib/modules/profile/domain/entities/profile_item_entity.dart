@@ -12,7 +12,7 @@ class ProfileItemEntity {
   final ProfileItemType profileItemType;
   final String title;
 
-  ProfileItemEntity({
+  const ProfileItemEntity({
     required this.profileItemType,
     required this.title,
     this.icon,
