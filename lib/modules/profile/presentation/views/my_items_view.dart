@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_app_bar.dart';
+import 'package:llegar/modules/profile/presentation/widgets/my_items_view_body.dart';
 
-class ItemsView extends StatelessWidget {
-  const ItemsView({
+class MyItemsView extends StatelessWidget {
+  const MyItemsView({
     super.key,
     required this.title,
   });
@@ -15,6 +16,7 @@ class ItemsView extends StatelessWidget {
       appBar: CustomAppBar(
         title: title,
       ),
+      body: const MyItemsViewBody(),
     );
   }
 }

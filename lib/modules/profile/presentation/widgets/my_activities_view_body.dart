@@ -30,7 +30,7 @@ class _MyActivitiesViewBodyState extends State<MyActivitiesViewBody> {
         onTap: () {
           Navigator.pushNamed(
             context,
-            AppRoutes.itemsView,
+            AppRoutes.myitemsView,
             arguments: translate(context).myItems,
           );
         },
@@ -42,7 +42,7 @@ class _MyActivitiesViewBodyState extends State<MyActivitiesViewBody> {
         onTap: () {
           Navigator.pushNamed(
             context,
-            AppRoutes.itemsView,
+            AppRoutes.myitemsView,
             arguments: translate(context).myRentedItems,
           );
         },
