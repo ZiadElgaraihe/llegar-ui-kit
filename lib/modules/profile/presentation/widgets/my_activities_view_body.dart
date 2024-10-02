@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:llegar/modules/profile/domain/entities/profile_item_entity.dart';
 import 'package:llegar/modules/profile/presentation/widgets/profile_item_list_tile.dart';
 import 'package:llegar/shared/constants/app_icons.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/utils/enums/profile_item_type.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
@@ -26,13 +27,25 @@ class _MyActivitiesViewBodyState extends State<MyActivitiesViewBody> {
         profileItemType: ProfileItemType.button,
         title: translate(context).myItems,
         icon: AppIcons.myItems,
-        onTap: () {},
+        onTap: () {
+          Navigator.pushNamed(
+            context,
+            AppRoutes.itemsView,
+            arguments: translate(context).myItems,
+          );
+        },
       ),
       ProfileItemEntity(
         profileItemType: ProfileItemType.button,
         title: translate(context).myRentedItems,
         icon: AppIcons.myRentedItems,
-        onTap: () {},
+        onTap: () {
+          Navigator.pushNamed(
+            context,
+            AppRoutes.itemsView,
+            arguments: translate(context).myRentedItems,
+          );
+        },
       ),
       ProfileItemEntity(
         profileItemType: ProfileItemType.button,

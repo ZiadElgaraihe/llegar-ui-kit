@@ -13,6 +13,7 @@ import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
 import 'package:llegar/modules/profile/presentation/views/contact_us_view.dart';
 import 'package:llegar/modules/profile/presentation/views/edit_profile_view.dart';
 import 'package:llegar/modules/profile/presentation/views/help_center_view.dart';
+import 'package:llegar/core/presentation/views/items_view.dart';
 import 'package:llegar/modules/profile/presentation/views/language_view.dart';
 import 'package:llegar/modules/profile/presentation/views/my_activities_view.dart';
 import 'package:llegar/modules/profile/presentation/views/privacy_policy_view.dart';
@@ -44,6 +45,7 @@ abstract class AppRoutes {
   static const String helpCenterView = '/HelpCenterView';
   static const String editProfileView = '/EditProfileView';
   static const String myActivitiesView = '/MyActivitiesView';
+  static const String itemsView = '/ItemsView';
 
   static Route<dynamic>? generate(RouteSettings routeSettings) {
     switch (routeSettings.name) {
@@ -124,6 +126,12 @@ abstract class AppRoutes {
       case helpCenterView:
         return SideSlideTransition(
           page: const HelpCenterView(),
+        );
+      case itemsView:
+        return SideSlideTransition(
+          page: ItemsView(
+            title: routeSettings.arguments as String,
+          ),
         );
     }
     return null;
