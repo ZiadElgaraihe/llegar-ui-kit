@@ -17,7 +17,7 @@ class MyActivitiesViewBody extends StatefulWidget {
 }
 
 class _MyActivitiesViewBodyState extends State<MyActivitiesViewBody> {
-  late final List<ProfileItemEntity> _items;
+  late List<ProfileItemEntity> _items;
 
   @override
   void didChangeDependencies() {
