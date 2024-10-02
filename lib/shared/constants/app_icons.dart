@@ -1,5 +1,8 @@
 ///This class contains all app icons like (arrows, search, notifications, ...)
 abstract class AppIcons {
+  ///assets/icons/add_item.svg
+  static const String addItem = 'assets/icons/add_item.svg';
+
   ///assets/icons/app_store.svg
   static const String appStore = 'assets/icons/app_store.svg';
 
@@ -87,6 +90,12 @@ abstract class AppIcons {
   ///assets/icons/my_activities.svg
   static const String myActivities = 'assets/icons/my_activities.svg';
 
+  ///assets/icons/my_items.svg
+  static const String myItems = 'assets/icons/my_items.svg';
+
+  ///assets/icons/my_rented_items.svg
+  static const String myRentedItems = 'assets/icons/my_rented_items.svg';
+
   ///assets/icons/notification.svg
   static const String notification = 'assets/icons/notification.svg';
 
@@ -113,6 +122,9 @@ abstract class AppIcons {
 
   ///assets/icons/security.svg
   static const String security = 'assets/icons/security.svg';
+
+  ///assets/icons/star.svg
+  static const String star = 'assets/icons/star.svg';
 
   ///assets/icons/tiktok.svg
   static const String tiktok = 'assets/icons/tiktok.svg';

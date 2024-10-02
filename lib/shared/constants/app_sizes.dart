@@ -26,6 +26,16 @@ abstract class AppSizes {
             MediaQuery.sizeOf(context).width < mediumtBreakpoint ? 16 : 24,
       );
 
+  ///if width < 600 then padding is 16 horizontally
+  ///else then padding is 24 horizontally, 
+  ///24 vertically
+  static EdgeInsets bodySymmetricPadding(BuildContext context) =>
+      EdgeInsets.symmetric(
+        horizontal:
+            MediaQuery.sizeOf(context).width < mediumtBreakpoint ? 16 : 24,
+        vertical: 24,
+      );
+
   ///SizedBox(height: 4)
   static const height4 = SizedBox(height: 4);
 

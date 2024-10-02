@@ -784,6 +784,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Update'**
   String get update;
+
+  /// No description provided for @myItems.
+  ///
+  /// In en, this message translates to:
+  /// **'My Items'**
+  String get myItems;
+
+  /// No description provided for @myRentedItems.
+  ///
+  /// In en, this message translates to:
+  /// **'My Rented Items'**
+  String get myRentedItems;
+
+  /// No description provided for @addItem.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Item'**
+  String get addItem;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

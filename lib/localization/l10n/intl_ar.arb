@@ -113,5 +113,8 @@
     "ans": "الإجابات",
     "typeYourMessage":"اكتب رسالتك",
     "send": "إرسال",
-    "update": "تحديث"
+    "update": "تحديث",
+    "myItems": "عناصري",
+    "myRentedItems": "عناصري المستأجرة",
+    "addItem": "إضافة عنصر"
 }

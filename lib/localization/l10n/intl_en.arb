@@ -113,5 +113,8 @@
     "faq": "FAQ",
     "ans": "ANS",
     "send": "Send",
-    "update": "Update"
+    "update": "Update",
+    "myItems": "My Items",
+    "myRentedItems": "My Rented Items",
+    "addItem": "Add Item"
 }

@@ -350,4 +350,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get update => 'Update';
+
+  @override
+  String get myItems => 'My Items';
+
+  @override
+  String get myRentedItems => 'My Rented Items';
+
+  @override
+  String get addItem => 'Add Item';
 }

@@ -35,7 +35,9 @@ class _ProfileItemsState extends State<ProfileItems> {
       ),
       ProfileItemEntity(
         icon: AppIcons.myActivities,
-        onTap: () {},
+        onTap: () {
+          Navigator.pushNamed(context, AppRoutes.myActivitiesView);
+        },
         profileItemType: ProfileItemType.button,
         title: translate(context).myActivities,
       ),
