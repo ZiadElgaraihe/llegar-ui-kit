@@ -10,6 +10,7 @@ import 'package:llegar/modules/auth/presentation/views/sign_up_identification_vi
 import 'package:llegar/modules/auth/presentation/views/sign_up_profile_info_view.dart';
 import 'package:llegar/modules/auth/presentation/views/sign_up_view.dart';
 import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
+import 'package:llegar/modules/profile/presentation/views/add_item_view.dart';
 import 'package:llegar/modules/profile/presentation/views/contact_us_view.dart';
 import 'package:llegar/modules/profile/presentation/views/edit_profile_view.dart';
 import 'package:llegar/modules/profile/presentation/views/help_center_view.dart';
@@ -46,6 +47,7 @@ abstract class AppRoutes {
   static const String editProfileView = '/EditProfileView';
   static const String myActivitiesView = '/MyActivitiesView';
   static const String myitemsView = '/MyItemsView';
+  static const String addItemView = '/AddItemView';
 
   static Route<dynamic>? generate(RouteSettings routeSettings) {
     switch (routeSettings.name) {
@@ -132,6 +134,10 @@ abstract class AppRoutes {
           page: MyItemsView(
             title: routeSettings.arguments as String,
           ),
+        );
+      case addItemView:
+        return SideSlideTransition(
+          page: const AddItemView(),
         );
     }
     return null;

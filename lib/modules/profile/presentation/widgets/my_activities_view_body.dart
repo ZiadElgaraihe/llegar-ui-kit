@@ -51,7 +51,9 @@ class _MyActivitiesViewBodyState extends State<MyActivitiesViewBody> {
         profileItemType: ProfileItemType.button,
         title: translate(context).addItem,
         icon: AppIcons.addItem,
-        onTap: () {},
+        onTap: () {
+          Navigator.pushNamed(context, AppRoutes.addItemView);
+        },
       ),
     ];
   }
