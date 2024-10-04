@@ -802,6 +802,108 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Add Item'**
   String get addItem;
+
+  /// No description provided for @addPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Photo'**
+  String get addPhoto;
+
+  /// No description provided for @rentType.
+  ///
+  /// In en, this message translates to:
+  /// **'Rent Type'**
+  String get rentType;
+
+  /// No description provided for @transportations.
+  ///
+  /// In en, this message translates to:
+  /// **'Transportations'**
+  String get transportations;
+
+  /// No description provided for @property.
+  ///
+  /// In en, this message translates to:
+  /// **'Property'**
+  String get property;
+
+  /// No description provided for @clothes.
+  ///
+  /// In en, this message translates to:
+  /// **'Clothes'**
+  String get clothes;
+
+  /// No description provided for @electronics.
+  ///
+  /// In en, this message translates to:
+  /// **'Electronics'**
+  String get electronics;
+
+  /// No description provided for @playAreas.
+  ///
+  /// In en, this message translates to:
+  /// **'Play Areas'**
+  String get playAreas;
+
+  /// No description provided for @eventRentals.
+  ///
+  /// In en, this message translates to:
+  /// **'Event Rentals'**
+  String get eventRentals;
+
+  /// No description provided for @title.
+  ///
+  /// In en, this message translates to:
+  /// **'Title'**
+  String get title;
+
+  /// No description provided for @description.
+  ///
+  /// In en, this message translates to:
+  /// **'Description'**
+  String get description;
+
+  /// No description provided for @pricePerDay.
+  ///
+  /// In en, this message translates to:
+  /// **'Price /day'**
+  String get pricePerDay;
+
+  /// No description provided for @shippingPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Shipping Price'**
+  String get shippingPrice;
+
+  /// No description provided for @writeYourCondition.
+  ///
+  /// In en, this message translates to:
+  /// **'Write Your Condition'**
+  String get writeYourCondition;
+
+  /// No description provided for @notRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Not required*'**
+  String get notRequired;
+
+  /// No description provided for @negotiable.
+  ///
+  /// In en, this message translates to:
+  /// **'Negotiable'**
+  String get negotiable;
+
+  /// No description provided for @availability.
+  ///
+  /// In en, this message translates to:
+  /// **'Availability'**
+  String get availability;
+
+  /// No description provided for @share.
+  ///
+  /// In en, this message translates to:
+  /// **'Share'**
+  String get share;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

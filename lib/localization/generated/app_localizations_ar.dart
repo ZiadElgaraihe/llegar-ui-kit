@@ -359,4 +359,55 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get addItem => 'إضافة عنصر';
+
+  @override
+  String get addPhoto => 'إضافة صورة';
+
+  @override
+  String get rentType => 'نوع الإيجار';
+
+  @override
+  String get transportations => 'وسائل النقل';
+
+  @override
+  String get property => 'العقارات';
+
+  @override
+  String get clothes => 'الملابس';
+
+  @override
+  String get electronics => 'الإلكترونيات';
+
+  @override
+  String get playAreas => 'مناطق اللعب';
+
+  @override
+  String get eventRentals => 'تأجير الفعاليات';
+
+  @override
+  String get title => 'العنوان';
+
+  @override
+  String get description => 'الوصف';
+
+  @override
+  String get pricePerDay => 'السعر /اليوم';
+
+  @override
+  String get shippingPrice => 'سعر الشحن';
+
+  @override
+  String get writeYourCondition => 'اكتب شروطك';
+
+  @override
+  String get notRequired => 'غير مطلوب*';
+
+  @override
+  String get negotiable => 'قابل للتفاوض';
+
+  @override
+  String get availability => 'متاح';
+
+  @override
+  String get share => 'مشاركة';
 }

@@ -116,5 +116,22 @@
     "update": "Update",
     "myItems": "My Items",
     "myRentedItems": "My Rented Items",
-    "addItem": "Add Item"
+    "addItem": "Add Item",
+    "addPhoto": "Add Photo",
+    "rentType": "Rent Type",
+    "transportations": "Transportations",
+    "property": "Property",
+    "clothes": "Clothes",
+    "electronics": "Electronics",
+    "playAreas": "Play Areas",
+    "eventRentals": "Event Rentals",
+    "title": "Title",
+    "description": "Description",
+    "pricePerDay": "Price /day",
+    "shippingPrice": "Shipping Price",
+    "writeYourCondition": "Write Your Condition",
+    "notRequired": "Not required*",
+    "negotiable": "Negotiable",
+    "availability": "Availability",
+    "share": "Share"
 }
