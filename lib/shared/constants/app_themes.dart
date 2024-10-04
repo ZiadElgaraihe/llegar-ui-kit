@@ -241,6 +241,12 @@ abstract class AppThemes {
           textColor: AppColors.prussianBlue,
           titleTextStyle: AppTextStyles.semiBold20(context),
         ),
+        dialogTheme: DialogTheme(
+          backgroundColor: AppColors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30),
+          ),
+        ),
       );
 
   static ThemeData darkTheme(BuildContext context) => ThemeData.dark().copyWith(
@@ -476,6 +482,12 @@ abstract class AppThemes {
         listTileTheme: ListTileThemeData(
           textColor: AppColors.orange,
           titleTextStyle: AppTextStyles.semiBold20(context),
+        ),
+        dialogTheme: DialogTheme(
+          backgroundColor: AppColors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30),
+          ),
         ),
       );
 }
