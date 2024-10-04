@@ -410,4 +410,19 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get share => 'مشاركة';
+
+  @override
+  String get success => 'نجاح';
+
+  @override
+  String get failed => 'فشل';
+
+  @override
+  String get yourItemHasBeenAddedSuccessfully => 'تمت إضافة العنصر بنجاح.';
+
+  @override
+  String get anErrorOccurredWhileProcessingYourRequestPleaseTryAgain => 'حدث خطأ أثناء معالجة طلبك. الرجاء المحاولة مرة أخرى.';
+
+  @override
+  String get ok => 'حسنا';
 }

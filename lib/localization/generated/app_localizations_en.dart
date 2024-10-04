@@ -410,4 +410,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get share => 'Share';
+
+  @override
+  String get success => 'Success';
+
+  @override
+  String get failed => 'Failed';
+
+  @override
+  String get yourItemHasBeenAddedSuccessfully => 'Your item has been added successfully.';
+
+  @override
+  String get anErrorOccurredWhileProcessingYourRequestPleaseTryAgain => 'An error occurred while processing your request. Please try again.';
+
+  @override
+  String get ok => 'OK';
 }

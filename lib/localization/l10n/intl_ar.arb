@@ -133,5 +133,10 @@
     "notRequired": "غير مطلوب*",
     "negotiable": "قابل للتفاوض",
     "availability": "متاح",
-    "share": "مشاركة"
+    "share": "مشاركة",
+    "success": "نجاح",
+    "failed": "فشل",
+    "yourItemHasBeenAddedSuccessfully": "تمت إضافة العنصر بنجاح.",
+    "anErrorOccurredWhileProcessingYourRequestPleaseTryAgain": "حدث خطأ أثناء معالجة طلبك. الرجاء المحاولة مرة أخرى.",
+    "ok": "حسنا"
 }

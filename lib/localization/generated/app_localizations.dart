@@ -904,6 +904,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Share'**
   String get share;
+
+  /// No description provided for @success.
+  ///
+  /// In en, this message translates to:
+  /// **'Success'**
+  String get success;
+
+  /// No description provided for @failed.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed'**
+  String get failed;
+
+  /// No description provided for @yourItemHasBeenAddedSuccessfully.
+  ///
+  /// In en, this message translates to:
+  /// **'Your item has been added successfully.'**
+  String get yourItemHasBeenAddedSuccessfully;
+
+  /// No description provided for @anErrorOccurredWhileProcessingYourRequestPleaseTryAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'An error occurred while processing your request. Please try again.'**
+  String get anErrorOccurredWhileProcessingYourRequestPleaseTryAgain;
+
+  /// No description provided for @ok.
+  ///
+  /// In en, this message translates to:
+  /// **'OK'**
+  String get ok;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

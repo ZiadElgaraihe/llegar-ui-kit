@@ -133,5 +133,10 @@
     "notRequired": "Not required*",
     "negotiable": "Negotiable",
     "availability": "Availability",
-    "share": "Share"
+    "share": "Share",
+    "success": "Success",
+    "failed": "Failed",
+    "yourItemHasBeenAddedSuccessfully": "Your item has been added successfully.",
+    "anErrorOccurredWhileProcessingYourRequestPleaseTryAgain": "An error occurred while processing your request. Please try again.",
+    "ok": "OK"
 }
