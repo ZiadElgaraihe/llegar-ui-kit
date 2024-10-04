@@ -6,7 +6,11 @@ import 'package:llegar/modules/profile/presentation/widgets/add_item_data_sectio
 import 'package:llegar/modules/profile/presentation/widgets/add_item_photo_button.dart';
 import 'package:llegar/modules/profile/presentation/widgets/negotiable_and_availability_section.dart';
 import 'package:llegar/modules/profile/presentation/widgets/write_your_condition_section.dart';
+import 'package:llegar/shared/constants/app_icons.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
+import 'package:llegar/shared/utils/enums/message_type.dart';
+import 'package:llegar/shared/utils/functions/preload_svg_images.dart';
+import 'package:llegar/shared/utils/functions/show_message_dialog.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
 class AddItemViewBody extends StatelessWidget {
@@ -72,10 +76,39 @@ class AddItemViewBody extends StatelessWidget {
         Center(
           child: CustomElevatedButton(
             title: translate(context).share,
-            onFuturePressed: () async {},
+            onFuturePressed: () async {
+              _onShareItemPressed(context);
+            },
           ),
         ),
       ],
+    );
+  }
+
+  Future<void> _onShareItemPressed(BuildContext context) async {
+    //remove this & add your logic
+    await Future.delayed(const Duration(seconds: 2));
+
+    /*
+    Execute preloadSvgImages() before displaying the dialog 
+    to ensure that the icon appears promptly without any delay. 
+    Include only the necessary icon (success or failed) based on 
+    the specific scenario.
+    */
+    preloadSvgImages(svgImages: [AppIcons.success]).then(
+      (value) {
+        if (!context.mounted) return;
+        showMessageDialog(
+          context,
+          messageType: MessageType.success,
+          title: translate(context).success,
+          message: translate(context).yourItemHasBeenAddedSuccessfully,
+        ).then(
+          (value) {
+            //Add here code you want to execute when dialog is closed
+          },
+        );
+      },
     );
   }
 }
