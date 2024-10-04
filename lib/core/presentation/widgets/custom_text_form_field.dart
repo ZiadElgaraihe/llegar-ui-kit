@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_strings.dart';
@@ -10,7 +11,10 @@ class CustomTextFormField extends StatelessWidget {
     this.controller,
     this.hintText,
     this.icon,
+    this.inputFormatters,
     this.keyboardType = TextInputType.name,
+    this.maxLines,
+    this.minLines,
     this.onSaved,
     this.readOnly = false,
     this.suffixIcon,
@@ -21,7 +25,10 @@ class CustomTextFormField extends StatelessWidget {
   final TextEditingController? controller;
   final String? hintText;
   final String? icon;
+  final List<TextInputFormatter>? inputFormatters;
   final TextInputType keyboardType;
+  final int? maxLines;
+  final int? minLines;
   final void Function(String? newValue)? onSaved;
   final bool readOnly;
   final Widget? suffixIcon;
@@ -33,6 +40,8 @@ class CustomTextFormField extends StatelessWidget {
     return TextFormField(
       controller: controller,
       readOnly: readOnly,
+      minLines: minLines,
+      maxLines: maxLines,
       keyboardType: keyboardType,
       textDirection: textDirection,
       obscureText: false,
@@ -41,6 +50,7 @@ class CustomTextFormField extends StatelessWidget {
         color: AppColors.black,
         fontFamily: AppStrings.interFontFamily,
       ),
+      inputFormatters: inputFormatters,
       onSaved: onSaved,
       validator: validator,
       decoration: InputDecoration(

@@ -237,236 +237,257 @@ abstract class AppThemes {
           unselectedLabelStyle: AppTextStyles.bold24(context),
           unselectedLabelColor: AppColors.black,
         ),
+        listTileTheme: ListTileThemeData(
+          textColor: AppColors.prussianBlue,
+          titleTextStyle: AppTextStyles.semiBold20(context),
+        ),
+        dialogTheme: DialogTheme(
+          backgroundColor: AppColors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30),
+          ),
+        ),
       );
 
   static ThemeData darkTheme(BuildContext context) => ThemeData.dark().copyWith(
-      scaffoldBackgroundColor: AppColors.prussianBlue,
-      colorScheme: ColorScheme.fromSeed(seedColor: AppColors.prussianBlue),
-      dividerTheme: const DividerThemeData(
-        color: AppColors.white,
-        thickness: 1,
-        indent: 8,
-        endIndent: 8,
-      ),
-      textTheme: const TextTheme(
-        bodyMedium: TextStyle(
-          color: AppColors.orange,
-          fontFamily: AppStrings.urbanistFontFamily,
-        ),
-      ),
-      appBarTheme: AppBarTheme(
-        backgroundColor: AppColors.prussianBlue,
-        elevation: 0,
-        titleTextStyle: AppTextStyles.bold24(context).copyWith(
+        scaffoldBackgroundColor: AppColors.prussianBlue,
+        colorScheme: ColorScheme.fromSeed(seedColor: AppColors.prussianBlue),
+        dividerTheme: const DividerThemeData(
           color: AppColors.white,
+          thickness: 1,
+          indent: 8,
+          endIndent: 8,
         ),
-        systemOverlayStyle: const SystemUiOverlayStyle(
-          statusBarColor: AppColors.prussianBlue,
-          statusBarBrightness: Brightness.dark,
-          statusBarIconBrightness: Brightness.light,
-        ),
-      ),
-      inputDecorationTheme: InputDecorationTheme(
-        filled: true,
-        fillColor: AppColors.antiFlashWhite,
-        errorStyle: AppTextStyles.medium10(context).copyWith(
-          color: AppColors.lightRed,
-          fontFamily: AppStrings.interFontFamily,
-        ),
-        hintStyle: AppTextStyles.medium15(context).copyWith(
-          color: AppColors.darkGrey,
-          fontFamily: AppStrings.interFontFamily,
-        ),
-        border: OutlineInputBorder(
-          borderSide: BorderSide.none,
-          borderRadius: BorderRadius.circular(6),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderSide: const BorderSide(
-            color: AppColors.green,
-            width: 1,
+        textTheme: const TextTheme(
+          bodyMedium: TextStyle(
+            color: AppColors.orange,
+            fontFamily: AppStrings.urbanistFontFamily,
           ),
-          borderRadius: BorderRadius.circular(6),
         ),
-        errorBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            color: Colors.red.shade300,
-            width: 1,
+        appBarTheme: AppBarTheme(
+          backgroundColor: AppColors.prussianBlue,
+          elevation: 0,
+          titleTextStyle: AppTextStyles.bold24(context).copyWith(
+            color: AppColors.white,
           ),
-          borderRadius: BorderRadius.circular(6),
-        ),
-        focusedErrorBorder: OutlineInputBorder(
-          borderSide: const BorderSide(
-            color: AppColors.red,
-            width: 1,
+          systemOverlayStyle: const SystemUiOverlayStyle(
+            statusBarColor: AppColors.prussianBlue,
+            statusBarBrightness: Brightness.dark,
+            statusBarIconBrightness: Brightness.light,
           ),
-          borderRadius: BorderRadius.circular(6),
         ),
-      ),
-      elevatedButtonTheme: ElevatedButtonThemeData(
-        style: ElevatedButton.styleFrom(
-          elevation: 2,
-          fixedSize: Size(MediaQuery.sizeOf(context).width, 58),
-          shadowColor: AppColors.ultramarineBlue,
-          backgroundColor: AppColors.orange,
-          overlayColor: AppColors.black,
-          disabledBackgroundColor: AppColors.orange,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(100),
+        inputDecorationTheme: InputDecorationTheme(
+          filled: true,
+          fillColor: AppColors.antiFlashWhite,
+          errorStyle: AppTextStyles.medium10(context).copyWith(
+            color: AppColors.lightRed,
+            fontFamily: AppStrings.interFontFamily,
           ),
-          textStyle: AppTextStyles.bold20(context),
-          foregroundColor: AppColors.white,
+          hintStyle: AppTextStyles.medium15(context).copyWith(
+            color: AppColors.darkGrey,
+            fontFamily: AppStrings.interFontFamily,
+          ),
+          border: OutlineInputBorder(
+            borderSide: BorderSide.none,
+            borderRadius: BorderRadius.circular(6),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderSide: const BorderSide(
+              color: AppColors.green,
+              width: 1,
+            ),
+            borderRadius: BorderRadius.circular(6),
+          ),
+          errorBorder: OutlineInputBorder(
+            borderSide: BorderSide(
+              color: Colors.red.shade300,
+              width: 1,
+            ),
+            borderRadius: BorderRadius.circular(6),
+          ),
+          focusedErrorBorder: OutlineInputBorder(
+            borderSide: const BorderSide(
+              color: AppColors.red,
+              width: 1,
+            ),
+            borderRadius: BorderRadius.circular(6),
+          ),
         ),
-      ),
-      outlinedButtonTheme: OutlinedButtonThemeData(
-        style: OutlinedButton.styleFrom(
-          fixedSize: Size(MediaQuery.sizeOf(context).width, 60),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            elevation: 2,
+            fixedSize: Size(MediaQuery.sizeOf(context).width, 58),
+            shadowColor: AppColors.ultramarineBlue,
+            backgroundColor: AppColors.orange,
+            overlayColor: AppColors.black,
+            disabledBackgroundColor: AppColors.orange,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(100),
+            ),
+            textStyle: AppTextStyles.bold20(context),
+            foregroundColor: AppColors.white,
+          ),
+        ),
+        outlinedButtonTheme: OutlinedButtonThemeData(
+          style: OutlinedButton.styleFrom(
+            fixedSize: Size(MediaQuery.sizeOf(context).width, 60),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+            side: const BorderSide(
+              color: AppColors.orange,
+              width: 2,
+            ),
+            textStyle: AppTextStyles.semiBold16(context),
+            foregroundColor: AppColors.orange,
+          ),
+        ),
+        textButtonTheme: TextButtonThemeData(
+          style: TextButton.styleFrom(
+            textStyle: AppTextStyles.bold14(context).copyWith(
+              color: AppColors.orange,
+            ),
+            foregroundColor: AppColors.orange,
+            disabledForegroundColor: AppColors.grey,
+          ),
+        ),
+        iconButtonTheme: IconButtonThemeData(
+          style: IconButton.styleFrom(
+            overlayColor: AppColors.lightGrey,
+          ),
+        ),
+        checkboxTheme: CheckboxThemeData(
+          fillColor: WidgetStateProperty.resolveWith(
+            (states) {
+              if (states.contains(WidgetState.selected)) {
+                return AppColors.orange;
+              }
+              return AppColors.prussianBlue;
+            },
           ),
           side: const BorderSide(
             color: AppColors.orange,
             width: 2,
           ),
-          textStyle: AppTextStyles.semiBold16(context),
-          foregroundColor: AppColors.orange,
-        ),
-      ),
-      textButtonTheme: TextButtonThemeData(
-        style: TextButton.styleFrom(
-          textStyle: AppTextStyles.bold14(context).copyWith(
-            color: AppColors.orange,
+          checkColor: const WidgetStatePropertyAll(AppColors.prussianBlue),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(4),
           ),
-          foregroundColor: AppColors.orange,
-          disabledForegroundColor: AppColors.grey,
+          materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+          visualDensity: const VisualDensity(horizontal: -4, vertical: -4),
         ),
-      ),
-      iconButtonTheme: IconButtonThemeData(
-        style: IconButton.styleFrom(
-          overlayColor: AppColors.lightGrey,
-        ),
-      ),
-      checkboxTheme: CheckboxThemeData(
-        fillColor: WidgetStateProperty.resolveWith(
-          (states) {
-            if (states.contains(WidgetState.selected)) {
-              return AppColors.orange;
-            }
-            return AppColors.prussianBlue;
-          },
-        ),
-        side: const BorderSide(
-          color: AppColors.orange,
-          width: 2,
-        ),
-        checkColor: const WidgetStatePropertyAll(AppColors.prussianBlue),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(4),
-        ),
-        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-        visualDensity: const VisualDensity(horizontal: -4, vertical: -4),
-      ),
-      datePickerTheme: DatePickerThemeData(
-        backgroundColor: AppColors.prussianBlue,
-        cancelButtonStyle: TextButton.styleFrom(
-          textStyle: AppTextStyles.bold14(context),
-          foregroundColor: AppColors.orange,
-        ),
-        confirmButtonStyle: TextButton.styleFrom(
-          textStyle: AppTextStyles.bold14(context),
-          foregroundColor: AppColors.orange,
-        ),
-        dayStyle: AppTextStyles.bold14(context),
-        dayForegroundColor: WidgetStateProperty.resolveWith(
-          (states) {
-            if (states.contains(WidgetState.selected)) {
-              return AppColors.prussianBlue;
-            }
-            return AppColors.white;
-          },
-        ),
-        dayBackgroundColor: WidgetStateProperty.resolveWith(
-          (states) {
-            if (states.contains(WidgetState.selected)) {
-              return AppColors.orange;
-            }
-            return Colors.transparent;
-          },
-        ),
-        weekdayStyle: AppTextStyles.bold14(context).copyWith(
-          color: AppColors.white,
-        ),
-        headerHelpStyle: AppTextStyles.medium14(context),
-        headerHeadlineStyle: AppTextStyles.bold32(context),
-        headerForegroundColor: AppColors.orange,
-        yearStyle: AppTextStyles.bold16(context),
-        yearForegroundColor: WidgetStateProperty.resolveWith(
-          (states) {
-            if (states.contains(WidgetState.selected)) {
-              return AppColors.prussianBlue;
-            }
-            return AppColors.lightGrey;
-          },
-        ),
-      ),
-      bottomNavigationBarTheme: BottomNavigationBarThemeData(
-        elevation: 0,
-        backgroundColor: Colors.transparent,
-        showSelectedLabels: true,
-        showUnselectedLabels: true,
-        selectedLabelStyle: AppTextStyles.regular11(context).copyWith(
-          fontFamily: AppStrings.interFontFamily,
-        ),
-        unselectedLabelStyle: AppTextStyles.regular11(context).copyWith(
-          fontFamily: AppStrings.interFontFamily,
-        ),
-        selectedItemColor: AppColors.orange,
-        unselectedItemColor: AppColors.orange,
-        type: BottomNavigationBarType.fixed,
-      ),
-      switchTheme: SwitchThemeData(
-        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-        thumbColor: const WidgetStatePropertyAll(AppColors.white),
-        trackColor: WidgetStateProperty.resolveWith((states) {
-          if (states.contains(WidgetState.selected)) {
-            return AppColors.green;
-          }
-          return AppColors.lavender;
-        }),
-        trackOutlineColor: const WidgetStatePropertyAll(Colors.transparent),
-      ),
-      bottomSheetTheme: const BottomSheetThemeData(
-        backgroundColor: AppColors.prussianBlue,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(40),
-            topRight: Radius.circular(40),
+        datePickerTheme: DatePickerThemeData(
+          backgroundColor: AppColors.prussianBlue,
+          cancelButtonStyle: TextButton.styleFrom(
+            textStyle: AppTextStyles.bold14(context),
+            foregroundColor: AppColors.orange,
+          ),
+          confirmButtonStyle: TextButton.styleFrom(
+            textStyle: AppTextStyles.bold14(context),
+            foregroundColor: AppColors.orange,
+          ),
+          dayStyle: AppTextStyles.bold14(context),
+          dayForegroundColor: WidgetStateProperty.resolveWith(
+            (states) {
+              if (states.contains(WidgetState.selected)) {
+                return AppColors.prussianBlue;
+              }
+              return AppColors.white;
+            },
+          ),
+          dayBackgroundColor: WidgetStateProperty.resolveWith(
+            (states) {
+              if (states.contains(WidgetState.selected)) {
+                return AppColors.orange;
+              }
+              return Colors.transparent;
+            },
+          ),
+          weekdayStyle: AppTextStyles.bold14(context).copyWith(
+            color: AppColors.white,
+          ),
+          headerHelpStyle: AppTextStyles.medium14(context),
+          headerHeadlineStyle: AppTextStyles.bold32(context),
+          headerForegroundColor: AppColors.orange,
+          yearStyle: AppTextStyles.bold16(context),
+          yearForegroundColor: WidgetStateProperty.resolveWith(
+            (states) {
+              if (states.contains(WidgetState.selected)) {
+                return AppColors.prussianBlue;
+              }
+              return AppColors.lightGrey;
+            },
           ),
         ),
-        showDragHandle: true,
-        dragHandleColor: AppColors.lightGrey,
-        dragHandleSize: Size(100, 3.5),
-      ),
-      radioTheme: const RadioThemeData(
-        fillColor: WidgetStatePropertyAll(AppColors.orange),
-        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-        visualDensity: VisualDensity(horizontal: -4, vertical: -4),
-      ),
-      tabBarTheme: TabBarTheme(
-        dividerHeight: 3,
-        dividerColor: AppColors.antiFlashWhite,
-        indicatorSize: TabBarIndicatorSize.tab,
-        indicator: UnderlineTabIndicator(
-          borderRadius: BorderRadius.circular(8),
-          borderSide: const BorderSide(
-            color: AppColors.orange,
-            width: 5,
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          elevation: 0,
+          backgroundColor: Colors.transparent,
+          showSelectedLabels: true,
+          showUnselectedLabels: true,
+          selectedLabelStyle: AppTextStyles.regular11(context).copyWith(
+            fontFamily: AppStrings.interFontFamily,
+          ),
+          unselectedLabelStyle: AppTextStyles.regular11(context).copyWith(
+            fontFamily: AppStrings.interFontFamily,
+          ),
+          selectedItemColor: AppColors.orange,
+          unselectedItemColor: AppColors.orange,
+          type: BottomNavigationBarType.fixed,
+        ),
+        switchTheme: SwitchThemeData(
+          materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+          thumbColor: const WidgetStatePropertyAll(AppColors.white),
+          trackColor: WidgetStateProperty.resolveWith((states) {
+            if (states.contains(WidgetState.selected)) {
+              return AppColors.green;
+            }
+            return AppColors.lavender;
+          }),
+          trackOutlineColor: const WidgetStatePropertyAll(Colors.transparent),
+        ),
+        bottomSheetTheme: const BottomSheetThemeData(
+          backgroundColor: AppColors.prussianBlue,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(40),
+              topRight: Radius.circular(40),
+            ),
+          ),
+          showDragHandle: true,
+          dragHandleColor: AppColors.lightGrey,
+          dragHandleSize: Size(100, 3.5),
+        ),
+        radioTheme: const RadioThemeData(
+          fillColor: WidgetStatePropertyAll(AppColors.orange),
+          materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+          visualDensity: VisualDensity(horizontal: -4, vertical: -4),
+        ),
+        tabBarTheme: TabBarTheme(
+          dividerHeight: 3,
+          dividerColor: AppColors.antiFlashWhite,
+          indicatorSize: TabBarIndicatorSize.tab,
+          indicator: UnderlineTabIndicator(
+            borderRadius: BorderRadius.circular(8),
+            borderSide: const BorderSide(
+              color: AppColors.orange,
+              width: 5,
+            ),
+          ),
+          labelPadding: const EdgeInsets.only(bottom: 8),
+          labelStyle: AppTextStyles.bold24(context),
+          labelColor: AppColors.orange,
+          unselectedLabelStyle: AppTextStyles.bold24(context),
+          unselectedLabelColor: AppColors.white,
+        ),
+        listTileTheme: ListTileThemeData(
+          textColor: AppColors.orange,
+          titleTextStyle: AppTextStyles.semiBold20(context),
+        ),
+        dialogTheme: DialogTheme(
+          backgroundColor: AppColors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30),
           ),
         ),
-        labelPadding: const EdgeInsets.only(bottom: 8),
-        labelStyle: AppTextStyles.bold24(context),
-        labelColor: AppColors.orange,
-        unselectedLabelStyle: AppTextStyles.bold24(context),
-        unselectedLabelColor: AppColors.white,
-      ));
+      );
 }

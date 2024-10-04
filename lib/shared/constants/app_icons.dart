@@ -31,13 +31,16 @@ abstract class AppIcons {
   static const String contactUs = 'assets/icons/contact_us.svg';
 
   ///assets/icons/contact_us_customer_services.svg
-  static const String contactUsCustomerServices = 'assets/icons/contact_us_customer_services.svg';
+  static const String contactUsCustomerServices =
+      'assets/icons/contact_us_customer_services.svg';
 
   ///assets/icons/contact_us_facebook.svg
-  static const String contactUsFacebook = 'assets/icons/contact_us_facebook.svg';
+  static const String contactUsFacebook =
+      'assets/icons/contact_us_facebook.svg';
 
   ///assets/icons/contact_us_instagram.svg
-  static const String contactUsInstagram = 'assets/icons/contact_us_instagram.svg';
+  static const String contactUsInstagram =
+      'assets/icons/contact_us_instagram.svg';
 
   ///assets/icons/contact_us_twitter.svg
   static const String contactUsTwitter = 'assets/icons/contact_us_twitter.svg';
@@ -46,7 +49,8 @@ abstract class AppIcons {
   static const String contactUsWebsite = 'assets/icons/contact_us_website.svg';
 
   ///assets/icons/contact_us_whatsapp.svg
-  static const String contactUsWhatsapp = 'assets/icons/contact_us_whatsapp.svg';
+  static const String contactUsWhatsapp =
+      'assets/icons/contact_us_whatsapp.svg';
 
   ///assets/icons/crown.svg
   static const String crown = 'assets/icons/crown.svg';
@@ -62,6 +66,9 @@ abstract class AppIcons {
 
   ///assets/icons/facebook.svg
   static const String facebook = 'assets/icons/facebook.svg';
+
+  ///assets/icons/failed.svg
+  static const String failed = 'assets/icons/failed.svg';
 
   ///assets/icons/google.svg
   static const String google = 'assets/icons/google.svg';
@@ -125,6 +132,9 @@ abstract class AppIcons {
 
   ///assets/icons/star.svg
   static const String star = 'assets/icons/star.svg';
+
+  ///assets/icons/success.svg
+  static const String success = 'assets/icons/success.svg';
 
   ///assets/icons/tiktok.svg
   static const String tiktok = 'assets/icons/tiktok.svg';

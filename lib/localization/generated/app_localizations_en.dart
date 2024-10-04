@@ -359,4 +359,70 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get addItem => 'Add Item';
+
+  @override
+  String get addPhoto => 'Add Photo';
+
+  @override
+  String get rentType => 'Rent Type';
+
+  @override
+  String get transportations => 'Transportations';
+
+  @override
+  String get property => 'Property';
+
+  @override
+  String get clothes => 'Clothes';
+
+  @override
+  String get electronics => 'Electronics';
+
+  @override
+  String get playAreas => 'Play Areas';
+
+  @override
+  String get eventRentals => 'Event Rentals';
+
+  @override
+  String get title => 'Title';
+
+  @override
+  String get description => 'Description';
+
+  @override
+  String get pricePerDay => 'Price /day';
+
+  @override
+  String get shippingPrice => 'Shipping Price';
+
+  @override
+  String get writeYourCondition => 'Write Your Condition';
+
+  @override
+  String get notRequired => 'Not required*';
+
+  @override
+  String get negotiable => 'Negotiable';
+
+  @override
+  String get availability => 'Availability';
+
+  @override
+  String get share => 'Share';
+
+  @override
+  String get success => 'Success';
+
+  @override
+  String get failed => 'Failed';
+
+  @override
+  String get yourItemHasBeenAddedSuccessfully => 'Your item has been added successfully.';
+
+  @override
+  String get anErrorOccurredWhileProcessingYourRequestPleaseTryAgain => 'An error occurred while processing your request. Please try again.';
+
+  @override
+  String get ok => 'OK';
 }
