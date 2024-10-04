@@ -13,6 +13,8 @@ class CustomTextFormField extends StatelessWidget {
     this.icon,
     this.inputFormatters,
     this.keyboardType = TextInputType.name,
+    this.maxLines,
+    this.minLines,
     this.onSaved,
     this.readOnly = false,
     this.suffixIcon,
@@ -25,6 +27,8 @@ class CustomTextFormField extends StatelessWidget {
   final String? icon;
   final List<TextInputFormatter>? inputFormatters;
   final TextInputType keyboardType;
+  final int? maxLines;
+  final int? minLines;
   final void Function(String? newValue)? onSaved;
   final bool readOnly;
   final Widget? suffixIcon;
@@ -36,6 +40,8 @@ class CustomTextFormField extends StatelessWidget {
     return TextFormField(
       controller: controller,
       readOnly: readOnly,
+      minLines: minLines,
+      maxLines: maxLines,
       keyboardType: keyboardType,
       textDirection: textDirection,
       obscureText: false,
