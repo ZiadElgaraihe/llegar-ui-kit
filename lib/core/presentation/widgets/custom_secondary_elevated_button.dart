@@ -9,9 +9,15 @@ class CustomSecondaryElevatedButton extends StatelessWidget {
     super.key,
     required this.onPressed,
     required this.title,
+    this.backgroundColor,
+    this.foregroundColor,
+    this.textColor,
   });
 
+  final Color? backgroundColor;
+  final Color? foregroundColor;
   final VoidCallback onPressed;
+  final Color? textColor;
   final String title;
 
   void _onPressed() {
@@ -29,17 +35,18 @@ class CustomSecondaryElevatedButton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           elevation: 0,
           shadowColor: Colors.transparent,
-          backgroundColor: AppColors.lavender,
-          foregroundColor: AppColors.prussianBlue,
+          backgroundColor: backgroundColor ?? AppColors.lavender,
+          foregroundColor: foregroundColor ?? AppColors.prussianBlue,
         ),
         child: Text(
           title,
           style: AppTextStyles.bold20(context).copyWith(
-            color: valueBasedOnTheme<Color>(
-              context,
-              light: AppColors.prussianBlue,
-              dark: AppColors.orange,
-            ),
+            color: textColor ??
+                valueBasedOnTheme<Color>(
+                  context,
+                  light: AppColors.prussianBlue,
+                  dark: AppColors.orange,
+                ),
           ),
         ),
       ),
