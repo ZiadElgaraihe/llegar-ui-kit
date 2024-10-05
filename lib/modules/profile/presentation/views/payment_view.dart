@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_app_bar.dart';
+import 'package:llegar/modules/profile/presentation/widgets/payment_methods_view_body.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
 class PaymentMethodsView extends StatelessWidget {
@@ -11,6 +12,7 @@ class PaymentMethodsView extends StatelessWidget {
       appBar: CustomAppBar(
         title: translate(context).paymentMethods,
       ),
+      body: const PaymentMethodsViewBody(),
     );
   }
 }
