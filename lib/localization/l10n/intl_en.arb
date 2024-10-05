@@ -138,5 +138,22 @@
     "failed": "Failed",
     "yourItemHasBeenAddedSuccessfully": "Your item has been added successfully.",
     "anErrorOccurredWhileProcessingYourRequestPleaseTryAgain": "An error occurred while processing your request. Please try again.",
-    "ok": "OK"
+    "ok": "OK",
+    "subscribeToPremium": "Subscribe to Premium",
+    "enjoyTheBestOffers": "Enjoy the best offers with features that will improve your experience of the application services",
+    "perMonth": "/month",
+    "sharing": "Sharing",
+    "ofTheRentAmountWithTheApplication": "of the rent amount with the application",
+    "notVerifiedAccount": "Not verified account",
+    "verifiedAccount": "Verified account",
+    "topOnSearchLevel": "Top on search level",
+    "daysOfSubscription": "Days of subscription",
+    "ads": "Ads",
+    "paymentMethods": "Payment Methods",
+    "selectThePaymentMethodYouWantToUse": "Select the payment method you want to use.",
+    "myWallet": "My Wallet",
+    "payPal": "PayPal",
+    "googlePay": "Google Pay",
+    "applePay": "Apple Pay",
+    "addNewCard": "Add New Card"
 }

@@ -934,6 +934,108 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'OK'**
   String get ok;
+
+  /// No description provided for @subscribeToPremium.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscribe to Premium'**
+  String get subscribeToPremium;
+
+  /// No description provided for @enjoyTheBestOffers.
+  ///
+  /// In en, this message translates to:
+  /// **'Enjoy the best offers with features that will improve your experience of the application services'**
+  String get enjoyTheBestOffers;
+
+  /// No description provided for @perMonth.
+  ///
+  /// In en, this message translates to:
+  /// **'/month'**
+  String get perMonth;
+
+  /// No description provided for @sharing.
+  ///
+  /// In en, this message translates to:
+  /// **'Sharing'**
+  String get sharing;
+
+  /// No description provided for @ofTheRentAmountWithTheApplication.
+  ///
+  /// In en, this message translates to:
+  /// **'of the rent amount with the application'**
+  String get ofTheRentAmountWithTheApplication;
+
+  /// No description provided for @notVerifiedAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Not verified account'**
+  String get notVerifiedAccount;
+
+  /// No description provided for @verifiedAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Verified account'**
+  String get verifiedAccount;
+
+  /// No description provided for @topOnSearchLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'Top on search level'**
+  String get topOnSearchLevel;
+
+  /// No description provided for @daysOfSubscription.
+  ///
+  /// In en, this message translates to:
+  /// **'Days of subscription'**
+  String get daysOfSubscription;
+
+  /// No description provided for @ads.
+  ///
+  /// In en, this message translates to:
+  /// **'Ads'**
+  String get ads;
+
+  /// No description provided for @paymentMethods.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment Methods'**
+  String get paymentMethods;
+
+  /// No description provided for @selectThePaymentMethodYouWantToUse.
+  ///
+  /// In en, this message translates to:
+  /// **'Select the payment method you want to use.'**
+  String get selectThePaymentMethodYouWantToUse;
+
+  /// No description provided for @myWallet.
+  ///
+  /// In en, this message translates to:
+  /// **'My Wallet'**
+  String get myWallet;
+
+  /// No description provided for @payPal.
+  ///
+  /// In en, this message translates to:
+  /// **'PayPal'**
+  String get payPal;
+
+  /// No description provided for @googlePay.
+  ///
+  /// In en, this message translates to:
+  /// **'Google Pay'**
+  String get googlePay;
+
+  /// No description provided for @applePay.
+  ///
+  /// In en, this message translates to:
+  /// **'Apple Pay'**
+  String get applePay;
+
+  /// No description provided for @addNewCard.
+  ///
+  /// In en, this message translates to:
+  /// **'Add New Card'**
+  String get addNewCard;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

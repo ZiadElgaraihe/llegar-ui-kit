@@ -17,8 +17,10 @@ import 'package:llegar/modules/profile/presentation/views/help_center_view.dart'
 import 'package:llegar/modules/profile/presentation/views/language_view.dart';
 import 'package:llegar/modules/profile/presentation/views/my_activities_view.dart';
 import 'package:llegar/modules/profile/presentation/views/my_items_view.dart';
+import 'package:llegar/modules/profile/presentation/views/payment_view.dart';
 import 'package:llegar/modules/profile/presentation/views/privacy_policy_view.dart';
 import 'package:llegar/modules/profile/presentation/views/security_view.dart';
+import 'package:llegar/modules/profile/presentation/views/subscribe_to_premium_view.dart';
 import 'package:llegar/modules/welcome/presentation/views/how_did_you_know_us_view.dart';
 import 'package:llegar/modules/welcome/presentation/views/welcome_view.dart';
 import 'package:llegar/shared/animations/bottom_slide_transition.dart';
@@ -48,6 +50,8 @@ abstract class AppRoutes {
   static const String myActivitiesView = '/MyActivitiesView';
   static const String myitemsView = '/MyItemsView';
   static const String addItemView = '/AddItemView';
+  static const String subscribeToPremiumView = '/SubscribeToPremiumView';
+  static const String paymentMethodsView = '/PaymentMethodsView';
 
   static Route<dynamic>? generate(RouteSettings routeSettings) {
     switch (routeSettings.name) {
@@ -138,6 +142,14 @@ abstract class AppRoutes {
       case addItemView:
         return SideSlideTransition(
           page: const AddItemView(),
+        );
+      case subscribeToPremiumView:
+        return SideSlideTransition(
+          page: const SubscribeToPremiumView(),
+        );
+      case paymentMethodsView:
+        return SideSlideTransition(
+          page: const PaymentMethodsView(),
         );
     }
     return null;

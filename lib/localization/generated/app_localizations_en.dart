@@ -425,4 +425,55 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get ok => 'OK';
+
+  @override
+  String get subscribeToPremium => 'Subscribe to Premium';
+
+  @override
+  String get enjoyTheBestOffers => 'Enjoy the best offers with features that will improve your experience of the application services';
+
+  @override
+  String get perMonth => '/month';
+
+  @override
+  String get sharing => 'Sharing';
+
+  @override
+  String get ofTheRentAmountWithTheApplication => 'of the rent amount with the application';
+
+  @override
+  String get notVerifiedAccount => 'Not verified account';
+
+  @override
+  String get verifiedAccount => 'Verified account';
+
+  @override
+  String get topOnSearchLevel => 'Top on search level';
+
+  @override
+  String get daysOfSubscription => 'Days of subscription';
+
+  @override
+  String get ads => 'Ads';
+
+  @override
+  String get paymentMethods => 'Payment Methods';
+
+  @override
+  String get selectThePaymentMethodYouWantToUse => 'Select the payment method you want to use.';
+
+  @override
+  String get myWallet => 'My Wallet';
+
+  @override
+  String get payPal => 'PayPal';
+
+  @override
+  String get googlePay => 'Google Pay';
+
+  @override
+  String get applePay => 'Apple Pay';
+
+  @override
+  String get addNewCard => 'Add New Card';
 }

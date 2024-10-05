@@ -77,7 +77,7 @@ class AddItemViewBody extends StatelessWidget {
           child: CustomElevatedButton(
             title: translate(context).share,
             onFuturePressed: () async {
-              _onShareItemPressed(context);
+              await _onShareItemPressed(context);
             },
           ),
         ),

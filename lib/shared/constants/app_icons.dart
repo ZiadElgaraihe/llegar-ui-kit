@@ -94,6 +94,9 @@ abstract class AppIcons {
   ///assets/icons/logout.svg
   static const String logOut = 'assets/icons/logout.svg';
 
+  ///assets/icons/master_card.svg
+  static const String masterCard = 'assets/icons/master_card.svg';
+
   ///assets/icons/my_activities.svg
   static const String myActivities = 'assets/icons/my_activities.svg';
 
@@ -114,6 +117,9 @@ abstract class AppIcons {
 
   ///assets/icons/password.svg
   static const String password = 'assets/icons/password.svg';
+
+  ///assets/icons/paypal.svg
+  static const String paypal = 'assets/icons/paypal.svg';
 
   ///assets/icons/pen.svg
   static const String pen = 'assets/icons/pen.svg';
@@ -144,6 +150,9 @@ abstract class AppIcons {
 
   ///assets/icons/wallet.svg
   static const String wallet = 'assets/icons/wallet.svg';
+
+  ///assets/icons/wallet_dark.svg
+  static const String walletDark = 'assets/icons/wallet_dark.svg';
 
   ///assets/icons/wallet_outlined.svg
   static const String walletOutlined = 'assets/icons/wallet_outlined.svg';

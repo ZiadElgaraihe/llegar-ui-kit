@@ -138,5 +138,22 @@
     "failed": "فشل",
     "yourItemHasBeenAddedSuccessfully": "تمت إضافة العنصر بنجاح.",
     "anErrorOccurredWhileProcessingYourRequestPleaseTryAgain": "حدث خطأ أثناء معالجة طلبك. الرجاء المحاولة مرة أخرى.",
-    "ok": "حسنا"
+    "ok": "حسنا",
+    "subscribeToPremium": "الإشتراك في العضوية المميزة",
+    "enjoyTheBestOffers": "استمتع بأفضل العروض مع الميزات التي من شأنها تحسين تجربتك لخدمات التطبيق",
+    "perMonth": "/الشهر",
+    "sharing": "مشاركة",
+    "ofTheRentAmountWithTheApplication": "من مبلغ الإيجار مع التطبيق",
+    "notVerifiedAccount": "حساب غير موثق",
+    "verifiedAccount": "حساب موثق",
+    "topOnSearchLevel": "في القمة على مستوى البحث",
+    "daysOfSubscription": "يومًا من الاشتراك",
+    "ads": "إعلانات",
+    "paymentMethods": "طرق الدفع",
+    "selectThePaymentMethodYouWantToUse": "حدد طريقة الدفع التي تريد استخدامها.",
+    "myWallet": "محفظتي",
+    "payPal": "باي بال",
+    "googlePay": "جوجل باي",
+    "applePay": "آبل باي",
+    "addNewCard": "إضافة بطاقة جديدة"
 }

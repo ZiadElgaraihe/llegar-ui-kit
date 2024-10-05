@@ -425,4 +425,55 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get ok => 'حسنا';
+
+  @override
+  String get subscribeToPremium => 'الإشتراك في العضوية المميزة';
+
+  @override
+  String get enjoyTheBestOffers => 'استمتع بأفضل العروض مع الميزات التي من شأنها تحسين تجربتك لخدمات التطبيق';
+
+  @override
+  String get perMonth => '/الشهر';
+
+  @override
+  String get sharing => 'مشاركة';
+
+  @override
+  String get ofTheRentAmountWithTheApplication => 'من مبلغ الإيجار مع التطبيق';
+
+  @override
+  String get notVerifiedAccount => 'حساب غير موثق';
+
+  @override
+  String get verifiedAccount => 'حساب موثق';
+
+  @override
+  String get topOnSearchLevel => 'في القمة على مستوى البحث';
+
+  @override
+  String get daysOfSubscription => 'يومًا من الاشتراك';
+
+  @override
+  String get ads => 'إعلانات';
+
+  @override
+  String get paymentMethods => 'طرق الدفع';
+
+  @override
+  String get selectThePaymentMethodYouWantToUse => 'حدد طريقة الدفع التي تريد استخدامها.';
+
+  @override
+  String get myWallet => 'محفظتي';
+
+  @override
+  String get payPal => 'باي بال';
+
+  @override
+  String get googlePay => 'جوجل باي';
+
+  @override
+  String get applePay => 'آبل باي';
+
+  @override
+  String get addNewCard => 'إضافة بطاقة جديدة';
 }
