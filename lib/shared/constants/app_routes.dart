@@ -17,6 +17,7 @@ import 'package:llegar/modules/profile/presentation/views/help_center_view.dart'
 import 'package:llegar/modules/profile/presentation/views/language_view.dart';
 import 'package:llegar/modules/profile/presentation/views/my_activities_view.dart';
 import 'package:llegar/modules/profile/presentation/views/my_items_view.dart';
+import 'package:llegar/modules/profile/presentation/views/payment_view.dart';
 import 'package:llegar/modules/profile/presentation/views/privacy_policy_view.dart';
 import 'package:llegar/modules/profile/presentation/views/security_view.dart';
 import 'package:llegar/modules/profile/presentation/views/subscribe_to_premium_view.dart';
@@ -50,6 +51,7 @@ abstract class AppRoutes {
   static const String myitemsView = '/MyItemsView';
   static const String addItemView = '/AddItemView';
   static const String subscribeToPremiumView = '/SubscribeToPremiumView';
+  static const String paymentMethodsView = '/PaymentMethodsView';
 
   static Route<dynamic>? generate(RouteSettings routeSettings) {
     switch (routeSettings.name) {
@@ -144,6 +146,10 @@ abstract class AppRoutes {
       case subscribeToPremiumView:
         return SideSlideTransition(
           page: const SubscribeToPremiumView(),
+        );
+      case paymentMethodsView:
+        return SideSlideTransition(
+          page: const PaymentMethodsView(),
         );
     }
     return null;

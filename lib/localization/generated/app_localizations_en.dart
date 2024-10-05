@@ -455,4 +455,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get ads => 'Ads';
+
+  @override
+  String get paymentMethods => 'Payment Methods';
 }

@@ -455,4 +455,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get ads => 'إعلانات';
+
+  @override
+  String get paymentMethods => 'طرق الدفع';
 }

@@ -994,6 +994,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Ads'**
   String get ads;
+
+  /// No description provided for @paymentMethods.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment Methods'**
+  String get paymentMethods;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
