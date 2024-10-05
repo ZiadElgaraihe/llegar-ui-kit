@@ -149,5 +149,11 @@
     "topOnSearchLevel": "Top on search level",
     "daysOfSubscription": "Days of subscription",
     "ads": "Ads",
-    "paymentMethods": "Payment Methods"
+    "paymentMethods": "Payment Methods",
+    "selectThePaymentMethodYouWantToUse": "Select the payment method you want to use.",
+    "myWallet": "My Wallet",
+    "payPal": "PayPal",
+    "googlePay": "Google Pay",
+    "applePay": "Apple Pay",
+    "addNewCard": "Add New Card"
 }

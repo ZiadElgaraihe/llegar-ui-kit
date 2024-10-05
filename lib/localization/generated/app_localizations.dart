@@ -1000,6 +1000,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Payment Methods'**
   String get paymentMethods;
+
+  /// No description provided for @selectThePaymentMethodYouWantToUse.
+  ///
+  /// In en, this message translates to:
+  /// **'Select the payment method you want to use.'**
+  String get selectThePaymentMethodYouWantToUse;
+
+  /// No description provided for @myWallet.
+  ///
+  /// In en, this message translates to:
+  /// **'My Wallet'**
+  String get myWallet;
+
+  /// No description provided for @payPal.
+  ///
+  /// In en, this message translates to:
+  /// **'PayPal'**
+  String get payPal;
+
+  /// No description provided for @googlePay.
+  ///
+  /// In en, this message translates to:
+  /// **'Google Pay'**
+  String get googlePay;
+
+  /// No description provided for @applePay.
+  ///
+  /// In en, this message translates to:
+  /// **'Apple Pay'**
+  String get applePay;
+
+  /// No description provided for @addNewCard.
+  ///
+  /// In en, this message translates to:
+  /// **'Add New Card'**
+  String get addNewCard;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

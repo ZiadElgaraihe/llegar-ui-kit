@@ -458,4 +458,22 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get paymentMethods => 'طرق الدفع';
+
+  @override
+  String get selectThePaymentMethodYouWantToUse => 'حدد طريقة الدفع التي تريد استخدامها.';
+
+  @override
+  String get myWallet => 'محفظتي';
+
+  @override
+  String get payPal => 'باي بال';
+
+  @override
+  String get googlePay => 'جوجل باي';
+
+  @override
+  String get applePay => 'آبل باي';
+
+  @override
+  String get addNewCard => 'إضافة بطاقة جديدة';
 }

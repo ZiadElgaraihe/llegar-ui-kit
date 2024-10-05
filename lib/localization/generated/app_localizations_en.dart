@@ -458,4 +458,22 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get paymentMethods => 'Payment Methods';
+
+  @override
+  String get selectThePaymentMethodYouWantToUse => 'Select the payment method you want to use.';
+
+  @override
+  String get myWallet => 'My Wallet';
+
+  @override
+  String get payPal => 'PayPal';
+
+  @override
+  String get googlePay => 'Google Pay';
+
+  @override
+  String get applePay => 'Apple Pay';
+
+  @override
+  String get addNewCard => 'Add New Card';
 }
