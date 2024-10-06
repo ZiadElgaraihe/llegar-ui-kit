@@ -3,6 +3,7 @@ import 'package:llegar/core/presentation/widgets/custom_secondary_elevated_butto
 import 'package:llegar/core/presentation/widgets/custom_sliver_fill_remaining_footer.dart';
 import 'package:llegar/modules/profile/presentation/widgets/payment_methods_column.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
@@ -42,7 +43,9 @@ class PaymentMethodsViewBody extends StatelessWidget {
                 ),
                 AppSizes.height24,
                 CustomSecondaryElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, AppRoutes.addNewCardView);
+                  },
                   title: translate(context).addNewCard,
                 ),
               ],

@@ -11,6 +11,7 @@ import 'package:llegar/modules/auth/presentation/views/sign_up_profile_info_view
 import 'package:llegar/modules/auth/presentation/views/sign_up_view.dart';
 import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
 import 'package:llegar/modules/profile/presentation/views/add_item_view.dart';
+import 'package:llegar/modules/profile/presentation/views/add_new_card_view.dart';
 import 'package:llegar/modules/profile/presentation/views/contact_us_view.dart';
 import 'package:llegar/modules/profile/presentation/views/edit_profile_view.dart';
 import 'package:llegar/modules/profile/presentation/views/help_center_view.dart';
@@ -29,29 +30,30 @@ import 'package:llegar/shared/animations/side_slide_transition.dart';
 
 ///This class contains all routes
 abstract class AppRoutes {
-  static const String welcomeView = '/WelcomeView';
-  static const String howDidYouKnowUsView = '/HowDidYouKnowUsView';
-  static const String socialLogInView = '/SocialLogInView';
-  static const String signUpView = '/SignUpView';
-  static const String logInView = '/LogInView';
-  static const String forgetPasswordView = '/ForgetPasswordView';
-  static const String otpView = '/OtpView';
-  static const String resetPasswordView = '/ResetPasswordView';
-  static const String successView = '/SuccessView';
-  static const String signUpProfileInfoView = '/SignUpProfileInfoView';
-  static const String signUpIdentificationView = '/SignUpIdentificationView';
-  static const String navBarView = '/NavBarView';
-  static const String securityView = '/SecurityView';
-  static const String privacyPolicyView = '/PrivacyPolicyView';
+  static const String addItemView = '/AddItemView';
+  static const String addNewCardView = '/AddNewCardView';
   static const String contactUsView = '/ContactUsView';
-  static const String languageView = '/LanguageView';
-  static const String helpCenterView = '/HelpCenterView';
   static const String editProfileView = '/EditProfileView';
+  static const String forgetPasswordView = '/ForgetPasswordView';
+  static const String helpCenterView = '/HelpCenterView';
+  static const String howDidYouKnowUsView = '/HowDidYouKnowUsView';
+  static const String languageView = '/LanguageView';
+  static const String logInView = '/LogInView';
   static const String myActivitiesView = '/MyActivitiesView';
   static const String myitemsView = '/MyItemsView';
-  static const String addItemView = '/AddItemView';
-  static const String subscribeToPremiumView = '/SubscribeToPremiumView';
+  static const String navBarView = '/NavBarView';
+  static const String otpView = '/OtpView';
   static const String paymentMethodsView = '/PaymentMethodsView';
+  static const String privacyPolicyView = '/PrivacyPolicyView';
+  static const String resetPasswordView = '/ResetPasswordView';
+  static const String securityView = '/SecurityView';
+  static const String signUpIdentificationView = '/SignUpIdentificationView';
+  static const String signUpProfileInfoView = '/SignUpProfileInfoView';
+  static const String signUpView = '/SignUpView';
+  static const String socialLogInView = '/SocialLogInView';
+  static const String subscribeToPremiumView = '/SubscribeToPremiumView';
+  static const String successView = '/SuccessView';
+  static const String welcomeView = '/WelcomeView';
 
   static Route<dynamic>? generate(RouteSettings routeSettings) {
     switch (routeSettings.name) {
@@ -150,6 +152,10 @@ abstract class AppRoutes {
       case paymentMethodsView:
         return SideSlideTransition(
           page: const PaymentMethodsView(),
+        );
+      case addNewCardView:
+        return SideSlideTransition(
+          page: const AddNewCardView(),
         );
     }
     return null;
