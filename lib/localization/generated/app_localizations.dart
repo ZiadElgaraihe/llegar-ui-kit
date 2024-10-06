@@ -1036,6 +1036,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Add New Card'**
   String get addNewCard;
+
+  /// No description provided for @cardNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Card Number'**
+  String get cardNumber;
+
+  /// No description provided for @expiredDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Expired Date'**
+  String get expiredDate;
+
+  /// No description provided for @cvv.
+  ///
+  /// In en, this message translates to:
+  /// **'CVV'**
+  String get cvv;
+
+  /// No description provided for @cardHolder.
+  ///
+  /// In en, this message translates to:
+  /// **'Card Holder'**
+  String get cardHolder;
+
+  /// No description provided for @pleaseInputAValidCardNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Please input a valid card number'**
+  String get pleaseInputAValidCardNumber;
+
+  /// No description provided for @pleaseInputAValidCvv.
+  ///
+  /// In en, this message translates to:
+  /// **'Please input a valid CVV'**
+  String get pleaseInputAValidCvv;
+
+  /// No description provided for @pleaseInputAValidDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Please input a valid date'**
+  String get pleaseInputAValidDate;
+
+  /// No description provided for @add.
+  ///
+  /// In en, this message translates to:
+  /// **'Add'**
+  String get add;
+
+  /// No description provided for @yourCardHasBeenAddedSuccessfully.
+  ///
+  /// In en, this message translates to:
+  /// **'Your card has been added successfully.'**
+  String get yourCardHasBeenAddedSuccessfully;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
