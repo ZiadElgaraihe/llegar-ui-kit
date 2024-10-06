@@ -98,5 +98,16 @@ class AddItemViewBody extends StatelessWidget {
         //Add here code you want to execute when dialog is closed
       },
     );
+
+    //You can use this code in case of failure
+    /*
+    showMessageDialog(
+      context,
+      messageType: MessageType.failed,
+      title: translate(context).failed,
+      message: translate(context)
+          .anErrorOccurredWhileProcessingYourRequestPleaseTryAgain,
+    );
+    */
   }
 }
