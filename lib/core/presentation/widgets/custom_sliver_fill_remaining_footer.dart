@@ -8,26 +8,31 @@ class CustomSliverFillRemainingFooter extends StatelessWidget {
     required this.buttonTitle,
     this.onFuturePressed,
     this.onPressed,
+    this.padding,
   });
 
   final String buttonTitle;
   final Future<void> Function()? onFuturePressed;
   final VoidCallback? onPressed;
+  final EdgeInsetsGeometry? padding;
 
   @override
   Widget build(BuildContext context) {
     return SliverFillRemaining(
       hasScrollBody: false,
-      child: Column(
-        children: [
-          const Expanded(child: AppSizes.height24),
-          CustomElevatedButton(
-            title: buttonTitle,
-            onFuturePressed: onFuturePressed,
-            onPressed: onPressed,
-          ),
-          AppSizes.height24,
-        ],
+      child: Padding(
+        padding: padding ?? EdgeInsets.zero,
+        child: Column(
+          children: [
+            const Expanded(child: AppSizes.height24),
+            CustomElevatedButton(
+              title: buttonTitle,
+              onFuturePressed: onFuturePressed,
+              onPressed: onPressed,
+            ),
+            AppSizes.height24,
+          ],
+        ),
       ),
     );
   }
