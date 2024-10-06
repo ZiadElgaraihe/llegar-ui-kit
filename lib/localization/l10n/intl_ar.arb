@@ -155,5 +155,14 @@
     "payPal": "باي بال",
     "googlePay": "جوجل باي",
     "applePay": "آبل باي",
-    "addNewCard": "إضافة بطاقة جديدة"
+    "addNewCard": "إضافة بطاقة جديدة",
+    "cardNumber": "رقم البطاقة",
+    "expiredDate": "تاريخ انتهاء الصلاحية",
+    "cvv": "رمز التحقق من البطاقة",
+    "cardHolder": "حامل البطاقة",
+    "pleaseInputAValidCardNumber": "الرجاء إدخال رقم بطاقة صالح",
+    "pleaseInputAValidCvv": "الرجاء إدخال رمز التحقق من البطاقة صالح",
+    "pleaseInputAValidDate": "الرجاء إدخال تاريخ صالح",
+    "add": "إضافة",
+    "yourCardHasBeenAddedSuccessfully": "تمت إضافة بطاقتك بنجاح."
 }

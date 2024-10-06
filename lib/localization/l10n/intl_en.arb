@@ -155,5 +155,14 @@
     "payPal": "PayPal",
     "googlePay": "Google Pay",
     "applePay": "Apple Pay",
-    "addNewCard": "Add New Card"
+    "addNewCard": "Add New Card",
+    "cardNumber": "Card Number",
+    "expiredDate": "Expired Date",
+    "cvv": "CVV",
+    "cardHolder": "Card Holder",
+    "pleaseInputAValidCardNumber": "Please input a valid card number",
+    "pleaseInputAValidCvv": "Please input a valid CVV",
+    "pleaseInputAValidDate": "Please input a valid date",
+    "add": "Add",
+    "yourCardHasBeenAddedSuccessfully": "Your card has been added successfully."
 }

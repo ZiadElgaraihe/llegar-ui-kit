@@ -476,4 +476,31 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get addNewCard => 'إضافة بطاقة جديدة';
+
+  @override
+  String get cardNumber => 'رقم البطاقة';
+
+  @override
+  String get expiredDate => 'تاريخ انتهاء الصلاحية';
+
+  @override
+  String get cvv => 'رمز التحقق من البطاقة';
+
+  @override
+  String get cardHolder => 'حامل البطاقة';
+
+  @override
+  String get pleaseInputAValidCardNumber => 'الرجاء إدخال رقم بطاقة صالح';
+
+  @override
+  String get pleaseInputAValidCvv => 'الرجاء إدخال رمز التحقق من البطاقة صالح';
+
+  @override
+  String get pleaseInputAValidDate => 'الرجاء إدخال تاريخ صالح';
+
+  @override
+  String get add => 'إضافة';
+
+  @override
+  String get yourCardHasBeenAddedSuccessfully => 'تمت إضافة بطاقتك بنجاح.';
 }

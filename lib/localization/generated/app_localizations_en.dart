@@ -476,4 +476,31 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get addNewCard => 'Add New Card';
+
+  @override
+  String get cardNumber => 'Card Number';
+
+  @override
+  String get expiredDate => 'Expired Date';
+
+  @override
+  String get cvv => 'CVV';
+
+  @override
+  String get cardHolder => 'Card Holder';
+
+  @override
+  String get pleaseInputAValidCardNumber => 'Please input a valid card number';
+
+  @override
+  String get pleaseInputAValidCvv => 'Please input a valid CVV';
+
+  @override
+  String get pleaseInputAValidDate => 'Please input a valid date';
+
+  @override
+  String get add => 'Add';
+
+  @override
+  String get yourCardHasBeenAddedSuccessfully => 'Your card has been added successfully.';
 }
