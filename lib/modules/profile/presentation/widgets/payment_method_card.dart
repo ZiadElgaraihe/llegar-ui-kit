@@ -21,14 +21,6 @@ class PaymentMethodCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: valueBasedOnTheme<Color>(
-        context,
-        light: AppColors.white,
-        dark: AppColors.prussianBlue,
-      ),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(10),
-      ),
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(8.0),

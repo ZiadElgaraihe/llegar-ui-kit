@@ -247,6 +247,12 @@ abstract class AppThemes {
             borderRadius: BorderRadius.circular(30),
           ),
         ),
+        cardTheme: CardTheme(
+          color: AppColors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+        ),
       );
 
   static ThemeData darkTheme(BuildContext context) => ThemeData.dark().copyWith(
@@ -487,6 +493,12 @@ abstract class AppThemes {
           backgroundColor: AppColors.white,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(30),
+          ),
+        ),
+        cardTheme: CardTheme(
+          color: AppColors.prussianBlue,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
           ),
         ),
       );
