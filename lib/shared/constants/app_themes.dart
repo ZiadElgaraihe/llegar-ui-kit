@@ -11,7 +11,7 @@ abstract class AppThemes {
         scaffoldBackgroundColor: AppColors.white,
         colorScheme: ColorScheme.fromSeed(seedColor: AppColors.prussianBlue),
         dividerTheme: const DividerThemeData(
-          color: AppColors.black,
+          color: AppColors.antiFlashWhite,
           thickness: 1,
           indent: 8,
           endIndent: 8,
@@ -259,7 +259,7 @@ abstract class AppThemes {
         scaffoldBackgroundColor: AppColors.prussianBlue,
         colorScheme: ColorScheme.fromSeed(seedColor: AppColors.prussianBlue),
         dividerTheme: const DividerThemeData(
-          color: AppColors.white,
+          color: AppColors.antiFlashWhite,
           thickness: 1,
           indent: 8,
           endIndent: 8,

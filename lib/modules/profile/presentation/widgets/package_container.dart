@@ -65,9 +65,7 @@ class PackageContainer extends StatelessWidget {
               ),
               AppSizes.height12,
               PricePerMonthRow(premiumPackageEntity: premiumPackageEntity),
-              const Divider(
-                color: AppColors.antiFlashWhite,
-              ),
+              const Divider(),
               Column(
                 children: premiumPackageEntity
                     .features(context)

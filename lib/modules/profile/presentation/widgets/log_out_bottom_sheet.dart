@@ -25,11 +25,7 @@ class LogOutBottomSheet extends StatelessWidget {
               color: AppColors.red,
             ),
           ),
-          const Divider(
-            thickness: 1,
-            color: AppColors.antiFlashWhite,
-            height: 32,
-          ),
+          const Divider(height: 32),
           FittedBox(
             fit: BoxFit.scaleDown,
             child: Text(
