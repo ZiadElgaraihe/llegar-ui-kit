@@ -164,5 +164,6 @@
     "pleaseInputAValidCvv": "الرجاء إدخال رمز التحقق من البطاقة صالح",
     "pleaseInputAValidDate": "الرجاء إدخال تاريخ صالح",
     "add": "إضافة",
-    "yourCardHasBeenAddedSuccessfully": "تمت إضافة بطاقتك بنجاح."
+    "yourCardHasBeenAddedSuccessfully": "تمت إضافة بطاقتك بنجاح.",
+    "reviewSummary": "مراجعة الملخص"
 }

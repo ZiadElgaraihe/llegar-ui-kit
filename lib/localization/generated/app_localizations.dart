@@ -1090,6 +1090,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your card has been added successfully.'**
   String get yourCardHasBeenAddedSuccessfully;
+
+  /// No description provided for @reviewSummary.
+  ///
+  /// In en, this message translates to:
+  /// **'Review Summary'**
+  String get reviewSummary;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

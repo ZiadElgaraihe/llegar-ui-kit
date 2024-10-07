@@ -26,7 +26,11 @@ class PackageContainer extends StatelessWidget {
         onTap: () {
           futureDelayedNavigator(
             () {
-              Navigator.pushNamed(context, AppRoutes.paymentMethodsView);
+              Navigator.pushNamed(
+                context,
+                AppRoutes.paymentMethodsView,
+                arguments: premiumPackageEntity,
+              );
             },
           );
         },

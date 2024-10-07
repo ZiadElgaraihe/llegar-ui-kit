@@ -10,6 +10,7 @@ import 'package:llegar/modules/auth/presentation/views/sign_up_identification_vi
 import 'package:llegar/modules/auth/presentation/views/sign_up_profile_info_view.dart';
 import 'package:llegar/modules/auth/presentation/views/sign_up_view.dart';
 import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
+import 'package:llegar/modules/profile/domain/entities/premium_package_entity.dart';
 import 'package:llegar/modules/profile/presentation/views/add_item_view.dart';
 import 'package:llegar/modules/profile/presentation/views/add_new_card_view.dart';
 import 'package:llegar/modules/profile/presentation/views/contact_us_view.dart';
@@ -20,6 +21,7 @@ import 'package:llegar/modules/profile/presentation/views/my_activities_view.dar
 import 'package:llegar/modules/profile/presentation/views/my_items_view.dart';
 import 'package:llegar/modules/profile/presentation/views/payment_view.dart';
 import 'package:llegar/modules/profile/presentation/views/privacy_policy_view.dart';
+import 'package:llegar/modules/profile/presentation/views/review_summary_view.dart';
 import 'package:llegar/modules/profile/presentation/views/security_view.dart';
 import 'package:llegar/modules/profile/presentation/views/subscribe_to_premium_view.dart';
 import 'package:llegar/modules/welcome/presentation/views/how_did_you_know_us_view.dart';
@@ -46,6 +48,7 @@ abstract class AppRoutes {
   static const String paymentMethodsView = '/PaymentMethodsView';
   static const String privacyPolicyView = '/PrivacyPolicyView';
   static const String resetPasswordView = '/ResetPasswordView';
+  static const String reviewSummaryView = '/ReviewSummaryView';
   static const String securityView = '/SecurityView';
   static const String signUpIdentificationView = '/SignUpIdentificationView';
   static const String signUpProfileInfoView = '/SignUpProfileInfoView';
@@ -151,11 +154,21 @@ abstract class AppRoutes {
         );
       case paymentMethodsView:
         return SideSlideTransition(
-          page: const PaymentMethodsView(),
+          page: PaymentMethodsView(
+            premiumPackageEntity:
+                routeSettings.arguments as PremiumPackageEntity,
+          ),
         );
       case addNewCardView:
         return SideSlideTransition(
           page: const AddNewCardView(),
+        );
+      case reviewSummaryView:
+        return SideSlideTransition(
+          page: ReviewSummaryView(
+            premiumPackageEntity:
+                routeSettings.arguments as PremiumPackageEntity,
+          ),
         );
     }
     return null;

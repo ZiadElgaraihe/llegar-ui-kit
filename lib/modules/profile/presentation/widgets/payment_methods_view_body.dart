@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_secondary_elevated_button.dart';
 import 'package:llegar/core/presentation/widgets/custom_sliver_fill_remaining_footer.dart';
+import 'package:llegar/modules/profile/domain/entities/premium_package_entity.dart';
 import 'package:llegar/modules/profile/presentation/widgets/payment_methods_column.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_routes.dart';
@@ -12,7 +13,10 @@ import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 class PaymentMethodsViewBody extends StatelessWidget {
   const PaymentMethodsViewBody({
     super.key,
+    required this.premiumPackageEntity,
   });
+
+  final PremiumPackageEntity premiumPackageEntity;
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +57,13 @@ class PaymentMethodsViewBody extends StatelessWidget {
           ),
           CustomSliverFillRemainingFooter(
             buttonTitle: translate(context).continueText,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(
+                context,
+                AppRoutes.reviewSummaryView,
+                arguments: premiumPackageEntity,
+              );
+            },
           ),
         ],
       ),

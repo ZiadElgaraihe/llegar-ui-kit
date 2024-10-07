@@ -164,5 +164,6 @@
     "pleaseInputAValidCvv": "Please input a valid CVV",
     "pleaseInputAValidDate": "Please input a valid date",
     "add": "Add",
-    "yourCardHasBeenAddedSuccessfully": "Your card has been added successfully."
+    "yourCardHasBeenAddedSuccessfully": "Your card has been added successfully.",
+    "reviewSummary": "Review Summary"
 }

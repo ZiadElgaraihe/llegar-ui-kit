@@ -503,4 +503,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get yourCardHasBeenAddedSuccessfully => 'Your card has been added successfully.';
+
+  @override
+  String get reviewSummary => 'Review Summary';
 }
