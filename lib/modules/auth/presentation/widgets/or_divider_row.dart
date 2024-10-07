@@ -15,7 +15,15 @@ class OrDividerRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const Expanded(child: Divider()),
+        Expanded(
+          child: Divider(
+            color: valueBasedOnTheme<Color>(
+              context,
+              light: AppColors.black,
+              dark: AppColors.white,
+            ),
+          ),
+        ),
         Text(
           title,
           style: AppTextStyles.bold24(context).copyWith(
@@ -26,7 +34,15 @@ class OrDividerRow extends StatelessWidget {
             ),
           ),
         ),
-        const Expanded(child: Divider()),
+        Expanded(
+          child: Divider(
+            color: valueBasedOnTheme<Color>(
+              context,
+              light: AppColors.black,
+              dark: AppColors.white,
+            ),
+          ),
+        ),
       ],
     );
   }

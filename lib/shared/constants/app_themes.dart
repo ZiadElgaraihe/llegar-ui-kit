@@ -11,7 +11,7 @@ abstract class AppThemes {
         scaffoldBackgroundColor: AppColors.white,
         colorScheme: ColorScheme.fromSeed(seedColor: AppColors.prussianBlue),
         dividerTheme: const DividerThemeData(
-          color: AppColors.black,
+          color: AppColors.antiFlashWhite,
           thickness: 1,
           indent: 8,
           endIndent: 8,
@@ -247,13 +247,19 @@ abstract class AppThemes {
             borderRadius: BorderRadius.circular(30),
           ),
         ),
+        cardTheme: CardTheme(
+          color: AppColors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+        ),
       );
 
   static ThemeData darkTheme(BuildContext context) => ThemeData.dark().copyWith(
         scaffoldBackgroundColor: AppColors.prussianBlue,
         colorScheme: ColorScheme.fromSeed(seedColor: AppColors.prussianBlue),
         dividerTheme: const DividerThemeData(
-          color: AppColors.white,
+          color: AppColors.antiFlashWhite,
           thickness: 1,
           indent: 8,
           endIndent: 8,
@@ -487,6 +493,12 @@ abstract class AppThemes {
           backgroundColor: AppColors.white,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(30),
+          ),
+        ),
+        cardTheme: CardTheme(
+          color: AppColors.prussianBlue,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
           ),
         ),
       );

@@ -1090,6 +1090,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your card has been added successfully.'**
   String get yourCardHasBeenAddedSuccessfully;
+
+  /// No description provided for @reviewSummary.
+  ///
+  /// In en, this message translates to:
+  /// **'Review Summary'**
+  String get reviewSummary;
+
+  /// No description provided for @amount.
+  ///
+  /// In en, this message translates to:
+  /// **'Amount'**
+  String get amount;
+
+  /// No description provided for @tax.
+  ///
+  /// In en, this message translates to:
+  /// **'Tax'**
+  String get tax;
+
+  /// No description provided for @total.
+  ///
+  /// In en, this message translates to:
+  /// **'Total'**
+  String get total;
+
+  /// No description provided for @confirmPayment.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm Payment'**
+  String get confirmPayment;
+
+  /// No description provided for @congratulations.
+  ///
+  /// In en, this message translates to:
+  /// **'Congratulations!'**
+  String get congratulations;
+
+  /// No description provided for @youHaveSuccessfullySubscribed.
+  ///
+  /// In en, this message translates to:
+  /// **'You have successfully subscribed 30 Days premium. Enjoy the benefits!'**
+  String get youHaveSuccessfullySubscribed;
+
+  /// No description provided for @paymentFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment failed'**
+  String get paymentFailed;
+
+  /// No description provided for @youHaveFailedSubscribed.
+  ///
+  /// In en, this message translates to:
+  /// **'You have failed subscribed 30 Days premium. Because there is not enough money in your account'**
+  String get youHaveFailedSubscribed;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

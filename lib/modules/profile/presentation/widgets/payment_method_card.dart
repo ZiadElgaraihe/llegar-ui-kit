@@ -9,26 +9,18 @@ import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 class PaymentMethodCard extends StatelessWidget {
   const PaymentMethodCard({
     super.key,
-    required this.groupValue,
-    required this.onChanged,
+    this.groupValue,
+    this.onChanged,
     required this.paymentMethodEntity,
   });
 
-  final String? groupValue;
-  final void Function(String? value) onChanged;
+  final PaymentMethodEntity? groupValue;
+  final void Function(PaymentMethodEntity? value)? onChanged;
   final PaymentMethodEntity paymentMethodEntity;
 
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: valueBasedOnTheme<Color>(
-        context,
-        light: AppColors.white,
-        dark: AppColors.prussianBlue,
-      ),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(10),
-      ),
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -64,11 +56,13 @@ class PaymentMethodCard extends StatelessWidget {
                 ),
             ],
           ),
-          trailing: Radio<String>(
-            value: paymentMethodEntity.title,
-            groupValue: groupValue,
-            onChanged: onChanged,
-          ),
+          trailing: (onChanged != null)
+              ? Radio<PaymentMethodEntity>(
+                  value: paymentMethodEntity,
+                  groupValue: groupValue,
+                  onChanged: onChanged,
+                )
+              : null,
         ),
       ),
     );
