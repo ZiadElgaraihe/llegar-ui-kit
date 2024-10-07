@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:llegar/modules/profile/domain/entities/premium_package_entity.dart';
 import 'package:llegar/modules/profile/presentation/widgets/package_container.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
@@ -74,7 +75,18 @@ class SubscribeToPremiumViewBody extends StatelessWidget {
           spacing: 24,
           runSpacing: 24,
           children: _packages
-              .map((package) => PackageContainer(premiumPackageEntity: package))
+              .map(
+                (package) => PackageContainer(
+                  premiumPackageEntity: package,
+                  onTap: () {
+                    Navigator.pushNamed(
+                      context,
+                      AppRoutes.paymentMethodsView,
+                      arguments: package,
+                    );
+                  },
+                ),
+              )
               .toList(),
         ),
         AppSizes.height24,

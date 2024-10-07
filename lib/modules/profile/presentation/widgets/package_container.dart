@@ -5,7 +5,6 @@ import 'package:llegar/modules/profile/presentation/widgets/package_feature_list
 import 'package:llegar/modules/profile/presentation/widgets/price_per_month_row.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_icons.dart';
-import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/utils/functions/future_delayed_navigator.dart';
 import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
@@ -13,27 +12,27 @@ import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 class PackageContainer extends StatelessWidget {
   const PackageContainer({
     super.key,
+    this.onTap,
     required this.premiumPackageEntity,
   });
 
   final PremiumPackageEntity premiumPackageEntity;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
     return ConstrainedBox(
       constraints: const BoxConstraints(maxWidth: 450),
       child: InkWell(
-        onTap: () {
-          futureDelayedNavigator(
-            () {
-              Navigator.pushNamed(
-                context,
-                AppRoutes.paymentMethodsView,
-                arguments: premiumPackageEntity,
-              );
-            },
-          );
-        },
+        onTap: (onTap != null)
+            ? () {
+                futureDelayedNavigator(
+                  () {
+                    onTap!();
+                  },
+                );
+              }
+            : null,
         borderRadius: BorderRadius.circular(30),
         child: Container(
           padding: const EdgeInsets.symmetric(
