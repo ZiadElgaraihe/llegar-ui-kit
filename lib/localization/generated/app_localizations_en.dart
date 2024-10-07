@@ -506,4 +506,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get reviewSummary => 'Review Summary';
+
+  @override
+  String get amount => 'Amount';
+
+  @override
+  String get tax => 'Tax';
+
+  @override
+  String get total => 'Total';
+
+  @override
+  String get confirmPayment => 'Confirm Payment';
 }

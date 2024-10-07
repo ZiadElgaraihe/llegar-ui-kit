@@ -11,6 +11,7 @@ import 'package:llegar/modules/auth/presentation/views/sign_up_profile_info_view
 import 'package:llegar/modules/auth/presentation/views/sign_up_view.dart';
 import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
 import 'package:llegar/modules/profile/domain/entities/premium_package_entity.dart';
+import 'package:llegar/modules/profile/domain/entities/review_summary_entity.dart';
 import 'package:llegar/modules/profile/presentation/views/add_item_view.dart';
 import 'package:llegar/modules/profile/presentation/views/add_new_card_view.dart';
 import 'package:llegar/modules/profile/presentation/views/contact_us_view.dart';
@@ -166,8 +167,8 @@ abstract class AppRoutes {
       case reviewSummaryView:
         return SideSlideTransition(
           page: ReviewSummaryView(
-            premiumPackageEntity:
-                routeSettings.arguments as PremiumPackageEntity,
+            reviewSummaryEntity:
+                routeSettings.arguments as ReviewSummaryEntity,
           ),
         );
     }

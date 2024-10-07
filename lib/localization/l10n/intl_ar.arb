@@ -165,5 +165,9 @@
     "pleaseInputAValidDate": "الرجاء إدخال تاريخ صالح",
     "add": "إضافة",
     "yourCardHasBeenAddedSuccessfully": "تمت إضافة بطاقتك بنجاح.",
-    "reviewSummary": "مراجعة الملخص"
+    "reviewSummary": "مراجعة الملخص",
+    "amount": "المبلغ",
+    "tax": "ضريبة",
+    "total": "الإجمالي",
+    "confirmPayment": "تأكيد الدفع"
 }

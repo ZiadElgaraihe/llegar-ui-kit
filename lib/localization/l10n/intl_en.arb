@@ -109,7 +109,7 @@
     "website": "Website",
     "twitter": "Twitter",
     "instagram": "Instagram",
-    "typeYourMessage":"Type Your Message",
+    "typeYourMessage": "Type Your Message",
     "faq": "FAQ",
     "ans": "ANS",
     "send": "Send",
@@ -165,5 +165,9 @@
     "pleaseInputAValidDate": "Please input a valid date",
     "add": "Add",
     "yourCardHasBeenAddedSuccessfully": "Your card has been added successfully.",
-    "reviewSummary": "Review Summary"
+    "reviewSummary": "Review Summary",
+    "amount": "Amount",
+    "tax": "Tax",
+    "total": "Total",
+    "confirmPayment": "Confirm Payment"
 }

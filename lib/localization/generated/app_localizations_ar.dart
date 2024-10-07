@@ -506,4 +506,16 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get reviewSummary => 'مراجعة الملخص';
+
+  @override
+  String get amount => 'المبلغ';
+
+  @override
+  String get tax => 'ضريبة';
+
+  @override
+  String get total => 'الإجمالي';
+
+  @override
+  String get confirmPayment => 'تأكيد الدفع';
 }
