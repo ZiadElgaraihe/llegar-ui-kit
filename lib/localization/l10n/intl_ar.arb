@@ -169,5 +169,9 @@
     "amount": "المبلغ",
     "tax": "ضريبة",
     "total": "الإجمالي",
-    "confirmPayment": "تأكيد الدفع"
+    "confirmPayment": "تأكيد الدفع",
+    "congratulations": "تهانينا!",
+    "youHaveSuccessfullySubscribed": "لقد تم الاشتراك بنجاح في 30 يومًا من العضوية المميزة. استمتع بالمزايا!",
+    "paymentFailed": "فشل الدفع",
+    "youHaveFailedSubscribed": "لقد فشل الاشتراك في 30 يومًا من العضوية المميزة. نظرًا لعدم وجود أموال كافية في حسابك"
 }

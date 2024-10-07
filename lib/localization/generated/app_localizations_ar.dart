@@ -518,4 +518,16 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get confirmPayment => 'تأكيد الدفع';
+
+  @override
+  String get congratulations => 'تهانينا!';
+
+  @override
+  String get youHaveSuccessfullySubscribed => 'لقد تم الاشتراك بنجاح في 30 يومًا من العضوية المميزة. استمتع بالمزايا!';
+
+  @override
+  String get paymentFailed => 'فشل الدفع';
+
+  @override
+  String get youHaveFailedSubscribed => 'لقد فشل الاشتراك في 30 يومًا من العضوية المميزة. نظرًا لعدم وجود أموال كافية في حسابك';
 }

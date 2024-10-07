@@ -518,4 +518,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get confirmPayment => 'Confirm Payment';
+
+  @override
+  String get congratulations => 'Congratulations!';
+
+  @override
+  String get youHaveSuccessfullySubscribed => 'You have successfully subscribed 30 Days premium. Enjoy the benefits!';
+
+  @override
+  String get paymentFailed => 'Payment failed';
+
+  @override
+  String get youHaveFailedSubscribed => 'You have failed subscribed 30 Days premium. Because there is not enough money in your account';
 }

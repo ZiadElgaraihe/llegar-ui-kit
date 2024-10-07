@@ -4,7 +4,10 @@ import 'package:llegar/modules/profile/domain/entities/review_summary_entity.dar
 import 'package:llegar/modules/profile/presentation/widgets/package_container.dart';
 import 'package:llegar/modules/profile/presentation/widgets/payment_method_card.dart';
 import 'package:llegar/modules/profile/presentation/widgets/total_price_card.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
+import 'package:llegar/shared/utils/enums/message_type.dart';
+import 'package:llegar/shared/utils/functions/show_message_dialog.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
 class ReviewSummaryViewBody extends StatelessWidget {
@@ -43,10 +46,44 @@ class ReviewSummaryViewBody extends StatelessWidget {
           ),
           CustomSliverFillRemainingFooter(
             buttonTitle: translate(context).confirmPayment,
-            onFuturePressed: () async {},
+            onFuturePressed: () async {
+              await _onConfirmPaymentPressed(context);
+            },
           ),
         ],
       ),
     );
+  }
+
+  Future<void> _onConfirmPaymentPressed(BuildContext context) async {
+    //remove this & add your logic
+    await Future.delayed(const Duration(seconds: 2));
+
+    if (!context.mounted) return;
+    showMessageDialog(
+      context,
+      messageType: MessageType.success,
+      title: translate(context).congratulations,
+      message: translate(context).youHaveSuccessfullySubscribed,
+    ).then(
+      (value) {
+        if (!context.mounted) return;
+        Navigator.pushNamedAndRemoveUntil(
+          context,
+          AppRoutes.navBarView,
+          (route) => false,
+        );
+      },
+    );
+
+    //You can use this code in case of failure
+    /*
+    showMessageDialog(
+      context,
+      messageType: MessageType.failed,
+      title: translate(context).paymentFailed,
+      message: translate(context).youHaveFailedSubscribed,
+    );
+    */
   }
 }
