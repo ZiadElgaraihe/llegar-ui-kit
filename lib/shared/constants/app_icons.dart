@@ -97,6 +97,9 @@ abstract class AppIcons {
   ///assets/icons/master_card.svg
   static const String masterCard = 'assets/icons/master_card.svg';
 
+  ///assets/icons/mic.svg
+  static const String mic = 'assets/icons/mic.svg';
+
   ///assets/icons/my_activities.svg
   static const String myActivities = 'assets/icons/my_activities.svg';
 
@@ -123,6 +126,9 @@ abstract class AppIcons {
 
   ///assets/icons/pen.svg
   static const String pen = 'assets/icons/pen.svg';
+
+  ///assets/icons/photo.svg
+  static const String photo = 'assets/icons/photo.svg';
 
   ///assets/icons/privacy_policy.svg
   static const String privacyPolicy = 'assets/icons/privacy_policy.svg';
