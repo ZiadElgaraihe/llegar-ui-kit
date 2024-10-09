@@ -1144,6 +1144,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You have failed subscribed 30 Days premium. Because there is not enough money in your account'**
   String get youHaveFailedSubscribed;
+
+  /// No description provided for @today.
+  ///
+  /// In en, this message translates to:
+  /// **'Today'**
+  String get today;
+
+  /// No description provided for @message.
+  ///
+  /// In en, this message translates to:
+  /// **'Message'**
+  String get message;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

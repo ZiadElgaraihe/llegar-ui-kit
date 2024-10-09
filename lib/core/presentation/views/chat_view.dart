@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/core/presentation/widgets/chat_view_body.dart';
 import 'package:llegar/core/presentation/widgets/custom_app_bar.dart';
 
 class ChatView extends StatelessWidget {
@@ -11,9 +12,13 @@ class ChatView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: CustomAppBar(
-        title: appBarTitle,
+    return GestureDetector(
+      onTap: () => FocusManager.instance.primaryFocus!.unfocus(),
+      child: Scaffold(
+        appBar: CustomAppBar(
+          title: appBarTitle,
+        ),
+        body: const ChatViewBody(),
       ),
     );
   }

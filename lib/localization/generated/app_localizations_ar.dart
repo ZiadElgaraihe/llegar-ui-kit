@@ -530,4 +530,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get youHaveFailedSubscribed => 'لقد فشل الاشتراك في 30 يومًا من العضوية المميزة. نظرًا لعدم وجود أموال كافية في حسابك';
+
+  @override
+  String get today => 'اليوم';
+
+  @override
+  String get message => 'رسالة';
 }

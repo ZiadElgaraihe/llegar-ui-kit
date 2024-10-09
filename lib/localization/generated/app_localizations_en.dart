@@ -530,4 +530,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get youHaveFailedSubscribed => 'You have failed subscribed 30 Days premium. Because there is not enough money in your account';
+
+  @override
+  String get today => 'Today';
+
+  @override
+  String get message => 'Message';
 }
