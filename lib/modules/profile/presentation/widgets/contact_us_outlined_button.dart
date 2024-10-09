@@ -4,6 +4,7 @@ import 'package:llegar/modules/profile/domain/entities/contact_us_entity.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
+import 'package:llegar/shared/utils/functions/future_delayed_navigator.dart';
 import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class ContactUsOutlinedButton extends StatelessWidget {
@@ -17,7 +18,13 @@ class ContactUsOutlinedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OutlinedButton(
-      onPressed: contactUsEntity.onPressed,
+      onPressed: () {
+        futureDelayedNavigator(
+          () {
+            contactUsEntity.onPressed(context);
+          },
+        );
+      },
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

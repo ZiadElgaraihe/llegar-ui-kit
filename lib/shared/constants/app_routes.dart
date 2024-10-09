@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/domain/entities/success_view_entity.dart';
+import 'package:llegar/core/presentation/views/chat_view.dart';
 import 'package:llegar/core/presentation/views/nav_bar_view.dart';
 import 'package:llegar/core/presentation/views/reset_password_view.dart';
 import 'package:llegar/core/presentation/views/success_view.dart';
@@ -35,6 +36,7 @@ import 'package:llegar/shared/animations/side_slide_transition.dart';
 abstract class AppRoutes {
   static const String addItemView = '/AddItemView';
   static const String addNewCardView = '/AddNewCardView';
+  static const String chatView = '/ChatView';
   static const String contactUsView = '/ContactUsView';
   static const String editProfileView = '/EditProfileView';
   static const String forgetPasswordView = '/ForgetPasswordView';
@@ -167,8 +169,13 @@ abstract class AppRoutes {
       case reviewSummaryView:
         return SideSlideTransition(
           page: ReviewSummaryView(
-            reviewSummaryEntity:
-                routeSettings.arguments as ReviewSummaryEntity,
+            reviewSummaryEntity: routeSettings.arguments as ReviewSummaryEntity,
+          ),
+        );
+      case chatView:
+        return SideSlideTransition(
+          page: ChatView(
+            appBarTitle: routeSettings.arguments as String,
           ),
         );
     }

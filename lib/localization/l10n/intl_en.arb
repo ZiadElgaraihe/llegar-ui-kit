@@ -173,5 +173,7 @@
     "congratulations": "Congratulations!",
     "youHaveSuccessfullySubscribed": "You have successfully subscribed 30 Days premium. Enjoy the benefits!",
     "paymentFailed": "Payment failed",
-    "youHaveFailedSubscribed": "You have failed subscribed 30 Days premium. Because there is not enough money in your account"
+    "youHaveFailedSubscribed": "You have failed subscribed 30 Days premium. Because there is not enough money in your account",
+    "today": "Today",
+    "message": "Message"
 }
