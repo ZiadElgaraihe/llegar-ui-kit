@@ -88,6 +88,9 @@ abstract class AppIcons {
   ///assets/icons/inbox_outlined.svg
   static const String inboxOutlined = 'assets/icons/inbox_outlined.svg';
 
+  ///assets/icons/leave_review.svg
+  static const String leaveReview = 'assets/icons/leave_review.svg';
+
   ///assets/icons/location.svg
   static const String location = 'assets/icons/location.svg';
 
@@ -138,6 +141,13 @@ abstract class AppIcons {
 
   ///assets/icons/profile_outlined.svg
   static const String profileOutlined = 'assets/icons/profile_outlined.svg';
+
+  ///assets/icons/rating_star.svg
+  static const String ratingStar = 'assets/icons/rating_star.svg';
+
+  ///assets/icons/rating_star_outlined.svg
+  static const String ratingStarOutlined =
+      'assets/icons/rating_star_outlined.svg';
 
   ///assets/icons/security.svg
   static const String security = 'assets/icons/security.svg';

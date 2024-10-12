@@ -175,5 +175,12 @@
     "paymentFailed": "Payment failed",
     "youHaveFailedSubscribed": "You have failed subscribed 30 Days premium. Because there is not enough money in your account",
     "today": "Today",
-    "message": "Message"
+    "message": "Message",
+    "myOrders": "My Orders",
+    "youDonotHaveAnOrderYet": "You don’t have an order yet",
+    "youDonotHaveAnOngoingOrdersAtThisTime": "You don’t have an ongoing orders at this time",
+    "leaveAReview": "Leave a Review",
+    "pleaseGiveYourRatingAndAlsoYourReview": "Please give your rating & also your review",
+    "leaveYourComment": "Leave Your Comment",
+    "submit": "Submit"
 }

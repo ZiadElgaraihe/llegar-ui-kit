@@ -536,4 +536,25 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get message => 'Message';
+
+  @override
+  String get myOrders => 'My Orders';
+
+  @override
+  String get youDonotHaveAnOrderYet => 'You don’t have an order yet';
+
+  @override
+  String get youDonotHaveAnOngoingOrdersAtThisTime => 'You don’t have an ongoing orders at this time';
+
+  @override
+  String get leaveAReview => 'Leave a Review';
+
+  @override
+  String get pleaseGiveYourRatingAndAlsoYourReview => 'Please give your rating & also your review';
+
+  @override
+  String get leaveYourComment => 'Leave Your Comment';
+
+  @override
+  String get submit => 'Submit';
 }

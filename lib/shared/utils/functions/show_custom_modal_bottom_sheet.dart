@@ -7,6 +7,7 @@ Future<T?> showCustomModalBottomSheet<T>(
 }) {
   return showModalBottomSheet(
     context: context,
+    isScrollControlled: true,
     constraints: BoxConstraints.expand(height: height),
     enableDrag: true,
     sheetAnimationStyle: AnimationStyle(

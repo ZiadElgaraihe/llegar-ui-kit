@@ -1156,6 +1156,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Message'**
   String get message;
+
+  /// No description provided for @myOrders.
+  ///
+  /// In en, this message translates to:
+  /// **'My Orders'**
+  String get myOrders;
+
+  /// No description provided for @youDonotHaveAnOrderYet.
+  ///
+  /// In en, this message translates to:
+  /// **'You don’t have an order yet'**
+  String get youDonotHaveAnOrderYet;
+
+  /// No description provided for @youDonotHaveAnOngoingOrdersAtThisTime.
+  ///
+  /// In en, this message translates to:
+  /// **'You don’t have an ongoing orders at this time'**
+  String get youDonotHaveAnOngoingOrdersAtThisTime;
+
+  /// No description provided for @leaveAReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Leave a Review'**
+  String get leaveAReview;
+
+  /// No description provided for @pleaseGiveYourRatingAndAlsoYourReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Please give your rating & also your review'**
+  String get pleaseGiveYourRatingAndAlsoYourReview;
+
+  /// No description provided for @leaveYourComment.
+  ///
+  /// In en, this message translates to:
+  /// **'Leave Your Comment'**
+  String get leaveYourComment;
+
+  /// No description provided for @submit.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit'**
+  String get submit;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

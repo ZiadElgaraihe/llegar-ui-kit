@@ -43,6 +43,13 @@ abstract class AppImages {
   ///assets/images/dark/make_deal_dark.svg
   static const String makeDealDark = 'assets/images/dark/make_deal_dark.svg';
 
+  ///assets/images/light/my_orders_empty.svg
+  static const String myOrdersEmpty = 'assets/images/light/my_orders_empty.svg';
+
+  ///assets/images/dark/my_orders_empty_dark.svg
+  static const String myOrdersEmptyDark =
+      'assets/images/dark/my_orders_empty_dark.svg';
+
   ///assets/images/light/ok_amico.svg
   static const String okAmico = 'assets/images/light/ok_amico.svg';
 
