@@ -6,11 +6,9 @@ import 'package:llegar/shared/utils/functions/translate.dart';
 class InboxView extends StatelessWidget {
   const InboxView({
     super.key,
-    required this.currentIndex,
     required this.pageController,
   });
 
-  final ValueNotifier<int> currentIndex;
   final PageController pageController;
 
   @override
@@ -18,16 +16,17 @@ class InboxView extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar(
         title: translate(context).inbox,
-        onBackPressed: () {
-          currentIndex.value = 0;
-          pageController.animateToPage(
-            0,
-            duration: const Duration(milliseconds: 300),
-            curve: Curves.easeIn,
-          );
-        },
+        onBackPressed: _onBackPressed,
       ),
       body: const InboxViewBody(),
+    );
+  }
+
+  void _onBackPressed() {
+    pageController.animateToPage(
+      0,
+      duration: const Duration(milliseconds: 300),
+      curve: Curves.easeIn,
     );
   }
 }

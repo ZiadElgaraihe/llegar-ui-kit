@@ -47,7 +47,6 @@ class _NavBarViewState extends State<NavBarView> {
         icon: AppIcons.inboxOutlined,
         activeIcon: AppIcons.inbox,
         page: InboxView(
-          currentIndex: _currentIndex,
           pageController: _pageController,
         ),
       ),
