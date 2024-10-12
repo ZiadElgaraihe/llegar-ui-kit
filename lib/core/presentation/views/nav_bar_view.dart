@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:llegar/core/domain/entities/nav_bar_entity.dart';
 import 'package:llegar/core/presentation/widgets/nav_bar.dart';
 import 'package:llegar/core/presentation/widgets/nav_bar_view_body.dart';
+import 'package:llegar/modules/inbox/presentation/views/inbox_view.dart';
 import 'package:llegar/modules/profile/presentation/views/profile_view.dart';
 import 'package:llegar/shared/constants/app_icons.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
@@ -45,7 +46,10 @@ class _NavBarViewState extends State<NavBarView> {
         label: translate(context).inbox,
         icon: AppIcons.inboxOutlined,
         activeIcon: AppIcons.inbox,
-        page: const Center(child: Text('Inbox')),
+        page: InboxView(
+          currentIndex: _currentIndex,
+          pageController: _pageController,
+        ),
       ),
       NavBarEntity(
         label: translate(context).wallet,
