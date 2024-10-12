@@ -4,7 +4,7 @@ class ChatEntity {
   final String appBarTitle;
   final List<ChatMessage> messages;
 
-  const ChatEntity({
+  ChatEntity({
     required this.appBarTitle,
     required this.messages,
   });
