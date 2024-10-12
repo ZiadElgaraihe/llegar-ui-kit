@@ -539,4 +539,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get myOrders => 'طلباتي';
+
+  @override
+  String get youDonotHaveAnOrderYet => 'ليس لديك طلبات بعد';
+
+  @override
+  String get youDonotHaveAnOngoingOrdersAtThisTime => 'ليس لديك طلبات جارية في هذا الوقت';
 }

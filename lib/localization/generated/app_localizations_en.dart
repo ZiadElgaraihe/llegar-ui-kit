@@ -539,4 +539,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get myOrders => 'My Orders';
+
+  @override
+  String get youDonotHaveAnOrderYet => 'You don’t have an order yet';
+
+  @override
+  String get youDonotHaveAnOngoingOrdersAtThisTime => 'You don’t have an ongoing orders at this time';
 }

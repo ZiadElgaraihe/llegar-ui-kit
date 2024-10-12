@@ -1162,6 +1162,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'My Orders'**
   String get myOrders;
+
+  /// No description provided for @youDonotHaveAnOrderYet.
+  ///
+  /// In en, this message translates to:
+  /// **'You don’t have an order yet'**
+  String get youDonotHaveAnOrderYet;
+
+  /// No description provided for @youDonotHaveAnOngoingOrdersAtThisTime.
+  ///
+  /// In en, this message translates to:
+  /// **'You don’t have an ongoing orders at this time'**
+  String get youDonotHaveAnOngoingOrdersAtThisTime;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

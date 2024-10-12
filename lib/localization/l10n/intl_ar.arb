@@ -176,5 +176,7 @@
     "youHaveFailedSubscribed": "لقد فشل الاشتراك في 30 يومًا من العضوية المميزة. نظرًا لعدم وجود أموال كافية في حسابك",
     "today": "اليوم",
     "message": "رسالة",
-    "myOrders": "طلباتي"
+    "myOrders": "طلباتي",
+    "youDonotHaveAnOrderYet": "ليس لديك طلبات بعد",
+    "youDonotHaveAnOngoingOrdersAtThisTime": "ليس لديك طلبات جارية في هذا الوقت"
 }

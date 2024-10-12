@@ -176,5 +176,7 @@
     "youHaveFailedSubscribed": "You have failed subscribed 30 Days premium. Because there is not enough money in your account",
     "today": "Today",
     "message": "Message",
-    "myOrders": "My Orders"
+    "myOrders": "My Orders",
+    "youDonotHaveAnOrderYet": "You don’t have an order yet",
+    "youDonotHaveAnOngoingOrdersAtThisTime": "You don’t have an ongoing orders at this time"
 }
