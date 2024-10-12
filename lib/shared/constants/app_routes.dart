@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/core/domain/entities/chat_entity.dart';
 import 'package:llegar/core/domain/entities/success_view_entity.dart';
 import 'package:llegar/core/presentation/views/chat_view.dart';
 import 'package:llegar/core/presentation/views/nav_bar_view.dart';
@@ -175,7 +176,7 @@ abstract class AppRoutes {
       case chatView:
         return SideSlideTransition(
           page: ChatView(
-            appBarTitle: routeSettings.arguments as String,
+            chatEntity: routeSettings.arguments as  ChatEntity,
           ),
         );
     }

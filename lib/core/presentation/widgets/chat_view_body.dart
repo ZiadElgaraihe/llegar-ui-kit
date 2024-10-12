@@ -13,7 +13,10 @@ import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 class ChatViewBody extends StatefulWidget {
   const ChatViewBody({
     super.key,
+    required this.messages,
   });
+
+  final List<ChatMessage> messages;
 
   @override
   State<ChatViewBody> createState() => _ChatViewBodyState();
@@ -22,54 +25,6 @@ class ChatViewBody extends StatefulWidget {
 class _ChatViewBodyState extends State<ChatViewBody> {
   late final TextEditingController _controller;
   late final ValueNotifier<bool> _showTrailing;
-
-  final List<ChatMessage> _messages = [
-    ChatMessage(
-      user: ChatUser(id: '0'),
-      medias: [
-        ChatMedia(
-          url:
-              'https://cdn.alweb.com/thumbs/photoghraphia/article/fit710x532/%D9%85%D8%A7-%D9%87%D9%8A-%D9%85%D9%83%D9%88%D9%86%D8%A7%D8%AA-%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%8A%D8%B1%D8%A7-%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9.jpg',
-          fileName: 'Camera',
-          type: MediaType.image,
-        ),
-      ],
-      createdAt: DateTime.now(),
-    ),
-    ChatMessage(
-      user: ChatUser(id: '1'),
-      text:
-          'Please describe the issue you\'re encountering so I can provide you with the necessary support to resolve it.',
-      createdAt: DateTime.now(),
-    ),
-    ChatMessage(
-      user: ChatUser(id: '1'),
-      text: 'sure.',
-      createdAt: DateTime.now(),
-    ),
-    ChatMessage(
-      user: ChatUser(id: '0'),
-      text: 'Could you assist me with this task, please?',
-      createdAt: DateTime.now(),
-    ),
-    ChatMessage(
-      user: ChatUser(id: '0'),
-      text:
-          'Hello, I seem to be experiencing some issues with my account and password.',
-      createdAt: DateTime.now(),
-    ),
-    ChatMessage(
-      user: ChatUser(id: '1'),
-      text:
-          'I am a technical support representative, can I assist you with anything?',
-      createdAt: DateTime.now(),
-    ),
-    ChatMessage(
-      user: ChatUser(id: '1'),
-      text: 'Hello.',
-      createdAt: DateTime.now(),
-    ),
-  ];
 
   @override
   void initState() {
@@ -93,7 +48,7 @@ class _ChatViewBodyState extends State<ChatViewBody> {
       inputOptions: _inputOptions(context),
       messageListOptions: _messageListOptions(context),
       messageOptions: _messageOptions(context),
-      messages: _messages,
+      messages: widget.messages,
     );
   }
 
@@ -144,7 +99,7 @@ class _ChatViewBodyState extends State<ChatViewBody> {
           builder: (context, showTrailing, child) => ChatInputTrailing(
             showTrailing: showTrailing,
             onSendPressed: () {
-              _messages.insert(
+              widget.messages.insert(
                 0,
                 ChatMessage(
                   user: ChatUser(id: '0'),
