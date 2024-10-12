@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_like_button.dart';
+import 'package:llegar/core/presentation/widgets/leave_review_button.dart';
 import 'package:llegar/core/presentation/widgets/rating_widget.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_images.dart';
@@ -10,16 +11,18 @@ import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 class ItemWidget extends StatelessWidget {
   const ItemWidget({
     super.key,
+    this.appearLeaveReviewButton = false,
     this.appearLikeButton = true,
     this.isLiked = false,
     this.onLikeTapped,
   });
 
-  final void Function(bool isLiked)? onLikeTapped;
+  final bool appearLeaveReviewButton;
   final bool appearLikeButton;
 
   ///This is initial value you can get current value from onLikeTapped
   final bool isLiked;
+  final void Function(bool isLiked)? onLikeTapped;
 
   @override
   Widget build(BuildContext context) {
@@ -46,6 +49,12 @@ class ItemWidget extends StatelessWidget {
                   isLiked: isLiked,
                   onLikeTapped: onLikeTapped,
                 ),
+              ),
+            if (appearLeaveReviewButton)
+              const PositionedDirectional(
+                top: 16,
+                start: 16,
+                child: LeaveReviewButton(),
               ),
           ],
         ),
