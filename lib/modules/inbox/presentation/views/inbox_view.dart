@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_app_bar.dart';
+import 'package:llegar/modules/inbox/presentation/widgets/inbox_view_body.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
 class InboxView extends StatelessWidget {
@@ -26,6 +27,7 @@ class InboxView extends StatelessWidget {
           );
         },
       ),
+      body: const InboxViewBody(),
     );
   }
 }
