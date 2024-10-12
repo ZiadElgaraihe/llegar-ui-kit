@@ -23,7 +23,6 @@ class NavBar extends StatelessWidget {
       builder: (context, currentIndex, child) => BottomNavigationBar(
         currentIndex: currentIndex,
         onTap: (value) {
-          this.currentIndex.value = value;
           pageController.animateToPage(
             value,
             duration: const Duration(milliseconds: 300),
