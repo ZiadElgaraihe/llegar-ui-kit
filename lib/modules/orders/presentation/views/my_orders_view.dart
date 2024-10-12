@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_app_bar.dart';
+import 'package:llegar/modules/orders/presentation/widgets/my_orders_view_body.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
 class MyOrdersView extends StatelessWidget {
@@ -17,6 +18,7 @@ class MyOrdersView extends StatelessWidget {
         title: translate(context).myOrders,
         onBackPressed: _onBackPressed,
       ),
+      body: const MyOrdersViewBody(),
     );
   }
 
