@@ -88,6 +88,9 @@ abstract class AppIcons {
   ///assets/icons/inbox_outlined.svg
   static const String inboxOutlined = 'assets/icons/inbox_outlined.svg';
 
+  ///assets/icons/leave_review.svg
+  static const String leaveReview = 'assets/icons/leave_review.svg';
+
   ///assets/icons/location.svg
   static const String location = 'assets/icons/location.svg';
 
