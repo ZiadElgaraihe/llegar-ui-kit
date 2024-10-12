@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_like_button.dart';
 import 'package:llegar/core/presentation/widgets/leave_review_button.dart';
-import 'package:llegar/core/presentation/widgets/rating_widget.dart';
+import 'package:llegar/core/presentation/widgets/rating_row_widget.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_images.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
@@ -67,7 +67,7 @@ class ItemWidget extends StatelessWidget {
                 style: AppTextStyles.bold20(context),
               ),
             ),
-            const RatingWidget(),
+            const RatingRowWidget(),
           ],
         ),
         AppSizes.height8,

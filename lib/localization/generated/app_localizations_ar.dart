@@ -545,4 +545,16 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get youDonotHaveAnOngoingOrdersAtThisTime => 'ليس لديك طلبات جارية في هذا الوقت';
+
+  @override
+  String get leaveAReview => 'اترك تقييمًا';
+
+  @override
+  String get pleaseGiveYourRatingAndAlsoYourReview => 'يرجى تقديم تقييمك وترك مراجعتك أيضًا';
+
+  @override
+  String get leaveYourComment => 'اترك تعليقك';
+
+  @override
+  String get submit => 'إرسال';
 }

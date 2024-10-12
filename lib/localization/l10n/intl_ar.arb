@@ -178,5 +178,9 @@
     "message": "رسالة",
     "myOrders": "طلباتي",
     "youDonotHaveAnOrderYet": "ليس لديك طلبات بعد",
-    "youDonotHaveAnOngoingOrdersAtThisTime": "ليس لديك طلبات جارية في هذا الوقت"
+    "youDonotHaveAnOngoingOrdersAtThisTime": "ليس لديك طلبات جارية في هذا الوقت",
+    "leaveAReview": "اترك تقييمًا",
+    "pleaseGiveYourRatingAndAlsoYourReview": "يرجى تقديم تقييمك وترك مراجعتك أيضًا",
+    "leaveYourComment": "اترك تعليقك",
+    "submit": "إرسال"
 }

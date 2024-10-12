@@ -178,5 +178,9 @@
     "message": "Message",
     "myOrders": "My Orders",
     "youDonotHaveAnOrderYet": "You don’t have an order yet",
-    "youDonotHaveAnOngoingOrdersAtThisTime": "You don’t have an ongoing orders at this time"
+    "youDonotHaveAnOngoingOrdersAtThisTime": "You don’t have an ongoing orders at this time",
+    "leaveAReview": "Leave a Review",
+    "pleaseGiveYourRatingAndAlsoYourReview": "Please give your rating & also your review",
+    "leaveYourComment": "Leave Your Comment",
+    "submit": "Submit"
 }
