@@ -142,6 +142,13 @@ abstract class AppIcons {
   ///assets/icons/profile_outlined.svg
   static const String profileOutlined = 'assets/icons/profile_outlined.svg';
 
+  ///assets/icons/rating_star.svg
+  static const String ratingStar = 'assets/icons/rating_star.svg';
+
+  ///assets/icons/rating_star_outlined.svg
+  static const String ratingStarOutlined =
+      'assets/icons/rating_star_outlined.svg';
+
   ///assets/icons/security.svg
   static const String security = 'assets/icons/security.svg';
 
