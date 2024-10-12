@@ -536,4 +536,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get message => 'رسالة';
+
+  @override
+  String get myOrders => 'طلباتي';
 }

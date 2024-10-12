@@ -1156,6 +1156,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Message'**
   String get message;
+
+  /// No description provided for @myOrders.
+  ///
+  /// In en, this message translates to:
+  /// **'My Orders'**
+  String get myOrders;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

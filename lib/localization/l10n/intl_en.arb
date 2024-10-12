@@ -175,5 +175,6 @@
     "paymentFailed": "Payment failed",
     "youHaveFailedSubscribed": "You have failed subscribed 30 Days premium. Because there is not enough money in your account",
     "today": "Today",
-    "message": "Message"
+    "message": "Message",
+    "myOrders": "My Orders"
 }
