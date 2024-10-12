@@ -24,18 +24,6 @@ class ContactUsViewBody extends StatelessWidget {
               appBarTitle: translate(context).customerService,
               messages: [
                 ChatMessage(
-                  user: ChatUser(id: '0'),
-                  medias: [
-                    ChatMedia(
-                      url:
-                          'https://cdn.alweb.com/thumbs/photoghraphia/article/fit710x532/%D9%85%D8%A7-%D9%87%D9%8A-%D9%85%D9%83%D9%88%D9%86%D8%A7%D8%AA-%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%8A%D8%B1%D8%A7-%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9.jpg',
-                      fileName: 'Camera',
-                      type: MediaType.image,
-                    ),
-                  ],
-                  createdAt: DateTime.now(),
-                ),
-                ChatMessage(
                   user: ChatUser(id: '1'),
                   text:
                       'Please describe the issue you\'re encountering so I can provide you with the necessary support to resolve it.',
