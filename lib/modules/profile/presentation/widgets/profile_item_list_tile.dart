@@ -30,9 +30,6 @@ class ProfileItemListTile extends StatelessWidget {
                 },
               );
             },
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
-      ),
       leading: (profileItemEntity.icon != null)
           ? SvgPicture.asset(
               profileItemEntity.icon!,

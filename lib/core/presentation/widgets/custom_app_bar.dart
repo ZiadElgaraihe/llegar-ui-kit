@@ -10,12 +10,14 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({
     super.key,
     this.actions,
+    this.onBackPressed,
     this.title,
     this.titleSpacing,
     this.toolbarHeight,
   });
 
   final List<Widget>? actions;
+  final VoidCallback? onBackPressed;
   final String? title;
   final double? titleSpacing;
   final double? toolbarHeight;
@@ -32,12 +34,12 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       title: (title != null) ? Text(title!) : null,
       titleSpacing: titleSpacing ?? 8,
       centerTitle: false,
-      leading: Navigator.canPop(context)
+      leading: (Navigator.canPop(context) || onBackPressed != null)
           ? IconButton(
               onPressed: () {
                 futureDelayedNavigator(
                   () {
-                    Navigator.pop(context);
+                    _handleBackPress(context);
                   },
                 );
               },
@@ -58,5 +60,13 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             )
           : null,
     );
+  }
+
+  void _handleBackPress(BuildContext context) {
+    if (onBackPressed != null) {
+      onBackPressed!();
+    } else {
+      Navigator.pop(context);
+    }
   }
 }

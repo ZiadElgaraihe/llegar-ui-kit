@@ -240,6 +240,12 @@ abstract class AppThemes {
         listTileTheme: ListTileThemeData(
           textColor: AppColors.prussianBlue,
           titleTextStyle: AppTextStyles.semiBold20(context),
+          subtitleTextStyle: AppTextStyles.medium14(context).copyWith(
+            color: AppColors.black,
+          ),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
         ),
         dialogTheme: DialogTheme(
           backgroundColor: AppColors.white,
@@ -488,6 +494,12 @@ abstract class AppThemes {
         listTileTheme: ListTileThemeData(
           textColor: AppColors.orange,
           titleTextStyle: AppTextStyles.semiBold20(context),
+          subtitleTextStyle: AppTextStyles.medium14(context).copyWith(
+            color: AppColors.white,
+          ),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
         ),
         dialogTheme: DialogTheme(
           backgroundColor: AppColors.white,
