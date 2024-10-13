@@ -27,6 +27,7 @@ abstract class AppThemes {
           elevation: 0,
           titleTextStyle: AppTextStyles.bold24(context).copyWith(
             color: AppColors.black,
+            fontFamily: AppStrings.interFontFamily,
           ),
           systemOverlayStyle: const SystemUiOverlayStyle(
             statusBarColor: AppColors.white,
@@ -82,7 +83,9 @@ abstract class AppThemes {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(100),
             ),
-            textStyle: AppTextStyles.bold20(context),
+            textStyle: AppTextStyles.bold20(context).copyWith(
+              fontFamily: AppStrings.urbanistFontFamily,
+            ),
             foregroundColor: AppColors.white,
           ),
         ),
@@ -96,7 +99,9 @@ abstract class AppThemes {
               color: AppColors.prussianBlue,
               width: 2,
             ),
-            textStyle: AppTextStyles.semiBold16(context),
+            textStyle: AppTextStyles.semiBold16(context).copyWith(
+              fontFamily: AppStrings.urbanistFontFamily,
+            ),
             foregroundColor: AppColors.prussianBlue,
           ),
         ),
@@ -104,6 +109,7 @@ abstract class AppThemes {
           style: TextButton.styleFrom(
             textStyle: AppTextStyles.bold14(context).copyWith(
               color: AppColors.prussianBlue,
+              fontFamily: AppStrings.urbanistFontFamily,
             ),
             foregroundColor: AppColors.prussianBlue,
             disabledForegroundColor: AppColors.grey,
@@ -137,14 +143,20 @@ abstract class AppThemes {
         datePickerTheme: DatePickerThemeData(
           backgroundColor: AppColors.white,
           cancelButtonStyle: TextButton.styleFrom(
-            textStyle: AppTextStyles.bold14(context),
+            textStyle: AppTextStyles.bold14(context).copyWith(
+              fontFamily: AppStrings.urbanistFontFamily,
+            ),
             foregroundColor: AppColors.prussianBlue,
           ),
           confirmButtonStyle: TextButton.styleFrom(
-            textStyle: AppTextStyles.bold14(context),
+            textStyle: AppTextStyles.bold14(context).copyWith(
+              fontFamily: AppStrings.urbanistFontFamily,
+            ),
             foregroundColor: AppColors.prussianBlue,
           ),
-          dayStyle: AppTextStyles.bold14(context),
+          dayStyle: AppTextStyles.bold14(context).copyWith(
+            fontFamily: AppStrings.urbanistFontFamily,
+          ),
           dayForegroundColor: WidgetStateProperty.resolveWith(
             (states) {
               if (states.contains(WidgetState.selected)) {
@@ -163,11 +175,18 @@ abstract class AppThemes {
           ),
           weekdayStyle: AppTextStyles.bold14(context).copyWith(
             color: AppColors.black,
+            fontFamily: AppStrings.urbanistFontFamily,
           ),
-          headerHelpStyle: AppTextStyles.medium14(context),
-          headerHeadlineStyle: AppTextStyles.bold32(context),
+          headerHelpStyle: AppTextStyles.medium14(context).copyWith(
+            fontFamily: AppStrings.urbanistFontFamily,
+          ),
+          headerHeadlineStyle: AppTextStyles.bold32(context).copyWith(
+            fontFamily: AppStrings.urbanistFontFamily,
+          ),
           headerForegroundColor: AppColors.prussianBlue,
-          yearStyle: AppTextStyles.bold16(context),
+          yearStyle: AppTextStyles.bold16(context).copyWith(
+            fontFamily: AppStrings.urbanistFontFamily,
+          ),
           yearForegroundColor: WidgetStateProperty.resolveWith(
             (states) {
               if (states.contains(WidgetState.selected)) {
@@ -232,16 +251,23 @@ abstract class AppThemes {
             ),
           ),
           labelPadding: const EdgeInsets.only(bottom: 8),
-          labelStyle: AppTextStyles.bold24(context),
+          labelStyle: AppTextStyles.bold24(context).copyWith(
+            fontFamily: AppStrings.urbanistFontFamily,
+          ),
           labelColor: AppColors.prussianBlue,
-          unselectedLabelStyle: AppTextStyles.bold24(context),
+          unselectedLabelStyle: AppTextStyles.bold24(context).copyWith(
+            fontFamily: AppStrings.urbanistFontFamily,
+          ),
           unselectedLabelColor: AppColors.black,
         ),
         listTileTheme: ListTileThemeData(
           textColor: AppColors.prussianBlue,
-          titleTextStyle: AppTextStyles.semiBold20(context),
+          titleTextStyle: AppTextStyles.semiBold20(context).copyWith(
+            fontFamily: AppStrings.urbanistFontFamily,
+          ),
           subtitleTextStyle: AppTextStyles.medium14(context).copyWith(
             color: AppColors.black,
+            fontFamily: AppStrings.urbanistFontFamily,
           ),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
@@ -281,6 +307,7 @@ abstract class AppThemes {
           elevation: 0,
           titleTextStyle: AppTextStyles.bold24(context).copyWith(
             color: AppColors.white,
+            fontFamily: AppStrings.interFontFamily,
           ),
           systemOverlayStyle: const SystemUiOverlayStyle(
             statusBarColor: AppColors.prussianBlue,
@@ -336,7 +363,9 @@ abstract class AppThemes {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(100),
             ),
-            textStyle: AppTextStyles.bold20(context),
+            textStyle: AppTextStyles.bold20(context).copyWith(
+              fontFamily: AppStrings.urbanistFontFamily,
+            ),
             foregroundColor: AppColors.white,
           ),
         ),
@@ -350,7 +379,9 @@ abstract class AppThemes {
               color: AppColors.orange,
               width: 2,
             ),
-            textStyle: AppTextStyles.semiBold16(context),
+            textStyle: AppTextStyles.semiBold16(context).copyWith(
+              fontFamily: AppStrings.urbanistFontFamily,
+            ),
             foregroundColor: AppColors.orange,
           ),
         ),
@@ -358,6 +389,7 @@ abstract class AppThemes {
           style: TextButton.styleFrom(
             textStyle: AppTextStyles.bold14(context).copyWith(
               color: AppColors.orange,
+              fontFamily: AppStrings.urbanistFontFamily,
             ),
             foregroundColor: AppColors.orange,
             disabledForegroundColor: AppColors.grey,
@@ -391,14 +423,20 @@ abstract class AppThemes {
         datePickerTheme: DatePickerThemeData(
           backgroundColor: AppColors.prussianBlue,
           cancelButtonStyle: TextButton.styleFrom(
-            textStyle: AppTextStyles.bold14(context),
+            textStyle: AppTextStyles.bold14(context).copyWith(
+              fontFamily: AppStrings.urbanistFontFamily,
+            ),
             foregroundColor: AppColors.orange,
           ),
           confirmButtonStyle: TextButton.styleFrom(
-            textStyle: AppTextStyles.bold14(context),
+            textStyle: AppTextStyles.bold14(context).copyWith(
+              fontFamily: AppStrings.urbanistFontFamily,
+            ),
             foregroundColor: AppColors.orange,
           ),
-          dayStyle: AppTextStyles.bold14(context),
+          dayStyle: AppTextStyles.bold14(context).copyWith(
+            fontFamily: AppStrings.urbanistFontFamily,
+          ),
           dayForegroundColor: WidgetStateProperty.resolveWith(
             (states) {
               if (states.contains(WidgetState.selected)) {
@@ -417,11 +455,18 @@ abstract class AppThemes {
           ),
           weekdayStyle: AppTextStyles.bold14(context).copyWith(
             color: AppColors.white,
+            fontFamily: AppStrings.urbanistFontFamily,
           ),
-          headerHelpStyle: AppTextStyles.medium14(context),
-          headerHeadlineStyle: AppTextStyles.bold32(context),
+          headerHelpStyle: AppTextStyles.medium14(context).copyWith(
+            fontFamily: AppStrings.urbanistFontFamily,
+          ),
+          headerHeadlineStyle: AppTextStyles.bold32(context).copyWith(
+            fontFamily: AppStrings.urbanistFontFamily,
+          ),
           headerForegroundColor: AppColors.orange,
-          yearStyle: AppTextStyles.bold16(context),
+          yearStyle: AppTextStyles.bold16(context).copyWith(
+            fontFamily: AppStrings.urbanistFontFamily,
+          ),
           yearForegroundColor: WidgetStateProperty.resolveWith(
             (states) {
               if (states.contains(WidgetState.selected)) {
@@ -486,16 +531,23 @@ abstract class AppThemes {
             ),
           ),
           labelPadding: const EdgeInsets.only(bottom: 8),
-          labelStyle: AppTextStyles.bold24(context),
+          labelStyle: AppTextStyles.bold24(context).copyWith(
+            fontFamily: AppStrings.urbanistFontFamily,
+          ),
           labelColor: AppColors.orange,
-          unselectedLabelStyle: AppTextStyles.bold24(context),
+          unselectedLabelStyle: AppTextStyles.bold24(context).copyWith(
+            fontFamily: AppStrings.urbanistFontFamily,
+          ),
           unselectedLabelColor: AppColors.white,
         ),
         listTileTheme: ListTileThemeData(
           textColor: AppColors.orange,
-          titleTextStyle: AppTextStyles.semiBold20(context),
+          titleTextStyle: AppTextStyles.semiBold20(context).copyWith(
+            fontFamily: AppStrings.urbanistFontFamily,
+          ),
           subtitleTextStyle: AppTextStyles.medium14(context).copyWith(
             color: AppColors.white,
+            fontFamily: AppStrings.urbanistFontFamily,
           ),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
