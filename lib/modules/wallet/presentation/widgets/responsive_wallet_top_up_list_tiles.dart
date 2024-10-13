@@ -21,7 +21,7 @@ class ResponsiveWalletTopUpListTiles extends StatelessWidget {
         children: [
           for (int i = 0; i < 3; i++) ...[
             const Expanded(child: WalletTopUpListTile()),
-            if (i < 2) AppSizes.width8,
+            if (i < 2) AppSizes.width16,
           ]
         ],
       );

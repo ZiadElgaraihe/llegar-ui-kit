@@ -40,7 +40,7 @@ class WalletTopUpListTile extends StatelessWidget {
         ),
       ),
       subtitle: Text(
-        'Jan 14, 2023 | 15:16 PM',
+        'Jan 14, 2023 | 03:16 PM',
         style: AppTextStyles.regular16(context).copyWith(
           fontFamily: AppStrings.interFontFamily,
           color: valueBasedOnTheme<Color>(
