@@ -182,5 +182,9 @@
     "leaveAReview": "Leave a Review",
     "pleaseGiveYourRatingAndAlsoYourReview": "Please give your rating & also your review",
     "leaveYourComment": "Leave Your Comment",
-    "submit": "Submit"
+    "submit": "Submit",
+    "money": "Money",
+    "latestTopUp": "Latest Top Up",
+    "topUpWallet": "Top Up Wallet",
+    "topUp": "Top Up"
 }

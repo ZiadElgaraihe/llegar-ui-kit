@@ -557,4 +557,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get submit => 'Submit';
+
+  @override
+  String get money => 'Money';
+
+  @override
+  String get latestTopUp => 'Latest Top Up';
+
+  @override
+  String get topUpWallet => 'Top Up Wallet';
+
+  @override
+  String get topUp => 'Top Up';
 }

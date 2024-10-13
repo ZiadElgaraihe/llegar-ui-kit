@@ -1198,6 +1198,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Submit'**
   String get submit;
+
+  /// No description provided for @money.
+  ///
+  /// In en, this message translates to:
+  /// **'Money'**
+  String get money;
+
+  /// No description provided for @latestTopUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Latest Top Up'**
+  String get latestTopUp;
+
+  /// No description provided for @topUpWallet.
+  ///
+  /// In en, this message translates to:
+  /// **'Top Up Wallet'**
+  String get topUpWallet;
+
+  /// No description provided for @topUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Top Up'**
+  String get topUp;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

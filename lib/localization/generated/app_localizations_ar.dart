@@ -557,4 +557,16 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get submit => 'إرسال';
+
+  @override
+  String get money => 'المال';
+
+  @override
+  String get latestTopUp => 'أحدث شحن رصيد';
+
+  @override
+  String get topUpWallet => 'شحن المحفظة';
+
+  @override
+  String get topUp => 'شحن رصيد';
 }
