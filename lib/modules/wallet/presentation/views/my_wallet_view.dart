@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_app_bar.dart';
+import 'package:llegar/modules/wallet/presentation/widgets/my_wallet_view_body.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
 class MyWalletView extends StatelessWidget {
@@ -17,6 +18,7 @@ class MyWalletView extends StatelessWidget {
         title: translate(context).myWallet,
         onBackPressed: _onBackPressed,
       ),
+      body: const MyWalletViewBody(),
     );
   }
 
