@@ -569,4 +569,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get topUp => 'Top Up';
+
+  @override
+  String get fundMyWallet => 'Fund My Wallet';
+
+  @override
+  String get enterYourFundAmount => 'Enter your fund amount';
 }

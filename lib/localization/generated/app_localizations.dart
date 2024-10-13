@@ -1222,6 +1222,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Top Up'**
   String get topUp;
+
+  /// No description provided for @fundMyWallet.
+  ///
+  /// In en, this message translates to:
+  /// **'Fund My Wallet'**
+  String get fundMyWallet;
+
+  /// No description provided for @enterYourFundAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your fund amount'**
+  String get enterYourFundAmount;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

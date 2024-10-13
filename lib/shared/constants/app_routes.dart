@@ -27,6 +27,7 @@ import 'package:llegar/modules/profile/presentation/views/privacy_policy_view.da
 import 'package:llegar/modules/profile/presentation/views/review_summary_view.dart';
 import 'package:llegar/modules/profile/presentation/views/security_view.dart';
 import 'package:llegar/modules/profile/presentation/views/subscribe_to_premium_view.dart';
+import 'package:llegar/modules/wallet/presentation/views/fund_my_wallet_view.dart';
 import 'package:llegar/modules/welcome/presentation/views/how_did_you_know_us_view.dart';
 import 'package:llegar/modules/welcome/presentation/views/welcome_view.dart';
 import 'package:llegar/shared/animations/bottom_slide_transition.dart';
@@ -41,6 +42,7 @@ abstract class AppRoutes {
   static const String contactUsView = '/ContactUsView';
   static const String editProfileView = '/EditProfileView';
   static const String forgetPasswordView = '/ForgetPasswordView';
+  static const String fundMyWalletView = '/FundMyWalletView';
   static const String helpCenterView = '/HelpCenterView';
   static const String howDidYouKnowUsView = '/HowDidYouKnowUsView';
   static const String languageView = '/LanguageView';
@@ -176,8 +178,12 @@ abstract class AppRoutes {
       case chatView:
         return SideSlideTransition(
           page: ChatView(
-            chatEntity: routeSettings.arguments as  ChatEntity,
+            chatEntity: routeSettings.arguments as ChatEntity,
           ),
+        );
+      case fundMyWalletView:
+        return SideSlideTransition(
+          page: const FundMyWalletView(),
         );
     }
     return null;

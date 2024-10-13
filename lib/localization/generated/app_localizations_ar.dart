@@ -569,4 +569,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get topUp => 'شحن رصيد';
+
+  @override
+  String get fundMyWallet => 'تمويل محفظتي';
+
+  @override
+  String get enterYourFundAmount => 'أدخل مبلغ التمويل الخاص بك';
 }

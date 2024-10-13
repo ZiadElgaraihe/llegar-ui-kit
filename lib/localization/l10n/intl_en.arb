@@ -186,5 +186,7 @@
     "money": "Money",
     "latestTopUp": "Latest Top Up",
     "topUpWallet": "Top Up Wallet",
-    "topUp": "Top Up"
+    "topUp": "Top Up",
+    "fundMyWallet": "Fund My Wallet",
+    "enterYourFundAmount": "Enter your fund amount"
 }
