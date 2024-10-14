@@ -188,5 +188,6 @@
     "topUpWallet": "Top Up Wallet",
     "topUp": "Top Up",
     "fundMyWallet": "Fund My Wallet",
-    "enterYourFundAmount": "Enter your fund amount"
+    "enterYourFundAmount": "Enter your fund amount",
+    "topUpElectronicWallet": "Top Up E-Wallet"
 }

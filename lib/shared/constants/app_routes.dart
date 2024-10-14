@@ -28,6 +28,7 @@ import 'package:llegar/modules/profile/presentation/views/review_summary_view.da
 import 'package:llegar/modules/profile/presentation/views/security_view.dart';
 import 'package:llegar/modules/profile/presentation/views/subscribe_to_premium_view.dart';
 import 'package:llegar/modules/wallet/presentation/views/fund_my_wallet_view.dart';
+import 'package:llegar/modules/wallet/presentation/views/top_up_electronic_wallet_view.dart';
 import 'package:llegar/modules/welcome/presentation/views/how_did_you_know_us_view.dart';
 import 'package:llegar/modules/welcome/presentation/views/welcome_view.dart';
 import 'package:llegar/shared/animations/bottom_slide_transition.dart';
@@ -62,6 +63,7 @@ abstract class AppRoutes {
   static const String socialLogInView = '/SocialLogInView';
   static const String subscribeToPremiumView = '/SubscribeToPremiumView';
   static const String successView = '/SuccessView';
+  static const String topUpElectronicWalletView = '/TopUpElectronicWalletView';
   static const String welcomeView = '/WelcomeView';
 
   static Route<dynamic>? generate(RouteSettings routeSettings) {
@@ -184,6 +186,10 @@ abstract class AppRoutes {
       case fundMyWalletView:
         return SideSlideTransition(
           page: const FundMyWalletView(),
+        );
+      case topUpElectronicWalletView:
+        return SideSlideTransition(
+          page: const TopUpElectronicWalletView(),
         );
     }
     return null;

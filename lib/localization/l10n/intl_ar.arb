@@ -188,5 +188,6 @@
     "topUpWallet": "شحن المحفظة",
     "topUp": "شحن رصيد",
     "fundMyWallet": "تمويل محفظتي",
-    "enterYourFundAmount": "أدخل مبلغ التمويل الخاص بك"
+    "enterYourFundAmount": "أدخل مبلغ التمويل الخاص بك",
+    "topUpElectronicWallet": "شحن المحفظة الإلكترونية"
 }

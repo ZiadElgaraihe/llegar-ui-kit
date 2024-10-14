@@ -1234,6 +1234,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Enter your fund amount'**
   String get enterYourFundAmount;
+
+  /// No description provided for @topUpElectronicWallet.
+  ///
+  /// In en, this message translates to:
+  /// **'Top Up E-Wallet'**
+  String get topUpElectronicWallet;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

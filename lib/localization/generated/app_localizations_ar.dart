@@ -575,4 +575,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get enterYourFundAmount => 'أدخل مبلغ التمويل الخاص بك';
+
+  @override
+  String get topUpElectronicWallet => 'شحن المحفظة الإلكترونية';
 }
