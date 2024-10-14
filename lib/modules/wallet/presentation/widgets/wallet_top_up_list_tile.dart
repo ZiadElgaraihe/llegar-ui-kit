@@ -60,6 +60,7 @@ class WalletTopUpListTile extends StatelessWidget {
             dark: AppColors.white,
           ),
         ),
+        textDirection: TextDirection.ltr,
       ),
     );
   }

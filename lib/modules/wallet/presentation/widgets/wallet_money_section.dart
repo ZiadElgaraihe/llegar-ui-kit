@@ -38,6 +38,7 @@ class WalletMoneySection extends StatelessWidget {
           child: Text(
             '\$420.50',
             style: AppTextStyles.bold48(context),
+            textDirection: TextDirection.ltr,
           ),
         ),
       ],
