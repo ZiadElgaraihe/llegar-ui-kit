@@ -204,6 +204,9 @@ abstract class AppIcons {
   ///assets/icons/wallet_outlined.svg
   static const String walletOutlined = 'assets/icons/wallet_outlined.svg';
 
+  ///assets/icons/waving_hand.svg
+  static const String wavingHand = 'assets/icons/waving_hand.svg';
+
   ///assets/icons/youtube.svg
   static const String youtube = 'assets/icons/youtube.svg';
 }
