@@ -578,4 +578,16 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get topUpElectronicWallet => 'شحن المحفظة الإلكترونية';
+
+  @override
+  String get topUpSuccessful => 'تم شحن الرصيد بنجاح!';
+
+  @override
+  String get topUpFailed => 'فشلت عملية شحن الرصيد!';
+
+  @override
+  String get youHaveSuccessfullyTopUpElectronicWalletFor => 'لقد نجحت في شحن المحفظة الإلكترونية بـ';
+
+  @override
+  String get youHaveFailedToTopUpYourElectronicWallet => 'لقد فشلت عملية شحن محفظتك الإلكترونية. يرجى التأكد من وجود رصيد كافٍ في حسابك.';
 }

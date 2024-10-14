@@ -1240,6 +1240,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Top Up E-Wallet'**
   String get topUpElectronicWallet;
+
+  /// No description provided for @topUpSuccessful.
+  ///
+  /// In en, this message translates to:
+  /// **'Top Up Successful!'**
+  String get topUpSuccessful;
+
+  /// No description provided for @topUpFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Top Up Failed!'**
+  String get topUpFailed;
+
+  /// No description provided for @youHaveSuccessfullyTopUpElectronicWalletFor.
+  ///
+  /// In en, this message translates to:
+  /// **'You have successfully top up e-wallet for'**
+  String get youHaveSuccessfullyTopUpElectronicWalletFor;
+
+  /// No description provided for @youHaveFailedToTopUpYourElectronicWallet.
+  ///
+  /// In en, this message translates to:
+  /// **'You have failed to top up your e-wallet. Please ensure that there is sufficient balance in your account.'**
+  String get youHaveFailedToTopUpYourElectronicWallet;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
