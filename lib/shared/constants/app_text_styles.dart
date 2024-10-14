@@ -38,6 +38,13 @@ abstract class AppTextStyles {
         fontWeight: FontWeight.w700,
       );
 
+  static TextStyle regular14(BuildContext context, {bool responsive = false}) =>
+      TextStyle(
+        fontSize:
+            responsive ? _getResponsiveFontSize(context, fontSize: 14) : 14,
+        fontWeight: FontWeight.w400,
+      );
+
   static TextStyle medium14(BuildContext context, {bool responsive = false}) =>
       TextStyle(
         fontSize:
