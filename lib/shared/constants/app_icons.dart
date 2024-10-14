@@ -27,6 +27,9 @@ abstract class AppIcons {
   ///assets/icons/chevron_right.svg
   static const String chevronRight = 'assets/icons/chevron_right.svg';
 
+  ///assets/icons/clothes.svg
+  static const String clothes = 'assets/icons/clothes.svg';
+
   ///assets/icons/contact_us.svg
   static const String contactUs = 'assets/icons/contact_us.svg';
 
@@ -61,14 +64,26 @@ abstract class AppIcons {
   ///assets/icons/edit_profile.svg
   static const String editProfile = 'assets/icons/edit_profile.svg';
 
+  ///assets/icons/electronics.svg
+  static const String electronics = 'assets/icons/electronics.svg';
+
   ///assets/icons/email.svg
   static const String email = 'assets/icons/email.svg';
+
+  ///assets/icons/event_rentals.svg
+  static const String eventRentals = 'assets/icons/event_rentals.svg';
 
   ///assets/icons/facebook.svg
   static const String facebook = 'assets/icons/facebook.svg';
 
   ///assets/icons/failed.svg
   static const String failed = 'assets/icons/failed.svg';
+
+  ///assets/icons/favourite.svg
+  static const String favourite = 'assets/icons/favourite.svg';
+
+  ///assets/icons/filter.svg
+  static const String filter = 'assets/icons/filter.svg';
 
   ///assets/icons/google.svg
   static const String google = 'assets/icons/google.svg';
@@ -115,6 +130,10 @@ abstract class AppIcons {
   ///assets/icons/notification.svg
   static const String notification = 'assets/icons/notification.svg';
 
+  ///assets/icons/notification_outlined.svg
+  static const String notificationOutlined =
+      'assets/icons/notification_outlined.svg';
+
   ///assets/icons/orders.svg
   static const String orders = 'assets/icons/orders.svg';
 
@@ -133,6 +152,9 @@ abstract class AppIcons {
   ///assets/icons/photo.svg
   static const String photo = 'assets/icons/photo.svg';
 
+  ///assets/icons/play_areas.svg
+  static const String playAreas = 'assets/icons/play_areas.svg';
+
   ///assets/icons/privacy_policy.svg
   static const String privacyPolicy = 'assets/icons/privacy_policy.svg';
 
@@ -142,12 +164,18 @@ abstract class AppIcons {
   ///assets/icons/profile_outlined.svg
   static const String profileOutlined = 'assets/icons/profile_outlined.svg';
 
+  ///assets/icons/property.svg
+  static const String property = 'assets/icons/property.svg';
+
   ///assets/icons/rating_star.svg
   static const String ratingStar = 'assets/icons/rating_star.svg';
 
   ///assets/icons/rating_star_outlined.svg
   static const String ratingStarOutlined =
       'assets/icons/rating_star_outlined.svg';
+
+  ///assets/icons/search.svg
+  static const String search = 'assets/icons/search.svg';
 
   ///assets/icons/security.svg
   static const String security = 'assets/icons/security.svg';
@@ -163,6 +191,9 @@ abstract class AppIcons {
 
   ///assets/icons/translate.svg
   static const String translate = 'assets/icons/translate.svg';
+
+  ///assets/icons/transportation.svg
+  static const String transportation = 'assets/icons/transportation.svg';
 
   ///assets/icons/wallet.svg
   static const String wallet = 'assets/icons/wallet.svg';

@@ -1,5 +1,8 @@
 ///This class contains all app images
 abstract class AppImages {
+  ///assets/images/advertisement_car.webp
+  static const String advertisementCar = 'assets/images/advertisement_car.webp';
+  
   ///assets/images/car.webp
   static const String car = 'assets/images/car.webp';
 
