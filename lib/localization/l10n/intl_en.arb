@@ -182,5 +182,16 @@
     "leaveAReview": "Leave a Review",
     "pleaseGiveYourRatingAndAlsoYourReview": "Please give your rating & also your review",
     "leaveYourComment": "Leave Your Comment",
-    "submit": "Submit"
+    "submit": "Submit",
+    "money": "Money",
+    "latestTopUp": "Latest Top Up",
+    "topUpWallet": "Top Up Wallet",
+    "topUp": "Top Up",
+    "fundMyWallet": "Fund My Wallet",
+    "enterYourFundAmount": "Enter your fund amount",
+    "topUpElectronicWallet": "Top Up E-Wallet",
+    "topUpSuccessful": "Top Up Successful!",
+    "topUpFailed": "Top Up Failed!",
+    "youHaveSuccessfullyTopUpElectronicWalletFor": "You have successfully top up e-wallet for",
+    "youHaveFailedToTopUpYourElectronicWallet": "You have failed to top up your e-wallet. Please ensure that there is sufficient balance in your account."
 }

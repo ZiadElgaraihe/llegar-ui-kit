@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_credit_card/flutter_credit_card.dart';
 import 'package:llegar/core/presentation/widgets/custom_sliver_fill_remaining_footer.dart';
-import 'package:llegar/modules/profile/presentation/widgets/credit_card_data.dart';
+import 'package:llegar/core/presentation/widgets/credit_card_data.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/utils/enums/message_type.dart';
 import 'package:llegar/shared/utils/functions/show_message_dialog.dart';

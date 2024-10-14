@@ -557,4 +557,37 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get submit => 'Submit';
+
+  @override
+  String get money => 'Money';
+
+  @override
+  String get latestTopUp => 'Latest Top Up';
+
+  @override
+  String get topUpWallet => 'Top Up Wallet';
+
+  @override
+  String get topUp => 'Top Up';
+
+  @override
+  String get fundMyWallet => 'Fund My Wallet';
+
+  @override
+  String get enterYourFundAmount => 'Enter your fund amount';
+
+  @override
+  String get topUpElectronicWallet => 'Top Up E-Wallet';
+
+  @override
+  String get topUpSuccessful => 'Top Up Successful!';
+
+  @override
+  String get topUpFailed => 'Top Up Failed!';
+
+  @override
+  String get youHaveSuccessfullyTopUpElectronicWalletFor => 'You have successfully top up e-wallet for';
+
+  @override
+  String get youHaveFailedToTopUpYourElectronicWallet => 'You have failed to top up your e-wallet. Please ensure that there is sufficient balance in your account.';
 }

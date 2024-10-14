@@ -1198,6 +1198,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Submit'**
   String get submit;
+
+  /// No description provided for @money.
+  ///
+  /// In en, this message translates to:
+  /// **'Money'**
+  String get money;
+
+  /// No description provided for @latestTopUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Latest Top Up'**
+  String get latestTopUp;
+
+  /// No description provided for @topUpWallet.
+  ///
+  /// In en, this message translates to:
+  /// **'Top Up Wallet'**
+  String get topUpWallet;
+
+  /// No description provided for @topUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Top Up'**
+  String get topUp;
+
+  /// No description provided for @fundMyWallet.
+  ///
+  /// In en, this message translates to:
+  /// **'Fund My Wallet'**
+  String get fundMyWallet;
+
+  /// No description provided for @enterYourFundAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your fund amount'**
+  String get enterYourFundAmount;
+
+  /// No description provided for @topUpElectronicWallet.
+  ///
+  /// In en, this message translates to:
+  /// **'Top Up E-Wallet'**
+  String get topUpElectronicWallet;
+
+  /// No description provided for @topUpSuccessful.
+  ///
+  /// In en, this message translates to:
+  /// **'Top Up Successful!'**
+  String get topUpSuccessful;
+
+  /// No description provided for @topUpFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Top Up Failed!'**
+  String get topUpFailed;
+
+  /// No description provided for @youHaveSuccessfullyTopUpElectronicWalletFor.
+  ///
+  /// In en, this message translates to:
+  /// **'You have successfully top up e-wallet for'**
+  String get youHaveSuccessfullyTopUpElectronicWalletFor;
+
+  /// No description provided for @youHaveFailedToTopUpYourElectronicWallet.
+  ///
+  /// In en, this message translates to:
+  /// **'You have failed to top up your e-wallet. Please ensure that there is sufficient balance in your account.'**
+  String get youHaveFailedToTopUpYourElectronicWallet;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

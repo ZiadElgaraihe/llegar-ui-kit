@@ -15,7 +15,7 @@ import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
 import 'package:llegar/modules/profile/domain/entities/premium_package_entity.dart';
 import 'package:llegar/modules/profile/domain/entities/review_summary_entity.dart';
 import 'package:llegar/modules/profile/presentation/views/add_item_view.dart';
-import 'package:llegar/modules/profile/presentation/views/add_new_card_view.dart';
+import 'package:llegar/core/presentation/views/add_new_card_view.dart';
 import 'package:llegar/modules/profile/presentation/views/contact_us_view.dart';
 import 'package:llegar/modules/profile/presentation/views/edit_profile_view.dart';
 import 'package:llegar/modules/profile/presentation/views/help_center_view.dart';
@@ -27,6 +27,8 @@ import 'package:llegar/modules/profile/presentation/views/privacy_policy_view.da
 import 'package:llegar/modules/profile/presentation/views/review_summary_view.dart';
 import 'package:llegar/modules/profile/presentation/views/security_view.dart';
 import 'package:llegar/modules/profile/presentation/views/subscribe_to_premium_view.dart';
+import 'package:llegar/modules/wallet/presentation/views/fund_my_wallet_view.dart';
+import 'package:llegar/modules/wallet/presentation/views/top_up_electronic_wallet_view.dart';
 import 'package:llegar/modules/welcome/presentation/views/how_did_you_know_us_view.dart';
 import 'package:llegar/modules/welcome/presentation/views/welcome_view.dart';
 import 'package:llegar/shared/animations/bottom_slide_transition.dart';
@@ -41,6 +43,7 @@ abstract class AppRoutes {
   static const String contactUsView = '/ContactUsView';
   static const String editProfileView = '/EditProfileView';
   static const String forgetPasswordView = '/ForgetPasswordView';
+  static const String fundMyWalletView = '/FundMyWalletView';
   static const String helpCenterView = '/HelpCenterView';
   static const String howDidYouKnowUsView = '/HowDidYouKnowUsView';
   static const String languageView = '/LanguageView';
@@ -60,6 +63,7 @@ abstract class AppRoutes {
   static const String socialLogInView = '/SocialLogInView';
   static const String subscribeToPremiumView = '/SubscribeToPremiumView';
   static const String successView = '/SuccessView';
+  static const String topUpElectronicWalletView = '/TopUpElectronicWalletView';
   static const String welcomeView = '/WelcomeView';
 
   static Route<dynamic>? generate(RouteSettings routeSettings) {
@@ -176,8 +180,16 @@ abstract class AppRoutes {
       case chatView:
         return SideSlideTransition(
           page: ChatView(
-            chatEntity: routeSettings.arguments as  ChatEntity,
+            chatEntity: routeSettings.arguments as ChatEntity,
           ),
+        );
+      case fundMyWalletView:
+        return SideSlideTransition(
+          page: const FundMyWalletView(),
+        );
+      case topUpElectronicWalletView:
+        return SideSlideTransition(
+          page: const TopUpElectronicWalletView(),
         );
     }
     return null;

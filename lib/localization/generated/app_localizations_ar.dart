@@ -557,4 +557,37 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get submit => 'إرسال';
+
+  @override
+  String get money => 'المال';
+
+  @override
+  String get latestTopUp => 'أحدث شحن رصيد';
+
+  @override
+  String get topUpWallet => 'شحن المحفظة';
+
+  @override
+  String get topUp => 'شحن رصيد';
+
+  @override
+  String get fundMyWallet => 'تمويل محفظتي';
+
+  @override
+  String get enterYourFundAmount => 'أدخل مبلغ التمويل الخاص بك';
+
+  @override
+  String get topUpElectronicWallet => 'شحن المحفظة الإلكترونية';
+
+  @override
+  String get topUpSuccessful => 'تم شحن الرصيد بنجاح!';
+
+  @override
+  String get topUpFailed => 'فشلت عملية شحن الرصيد!';
+
+  @override
+  String get youHaveSuccessfullyTopUpElectronicWalletFor => 'لقد نجحت في شحن المحفظة الإلكترونية بـ';
+
+  @override
+  String get youHaveFailedToTopUpYourElectronicWallet => 'لقد فشلت عملية شحن محفظتك الإلكترونية. يرجى التأكد من وجود رصيد كافٍ في حسابك.';
 }

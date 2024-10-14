@@ -5,6 +5,7 @@ import 'package:llegar/core/presentation/widgets/nav_bar_view_body.dart';
 import 'package:llegar/modules/inbox/presentation/views/inbox_view.dart';
 import 'package:llegar/modules/orders/presentation/views/my_orders_view.dart';
 import 'package:llegar/modules/profile/presentation/views/profile_view.dart';
+import 'package:llegar/modules/wallet/presentation/views/my_wallet_view.dart';
 import 'package:llegar/shared/constants/app_icons.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
@@ -53,7 +54,7 @@ class _NavBarViewState extends State<NavBarView> {
         label: translate(context).wallet,
         icon: AppIcons.walletOutlined,
         activeIcon: AppIcons.wallet,
-        page: const Center(child: Text('Wallet')),
+        page: MyWalletView(pageController: _pageController),
       ),
       NavBarEntity(
         label: translate(context).profile,
