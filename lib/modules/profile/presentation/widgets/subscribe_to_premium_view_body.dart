@@ -81,7 +81,7 @@ class SubscribeToPremiumViewBody extends StatelessWidget {
                   onTap: () {
                     Navigator.pushNamed(
                       context,
-                      AppRoutes.paymentMethodsView,
+                      AppRoutes.premiumPackagePaymentView,
                       arguments: package,
                     );
                   },

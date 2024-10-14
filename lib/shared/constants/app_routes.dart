@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/domain/entities/chat_entity.dart';
 import 'package:llegar/core/domain/entities/success_view_entity.dart';
+import 'package:llegar/core/presentation/views/add_new_card_view.dart';
 import 'package:llegar/core/presentation/views/chat_view.dart';
 import 'package:llegar/core/presentation/views/nav_bar_view.dart';
 import 'package:llegar/core/presentation/views/reset_password_view.dart';
@@ -15,14 +16,13 @@ import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
 import 'package:llegar/modules/profile/domain/entities/premium_package_entity.dart';
 import 'package:llegar/modules/profile/domain/entities/review_summary_entity.dart';
 import 'package:llegar/modules/profile/presentation/views/add_item_view.dart';
-import 'package:llegar/core/presentation/views/add_new_card_view.dart';
 import 'package:llegar/modules/profile/presentation/views/contact_us_view.dart';
 import 'package:llegar/modules/profile/presentation/views/edit_profile_view.dart';
 import 'package:llegar/modules/profile/presentation/views/help_center_view.dart';
 import 'package:llegar/modules/profile/presentation/views/language_view.dart';
 import 'package:llegar/modules/profile/presentation/views/my_activities_view.dart';
 import 'package:llegar/modules/profile/presentation/views/my_items_view.dart';
-import 'package:llegar/modules/profile/presentation/views/payment_view.dart';
+import 'package:llegar/modules/profile/presentation/views/premium_package_payment_view.dart';
 import 'package:llegar/modules/profile/presentation/views/privacy_policy_view.dart';
 import 'package:llegar/modules/profile/presentation/views/review_summary_view.dart';
 import 'package:llegar/modules/profile/presentation/views/security_view.dart';
@@ -52,7 +52,7 @@ abstract class AppRoutes {
   static const String myitemsView = '/MyItemsView';
   static const String navBarView = '/NavBarView';
   static const String otpView = '/OtpView';
-  static const String paymentMethodsView = '/PaymentMethodsView';
+  static const String premiumPackagePaymentView = '/PremiumPackagePaymentView';
   static const String privacyPolicyView = '/PrivacyPolicyView';
   static const String resetPasswordView = '/ResetPasswordView';
   static const String reviewSummaryView = '/ReviewSummaryView';
@@ -160,9 +160,9 @@ abstract class AppRoutes {
         return SideSlideTransition(
           page: const SubscribeToPremiumView(),
         );
-      case paymentMethodsView:
+      case premiumPackagePaymentView:
         return SideSlideTransition(
-          page: PaymentMethodsView(
+          page: PremiumPackagePaymentView(
             premiumPackageEntity:
                 routeSettings.arguments as PremiumPackageEntity,
           ),
