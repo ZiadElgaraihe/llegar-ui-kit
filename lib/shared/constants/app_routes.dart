@@ -15,7 +15,7 @@ import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
 import 'package:llegar/modules/profile/domain/entities/premium_package_entity.dart';
 import 'package:llegar/modules/profile/domain/entities/review_summary_entity.dart';
 import 'package:llegar/modules/profile/presentation/views/add_item_view.dart';
-import 'package:llegar/modules/profile/presentation/views/add_new_card_view.dart';
+import 'package:llegar/core/presentation/views/add_new_card_view.dart';
 import 'package:llegar/modules/profile/presentation/views/contact_us_view.dart';
 import 'package:llegar/modules/profile/presentation/views/edit_profile_view.dart';
 import 'package:llegar/modules/profile/presentation/views/help_center_view.dart';

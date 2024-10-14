@@ -80,7 +80,7 @@ class _FundMyWalletViewBodyState extends State<FundMyWalletViewBody> {
                 FundWalletTextField(
                   controller: _controller,
                 ),
-                AppSizes.height16,
+                AppSizes.height24,
                 ValueListenableBuilder(
                   valueListenable: _selectedAmount,
                   builder: (context, selectedAmount, child) =>

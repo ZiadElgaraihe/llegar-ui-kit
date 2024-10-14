@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:llegar/modules/profile/domain/entities/payment_method_entity.dart';
-import 'package:llegar/modules/profile/presentation/widgets/payment_method_card.dart';
+import 'package:llegar/core/domain/entities/payment_method_entity.dart';
+import 'package:llegar/core/presentation/widgets/payment_method_card.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 
 class PaymentMethodsColumn extends StatelessWidget {
