@@ -9,7 +9,7 @@ class ResponsiveWalletTopUpListTiles extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (MediaQuery.sizeOf(context).width < 1100) {
+    if (MediaQuery.sizeOf(context).width < AppSizes.largeBreakpoint) {
       return Column(
         children: List.generate(
           3,
@@ -21,7 +21,7 @@ class ResponsiveWalletTopUpListTiles extends StatelessWidget {
         children: [
           for (int i = 0; i < 3; i++) ...[
             const Expanded(child: WalletTopUpListTile()),
-            if (i < 2) AppSizes.width16,
+            if (i < 2) AppSizes.width24,
           ]
         ],
       );
