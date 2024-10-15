@@ -7,10 +7,12 @@ class CustomDot extends StatelessWidget {
     super.key,
     required this.isActive,
     required this.size,
+    this.inactiveColor,
   });
 
   final bool isActive;
   final double size;
+  final Color? inactiveColor;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +27,7 @@ class CustomDot extends StatelessWidget {
                 light: AppColors.prussianBlue,
                 dark: AppColors.orange,
               )
-            : AppColors.lightGrey,
+            : inactiveColor ?? AppColors.lightGrey,
         borderRadius: BorderRadius.circular(100),
       ),
     );
