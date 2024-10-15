@@ -590,4 +590,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get youHaveFailedToTopUpYourElectronicWallet => 'You have failed to top up your e-wallet. Please ensure that there is sufficient balance in your account.';
+
+  @override
+  String get goodMorning => 'Good Morning';
+
+  @override
+  String get goodEvening => 'Good Evening';
 }

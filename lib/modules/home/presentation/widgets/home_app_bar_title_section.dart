@@ -6,6 +6,7 @@ import 'package:llegar/shared/constants/app_icons.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_strings.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
+import 'package:llegar/shared/utils/functions/translate.dart';
 import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class HomeAppBarTitleSection extends StatelessWidget {
@@ -37,7 +38,7 @@ class HomeAppBarTitleSection extends StatelessWidget {
             Row(
               children: [
                 Text(
-                  'Welcome',
+                  _getGreeting(context),
                   style: AppTextStyles.regular14(context).copyWith(
                     fontFamily: AppStrings.urbanistFontFamily,
                   ),
@@ -65,5 +66,18 @@ class HomeAppBarTitleSection extends StatelessWidget {
         ),
       ],
     );
+  }
+
+  ///Used to get greeting sentence depending on the day time
+  String _getGreeting(BuildContext context) {
+    final hour = DateTime.now().hour;
+
+    if (hour >= 5 && hour < 17) {
+      // Morning: 5:00 AM to 4:59 PM
+      return translate(context).goodMorning;
+    } else {
+      // Evening: 5:00 PM to 4:59 AM
+      return translate(context).goodEvening;
+    }
   }
 }

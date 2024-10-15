@@ -590,4 +590,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get youHaveFailedToTopUpYourElectronicWallet => 'لقد فشلت عملية شحن محفظتك الإلكترونية. يرجى التأكد من وجود رصيد كافٍ في حسابك.';
+
+  @override
+  String get goodMorning => 'صباح الخير';
+
+  @override
+  String get goodEvening => 'مساء الخير';
 }

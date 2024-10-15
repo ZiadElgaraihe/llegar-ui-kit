@@ -193,5 +193,7 @@
     "topUpSuccessful": "Top Up Successful!",
     "topUpFailed": "Top Up Failed!",
     "youHaveSuccessfullyTopUpElectronicWalletFor": "You have successfully top up e-wallet for",
-    "youHaveFailedToTopUpYourElectronicWallet": "You have failed to top up your e-wallet. Please ensure that there is sufficient balance in your account."
+    "youHaveFailedToTopUpYourElectronicWallet": "You have failed to top up your e-wallet. Please ensure that there is sufficient balance in your account.",
+    "goodMorning": "Good Morning",
+    "goodEvening": "Good Evening"
 }

@@ -193,5 +193,7 @@
     "topUpSuccessful": "تم شحن الرصيد بنجاح!",
     "topUpFailed": "فشلت عملية شحن الرصيد!",
     "youHaveSuccessfullyTopUpElectronicWalletFor": "لقد نجحت في شحن المحفظة الإلكترونية بـ",
-    "youHaveFailedToTopUpYourElectronicWallet": "لقد فشلت عملية شحن محفظتك الإلكترونية. يرجى التأكد من وجود رصيد كافٍ في حسابك."
+    "youHaveFailedToTopUpYourElectronicWallet": "لقد فشلت عملية شحن محفظتك الإلكترونية. يرجى التأكد من وجود رصيد كافٍ في حسابك.",
+    "goodMorning": "صباح الخير",
+    "goodEvening": "مساء الخير"
 }

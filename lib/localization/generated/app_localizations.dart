@@ -1264,6 +1264,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You have failed to top up your e-wallet. Please ensure that there is sufficient balance in your account.'**
   String get youHaveFailedToTopUpYourElectronicWallet;
+
+  /// No description provided for @goodMorning.
+  ///
+  /// In en, this message translates to:
+  /// **'Good Morning'**
+  String get goodMorning;
+
+  /// No description provided for @goodEvening.
+  ///
+  /// In en, this message translates to:
+  /// **'Good Evening'**
+  String get goodEvening;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
