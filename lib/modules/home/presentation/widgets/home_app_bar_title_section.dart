@@ -32,37 +32,52 @@ class HomeAppBarTitleSection extends StatelessWidget {
           ),
         ),
         AppSizes.width8,
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                Text(
-                  _getGreeting(context),
-                  style: AppTextStyles.regular14(context).copyWith(
-                    fontFamily: AppStrings.urbanistFontFamily,
-                  ),
-                ),
-                AppSizes.width8,
-                SvgPicture.asset(
-                  AppIcons.wavingHand,
-                  colorFilter: valueBasedOnTheme<ColorFilter>(
-                    context,
-                    dark: const ColorFilter.mode(
-                      AppColors.orange,
-                      BlendMode.srcATop,
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Row(
+                  children: [
+                    Text(
+                      _getGreeting(context),
+                      style: AppTextStyles.regular14(context).copyWith(
+                        fontFamily: AppStrings.urbanistFontFamily,
+                        color: valueBasedOnTheme<Color>(
+                          context,
+                          light: AppColors.prussianBlue,
+                          dark: AppColors.orange,
+                        ),
+                      ),
                     ),
+                    AppSizes.width8,
+                    SvgPicture.asset(
+                      AppIcons.wavingHand,
+                      colorFilter: valueBasedOnTheme<ColorFilter>(
+                        context,
+                        dark: const ColorFilter.mode(
+                          AppColors.orange,
+                          BlendMode.srcATop,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Text(
+                'Nour Mohamed',
+                style: AppTextStyles.bold16(context).copyWith(
+                  fontFamily: AppStrings.urbanistFontFamily,
+                  color: valueBasedOnTheme<Color>(
+                    context,
+                    light: AppColors.prussianBlue,
+                    dark: AppColors.orange,
                   ),
                 ),
-              ],
-            ),
-            Text(
-              'Nour Mohamed',
-              style: AppTextStyles.bold16(context).copyWith(
-                fontFamily: AppStrings.urbanistFontFamily,
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ],
     );
