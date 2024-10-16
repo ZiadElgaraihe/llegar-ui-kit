@@ -13,6 +13,7 @@ import 'package:llegar/modules/auth/presentation/views/sign_up_identification_vi
 import 'package:llegar/modules/auth/presentation/views/sign_up_profile_info_view.dart';
 import 'package:llegar/modules/auth/presentation/views/sign_up_view.dart';
 import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
+import 'package:llegar/modules/home/presentation/views/search_view.dart';
 import 'package:llegar/modules/profile/domain/entities/premium_package_entity.dart';
 import 'package:llegar/modules/profile/domain/entities/review_summary_entity.dart';
 import 'package:llegar/modules/profile/presentation/views/add_item_view.dart';
@@ -56,6 +57,7 @@ abstract class AppRoutes {
   static const String privacyPolicyView = '/PrivacyPolicyView';
   static const String resetPasswordView = '/ResetPasswordView';
   static const String reviewSummaryView = '/ReviewSummaryView';
+  static const String searchView = '/SearchView';
   static const String securityView = '/SecurityView';
   static const String signUpIdentificationView = '/SignUpIdentificationView';
   static const String signUpProfileInfoView = '/SignUpProfileInfoView';
@@ -190,6 +192,10 @@ abstract class AppRoutes {
       case topUpElectronicWalletView:
         return SideSlideTransition(
           page: const TopUpElectronicWalletView(),
+        );
+      case searchView:
+        return SideSlideTransition(
+          page: const SearchView(),
         );
     }
     return null;

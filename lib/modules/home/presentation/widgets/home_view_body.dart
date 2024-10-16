@@ -4,6 +4,7 @@ import 'package:llegar/modules/home/presentation/widgets/responsive_items_sliver
 import 'package:llegar/modules/home/presentation/widgets/search_text_field.dart';
 import 'package:llegar/modules/home/presentation/widgets/special_offers_section.dart';
 import 'package:llegar/modules/home/presentation/widgets/top_deals_categories_section.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
@@ -21,7 +22,12 @@ class HomeViewBody extends StatelessWidget {
           sliver: SliverToBoxAdapter(
             child: Column(
               children: [
-                const SearchTextField(readOnly: true),
+                SearchTextField(
+                  readOnly: true,
+                  onTap: () {
+                    Navigator.pushNamed(context, AppRoutes.searchView);
+                  },
+                ),
                 AppSizes.height24,
                 const SpecialOffersSection(),
                 AppSizes.height24,
