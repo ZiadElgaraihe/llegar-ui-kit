@@ -3,6 +3,13 @@ import 'package:llegar/shared/constants/app_sizes.dart';
 
 ///This class contains all text styles depending on font size and weight
 abstract class AppTextStyles {
+  static TextStyle regular10(BuildContext context, {bool responsive = false}) =>
+      TextStyle(
+        fontSize:
+            responsive ? _getResponsiveFontSize(context, fontSize: 10) : 10,
+        fontWeight: FontWeight.w400,
+      );
+
   static TextStyle medium10(BuildContext context, {bool responsive = false}) =>
       TextStyle(
         fontSize:
@@ -159,7 +166,7 @@ abstract class AppTextStyles {
             responsive ? _getResponsiveFontSize(context, fontSize: 32) : 32,
         fontWeight: FontWeight.w700,
       );
-
+  
   static TextStyle bold40(BuildContext context, {bool responsive = false}) =>
       TextStyle(
         fontSize:
