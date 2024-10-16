@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:llegar/modules/home/presentation/widgets/home_section_header.dart';
 import 'package:llegar/modules/home/presentation/widgets/special_offers_categories_section.dart';
 import 'package:llegar/modules/home/presentation/widgets/special_offers_container.dart';
-import 'package:llegar/modules/home/presentation/widgets/special_offers_custom_page_view.dart';
+import 'package:llegar/modules/home/presentation/widgets/special_offers_carousel_slider.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
@@ -21,7 +21,7 @@ class SpecialOffersSection extends StatelessWidget {
         ),
         AppSizes.height36,
         const SpecialOffersConatiner(
-          child: SpecialOffersPageView(),
+          child: SpecialOffersCarouselSlider(),
         ),
         AppSizes.height24,
         const SpecialOffersCategoriesSection(),

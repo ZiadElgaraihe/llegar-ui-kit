@@ -1,24 +1,23 @@
-import 'dart:async';
-
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/dots_indicator.dart';
 import 'package:llegar/modules/home/presentation/widgets/special_offers_item.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 
-class SpecialOffersPageView extends StatefulWidget {
-  const SpecialOffersPageView({
+class SpecialOffersCarouselSlider extends StatefulWidget {
+  const SpecialOffersCarouselSlider({
     super.key,
   });
 
   @override
-  State<SpecialOffersPageView> createState() => _SpecialOffersPageViewState();
+  State<SpecialOffersCarouselSlider> createState() =>
+      _SpecialOffersCarouselSliderState();
 }
 
-class _SpecialOffersPageViewState extends State<SpecialOffersPageView> {
-  late PageController _pageController;
+class _SpecialOffersCarouselSliderState
+    extends State<SpecialOffersCarouselSlider> {
   late ValueNotifier<int> _currentPage;
-  late Timer _timer;
 
   ///This variable represents the length of the list
   ///and will be dynamically replaced with the actual length
@@ -28,32 +27,10 @@ class _SpecialOffersPageViewState extends State<SpecialOffersPageView> {
   void initState() {
     super.initState();
     _currentPage = ValueNotifier<int>(0);
-    _pageController = PageController(initialPage: 0);
-    _startAutoScroll();
-  }
-
-  void _startAutoScroll() {
-    _timer = Timer.periodic(const Duration(seconds: 4), (Timer timer) {
-      int nextPage;
-
-      if (_currentPage.value < _lenght - 1) {
-        nextPage = _currentPage.value + 1;
-      } else {
-        nextPage = 0;
-      }
-
-      _pageController.animateToPage(
-        nextPage,
-        duration: const Duration(milliseconds: 400),
-        curve: Curves.easeInOut,
-      );
-    });
   }
 
   @override
   void dispose() {
-    _timer.cancel();
-    _pageController.dispose();
     _currentPage.dispose();
     super.dispose();
   }
@@ -63,13 +40,18 @@ class _SpecialOffersPageViewState extends State<SpecialOffersPageView> {
     return Column(
       children: [
         Expanded(
-          child: PageView.builder(
-            controller: _pageController,
-            onPageChanged: (value) {
-              _currentPage.value = value;
-            },
-            itemCount: _lenght,
-            itemBuilder: (context, index) => const SpecialOffersItem(),
+          child: CarouselSlider(
+            options: CarouselOptions(
+              autoPlay: true,
+              initialPage: 0,
+              aspectRatio: 400 / 172,
+              viewportFraction: 1,
+              autoPlayAnimationDuration: const Duration(milliseconds: 400),
+              onPageChanged: (index, reason) {
+                _currentPage.value = index;
+              },
+            ),
+            items: List.generate(_lenght, (index) => const SpecialOffersItem()),
           ),
         ),
         AppSizes.height4,
