@@ -50,6 +50,10 @@ abstract class AppThemes {
             borderSide: BorderSide.none,
             borderRadius: BorderRadius.circular(6),
           ),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide.none,
+            borderRadius: BorderRadius.circular(6),
+          ),
           focusedBorder: OutlineInputBorder(
             borderSide: const BorderSide(
               color: AppColors.green,
@@ -327,6 +331,10 @@ abstract class AppThemes {
             fontFamily: AppStrings.interFontFamily,
           ),
           border: OutlineInputBorder(
+            borderSide: BorderSide.none,
+            borderRadius: BorderRadius.circular(6),
+          ),
+          enabledBorder: OutlineInputBorder(
             borderSide: BorderSide.none,
             borderRadius: BorderRadius.circular(6),
           ),
