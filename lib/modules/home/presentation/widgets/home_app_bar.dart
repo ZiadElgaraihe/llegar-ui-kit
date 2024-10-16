@@ -17,6 +17,7 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      forceMaterialTransparency: true,
       title: const HomeAppBarTitleSection(),
       actions: [
         IconButton(

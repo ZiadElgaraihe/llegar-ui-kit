@@ -119,7 +119,7 @@
     "addItem": "إضافة عنصر",
     "addPhoto": "إضافة صورة",
     "rentType": "نوع الإيجار",
-    "transportations": "وسائل النقل",
+    "transportation": "وسائل النقل",
     "property": "العقارات",
     "clothes": "الملابس",
     "electronics": "الإلكترونيات",
@@ -195,5 +195,10 @@
     "youHaveSuccessfullyTopUpElectronicWalletFor": "لقد نجحت في شحن المحفظة الإلكترونية بـ",
     "youHaveFailedToTopUpYourElectronicWallet": "لقد فشلت عملية شحن محفظتك الإلكترونية. يرجى التأكد من وجود رصيد كافٍ في حسابك.",
     "goodMorning": "صباح الخير",
-    "goodEvening": "مساء الخير"
+    "goodEvening": "مساء الخير",
+    "search": "بحث",
+    "specialOffers": "عروض خاصة",
+    "seeAll": "عرض الكل",
+    "topDeals": "أفضل العروض",
+    "all": "الكل"
 }

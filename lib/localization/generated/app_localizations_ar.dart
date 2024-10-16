@@ -367,7 +367,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get rentType => 'نوع الإيجار';
 
   @override
-  String get transportations => 'وسائل النقل';
+  String get transportation => 'وسائل النقل';
 
   @override
   String get property => 'العقارات';
@@ -596,4 +596,19 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get goodEvening => 'مساء الخير';
+
+  @override
+  String get search => 'بحث';
+
+  @override
+  String get specialOffers => 'عروض خاصة';
+
+  @override
+  String get seeAll => 'عرض الكل';
+
+  @override
+  String get topDeals => 'أفضل العروض';
+
+  @override
+  String get all => 'الكل';
 }

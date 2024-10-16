@@ -367,7 +367,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get rentType => 'Rent Type';
 
   @override
-  String get transportations => 'Transportations';
+  String get transportation => 'Transportation';
 
   @override
   String get property => 'Property';
@@ -596,4 +596,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get goodEvening => 'Good Evening';
+
+  @override
+  String get search => 'Search';
+
+  @override
+  String get specialOffers => 'Special Offers';
+
+  @override
+  String get seeAll => 'See All';
+
+  @override
+  String get topDeals => 'Top Deals';
+
+  @override
+  String get all => 'All';
 }

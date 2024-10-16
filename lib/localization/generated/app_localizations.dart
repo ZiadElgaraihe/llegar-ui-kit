@@ -815,11 +815,11 @@ abstract class AppLocalizations {
   /// **'Rent Type'**
   String get rentType;
 
-  /// No description provided for @transportations.
+  /// No description provided for @transportation.
   ///
   /// In en, this message translates to:
-  /// **'Transportations'**
-  String get transportations;
+  /// **'Transportation'**
+  String get transportation;
 
   /// No description provided for @property.
   ///
@@ -1276,6 +1276,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Good Evening'**
   String get goodEvening;
+
+  /// No description provided for @search.
+  ///
+  /// In en, this message translates to:
+  /// **'Search'**
+  String get search;
+
+  /// No description provided for @specialOffers.
+  ///
+  /// In en, this message translates to:
+  /// **'Special Offers'**
+  String get specialOffers;
+
+  /// No description provided for @seeAll.
+  ///
+  /// In en, this message translates to:
+  /// **'See All'**
+  String get seeAll;
+
+  /// No description provided for @topDeals.
+  ///
+  /// In en, this message translates to:
+  /// **'Top Deals'**
+  String get topDeals;
+
+  /// No description provided for @all.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get all;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
