@@ -289,6 +289,23 @@ abstract class AppThemes {
             borderRadius: BorderRadius.circular(10),
           ),
         ),
+        sliderTheme: SliderThemeData(
+          trackHeight: 2,
+          activeTrackColor: AppColors.prussianBlue,
+          inactiveTrackColor: AppColors.black.withOpacity(0.2),
+          thumbColor: AppColors.prussianBlue,
+          overlayColor: Colors.transparent,
+          overlayShape: const RoundSliderOverlayShape(overlayRadius: 0.0),
+          showValueIndicator: ShowValueIndicator.always,
+          valueIndicatorColor: AppColors.white,
+          valueIndicatorStrokeColor: Colors.transparent,
+          overlappingShapeStrokeColor: Colors.transparent,
+          valueIndicatorTextStyle: AppTextStyles.semiBold16(context).copyWith(
+            color: AppColors.prussianBlue,
+          ),
+          activeTickMarkColor: Colors.transparent,
+          inactiveTickMarkColor: Colors.transparent,
+        ),
       );
 
   static ThemeData darkTheme(BuildContext context) => ThemeData.dark().copyWith(
@@ -572,6 +589,23 @@ abstract class AppThemes {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
           ),
+        ),
+        sliderTheme: SliderThemeData(
+          trackHeight: 2,
+          activeTrackColor: AppColors.orange,
+          inactiveTrackColor: AppColors.black.withOpacity(0.2),
+          thumbColor: AppColors.orange,
+          overlayColor: Colors.transparent,
+          overlayShape: const RoundSliderOverlayShape(overlayRadius: 0.0),
+          showValueIndicator: ShowValueIndicator.always,
+          valueIndicatorColor: AppColors.prussianBlue,
+          valueIndicatorStrokeColor: Colors.transparent,
+          overlappingShapeStrokeColor: Colors.transparent,
+          valueIndicatorTextStyle: AppTextStyles.semiBold16(context).copyWith(
+            color: AppColors.orange,
+          ),
+          activeTickMarkColor: Colors.transparent,
+          inactiveTickMarkColor: Colors.transparent,
         ),
       );
 }
