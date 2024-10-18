@@ -200,5 +200,11 @@
     "specialOffers": "Special Offers",
     "seeAll": "See All",
     "topDeals": "Top Deals",
-    "all": "All"
+    "all": "All",
+    "recent": "Recent",
+    "clearAll": "Clear All",
+    "resultsFor": "Results for",
+    "found": "found",
+    "notFound": "Not Found",
+    "sorryTheKeywordYouEnteredCannotBeFound": "Sorry, the Keyword you entered cannot be found, please check again or search with another keyword."
 }

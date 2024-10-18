@@ -194,8 +194,9 @@ abstract class AppRoutes {
           page: const TopUpElectronicWalletView(),
         );
       case searchView:
-        return SideSlideTransition(
-          page: const SearchView(),
+        return PageRouteBuilder(
+          pageBuilder: (context, animation, secondaryAnimation) =>
+              const SearchView(),
         );
     }
     return null;

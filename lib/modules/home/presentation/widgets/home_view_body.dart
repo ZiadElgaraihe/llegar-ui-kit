@@ -6,6 +6,7 @@ import 'package:llegar/modules/home/presentation/widgets/special_offers_section.
 import 'package:llegar/modules/home/presentation/widgets/top_deals_categories_section.dart';
 import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
+import 'package:llegar/shared/constants/app_strings.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -22,11 +23,14 @@ class HomeViewBody extends StatelessWidget {
           sliver: SliverToBoxAdapter(
             child: Column(
               children: [
-                SearchTextField(
-                  readOnly: true,
-                  onTap: () {
-                    Navigator.pushNamed(context, AppRoutes.searchView);
-                  },
+                Hero(
+                  tag: AppStrings.searchHeroTag,
+                  child: SearchTextField(
+                    readOnly: true,
+                    onTap: () {
+                      Navigator.pushNamed(context, AppRoutes.searchView);
+                    },
+                  ),
                 ),
                 AppSizes.height24,
                 const SpecialOffersSection(),

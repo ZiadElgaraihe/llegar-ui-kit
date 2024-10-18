@@ -611,4 +611,22 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get all => 'الكل';
+
+  @override
+  String get recent => 'الأحدث';
+
+  @override
+  String get clearAll => 'مسح الكل';
+
+  @override
+  String get resultsFor => 'نتائج البحث عن';
+
+  @override
+  String get found => 'نتيجة';
+
+  @override
+  String get notFound => 'غير موجود';
+
+  @override
+  String get sorryTheKeywordYouEnteredCannotBeFound => 'عذرًا، لا يمكن العثور على الكلمة الرئيسية التي أدخلتها، يرجى التحقق مرة أخرى أو البحث باستخدام كلمة رئيسية أخرى.';
 }

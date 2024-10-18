@@ -2,7 +2,7 @@
 abstract class AppImages {
   ///assets/images/advertisement_car.webp
   static const String advertisementCar = 'assets/images/advertisement_car.webp';
-  
+
   ///assets/images/car.webp
   static const String car = 'assets/images/car.webp';
 
@@ -52,6 +52,12 @@ abstract class AppImages {
   ///assets/images/dark/my_orders_empty_dark.svg
   static const String myOrdersEmptyDark =
       'assets/images/dark/my_orders_empty_dark.svg';
+
+  ///assets/images/light/not_found.svg
+  static const String notFound = 'assets/images/light/not_found.svg';
+
+  ///assets/images/dark/not_found_dark.svg
+  static const String notFoundDark = 'assets/images/dark/not_found_dark.svg';
 
   ///assets/images/light/ok_amico.svg
   static const String okAmico = 'assets/images/light/ok_amico.svg';

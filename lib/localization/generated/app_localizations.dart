@@ -1306,6 +1306,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'All'**
   String get all;
+
+  /// No description provided for @recent.
+  ///
+  /// In en, this message translates to:
+  /// **'Recent'**
+  String get recent;
+
+  /// No description provided for @clearAll.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear All'**
+  String get clearAll;
+
+  /// No description provided for @resultsFor.
+  ///
+  /// In en, this message translates to:
+  /// **'Results for'**
+  String get resultsFor;
+
+  /// No description provided for @found.
+  ///
+  /// In en, this message translates to:
+  /// **'found'**
+  String get found;
+
+  /// No description provided for @notFound.
+  ///
+  /// In en, this message translates to:
+  /// **'Not Found'**
+  String get notFound;
+
+  /// No description provided for @sorryTheKeywordYouEnteredCannotBeFound.
+  ///
+  /// In en, this message translates to:
+  /// **'Sorry, the Keyword you entered cannot be found, please check again or search with another keyword.'**
+  String get sorryTheKeywordYouEnteredCannotBeFound;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

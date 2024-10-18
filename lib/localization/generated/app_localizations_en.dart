@@ -611,4 +611,22 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get all => 'All';
+
+  @override
+  String get recent => 'Recent';
+
+  @override
+  String get clearAll => 'Clear All';
+
+  @override
+  String get resultsFor => 'Results for';
+
+  @override
+  String get found => 'found';
+
+  @override
+  String get notFound => 'Not Found';
+
+  @override
+  String get sorryTheKeywordYouEnteredCannotBeFound => 'Sorry, the Keyword you entered cannot be found, please check again or search with another keyword.';
 }

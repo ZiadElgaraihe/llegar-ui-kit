@@ -112,10 +112,10 @@ abstract class AppThemes {
         textButtonTheme: TextButtonThemeData(
           style: TextButton.styleFrom(
             textStyle: AppTextStyles.bold14(context).copyWith(
-              color: AppColors.prussianBlue,
+              color: AppColors.black,
               fontFamily: AppStrings.urbanistFontFamily,
             ),
-            foregroundColor: AppColors.prussianBlue,
+            foregroundColor: AppColors.black,
             disabledForegroundColor: AppColors.grey,
           ),
         ),
@@ -396,10 +396,10 @@ abstract class AppThemes {
         textButtonTheme: TextButtonThemeData(
           style: TextButton.styleFrom(
             textStyle: AppTextStyles.bold14(context).copyWith(
-              color: AppColors.orange,
+              color: AppColors.white,
               fontFamily: AppStrings.urbanistFontFamily,
             ),
-            foregroundColor: AppColors.orange,
+            foregroundColor: AppColors.white,
             disabledForegroundColor: AppColors.grey,
           ),
         ),
