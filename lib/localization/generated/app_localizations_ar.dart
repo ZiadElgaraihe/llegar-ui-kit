@@ -235,7 +235,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get myActivities => 'أنشطتي';
 
   @override
-  String get notification => 'الإشعار';
+  String get notification => 'الإشعارات';
 
   @override
   String get security => 'الأمان والحماية';

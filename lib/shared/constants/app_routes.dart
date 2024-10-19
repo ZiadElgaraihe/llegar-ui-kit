@@ -14,6 +14,7 @@ import 'package:llegar/modules/auth/presentation/views/sign_up_profile_info_view
 import 'package:llegar/modules/auth/presentation/views/sign_up_view.dart';
 import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
 import 'package:llegar/modules/home/presentation/views/my_wishlist_view.dart';
+import 'package:llegar/modules/home/presentation/views/notification_view.dart';
 import 'package:llegar/modules/home/presentation/views/search_view.dart';
 import 'package:llegar/modules/home/presentation/views/special_offers_view.dart';
 import 'package:llegar/modules/home/presentation/views/top_deals_view.dart';
@@ -56,6 +57,7 @@ abstract class AppRoutes {
   static const String myWishlistView = '/MyWishlistView';
   static const String myitemsView = '/MyItemsView';
   static const String navBarView = '/NavBarView';
+  static const String notificationView = '/NotificationView';
   static const String otpView = '/OtpView';
   static const String premiumPackagePaymentView = '/PremiumPackagePaymentView';
   static const String privacyPolicyView = '/PrivacyPolicyView';
@@ -215,6 +217,10 @@ abstract class AppRoutes {
       case topDealsView:
         return SideSlideTransition(
           page: const TopDealsView(),
+        );
+      case notificationView:
+        return SideSlideTransition(
+          page: const NotificationView(),
         );
     }
     return null;

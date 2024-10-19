@@ -23,7 +23,9 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
       title: const HomeAppBarTitleSection(),
       actions: [
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            _onNotificationPressed(context);
+          },
           icon: SvgPicture.asset(
             AppIcons.notificationOutlined,
             colorFilter: valueBasedOnTheme<ColorFilter>(
@@ -58,6 +60,12 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   void _onFavouritePressed(BuildContext context) {
     futureDelayedNavigator(() {
       Navigator.pushNamed(context, AppRoutes.myWishlistView);
+    });
+  }
+
+  void _onNotificationPressed(BuildContext context) {
+    futureDelayedNavigator(() {
+      Navigator.pushNamed(context, AppRoutes.notificationView);
     });
   }
 }
