@@ -3,7 +3,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:llegar/modules/home/presentation/widgets/home_app_bar_title_section.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_icons.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
+import 'package:llegar/shared/utils/functions/future_delayed_navigator.dart';
 import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -34,7 +36,9 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
           ),
         ),
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            _onFavouritePressed(context);
+          },
           icon: SvgPicture.asset(
             AppIcons.favourite,
             colorFilter: valueBasedOnTheme<ColorFilter>(
@@ -49,5 +53,11 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
         AppSizes.width16,
       ],
     );
+  }
+
+  void _onFavouritePressed(BuildContext context) {
+    futureDelayedNavigator(() {
+      Navigator.pushNamed(context, AppRoutes.myWishlistView);
+    });
   }
 }

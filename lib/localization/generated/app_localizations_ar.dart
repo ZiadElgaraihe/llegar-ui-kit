@@ -656,4 +656,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get apply => 'تطبيق';
+
+  @override
+  String get myWishlist => 'المفضلة';
 }

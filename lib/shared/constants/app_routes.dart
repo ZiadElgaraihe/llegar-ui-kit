@@ -13,6 +13,7 @@ import 'package:llegar/modules/auth/presentation/views/sign_up_identification_vi
 import 'package:llegar/modules/auth/presentation/views/sign_up_profile_info_view.dart';
 import 'package:llegar/modules/auth/presentation/views/sign_up_view.dart';
 import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
+import 'package:llegar/modules/home/presentation/views/my_wishlist_view.dart';
 import 'package:llegar/modules/home/presentation/views/search_view.dart';
 import 'package:llegar/modules/profile/domain/entities/premium_package_entity.dart';
 import 'package:llegar/modules/profile/domain/entities/review_summary_entity.dart';
@@ -50,6 +51,7 @@ abstract class AppRoutes {
   static const String languageView = '/LanguageView';
   static const String logInView = '/LogInView';
   static const String myActivitiesView = '/MyActivitiesView';
+  static const String myWishlistView = '/MyWishlistView';
   static const String myitemsView = '/MyItemsView';
   static const String navBarView = '/NavBarView';
   static const String otpView = '/OtpView';
@@ -197,6 +199,10 @@ abstract class AppRoutes {
         return PageRouteBuilder(
           pageBuilder: (context, animation, secondaryAnimation) =>
               const SearchView(),
+        );
+      case myWishlistView:
+        return SideSlideTransition(
+          page: const MyWishlistView(),
         );
     }
     return null;

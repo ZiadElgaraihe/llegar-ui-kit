@@ -8,12 +8,16 @@ class ResponsiveItemsList extends StatelessWidget {
     required this.itemCount,
     this.appearLikeButton = true,
     this.appearLeaveReviewButton = false,
+    this.isLiked = false,
+    this.onLikeTapped,
     this.padding,
   });
 
   final bool appearLeaveReviewButton;
   final bool appearLikeButton;
+  final bool isLiked;
   final int itemCount;
+  final void Function(bool isLiked)? onLikeTapped;
   final EdgeInsets? padding;
 
   @override
@@ -25,6 +29,8 @@ class ResponsiveItemsList extends StatelessWidget {
         itemBuilder: (context, index) => ItemWidget(
           appearLeaveReviewButton: appearLeaveReviewButton,
           appearLikeButton: appearLikeButton,
+          isLiked: isLiked,
+          onLikeTapped: onLikeTapped,
         ),
         separatorBuilder: (context, index) => AppSizes.height24,
       );
@@ -41,6 +47,8 @@ class ResponsiveItemsList extends StatelessWidget {
         itemBuilder: (context, index) => ItemWidget(
           appearLeaveReviewButton: appearLeaveReviewButton,
           appearLikeButton: appearLikeButton,
+          isLiked: isLiked,
+          onLikeTapped: onLikeTapped,
         ),
       );
     }
