@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:llegar/modules/home/presentation/widgets/filter_bottom_sheet.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_icons.dart';
+import 'package:llegar/shared/utils/functions/show_custom_modal_bottom_sheet.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
 class SearchTextField extends StatelessWidget {
@@ -47,7 +49,15 @@ class SearchTextField extends StatelessWidget {
               ),
             ),
             suffixIcon: IconButton(
-              onPressed: readOnly ? null : () {},
+              onPressed: readOnly
+                  ? null
+                  : () {
+                      showCustomModalBottomSheet(
+                        context,
+                        height: MediaQuery.sizeOf(context).height * 0.8,
+                        builder: (context) => const FilterBottomSheet(),
+                      );
+                    },
               style: IconButton.styleFrom(
                 foregroundColor: AppColors.prussianBlue,
               ),

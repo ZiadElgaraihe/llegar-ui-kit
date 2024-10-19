@@ -206,5 +206,14 @@
     "resultsFor": "نتائج البحث عن",
     "found": "نتيجة",
     "notFound": "غير موجود",
-    "sorryTheKeywordYouEnteredCannotBeFound": "عذرًا، لا يمكن العثور على الكلمة الرئيسية التي أدخلتها، يرجى التحقق مرة أخرى أو البحث باستخدام كلمة رئيسية أخرى."
+    "sorryTheKeywordYouEnteredCannotBeFound": "عذرًا، لا يمكن العثور على الكلمة الرئيسية التي أدخلتها، يرجى التحقق مرة أخرى أو البحث باستخدام كلمة رئيسية أخرى.",
+    "sortAndFilter": "فرز & تصفية",
+    "itemType": "نوع السلعة",
+    "itemCondition": "حالة السلعة",
+    "newText": "جديد",
+    "used": "مستعمل",
+    "priceRange": "نطاق السعر",
+    "rating": "التقييم",
+    "reset": "إعادة الضبط",
+    "apply": "تطبيق"
 }

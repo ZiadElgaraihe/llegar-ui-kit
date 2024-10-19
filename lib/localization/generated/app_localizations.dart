@@ -1342,6 +1342,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Sorry, the Keyword you entered cannot be found, please check again or search with another keyword.'**
   String get sorryTheKeywordYouEnteredCannotBeFound;
+
+  /// No description provided for @sortAndFilter.
+  ///
+  /// In en, this message translates to:
+  /// **'Sort & Filter'**
+  String get sortAndFilter;
+
+  /// No description provided for @itemType.
+  ///
+  /// In en, this message translates to:
+  /// **'Item Type'**
+  String get itemType;
+
+  /// No description provided for @itemCondition.
+  ///
+  /// In en, this message translates to:
+  /// **'Item Condition'**
+  String get itemCondition;
+
+  /// No description provided for @newText.
+  ///
+  /// In en, this message translates to:
+  /// **'New'**
+  String get newText;
+
+  /// No description provided for @used.
+  ///
+  /// In en, this message translates to:
+  /// **'Used'**
+  String get used;
+
+  /// No description provided for @priceRange.
+  ///
+  /// In en, this message translates to:
+  /// **'Price Range'**
+  String get priceRange;
+
+  /// No description provided for @rating.
+  ///
+  /// In en, this message translates to:
+  /// **'Rating'**
+  String get rating;
+
+  /// No description provided for @reset.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset'**
+  String get reset;
+
+  /// No description provided for @apply.
+  ///
+  /// In en, this message translates to:
+  /// **'Apply'**
+  String get apply;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

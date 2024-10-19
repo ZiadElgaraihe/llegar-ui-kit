@@ -629,4 +629,31 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get sorryTheKeywordYouEnteredCannotBeFound => 'Sorry, the Keyword you entered cannot be found, please check again or search with another keyword.';
+
+  @override
+  String get sortAndFilter => 'Sort & Filter';
+
+  @override
+  String get itemType => 'Item Type';
+
+  @override
+  String get itemCondition => 'Item Condition';
+
+  @override
+  String get newText => 'New';
+
+  @override
+  String get used => 'Used';
+
+  @override
+  String get priceRange => 'Price Range';
+
+  @override
+  String get rating => 'Rating';
+
+  @override
+  String get reset => 'Reset';
+
+  @override
+  String get apply => 'Apply';
 }

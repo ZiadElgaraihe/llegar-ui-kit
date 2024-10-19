@@ -3,14 +3,16 @@ import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
-class TopDealsCategoryButton extends StatelessWidget {
-  const TopDealsCategoryButton({
+class OptionButton extends StatelessWidget {
+  const OptionButton({
     super.key,
     required this.isSelected,
     required this.onTap,
     required this.title,
+    this.builder,
   });
 
+  final Widget Function(String item, bool isSelected)? builder;
   final bool isSelected;
   final VoidCallback onTap;
   final String title;
@@ -42,12 +44,14 @@ class TopDealsCategoryButton extends StatelessWidget {
             width: 2,
           ),
         ),
-        child: Text(
-          title,
-          style: AppTextStyles.bold20(context).copyWith(
-            color: isSelected ? AppColors.white : null,
-          ),
-        ),
+        child: (builder != null)
+            ? builder!(title, isSelected)
+            : Text(
+                title,
+                style: AppTextStyles.bold20(context).copyWith(
+                  color: isSelected ? AppColors.white : null,
+                ),
+              ),
       ),
     );
   }

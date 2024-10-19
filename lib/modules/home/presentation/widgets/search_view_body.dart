@@ -77,7 +77,8 @@ class _SearchViewBodyState extends State<SearchViewBody> {
               builder: (context, searchText, child) => (searchText.isEmpty)
                   ? const RecentSearchSection()
                   : SearchResultSection(
-                      numberOfResults: 'cars'.startsWith(searchText) ? 10 : 0,
+                      numberOfResults:
+                          'cars'.startsWith(searchText.toLowerCase()) ? 10 : 0,
                       searchText: searchText,
                     ),
             ),

@@ -206,5 +206,14 @@
     "resultsFor": "Results for",
     "found": "found",
     "notFound": "Not Found",
-    "sorryTheKeywordYouEnteredCannotBeFound": "Sorry, the Keyword you entered cannot be found, please check again or search with another keyword."
+    "sorryTheKeywordYouEnteredCannotBeFound": "Sorry, the Keyword you entered cannot be found, please check again or search with another keyword.",
+    "sortAndFilter": "Sort & Filter",
+    "itemType": "Item Type",
+    "itemCondition": "Item Condition",
+    "newText": "New",
+    "used": "Used",
+    "priceRange": "Price Range",
+    "rating": "Rating",
+    "reset": "Reset",
+    "apply": "Apply"
 }

@@ -629,4 +629,31 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get sorryTheKeywordYouEnteredCannotBeFound => 'عذرًا، لا يمكن العثور على الكلمة الرئيسية التي أدخلتها، يرجى التحقق مرة أخرى أو البحث باستخدام كلمة رئيسية أخرى.';
+
+  @override
+  String get sortAndFilter => 'فرز & تصفية';
+
+  @override
+  String get itemType => 'نوع السلعة';
+
+  @override
+  String get itemCondition => 'حالة السلعة';
+
+  @override
+  String get newText => 'جديد';
+
+  @override
+  String get used => 'مستعمل';
+
+  @override
+  String get priceRange => 'نطاق السعر';
+
+  @override
+  String get rating => 'التقييم';
+
+  @override
+  String get reset => 'إعادة الضبط';
+
+  @override
+  String get apply => 'تطبيق';
 }
