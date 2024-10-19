@@ -16,6 +16,7 @@ import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
 import 'package:llegar/modules/home/presentation/views/my_wishlist_view.dart';
 import 'package:llegar/modules/home/presentation/views/search_view.dart';
 import 'package:llegar/modules/home/presentation/views/special_offers_view.dart';
+import 'package:llegar/modules/home/presentation/views/top_deals_view.dart';
 import 'package:llegar/modules/profile/domain/entities/premium_package_entity.dart';
 import 'package:llegar/modules/profile/domain/entities/review_summary_entity.dart';
 import 'package:llegar/modules/profile/presentation/views/add_item_view.dart';
@@ -69,6 +70,7 @@ abstract class AppRoutes {
   static const String specialOffersView = '/SpecialOffersView';
   static const String subscribeToPremiumView = '/SubscribeToPremiumView';
   static const String successView = '/SuccessView';
+  static const String topDealsView = '/TopDealsView';
   static const String topUpElectronicWalletView = '/TopUpElectronicWalletView';
   static const String welcomeView = '/WelcomeView';
 
@@ -209,6 +211,10 @@ abstract class AppRoutes {
       case specialOffersView:
         return SideSlideTransition(
           page: const SpecialOffersView(),
+        );
+      case topDealsView:
+        return SideSlideTransition(
+          page: const TopDealsView(),
         );
     }
     return null;

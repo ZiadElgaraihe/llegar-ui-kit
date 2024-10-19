@@ -37,7 +37,9 @@ class HomeViewBody extends StatelessWidget {
                 AppSizes.height24,
                 HomeSectionHeader(
                   title: translate(context).topDeals,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, AppRoutes.topDealsView);
+                  },
                 ),
               ],
             ),
