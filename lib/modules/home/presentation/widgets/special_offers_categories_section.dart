@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/modules/home/presentation/widgets/special_offers_category_button.dart';
 import 'package:llegar/shared/constants/app_icons.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
@@ -24,19 +25,25 @@ class SpecialOffersCategoriesSection extends StatelessWidget {
             children: [
               SpecialOffersCategoryButton(
                 icon: AppIcons.property,
-                onTap: () {},
+                onTap: () {
+                  _onCategoryTapped(context);
+                },
                 title: translate(context).property,
               ),
               AppSizes.width8,
               SpecialOffersCategoryButton(
                 icon: AppIcons.transportation,
-                onTap: () {},
+                onTap: () {
+                  _onCategoryTapped(context);
+                },
                 title: translate(context).transportation,
               ),
               AppSizes.width8,
               SpecialOffersCategoryButton(
                 icon: AppIcons.playAreas,
-                onTap: () {},
+                onTap: () {
+                  _onCategoryTapped(context);
+                },
                 title: translate(context).playAreas,
               ),
             ],
@@ -49,19 +56,25 @@ class SpecialOffersCategoriesSection extends StatelessWidget {
             children: [
               SpecialOffersCategoryButton(
                 icon: AppIcons.clothes,
-                onTap: () {},
+                onTap: () {
+                  _onCategoryTapped(context);
+                },
                 title: translate(context).clothes,
               ),
               AppSizes.width8,
               SpecialOffersCategoryButton(
                 icon: AppIcons.eventRentals,
-                onTap: () {},
+                onTap: () {
+                  _onCategoryTapped(context);
+                },
                 title: translate(context).eventRentals,
               ),
               AppSizes.width8,
               SpecialOffersCategoryButton(
                 icon: AppIcons.electronics,
-                onTap: () {},
+                onTap: () {
+                  _onCategoryTapped(context);
+                },
                 title: translate(context).electronics,
               ),
             ],
@@ -69,5 +82,9 @@ class SpecialOffersCategoriesSection extends StatelessWidget {
         ),
       ],
     );
+  }
+
+  void _onCategoryTapped(BuildContext context){
+    Navigator.pushNamed(context, AppRoutes.specialOffersView);
   }
 }
