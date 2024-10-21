@@ -683,4 +683,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get viewDetails => 'View Details';
+
+  @override
+  String get yourOffer => 'Your offer';
 }

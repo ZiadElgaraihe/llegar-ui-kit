@@ -683,4 +683,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get viewDetails => 'عرض التفاصيل';
+
+  @override
+  String get yourOffer => 'العرض الخاص بك';
 }
