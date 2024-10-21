@@ -225,5 +225,12 @@
     "youHaveAnOrderFrom": "لديك عرض من",
     "forYour": "من أجل",
     "viewDetails": "عرض التفاصيل",
-    "yourOffer": "العرض الخاص بك"
+    "yourOffer": "العرض الخاص بك",
+    "weAreSorryYourOfferHasBeenRejected": "نحن آسفون، لقد تم رفض عرضك",
+    "doNotWorryYouWillAlwaysBeAbleToMakeAnotherOffer": "لا تقلق، ستتمكن دائمًا من تقديم عرض آخر أكثر ملاءمة، حتى يتم قبول عرضك",
+    "makeAnOfferAgain": "قدم عرضًا أخر",
+    "backToHome": "العودة إلى الرئيسية",
+    "congratsYourOfferHasBeenAccepted": "تهانينا! لقد تم قبول عرضك",
+    "yourOfferHasBeenAcceptedByTheOwnerFor": "تم قبول عرضك من قبل المالك مقابل",
+    "proceedToCheckout": "المتابعة إلى الدفع"
 }

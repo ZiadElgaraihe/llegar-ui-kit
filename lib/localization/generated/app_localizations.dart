@@ -1456,6 +1456,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your offer'**
   String get yourOffer;
+
+  /// No description provided for @weAreSorryYourOfferHasBeenRejected.
+  ///
+  /// In en, this message translates to:
+  /// **'We’re sorry, your offer has been rejected'**
+  String get weAreSorryYourOfferHasBeenRejected;
+
+  /// No description provided for @doNotWorryYouWillAlwaysBeAbleToMakeAnotherOffer.
+  ///
+  /// In en, this message translates to:
+  /// **'Don’t worry, you will always be able to make another offer that is more suitable, so that your offer is accepted'**
+  String get doNotWorryYouWillAlwaysBeAbleToMakeAnotherOffer;
+
+  /// No description provided for @makeAnOfferAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Make an offer again'**
+  String get makeAnOfferAgain;
+
+  /// No description provided for @backToHome.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to Home'**
+  String get backToHome;
+
+  /// No description provided for @congratsYourOfferHasBeenAccepted.
+  ///
+  /// In en, this message translates to:
+  /// **'Congrats! Your offer has been accepted'**
+  String get congratsYourOfferHasBeenAccepted;
+
+  /// No description provided for @yourOfferHasBeenAcceptedByTheOwnerFor.
+  ///
+  /// In en, this message translates to:
+  /// **'Your offer has been accepted by the owner for'**
+  String get yourOfferHasBeenAcceptedByTheOwnerFor;
+
+  /// No description provided for @proceedToCheckout.
+  ///
+  /// In en, this message translates to:
+  /// **'Proceed to Checkout'**
+  String get proceedToCheckout;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

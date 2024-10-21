@@ -59,6 +59,20 @@ abstract class AppImages {
   ///assets/images/dark/not_found_dark.svg
   static const String notFoundDark = 'assets/images/dark/not_found_dark.svg';
 
+  ///assets/images/light/offer_accepted.svg
+  static const String offerAccepted = 'assets/images/light/offer_accepted.svg';
+
+  ///assets/images/dark/offer_accepted_dark.svg
+  static const String offerAcceptedDark =
+      'assets/images/dark/offer_accepted_dark.svg';
+
+  ///assets/images/light/offer_rejected.svg
+  static const String offerRejected = 'assets/images/light/offer_rejected.svg';
+
+  ///assets/images/dark/offer_rejected_dark.svg
+  static const String offerRejectedDark =
+      'assets/images/dark/offer_rejected_dark.svg';
+
   ///assets/images/light/ok_amico.svg
   static const String okAmico = 'assets/images/light/ok_amico.svg';
 

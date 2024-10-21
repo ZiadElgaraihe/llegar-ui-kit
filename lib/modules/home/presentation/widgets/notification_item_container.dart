@@ -83,15 +83,7 @@ class NotificationItemContainer extends StatelessWidget {
             AppSizes.height12,
             OutlinedButton(
               onPressed: () {
-                if (notification.notificationType ==
-                    NotificationType.receivedOffer) {
-                } else {
-                  Navigator.pushNamed(
-                    context,
-                    AppRoutes.offerResultView,
-                    arguments: notification.notificationType,
-                  );
-                }
+                _onViewDetailsPressed(context);
               },
               style: OutlinedButton.styleFrom(
                 fixedSize: const Size(155, 42),
@@ -108,5 +100,16 @@ class NotificationItemContainer extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  void _onViewDetailsPressed(BuildContext context) {
+    if (notification.notificationType == NotificationType.receivedOffer) {
+    } else {
+      Navigator.pushNamed(
+        context,
+        AppRoutes.offerResultView,
+        arguments: notification.notificationType,
+      );
+    }
   }
 }

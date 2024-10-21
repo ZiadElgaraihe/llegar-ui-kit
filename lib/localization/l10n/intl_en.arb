@@ -225,5 +225,12 @@
     "youHaveAnOrderFrom": "You have an order from",
     "forYour": "for your",
     "viewDetails": "View Details",
-    "yourOffer": "Your offer"
+    "yourOffer": "Your offer",
+    "weAreSorryYourOfferHasBeenRejected": "We’re sorry, your offer has been rejected",
+    "doNotWorryYouWillAlwaysBeAbleToMakeAnotherOffer": "Don’t worry, you will always be able to make another offer that is more suitable, so that your offer is accepted",
+    "makeAnOfferAgain": "Make an offer again",
+    "backToHome": "Back to Home",
+    "congratsYourOfferHasBeenAccepted": "Congrats! Your offer has been accepted",
+    "yourOfferHasBeenAcceptedByTheOwnerFor": "Your offer has been accepted by the owner for",
+    "proceedToCheckout": "Proceed to Checkout"
 }

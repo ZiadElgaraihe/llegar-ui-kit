@@ -686,4 +686,25 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get yourOffer => 'Your offer';
+
+  @override
+  String get weAreSorryYourOfferHasBeenRejected => 'We’re sorry, your offer has been rejected';
+
+  @override
+  String get doNotWorryYouWillAlwaysBeAbleToMakeAnotherOffer => 'Don’t worry, you will always be able to make another offer that is more suitable, so that your offer is accepted';
+
+  @override
+  String get makeAnOfferAgain => 'Make an offer again';
+
+  @override
+  String get backToHome => 'Back to Home';
+
+  @override
+  String get congratsYourOfferHasBeenAccepted => 'Congrats! Your offer has been accepted';
+
+  @override
+  String get yourOfferHasBeenAcceptedByTheOwnerFor => 'Your offer has been accepted by the owner for';
+
+  @override
+  String get proceedToCheckout => 'Proceed to Checkout';
 }

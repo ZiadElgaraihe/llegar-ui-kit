@@ -686,4 +686,25 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get yourOffer => 'العرض الخاص بك';
+
+  @override
+  String get weAreSorryYourOfferHasBeenRejected => 'نحن آسفون، لقد تم رفض عرضك';
+
+  @override
+  String get doNotWorryYouWillAlwaysBeAbleToMakeAnotherOffer => 'لا تقلق، ستتمكن دائمًا من تقديم عرض آخر أكثر ملاءمة، حتى يتم قبول عرضك';
+
+  @override
+  String get makeAnOfferAgain => 'قدم عرضًا أخر';
+
+  @override
+  String get backToHome => 'العودة إلى الرئيسية';
+
+  @override
+  String get congratsYourOfferHasBeenAccepted => 'تهانينا! لقد تم قبول عرضك';
+
+  @override
+  String get yourOfferHasBeenAcceptedByTheOwnerFor => 'تم قبول عرضك من قبل المالك مقابل';
+
+  @override
+  String get proceedToCheckout => 'المتابعة إلى الدفع';
 }
