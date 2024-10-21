@@ -1402,6 +1402,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'My Wishlist'**
   String get myWishlist;
+
+  /// No description provided for @yourOfferHasBeenAccepted.
+  ///
+  /// In en, this message translates to:
+  /// **'Your offer has been accepted!'**
+  String get yourOfferHasBeenAccepted;
+
+  /// No description provided for @yourOfferHasBeenRejected.
+  ///
+  /// In en, this message translates to:
+  /// **'Your offer has been rejected!'**
+  String get yourOfferHasBeenRejected;
+
+  /// No description provided for @congratsYourOfferHasBeenAcceptedByTheSellerFor.
+  ///
+  /// In en, this message translates to:
+  /// **'Congrats! your offer has been accepted by the seller for'**
+  String get congratsYourOfferHasBeenAcceptedByTheSellerFor;
+
+  /// No description provided for @weAreSorryYourOfferHasBeenRejectedByTheOwner.
+  ///
+  /// In en, this message translates to:
+  /// **'we are sorry. your offer has been rejected by the owner.'**
+  String get weAreSorryYourOfferHasBeenRejectedByTheOwner;
+
+  /// No description provided for @orderFrom.
+  ///
+  /// In en, this message translates to:
+  /// **'Order from'**
+  String get orderFrom;
+
+  /// No description provided for @youHaveAnOrderFrom.
+  ///
+  /// In en, this message translates to:
+  /// **'You have an order from'**
+  String get youHaveAnOrderFrom;
+
+  /// No description provided for @forYour.
+  ///
+  /// In en, this message translates to:
+  /// **'for your'**
+  String get forYour;
+
+  /// No description provided for @viewDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'View Details'**
+  String get viewDetails;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

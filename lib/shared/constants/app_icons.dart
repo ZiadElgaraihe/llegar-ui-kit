@@ -134,6 +134,9 @@ abstract class AppIcons {
   static const String notificationOutlined =
       'assets/icons/notification_outlined.svg';
 
+  ///assets/icons/offer.svg
+  static const String offer = 'assets/icons/offer.svg';
+
   ///assets/icons/orders.svg
   static const String orders = 'assets/icons/orders.svg';
 

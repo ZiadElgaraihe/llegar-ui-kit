@@ -659,4 +659,28 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get myWishlist => 'المفضلة';
+
+  @override
+  String get yourOfferHasBeenAccepted => 'لقد تم قبول عرضك!';
+
+  @override
+  String get yourOfferHasBeenRejected => 'تم رفض عرضك!';
+
+  @override
+  String get congratsYourOfferHasBeenAcceptedByTheSellerFor => 'تهانينا! لقد قبل البائع عرضك مقابل';
+
+  @override
+  String get weAreSorryYourOfferHasBeenRejectedByTheOwner => 'عذرًا، لقد تم رفض عرضك من قبل المالك.';
+
+  @override
+  String get orderFrom => 'عرض من';
+
+  @override
+  String get youHaveAnOrderFrom => 'لديك عرض من';
+
+  @override
+  String get forYour => 'من أجل';
+
+  @override
+  String get viewDetails => 'عرض التفاصيل';
 }

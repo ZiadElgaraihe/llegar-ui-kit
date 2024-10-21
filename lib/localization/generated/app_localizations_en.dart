@@ -659,4 +659,28 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get myWishlist => 'My Wishlist';
+
+  @override
+  String get yourOfferHasBeenAccepted => 'Your offer has been accepted!';
+
+  @override
+  String get yourOfferHasBeenRejected => 'Your offer has been rejected!';
+
+  @override
+  String get congratsYourOfferHasBeenAcceptedByTheSellerFor => 'Congrats! your offer has been accepted by the seller for';
+
+  @override
+  String get weAreSorryYourOfferHasBeenRejectedByTheOwner => 'we are sorry. your offer has been rejected by the owner.';
+
+  @override
+  String get orderFrom => 'Order from';
+
+  @override
+  String get youHaveAnOrderFrom => 'You have an order from';
+
+  @override
+  String get forYour => 'for your';
+
+  @override
+  String get viewDetails => 'View Details';
 }

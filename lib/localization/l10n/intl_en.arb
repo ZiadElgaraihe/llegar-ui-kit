@@ -216,5 +216,13 @@
     "rating": "Rating",
     "reset": "Reset",
     "apply": "Apply",
-    "myWishlist": "My Wishlist"
+    "myWishlist": "My Wishlist",
+    "yourOfferHasBeenAccepted": "Your offer has been accepted!",
+    "yourOfferHasBeenRejected": "Your offer has been rejected!",
+    "congratsYourOfferHasBeenAcceptedByTheSellerFor": "Congrats! your offer has been accepted by the seller for",
+    "weAreSorryYourOfferHasBeenRejectedByTheOwner": "we are sorry. your offer has been rejected by the owner.",
+    "orderFrom": "Order from",
+    "youHaveAnOrderFrom": "You have an order from",
+    "forYour": "for your",
+    "viewDetails": "View Details"
 }

@@ -216,5 +216,13 @@
     "rating": "التقييم",
     "reset": "إعادة الضبط",
     "apply": "تطبيق",
-    "myWishlist": "المفضلة"
+    "myWishlist": "المفضلة",
+    "yourOfferHasBeenAccepted": "لقد تم قبول عرضك!",
+    "yourOfferHasBeenRejected": "تم رفض عرضك!",
+    "congratsYourOfferHasBeenAcceptedByTheSellerFor": "تهانينا! لقد قبل البائع عرضك مقابل",
+    "weAreSorryYourOfferHasBeenRejectedByTheOwner": "عذرًا، لقد تم رفض عرضك من قبل المالك.",
+    "orderFrom": "عرض من",
+    "youHaveAnOrderFrom": "لديك عرض من",
+    "forYour": "من أجل",
+    "viewDetails": "عرض التفاصيل"
 }
