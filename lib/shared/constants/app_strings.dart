@@ -10,6 +10,9 @@ abstract class AppStrings {
   ///English
   static const String english = 'English';
 
+  ///search
+  static const String searchHeroTag = 'search';
+
   /******************************language codes******************************/
   ///ar
   static const String arabicLanguageCode = 'ar';

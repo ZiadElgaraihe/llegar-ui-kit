@@ -50,6 +50,10 @@ abstract class AppThemes {
             borderSide: BorderSide.none,
             borderRadius: BorderRadius.circular(6),
           ),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide.none,
+            borderRadius: BorderRadius.circular(6),
+          ),
           focusedBorder: OutlineInputBorder(
             borderSide: const BorderSide(
               color: AppColors.green,
@@ -108,10 +112,10 @@ abstract class AppThemes {
         textButtonTheme: TextButtonThemeData(
           style: TextButton.styleFrom(
             textStyle: AppTextStyles.bold14(context).copyWith(
-              color: AppColors.prussianBlue,
+              color: AppColors.black,
               fontFamily: AppStrings.urbanistFontFamily,
             ),
-            foregroundColor: AppColors.prussianBlue,
+            foregroundColor: AppColors.black,
             disabledForegroundColor: AppColors.grey,
           ),
         ),
@@ -285,6 +289,23 @@ abstract class AppThemes {
             borderRadius: BorderRadius.circular(10),
           ),
         ),
+        sliderTheme: SliderThemeData(
+          trackHeight: 2,
+          activeTrackColor: AppColors.prussianBlue,
+          inactiveTrackColor: AppColors.black.withOpacity(0.2),
+          thumbColor: AppColors.prussianBlue,
+          overlayColor: Colors.transparent,
+          overlayShape: const RoundSliderOverlayShape(overlayRadius: 0.0),
+          showValueIndicator: ShowValueIndicator.always,
+          valueIndicatorColor: AppColors.white,
+          valueIndicatorStrokeColor: Colors.transparent,
+          overlappingShapeStrokeColor: Colors.transparent,
+          valueIndicatorTextStyle: AppTextStyles.semiBold16(context).copyWith(
+            color: AppColors.prussianBlue,
+          ),
+          activeTickMarkColor: Colors.transparent,
+          inactiveTickMarkColor: Colors.transparent,
+        ),
       );
 
   static ThemeData darkTheme(BuildContext context) => ThemeData.dark().copyWith(
@@ -327,6 +348,10 @@ abstract class AppThemes {
             fontFamily: AppStrings.interFontFamily,
           ),
           border: OutlineInputBorder(
+            borderSide: BorderSide.none,
+            borderRadius: BorderRadius.circular(6),
+          ),
+          enabledBorder: OutlineInputBorder(
             borderSide: BorderSide.none,
             borderRadius: BorderRadius.circular(6),
           ),
@@ -388,10 +413,10 @@ abstract class AppThemes {
         textButtonTheme: TextButtonThemeData(
           style: TextButton.styleFrom(
             textStyle: AppTextStyles.bold14(context).copyWith(
-              color: AppColors.orange,
+              color: AppColors.white,
               fontFamily: AppStrings.urbanistFontFamily,
             ),
-            foregroundColor: AppColors.orange,
+            foregroundColor: AppColors.white,
             disabledForegroundColor: AppColors.grey,
           ),
         ),
@@ -564,6 +589,23 @@ abstract class AppThemes {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
           ),
+        ),
+        sliderTheme: SliderThemeData(
+          trackHeight: 2,
+          activeTrackColor: AppColors.orange,
+          inactiveTrackColor: AppColors.black.withOpacity(0.2),
+          thumbColor: AppColors.orange,
+          overlayColor: Colors.transparent,
+          overlayShape: const RoundSliderOverlayShape(overlayRadius: 0.0),
+          showValueIndicator: ShowValueIndicator.always,
+          valueIndicatorColor: AppColors.prussianBlue,
+          valueIndicatorStrokeColor: Colors.transparent,
+          overlappingShapeStrokeColor: Colors.transparent,
+          valueIndicatorTextStyle: AppTextStyles.semiBold16(context).copyWith(
+            color: AppColors.orange,
+          ),
+          activeTickMarkColor: Colors.transparent,
+          inactiveTickMarkColor: Colors.transparent,
         ),
       );
 }

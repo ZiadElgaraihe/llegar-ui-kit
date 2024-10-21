@@ -51,6 +51,9 @@ abstract class AppSizes {
   ///SizedBox(height: 24)
   static const height24 = SizedBox(height: 24);
 
+  ///SizedBox(height: 36)
+  static const height36 = SizedBox(height: 36);
+
   ///SizedBox(height: 48)
   static const height48 = SizedBox(height: 48);
 

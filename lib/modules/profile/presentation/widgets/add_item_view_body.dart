@@ -26,7 +26,7 @@ class AddItemViewBody extends StatelessWidget {
         CustomAnimatedDropdown<String>(
           hintText: translate(context).rentType,
           items: [
-            translate(context).transportations,
+            translate(context).transportation,
             translate(context).property,
             translate(context).clothes,
             translate(context).electronics,

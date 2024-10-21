@@ -8,12 +8,14 @@ class DotsIndicator extends StatelessWidget {
     required this.currentPageIndex,
     required this.dotSize,
     required this.horizontalPadding,
+    this.inactiveColor,
   });
 
   final int length;
   final int currentPageIndex;
   final double dotSize;
   final double horizontalPadding;
+  final Color? inactiveColor;
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +28,7 @@ class DotsIndicator extends StatelessWidget {
           child: CustomDot(
             isActive: currentPageIndex == index,
             size: dotSize,
+            inactiveColor: inactiveColor,
           ),
         ),
       ),

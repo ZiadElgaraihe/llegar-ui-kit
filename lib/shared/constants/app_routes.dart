@@ -13,6 +13,11 @@ import 'package:llegar/modules/auth/presentation/views/sign_up_identification_vi
 import 'package:llegar/modules/auth/presentation/views/sign_up_profile_info_view.dart';
 import 'package:llegar/modules/auth/presentation/views/sign_up_view.dart';
 import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
+import 'package:llegar/modules/home/presentation/views/my_wishlist_view.dart';
+import 'package:llegar/modules/home/presentation/views/notification_view.dart';
+import 'package:llegar/modules/home/presentation/views/search_view.dart';
+import 'package:llegar/modules/home/presentation/views/special_offers_view.dart';
+import 'package:llegar/modules/home/presentation/views/top_deals_view.dart';
 import 'package:llegar/modules/profile/domain/entities/premium_package_entity.dart';
 import 'package:llegar/modules/profile/domain/entities/review_summary_entity.dart';
 import 'package:llegar/modules/profile/presentation/views/add_item_view.dart';
@@ -49,20 +54,25 @@ abstract class AppRoutes {
   static const String languageView = '/LanguageView';
   static const String logInView = '/LogInView';
   static const String myActivitiesView = '/MyActivitiesView';
+  static const String myWishlistView = '/MyWishlistView';
   static const String myitemsView = '/MyItemsView';
   static const String navBarView = '/NavBarView';
+  static const String notificationView = '/NotificationView';
   static const String otpView = '/OtpView';
   static const String premiumPackagePaymentView = '/PremiumPackagePaymentView';
   static const String privacyPolicyView = '/PrivacyPolicyView';
   static const String resetPasswordView = '/ResetPasswordView';
   static const String reviewSummaryView = '/ReviewSummaryView';
+  static const String searchView = '/SearchView';
   static const String securityView = '/SecurityView';
   static const String signUpIdentificationView = '/SignUpIdentificationView';
   static const String signUpProfileInfoView = '/SignUpProfileInfoView';
   static const String signUpView = '/SignUpView';
   static const String socialLogInView = '/SocialLogInView';
+  static const String specialOffersView = '/SpecialOffersView';
   static const String subscribeToPremiumView = '/SubscribeToPremiumView';
   static const String successView = '/SuccessView';
+  static const String topDealsView = '/TopDealsView';
   static const String topUpElectronicWalletView = '/TopUpElectronicWalletView';
   static const String welcomeView = '/WelcomeView';
 
@@ -190,6 +200,27 @@ abstract class AppRoutes {
       case topUpElectronicWalletView:
         return SideSlideTransition(
           page: const TopUpElectronicWalletView(),
+        );
+      case searchView:
+        return PageRouteBuilder(
+          pageBuilder: (context, animation, secondaryAnimation) =>
+              const SearchView(),
+        );
+      case myWishlistView:
+        return SideSlideTransition(
+          page: const MyWishlistView(),
+        );
+      case specialOffersView:
+        return SideSlideTransition(
+          page: const SpecialOffersView(),
+        );
+      case topDealsView:
+        return SideSlideTransition(
+          page: const TopDealsView(),
+        );
+      case notificationView:
+        return SideSlideTransition(
+          page: const NotificationView(),
         );
     }
     return null;

@@ -367,7 +367,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get rentType => 'Rent Type';
 
   @override
-  String get transportations => 'Transportations';
+  String get transportation => 'Transportation';
 
   @override
   String get property => 'Property';
@@ -590,4 +590,97 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get youHaveFailedToTopUpYourElectronicWallet => 'You have failed to top up your e-wallet. Please ensure that there is sufficient balance in your account.';
+
+  @override
+  String get goodMorning => 'Good Morning';
+
+  @override
+  String get goodEvening => 'Good Evening';
+
+  @override
+  String get search => 'Search';
+
+  @override
+  String get specialOffers => 'Special Offers';
+
+  @override
+  String get seeAll => 'See All';
+
+  @override
+  String get topDeals => 'Top Deals';
+
+  @override
+  String get all => 'All';
+
+  @override
+  String get recent => 'Recent';
+
+  @override
+  String get clearAll => 'Clear All';
+
+  @override
+  String get resultsFor => 'Results for';
+
+  @override
+  String get found => 'found';
+
+  @override
+  String get notFound => 'Not Found';
+
+  @override
+  String get sorryTheKeywordYouEnteredCannotBeFound => 'Sorry, the Keyword you entered cannot be found, please check again or search with another keyword.';
+
+  @override
+  String get sortAndFilter => 'Sort & Filter';
+
+  @override
+  String get itemType => 'Item Type';
+
+  @override
+  String get itemCondition => 'Item Condition';
+
+  @override
+  String get newText => 'New';
+
+  @override
+  String get used => 'Used';
+
+  @override
+  String get priceRange => 'Price Range';
+
+  @override
+  String get rating => 'Rating';
+
+  @override
+  String get reset => 'Reset';
+
+  @override
+  String get apply => 'Apply';
+
+  @override
+  String get myWishlist => 'My Wishlist';
+
+  @override
+  String get yourOfferHasBeenAccepted => 'Your offer has been accepted!';
+
+  @override
+  String get yourOfferHasBeenRejected => 'Your offer has been rejected!';
+
+  @override
+  String get congratsYourOfferHasBeenAcceptedByTheSellerFor => 'Congrats! your offer has been accepted by the seller for';
+
+  @override
+  String get weAreSorryYourOfferHasBeenRejectedByTheOwner => 'we are sorry. your offer has been rejected by the owner.';
+
+  @override
+  String get orderFrom => 'Order from';
+
+  @override
+  String get youHaveAnOrderFrom => 'You have an order from';
+
+  @override
+  String get forYour => 'for your';
+
+  @override
+  String get viewDetails => 'View Details';
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:llegar/core/domain/entities/nav_bar_entity.dart';
 import 'package:llegar/core/presentation/widgets/nav_bar.dart';
 import 'package:llegar/core/presentation/widgets/nav_bar_view_body.dart';
+import 'package:llegar/modules/home/presentation/views/home_view.dart';
 import 'package:llegar/modules/inbox/presentation/views/inbox_view.dart';
 import 'package:llegar/modules/orders/presentation/views/my_orders_view.dart';
 import 'package:llegar/modules/profile/presentation/views/profile_view.dart';
@@ -36,7 +37,7 @@ class _NavBarViewState extends State<NavBarView> {
         label: translate(context).home,
         icon: AppIcons.homeOutlined,
         activeIcon: AppIcons.home,
-        page: const Center(child: Text('Home')),
+        page: const HomeView(),
       ),
       NavBarEntity(
         label: translate(context).orders,

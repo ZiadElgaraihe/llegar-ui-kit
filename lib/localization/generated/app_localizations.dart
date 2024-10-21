@@ -815,11 +815,11 @@ abstract class AppLocalizations {
   /// **'Rent Type'**
   String get rentType;
 
-  /// No description provided for @transportations.
+  /// No description provided for @transportation.
   ///
   /// In en, this message translates to:
-  /// **'Transportations'**
-  String get transportations;
+  /// **'Transportation'**
+  String get transportation;
 
   /// No description provided for @property.
   ///
@@ -1264,6 +1264,192 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You have failed to top up your e-wallet. Please ensure that there is sufficient balance in your account.'**
   String get youHaveFailedToTopUpYourElectronicWallet;
+
+  /// No description provided for @goodMorning.
+  ///
+  /// In en, this message translates to:
+  /// **'Good Morning'**
+  String get goodMorning;
+
+  /// No description provided for @goodEvening.
+  ///
+  /// In en, this message translates to:
+  /// **'Good Evening'**
+  String get goodEvening;
+
+  /// No description provided for @search.
+  ///
+  /// In en, this message translates to:
+  /// **'Search'**
+  String get search;
+
+  /// No description provided for @specialOffers.
+  ///
+  /// In en, this message translates to:
+  /// **'Special Offers'**
+  String get specialOffers;
+
+  /// No description provided for @seeAll.
+  ///
+  /// In en, this message translates to:
+  /// **'See All'**
+  String get seeAll;
+
+  /// No description provided for @topDeals.
+  ///
+  /// In en, this message translates to:
+  /// **'Top Deals'**
+  String get topDeals;
+
+  /// No description provided for @all.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get all;
+
+  /// No description provided for @recent.
+  ///
+  /// In en, this message translates to:
+  /// **'Recent'**
+  String get recent;
+
+  /// No description provided for @clearAll.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear All'**
+  String get clearAll;
+
+  /// No description provided for @resultsFor.
+  ///
+  /// In en, this message translates to:
+  /// **'Results for'**
+  String get resultsFor;
+
+  /// No description provided for @found.
+  ///
+  /// In en, this message translates to:
+  /// **'found'**
+  String get found;
+
+  /// No description provided for @notFound.
+  ///
+  /// In en, this message translates to:
+  /// **'Not Found'**
+  String get notFound;
+
+  /// No description provided for @sorryTheKeywordYouEnteredCannotBeFound.
+  ///
+  /// In en, this message translates to:
+  /// **'Sorry, the Keyword you entered cannot be found, please check again or search with another keyword.'**
+  String get sorryTheKeywordYouEnteredCannotBeFound;
+
+  /// No description provided for @sortAndFilter.
+  ///
+  /// In en, this message translates to:
+  /// **'Sort & Filter'**
+  String get sortAndFilter;
+
+  /// No description provided for @itemType.
+  ///
+  /// In en, this message translates to:
+  /// **'Item Type'**
+  String get itemType;
+
+  /// No description provided for @itemCondition.
+  ///
+  /// In en, this message translates to:
+  /// **'Item Condition'**
+  String get itemCondition;
+
+  /// No description provided for @newText.
+  ///
+  /// In en, this message translates to:
+  /// **'New'**
+  String get newText;
+
+  /// No description provided for @used.
+  ///
+  /// In en, this message translates to:
+  /// **'Used'**
+  String get used;
+
+  /// No description provided for @priceRange.
+  ///
+  /// In en, this message translates to:
+  /// **'Price Range'**
+  String get priceRange;
+
+  /// No description provided for @rating.
+  ///
+  /// In en, this message translates to:
+  /// **'Rating'**
+  String get rating;
+
+  /// No description provided for @reset.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset'**
+  String get reset;
+
+  /// No description provided for @apply.
+  ///
+  /// In en, this message translates to:
+  /// **'Apply'**
+  String get apply;
+
+  /// No description provided for @myWishlist.
+  ///
+  /// In en, this message translates to:
+  /// **'My Wishlist'**
+  String get myWishlist;
+
+  /// No description provided for @yourOfferHasBeenAccepted.
+  ///
+  /// In en, this message translates to:
+  /// **'Your offer has been accepted!'**
+  String get yourOfferHasBeenAccepted;
+
+  /// No description provided for @yourOfferHasBeenRejected.
+  ///
+  /// In en, this message translates to:
+  /// **'Your offer has been rejected!'**
+  String get yourOfferHasBeenRejected;
+
+  /// No description provided for @congratsYourOfferHasBeenAcceptedByTheSellerFor.
+  ///
+  /// In en, this message translates to:
+  /// **'Congrats! your offer has been accepted by the seller for'**
+  String get congratsYourOfferHasBeenAcceptedByTheSellerFor;
+
+  /// No description provided for @weAreSorryYourOfferHasBeenRejectedByTheOwner.
+  ///
+  /// In en, this message translates to:
+  /// **'we are sorry. your offer has been rejected by the owner.'**
+  String get weAreSorryYourOfferHasBeenRejectedByTheOwner;
+
+  /// No description provided for @orderFrom.
+  ///
+  /// In en, this message translates to:
+  /// **'Order from'**
+  String get orderFrom;
+
+  /// No description provided for @youHaveAnOrderFrom.
+  ///
+  /// In en, this message translates to:
+  /// **'You have an order from'**
+  String get youHaveAnOrderFrom;
+
+  /// No description provided for @forYour.
+  ///
+  /// In en, this message translates to:
+  /// **'for your'**
+  String get forYour;
+
+  /// No description provided for @viewDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'View Details'**
+  String get viewDetails;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

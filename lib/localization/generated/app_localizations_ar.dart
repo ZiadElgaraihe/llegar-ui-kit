@@ -235,7 +235,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get myActivities => 'أنشطتي';
 
   @override
-  String get notification => 'الإشعار';
+  String get notification => 'الإشعارات';
 
   @override
   String get security => 'الأمان والحماية';
@@ -367,7 +367,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get rentType => 'نوع الإيجار';
 
   @override
-  String get transportations => 'وسائل النقل';
+  String get transportation => 'وسائل النقل';
 
   @override
   String get property => 'العقارات';
@@ -590,4 +590,97 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get youHaveFailedToTopUpYourElectronicWallet => 'لقد فشلت عملية شحن محفظتك الإلكترونية. يرجى التأكد من وجود رصيد كافٍ في حسابك.';
+
+  @override
+  String get goodMorning => 'صباح الخير';
+
+  @override
+  String get goodEvening => 'مساء الخير';
+
+  @override
+  String get search => 'بحث';
+
+  @override
+  String get specialOffers => 'عروض خاصة';
+
+  @override
+  String get seeAll => 'عرض الكل';
+
+  @override
+  String get topDeals => 'أفضل العروض';
+
+  @override
+  String get all => 'الكل';
+
+  @override
+  String get recent => 'الأحدث';
+
+  @override
+  String get clearAll => 'مسح الكل';
+
+  @override
+  String get resultsFor => 'نتائج البحث عن';
+
+  @override
+  String get found => 'نتيجة';
+
+  @override
+  String get notFound => 'غير موجود';
+
+  @override
+  String get sorryTheKeywordYouEnteredCannotBeFound => 'عذرًا، لا يمكن العثور على الكلمة الرئيسية التي أدخلتها، يرجى التحقق مرة أخرى أو البحث باستخدام كلمة رئيسية أخرى.';
+
+  @override
+  String get sortAndFilter => 'فرز & تصفية';
+
+  @override
+  String get itemType => 'نوع السلعة';
+
+  @override
+  String get itemCondition => 'حالة السلعة';
+
+  @override
+  String get newText => 'جديد';
+
+  @override
+  String get used => 'مستعمل';
+
+  @override
+  String get priceRange => 'نطاق السعر';
+
+  @override
+  String get rating => 'التقييم';
+
+  @override
+  String get reset => 'إعادة الضبط';
+
+  @override
+  String get apply => 'تطبيق';
+
+  @override
+  String get myWishlist => 'المفضلة';
+
+  @override
+  String get yourOfferHasBeenAccepted => 'لقد تم قبول عرضك!';
+
+  @override
+  String get yourOfferHasBeenRejected => 'تم رفض عرضك!';
+
+  @override
+  String get congratsYourOfferHasBeenAcceptedByTheSellerFor => 'تهانينا! لقد قبل البائع عرضك مقابل';
+
+  @override
+  String get weAreSorryYourOfferHasBeenRejectedByTheOwner => 'عذرًا، لقد تم رفض عرضك من قبل المالك.';
+
+  @override
+  String get orderFrom => 'عرض من';
+
+  @override
+  String get youHaveAnOrderFrom => 'لديك عرض من';
+
+  @override
+  String get forYour => 'من أجل';
+
+  @override
+  String get viewDetails => 'عرض التفاصيل';
 }
