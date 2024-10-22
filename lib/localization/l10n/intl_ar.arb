@@ -233,5 +233,12 @@
     "congratsYourOfferHasBeenAccepted": "تهانينا! لقد تم قبول عرضك",
     "yourOfferHasBeenAcceptedByTheOwnerFor": "تم قبول عرضك من قبل المالك مقابل",
     "proceedToCheckout": "المتابعة إلى الدفع",
-    "checkout": "الدفع"
+    "checkout": "الدفع",
+    "shippingAddress": "عنوان الشحن",
+    "homeLocation": "المنزل",
+    "item": "السلعة",
+    "continueToPayment": "إستكمال عملية الدفع",
+    "shipping": "الشحن",
+    "commission": "العمولة",
+    "day": "اليوم"
 }

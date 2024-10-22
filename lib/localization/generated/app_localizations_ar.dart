@@ -710,4 +710,25 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get checkout => 'الدفع';
+
+  @override
+  String get shippingAddress => 'عنوان الشحن';
+
+  @override
+  String get homeLocation => 'المنزل';
+
+  @override
+  String get item => 'السلعة';
+
+  @override
+  String get continueToPayment => 'إستكمال عملية الدفع';
+
+  @override
+  String get shipping => 'الشحن';
+
+  @override
+  String get commission => 'العمولة';
+
+  @override
+  String get day => 'اليوم';
 }

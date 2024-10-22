@@ -28,7 +28,7 @@ class _NotificationViewBodyState extends State<NotificationViewBody> {
           NotificationEntity(
             title: translate(context).yourOfferHasBeenAccepted,
             subTitle:
-                '${translate(context).congratsYourOfferHasBeenAcceptedByTheSellerFor} \$150.',
+                '${translate(context).congratsYourOfferHasBeenAcceptedByTheSellerFor} \$230.',
             notificationType: NotificationType.offerAccepted,
           ),
           const NotificationEntity(

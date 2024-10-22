@@ -710,4 +710,25 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get checkout => 'Checkout';
+
+  @override
+  String get shippingAddress => 'Shipping Address';
+
+  @override
+  String get homeLocation => 'Home';
+
+  @override
+  String get item => 'Item';
+
+  @override
+  String get continueToPayment => 'Continue to Payment';
+
+  @override
+  String get shipping => 'Shipping';
+
+  @override
+  String get commission => 'Commission';
+
+  @override
+  String get day => 'day';
 }

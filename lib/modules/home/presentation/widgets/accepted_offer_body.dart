@@ -42,7 +42,7 @@ class AcceptedOfferBody extends StatelessWidget {
                 ),
                 AppSizes.height8,
                 Text(
-                  '${translate(context).yourOfferHasBeenAcceptedByTheOwnerFor} \$150',
+                  '${translate(context).yourOfferHasBeenAcceptedByTheOwnerFor} \$230',
                   style: AppTextStyles.bold16(context).copyWith(
                     color: valueBasedOnTheme<Color>(
                       context,

@@ -233,5 +233,12 @@
     "congratsYourOfferHasBeenAccepted": "Congrats! Your offer has been accepted",
     "yourOfferHasBeenAcceptedByTheOwnerFor": "Your offer has been accepted by the owner for",
     "proceedToCheckout": "Proceed to Checkout",
-    "checkout": "Checkout"
+    "checkout": "Checkout",
+    "shippingAddress": "Shipping Address",
+    "homeLocation": "Home",
+    "item": "Item",
+    "continueToPayment": "Continue to Payment",
+    "shipping": "Shipping",
+    "commission": "Commission",
+    "day": "day"
 }
