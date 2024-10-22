@@ -232,5 +232,6 @@
     "backToHome": "Back to Home",
     "congratsYourOfferHasBeenAccepted": "Congrats! Your offer has been accepted",
     "yourOfferHasBeenAcceptedByTheOwnerFor": "Your offer has been accepted by the owner for",
-    "proceedToCheckout": "Proceed to Checkout"
+    "proceedToCheckout": "Proceed to Checkout",
+    "checkout": "Checkout"
 }

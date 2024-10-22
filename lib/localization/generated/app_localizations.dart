@@ -1498,6 +1498,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Proceed to Checkout'**
   String get proceedToCheckout;
+
+  /// No description provided for @checkout.
+  ///
+  /// In en, this message translates to:
+  /// **'Checkout'**
+  String get checkout;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

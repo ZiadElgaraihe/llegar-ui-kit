@@ -232,5 +232,6 @@
     "backToHome": "العودة إلى الرئيسية",
     "congratsYourOfferHasBeenAccepted": "تهانينا! لقد تم قبول عرضك",
     "yourOfferHasBeenAcceptedByTheOwnerFor": "تم قبول عرضك من قبل المالك مقابل",
-    "proceedToCheckout": "المتابعة إلى الدفع"
+    "proceedToCheckout": "المتابعة إلى الدفع",
+    "checkout": "الدفع"
 }

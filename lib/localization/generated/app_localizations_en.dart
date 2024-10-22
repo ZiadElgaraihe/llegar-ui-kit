@@ -707,4 +707,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get proceedToCheckout => 'Proceed to Checkout';
+
+  @override
+  String get checkout => 'Checkout';
 }

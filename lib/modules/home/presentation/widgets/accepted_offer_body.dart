@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_images.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
@@ -54,7 +55,9 @@ class AcceptedOfferBody extends StatelessWidget {
                 const Expanded(child: AppSizes.height24),
                 CustomElevatedButton(
                   title: translate(context).proceedToCheckout,
-                  onPressed: () {},
+                  onPressed: () {
+                    _onProceedToCheckoutPressed(context);
+                  },
                 ),
                 AppSizes.height24,
               ],
@@ -63,5 +66,9 @@ class AcceptedOfferBody extends StatelessWidget {
         ),
       ],
     );
+  }
+
+  void _onProceedToCheckoutPressed(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.checkoutView);
   }
 }

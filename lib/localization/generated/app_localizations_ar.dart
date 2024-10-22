@@ -707,4 +707,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get proceedToCheckout => 'المتابعة إلى الدفع';
+
+  @override
+  String get checkout => 'الدفع';
 }
