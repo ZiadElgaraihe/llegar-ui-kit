@@ -240,5 +240,9 @@
     "continueToPayment": "إستكمال عملية الدفع",
     "shipping": "الشحن",
     "commission": "العمولة",
-    "day": "اليوم"
+    "day": "اليوم",
+    "rentSuccessful": "تم الإيجار بنجاح",
+    "youHaveSuccessfullyMadeRent": "لقد أكملت عملية الإيجار بنجاح",
+    "rentFailed": "فشل الإيجار",
+    "unfortunatelyTheRentalProcessCouldNotBeCompleted": "للأسف، لم يتم استكمال عملية الإيجار"
 }

@@ -3,6 +3,7 @@ import 'package:llegar/core/presentation/widgets/custom_sliver_fill_remaining_fo
 import 'package:llegar/core/presentation/widgets/item_widget.dart';
 import 'package:llegar/core/presentation/widgets/location_item.dart';
 import 'package:llegar/modules/home/presentation/widgets/checkout_container.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
@@ -60,9 +61,15 @@ class CheckoutViewBody extends StatelessWidget {
         CustomSliverFillRemainingFooter(
           padding: AppSizes.bodyHorizontalPadding(context),
           buttonTitle: translate(context).continueToPayment,
-          onPressed: () {},
+          onPressed: () {
+            _onContinueToPaymentPressed(context);
+          },
         ),
       ],
     );
+  }
+
+  void _onContinueToPaymentPressed(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.checkoutPaymentView);
   }
 }

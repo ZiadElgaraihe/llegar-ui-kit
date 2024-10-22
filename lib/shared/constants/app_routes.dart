@@ -13,6 +13,7 @@ import 'package:llegar/modules/auth/presentation/views/sign_up_identification_vi
 import 'package:llegar/modules/auth/presentation/views/sign_up_profile_info_view.dart';
 import 'package:llegar/modules/auth/presentation/views/sign_up_view.dart';
 import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
+import 'package:llegar/modules/home/presentation/views/checkout_payment_view.dart';
 import 'package:llegar/modules/home/presentation/views/checkout_view.dart';
 import 'package:llegar/modules/home/presentation/views/my_wishlist_view.dart';
 import 'package:llegar/modules/home/presentation/views/notification_view.dart';
@@ -48,6 +49,7 @@ abstract class AppRoutes {
   static const String addItemView = '/AddItemView';
   static const String addNewCardView = '/AddNewCardView';
   static const String chatView = '/ChatView';
+  static const String checkoutPaymentView = '/CheckoutPaymentView';
   static const String checkoutView = '/CheckoutView';
   static const String contactUsView = '/ContactUsView';
   static const String editProfileView = '/EditProfileView';
@@ -236,6 +238,10 @@ abstract class AppRoutes {
       case checkoutView:
         return SideSlideTransition(
           page: const CheckoutView(),
+        );
+      case checkoutPaymentView:
+        return SideSlideTransition(
+          page: const CheckoutPaymentView(),
         );
     }
     return null;

@@ -240,5 +240,9 @@
     "continueToPayment": "Continue to Payment",
     "shipping": "Shipping",
     "commission": "Commission",
-    "day": "day"
+    "day": "day",
+    "rentSuccessful": "Rent Successful",
+    "youHaveSuccessfullyMadeRent": "You have successfully made Rent",
+    "rentFailed": "Rent Failed",
+    "unfortunatelyTheRentalProcessCouldNotBeCompleted": "Unfortunately, the rental process could not be completed"
 }

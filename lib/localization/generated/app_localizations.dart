@@ -1546,6 +1546,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'day'**
   String get day;
+
+  /// No description provided for @rentSuccessful.
+  ///
+  /// In en, this message translates to:
+  /// **'Rent Successful'**
+  String get rentSuccessful;
+
+  /// No description provided for @youHaveSuccessfullyMadeRent.
+  ///
+  /// In en, this message translates to:
+  /// **'You have successfully made Rent'**
+  String get youHaveSuccessfullyMadeRent;
+
+  /// No description provided for @rentFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Rent Failed'**
+  String get rentFailed;
+
+  /// No description provided for @unfortunatelyTheRentalProcessCouldNotBeCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Unfortunately, the rental process could not be completed'**
+  String get unfortunatelyTheRentalProcessCouldNotBeCompleted;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

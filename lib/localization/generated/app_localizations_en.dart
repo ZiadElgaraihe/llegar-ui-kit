@@ -731,4 +731,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get day => 'day';
+
+  @override
+  String get rentSuccessful => 'Rent Successful';
+
+  @override
+  String get youHaveSuccessfullyMadeRent => 'You have successfully made Rent';
+
+  @override
+  String get rentFailed => 'Rent Failed';
+
+  @override
+  String get unfortunatelyTheRentalProcessCouldNotBeCompleted => 'Unfortunately, the rental process could not be completed';
 }

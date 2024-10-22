@@ -731,4 +731,16 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get day => 'اليوم';
+
+  @override
+  String get rentSuccessful => 'تم الإيجار بنجاح';
+
+  @override
+  String get youHaveSuccessfullyMadeRent => 'لقد أكملت عملية الإيجار بنجاح';
+
+  @override
+  String get rentFailed => 'فشل الإيجار';
+
+  @override
+  String get unfortunatelyTheRentalProcessCouldNotBeCompleted => 'للأسف، لم يتم استكمال عملية الإيجار';
 }
