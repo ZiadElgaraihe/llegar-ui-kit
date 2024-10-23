@@ -1450,6 +1450,126 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'View Details'**
   String get viewDetails;
+
+  /// No description provided for @yourOffer.
+  ///
+  /// In en, this message translates to:
+  /// **'Your offer'**
+  String get yourOffer;
+
+  /// No description provided for @weAreSorryYourOfferHasBeenRejected.
+  ///
+  /// In en, this message translates to:
+  /// **'We’re sorry, your offer has been rejected'**
+  String get weAreSorryYourOfferHasBeenRejected;
+
+  /// No description provided for @doNotWorryYouWillAlwaysBeAbleToMakeAnotherOffer.
+  ///
+  /// In en, this message translates to:
+  /// **'Don’t worry, you will always be able to make another offer that is more suitable, so that your offer is accepted'**
+  String get doNotWorryYouWillAlwaysBeAbleToMakeAnotherOffer;
+
+  /// No description provided for @makeAnOfferAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Make an offer again'**
+  String get makeAnOfferAgain;
+
+  /// No description provided for @backToHome.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to Home'**
+  String get backToHome;
+
+  /// No description provided for @congratsYourOfferHasBeenAccepted.
+  ///
+  /// In en, this message translates to:
+  /// **'Congrats! Your offer has been accepted'**
+  String get congratsYourOfferHasBeenAccepted;
+
+  /// No description provided for @yourOfferHasBeenAcceptedByTheOwnerFor.
+  ///
+  /// In en, this message translates to:
+  /// **'Your offer has been accepted by the owner for'**
+  String get yourOfferHasBeenAcceptedByTheOwnerFor;
+
+  /// No description provided for @proceedToCheckout.
+  ///
+  /// In en, this message translates to:
+  /// **'Proceed to Checkout'**
+  String get proceedToCheckout;
+
+  /// No description provided for @checkout.
+  ///
+  /// In en, this message translates to:
+  /// **'Checkout'**
+  String get checkout;
+
+  /// No description provided for @shippingAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'Shipping Address'**
+  String get shippingAddress;
+
+  /// No description provided for @item.
+  ///
+  /// In en, this message translates to:
+  /// **'Item'**
+  String get item;
+
+  /// No description provided for @continueToPayment.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue to Payment'**
+  String get continueToPayment;
+
+  /// No description provided for @shipping.
+  ///
+  /// In en, this message translates to:
+  /// **'Shipping'**
+  String get shipping;
+
+  /// No description provided for @commission.
+  ///
+  /// In en, this message translates to:
+  /// **'Commission'**
+  String get commission;
+
+  /// No description provided for @day.
+  ///
+  /// In en, this message translates to:
+  /// **'day'**
+  String get day;
+
+  /// No description provided for @rentSuccessful.
+  ///
+  /// In en, this message translates to:
+  /// **'Rent Successful'**
+  String get rentSuccessful;
+
+  /// No description provided for @youHaveSuccessfullyMadeRent.
+  ///
+  /// In en, this message translates to:
+  /// **'You have successfully made Rent'**
+  String get youHaveSuccessfullyMadeRent;
+
+  /// No description provided for @rentFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Rent Failed'**
+  String get rentFailed;
+
+  /// No description provided for @unfortunatelyTheRentalProcessCouldNotBeCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Unfortunately, the rental process could not be completed'**
+  String get unfortunatelyTheRentalProcessCouldNotBeCompleted;
+
+  /// No description provided for @confirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get confirm;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

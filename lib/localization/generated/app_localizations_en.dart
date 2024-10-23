@@ -683,4 +683,64 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get viewDetails => 'View Details';
+
+  @override
+  String get yourOffer => 'Your offer';
+
+  @override
+  String get weAreSorryYourOfferHasBeenRejected => 'We’re sorry, your offer has been rejected';
+
+  @override
+  String get doNotWorryYouWillAlwaysBeAbleToMakeAnotherOffer => 'Don’t worry, you will always be able to make another offer that is more suitable, so that your offer is accepted';
+
+  @override
+  String get makeAnOfferAgain => 'Make an offer again';
+
+  @override
+  String get backToHome => 'Back to Home';
+
+  @override
+  String get congratsYourOfferHasBeenAccepted => 'Congrats! Your offer has been accepted';
+
+  @override
+  String get yourOfferHasBeenAcceptedByTheOwnerFor => 'Your offer has been accepted by the owner for';
+
+  @override
+  String get proceedToCheckout => 'Proceed to Checkout';
+
+  @override
+  String get checkout => 'Checkout';
+
+  @override
+  String get shippingAddress => 'Shipping Address';
+
+  @override
+  String get item => 'Item';
+
+  @override
+  String get continueToPayment => 'Continue to Payment';
+
+  @override
+  String get shipping => 'Shipping';
+
+  @override
+  String get commission => 'Commission';
+
+  @override
+  String get day => 'day';
+
+  @override
+  String get rentSuccessful => 'Rent Successful';
+
+  @override
+  String get youHaveSuccessfullyMadeRent => 'You have successfully made Rent';
+
+  @override
+  String get rentFailed => 'Rent Failed';
+
+  @override
+  String get unfortunatelyTheRentalProcessCouldNotBeCompleted => 'Unfortunately, the rental process could not be completed';
+
+  @override
+  String get confirm => 'Confirm';
 }

@@ -13,9 +13,13 @@ import 'package:llegar/modules/auth/presentation/views/sign_up_identification_vi
 import 'package:llegar/modules/auth/presentation/views/sign_up_profile_info_view.dart';
 import 'package:llegar/modules/auth/presentation/views/sign_up_view.dart';
 import 'package:llegar/modules/auth/presentation/views/social_log_in_view.dart';
+import 'package:llegar/modules/home/presentation/views/checkout_payment_view.dart';
+import 'package:llegar/modules/home/presentation/views/checkout_view.dart';
 import 'package:llegar/modules/home/presentation/views/my_wishlist_view.dart';
 import 'package:llegar/modules/home/presentation/views/notification_view.dart';
+import 'package:llegar/modules/home/presentation/views/offer_result_view.dart';
 import 'package:llegar/modules/home/presentation/views/search_view.dart';
+import 'package:llegar/modules/home/presentation/views/shipping_address_view.dart';
 import 'package:llegar/modules/home/presentation/views/special_offers_view.dart';
 import 'package:llegar/modules/home/presentation/views/top_deals_view.dart';
 import 'package:llegar/modules/profile/domain/entities/premium_package_entity.dart';
@@ -39,12 +43,15 @@ import 'package:llegar/modules/welcome/presentation/views/welcome_view.dart';
 import 'package:llegar/shared/animations/bottom_slide_transition.dart';
 import 'package:llegar/shared/animations/opacity_transition.dart';
 import 'package:llegar/shared/animations/side_slide_transition.dart';
+import 'package:llegar/shared/utils/enums/notification_type.dart';
 
 ///This class contains all routes
 abstract class AppRoutes {
   static const String addItemView = '/AddItemView';
   static const String addNewCardView = '/AddNewCardView';
   static const String chatView = '/ChatView';
+  static const String checkoutPaymentView = '/CheckoutPaymentView';
+  static const String checkoutView = '/CheckoutView';
   static const String contactUsView = '/ContactUsView';
   static const String editProfileView = '/EditProfileView';
   static const String forgetPasswordView = '/ForgetPasswordView';
@@ -58,6 +65,7 @@ abstract class AppRoutes {
   static const String myitemsView = '/MyItemsView';
   static const String navBarView = '/NavBarView';
   static const String notificationView = '/NotificationView';
+  static const String offerResultView = '/OfferResultView';
   static const String otpView = '/OtpView';
   static const String premiumPackagePaymentView = '/PremiumPackagePaymentView';
   static const String privacyPolicyView = '/PrivacyPolicyView';
@@ -65,6 +73,7 @@ abstract class AppRoutes {
   static const String reviewSummaryView = '/ReviewSummaryView';
   static const String searchView = '/SearchView';
   static const String securityView = '/SecurityView';
+  static const String shippingAddressView = '/ShippingAddressView';
   static const String signUpIdentificationView = '/SignUpIdentificationView';
   static const String signUpProfileInfoView = '/SignUpProfileInfoView';
   static const String signUpView = '/SignUpView';
@@ -221,6 +230,24 @@ abstract class AppRoutes {
       case notificationView:
         return SideSlideTransition(
           page: const NotificationView(),
+        );
+      case offerResultView:
+        return SideSlideTransition(
+          page: OfferResultView(
+            notificationType: routeSettings.arguments as NotificationType,
+          ),
+        );
+      case checkoutView:
+        return SideSlideTransition(
+          page: const CheckoutView(),
+        );
+      case checkoutPaymentView:
+        return SideSlideTransition(
+          page: const CheckoutPaymentView(),
+        );
+      case shippingAddressView:
+        return SideSlideTransition(
+          page: const ShippingAddressView(),
         );
     }
     return null;

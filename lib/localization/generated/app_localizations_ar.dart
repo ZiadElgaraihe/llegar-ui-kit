@@ -683,4 +683,64 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get viewDetails => 'عرض التفاصيل';
+
+  @override
+  String get yourOffer => 'العرض الخاص بك';
+
+  @override
+  String get weAreSorryYourOfferHasBeenRejected => 'نحن آسفون، لقد تم رفض عرضك';
+
+  @override
+  String get doNotWorryYouWillAlwaysBeAbleToMakeAnotherOffer => 'لا تقلق، ستتمكن دائمًا من تقديم عرض آخر أكثر ملاءمة، حتى يتم قبول عرضك';
+
+  @override
+  String get makeAnOfferAgain => 'قدم عرضًا أخر';
+
+  @override
+  String get backToHome => 'العودة إلى الرئيسية';
+
+  @override
+  String get congratsYourOfferHasBeenAccepted => 'تهانينا! لقد تم قبول عرضك';
+
+  @override
+  String get yourOfferHasBeenAcceptedByTheOwnerFor => 'تم قبول عرضك من قبل المالك مقابل';
+
+  @override
+  String get proceedToCheckout => 'المتابعة إلى الدفع';
+
+  @override
+  String get checkout => 'الدفع';
+
+  @override
+  String get shippingAddress => 'عنوان الشحن';
+
+  @override
+  String get item => 'السلعة';
+
+  @override
+  String get continueToPayment => 'إستكمال عملية الدفع';
+
+  @override
+  String get shipping => 'الشحن';
+
+  @override
+  String get commission => 'العمولة';
+
+  @override
+  String get day => 'اليوم';
+
+  @override
+  String get rentSuccessful => 'تم الإيجار بنجاح';
+
+  @override
+  String get youHaveSuccessfullyMadeRent => 'لقد أكملت عملية الإيجار بنجاح';
+
+  @override
+  String get rentFailed => 'فشل الإيجار';
+
+  @override
+  String get unfortunatelyTheRentalProcessCouldNotBeCompleted => 'للأسف، لم يتم استكمال عملية الإيجار';
+
+  @override
+  String get confirm => 'تأكيد';
 }

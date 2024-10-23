@@ -4,6 +4,7 @@ import 'package:llegar/core/presentation/widgets/profile_photo.dart';
 import 'package:llegar/modules/home/domain/entities/notification_entity.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_icons.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/enums/notification_type.dart';
@@ -81,7 +82,9 @@ class NotificationItemContainer extends StatelessWidget {
           if (notification.notificationType != NotificationType.other) ...[
             AppSizes.height12,
             OutlinedButton(
-              onPressed: () {},
+              onPressed: () {
+                _onViewDetailsPressed(context);
+              },
               style: OutlinedButton.styleFrom(
                 fixedSize: const Size(155, 42),
                 shape: RoundedRectangleBorder(
@@ -97,5 +100,16 @@ class NotificationItemContainer extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  void _onViewDetailsPressed(BuildContext context) {
+    if (notification.notificationType == NotificationType.receivedOffer) {
+    } else {
+      Navigator.pushNamed(
+        context,
+        AppRoutes.offerResultView,
+        arguments: notification.notificationType,
+      );
+    }
   }
 }

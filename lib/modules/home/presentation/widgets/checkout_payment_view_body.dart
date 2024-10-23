@@ -7,31 +7,31 @@ import 'package:llegar/shared/utils/enums/message_type.dart';
 import 'package:llegar/shared/utils/functions/show_message_dialog.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
-class TopUpElectronicWalletViewBody extends StatelessWidget {
-  const TopUpElectronicWalletViewBody({
+class CheckoutPaymentViewBody extends StatelessWidget {
+  const CheckoutPaymentViewBody({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: AppSizes.bodyHorizontalPadding(context),
-      child: CustomScrollView(
-        slivers: [
-          SliverToBoxAdapter(
+    return CustomScrollView(
+      slivers: [
+        SliverPadding(
+          padding: AppSizes.bodyHorizontalPadding(context),
+          sliver: SliverToBoxAdapter(
             child: CustomPaymentSection(
-              appearMyWallet: false,
               onChanged: (paymentMethodEntity) {},
             ),
           ),
-          CustomSliverFillRemainingFooter(
-            buttonTitle: translate(context).continueText,
-            onFuturePressed: () async {
-              await _onContinuePressed(context);
-            },
-          ),
-        ],
-      ),
+        ),
+        CustomSliverFillRemainingFooter(
+          padding: AppSizes.bodyHorizontalPadding(context),
+          buttonTitle: translate(context).continueText,
+          onFuturePressed: () async {
+            await _onContinuePressed(context);
+          },
+        ),
+      ],
     );
   }
 
@@ -43,9 +43,8 @@ class TopUpElectronicWalletViewBody extends StatelessWidget {
     showMessageDialog(
       context,
       messageType: MessageType.success,
-      title: translate(context).topUpSuccessful,
-      message:
-          '${translate(context).youHaveSuccessfullyTopUpElectronicWalletFor} \$40',
+      title: translate(context).rentSuccessful,
+      message: translate(context).youHaveSuccessfullyMadeRent,
     ).then(
       (value) {
         if (!context.mounted) return;
@@ -62,8 +61,8 @@ class TopUpElectronicWalletViewBody extends StatelessWidget {
     showMessageDialog(
       context,
       messageType: MessageType.failed,
-      title: translate(context).topUpFailed,
-      message: translate(context).youHaveFailedToTopUpYourElectronicWallet,
+      title: translate(context).rentFailed,
+      message: translate(context).unfortunatelyTheRentalProcessCouldNotBeCompleted,
     )
     */
   }
