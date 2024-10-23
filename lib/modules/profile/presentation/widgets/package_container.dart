@@ -3,11 +3,10 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:llegar/modules/profile/domain/entities/premium_package_entity.dart';
 import 'package:llegar/modules/profile/presentation/widgets/package_feature_list_tile.dart';
 import 'package:llegar/modules/profile/presentation/widgets/price_per_month_row.dart';
-import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_icons.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/utils/functions/future_delayed_navigator.dart';
-import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 
 class PackageContainer extends StatelessWidget {
   const PackageContainer({
@@ -42,11 +41,7 @@ class PackageContainer extends StatelessWidget {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
             border: Border.all(
-              color: valueBasedOnTheme<Color>(
-                context,
-                light: AppColors.prussianBlue,
-                dark: AppColors.orange,
-              )!,
+              color: mainThemeColor(context),
               width: 2,
             ),
           ),
@@ -55,11 +50,7 @@ class PackageContainer extends StatelessWidget {
               SvgPicture.asset(
                 AppIcons.crown,
                 colorFilter: ColorFilter.mode(
-                  valueBasedOnTheme<Color>(
-                    context,
-                    light: AppColors.prussianBlue,
-                    dark: AppColors.orange,
-                  )!,
+                  mainThemeColor(context),
                   BlendMode.srcATop,
                 ),
               ),

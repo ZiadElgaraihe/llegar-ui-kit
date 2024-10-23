@@ -7,6 +7,7 @@ import 'package:llegar/shared/constants/app_icons.dart';
 import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/functions/future_delayed_navigator.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 import 'package:llegar/shared/utils/functions/value_based_on_locale.dart';
 import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
@@ -34,11 +35,7 @@ class WelcomeView extends StatelessWidget {
               Text(
                 translate(context).skip,
                 style: AppTextStyles.bold24(context).copyWith(
-                  color: valueBasedOnTheme<Color>(
-                    context,
-                    light: AppColors.black,
-                    dark: AppColors.white,
-                  ),
+                  color: secondaryThemeColor(context),
                 ),
               ),
               IconButton(

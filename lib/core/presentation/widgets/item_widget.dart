@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_like_button.dart';
 import 'package:llegar/core/presentation/widgets/leave_review_button.dart';
 import 'package:llegar/core/presentation/widgets/rating_row_widget.dart';
-import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_images.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
-import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class ItemWidget extends StatelessWidget {
   const ItemWidget({
@@ -75,11 +74,7 @@ class ItemWidget extends StatelessWidget {
         Text(
           'This spacious BMW is perfect for long drives and local errands.',
           style: AppTextStyles.semiBold16(context).copyWith(
-            color: valueBasedOnTheme<Color>(
-              context,
-              light: AppColors.black,
-              dark: AppColors.white,
-            ),
+            color: secondaryThemeColor(context),
           ),
           maxLines: 2,
           overflow: TextOverflow.ellipsis,

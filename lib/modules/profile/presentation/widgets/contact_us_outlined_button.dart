@@ -5,6 +5,7 @@ import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/functions/future_delayed_navigator.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class ContactUsOutlinedButton extends StatelessWidget {
@@ -42,11 +43,7 @@ class ContactUsOutlinedButton extends StatelessWidget {
           Text(
             contactUsEntity.title(context),
             style: AppTextStyles.bold20(context).copyWith(
-              color: valueBasedOnTheme<Color>(
-                context,
-                light: AppColors.black,
-                dark: AppColors.white,
-              ),
+              color: secondaryThemeColor(context),
             ),
           ),
         ],

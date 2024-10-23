@@ -4,7 +4,7 @@ import 'package:llegar/modules/welcome/domain/entities/how_did_you_know_us_item_
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
-import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 
 class HowDidYouKnowUsTabletLayoutButton extends StatelessWidget {
   const HowDidYouKnowUsTabletLayoutButton({
@@ -31,20 +31,10 @@ class HowDidYouKnowUsTabletLayoutButton extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.all(16.0),
             decoration: BoxDecoration(
-              color: isActive
-                  ? valueBasedOnTheme<Color>(
-                      context,
-                      light: AppColors.prussianBlue,
-                      dark: AppColors.orange,
-                    )!
-                  : Colors.transparent,
+              color: isActive ? mainThemeColor(context) : Colors.transparent,
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
-                color: valueBasedOnTheme<Color>(
-                  context,
-                  light: AppColors.prussianBlue,
-                  dark: AppColors.orange,
-                )!,
+                color: mainThemeColor(context),
                 width: 2,
               ),
             ),

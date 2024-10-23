@@ -3,11 +3,10 @@ import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
 import 'package:llegar/core/presentation/widgets/custom_rating_bar.dart';
 import 'package:llegar/core/presentation/widgets/custom_secondary_elevated_button.dart';
 import 'package:llegar/core/presentation/widgets/review_comment_text_form_field.dart';
-import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
-import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class ReviewBottomSheet extends StatelessWidget {
   const ReviewBottomSheet({
@@ -34,11 +33,7 @@ class ReviewBottomSheet extends StatelessWidget {
                   Text(
                     translate(context).pleaseGiveYourRatingAndAlsoYourReview,
                     style: AppTextStyles.medium16(context).copyWith(
-                      color: valueBasedOnTheme<Color>(
-                        context,
-                        light: AppColors.black,
-                        dark: AppColors.white,
-                      ),
+                      color: secondaryThemeColor(context),
                     ),
                     textAlign: TextAlign.center,
                   ),

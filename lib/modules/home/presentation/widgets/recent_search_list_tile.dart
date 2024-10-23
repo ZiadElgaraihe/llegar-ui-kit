@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
-import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 
 class RecentSearchListTile extends StatelessWidget {
   const RecentSearchListTile({
@@ -18,11 +17,7 @@ class RecentSearchListTile extends StatelessWidget {
       title: Text(
         'Tesla',
         style: AppTextStyles.medium20(context).copyWith(
-          color: valueBasedOnTheme<Color>(
-            context,
-            light: AppColors.black,
-            dark: AppColors.white,
-          ),
+          color: secondaryThemeColor(context),
         ),
         maxLines: 1,
         overflow: TextOverflow.ellipsis,
@@ -34,11 +29,7 @@ class RecentSearchListTile extends StatelessWidget {
         child: IconButton(
           onPressed: onRemovePressed,
           style: IconButton.styleFrom(
-            foregroundColor: valueBasedOnTheme<Color>(
-              context,
-              light: AppColors.black,
-              dark: AppColors.white,
-            ),
+            foregroundColor: secondaryThemeColor(context),
           ),
           icon: const Icon(
             Icons.close_rounded,

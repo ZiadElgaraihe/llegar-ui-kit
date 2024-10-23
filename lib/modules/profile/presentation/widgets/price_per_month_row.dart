@@ -3,8 +3,8 @@ import 'package:llegar/modules/profile/domain/entities/premium_package_entity.da
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
-import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class PricePerMonthRow extends StatelessWidget {
   const PricePerMonthRow({
@@ -22,11 +22,7 @@ class PricePerMonthRow extends StatelessWidget {
         Text(
           '\$${premiumPackageEntity.price}',
           style: AppTextStyles.bold32(context).copyWith(
-            color: valueBasedOnTheme<Color>(
-              context,
-              light: AppColors.prussianBlue,
-              dark: AppColors.orange,
-            )!,
+            color: mainThemeColor(context),
           ),
         ),
         AppSizes.width8,
