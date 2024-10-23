@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/modules/profile/domain/entities/premium_package_entity.dart';
 import 'package:llegar/modules/profile/presentation/widgets/package_container.dart';
-import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
-import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class SubscribeToPremiumViewBody extends StatelessWidget {
   const SubscribeToPremiumViewBody({
@@ -61,11 +60,7 @@ class SubscribeToPremiumViewBody extends StatelessWidget {
         Text(
           translate(context).enjoyTheBestOffers,
           style: AppTextStyles.medium16(context).copyWith(
-            color: valueBasedOnTheme<Color>(
-              context,
-              light: AppColors.black,
-              dark: AppColors.white,
-            ),
+            color: secondaryThemeColor(context),
           ),
           textAlign: TextAlign.center,
         ),

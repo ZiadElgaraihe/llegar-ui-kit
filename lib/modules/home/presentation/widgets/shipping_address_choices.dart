@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/domain/entities/address_entity.dart';
 import 'package:llegar/core/presentation/widgets/location_item.dart';
-import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
-import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 
 class ShippingAddressChoices extends StatefulWidget {
   const ShippingAddressChoices({
@@ -55,11 +54,7 @@ class _ShippingAddressChoicesState extends State<ShippingAddressChoices> {
                     ? Icons.check_box_rounded
                     : Icons.check_box_outlined,
                 size: 24,
-                color: valueBasedOnTheme<Color>(
-                  context,
-                  light: AppColors.prussianBlue,
-                  dark: AppColors.orange,
-                ),
+                color: mainThemeColor(context),
               ),
             ),
           ),

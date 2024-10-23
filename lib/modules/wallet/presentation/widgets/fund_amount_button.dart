@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class FundAmountButton extends StatelessWidget {
@@ -24,20 +25,10 @@ class FundAmountButton extends StatelessWidget {
         width: 114,
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          color: isSelected
-              ? valueBasedOnTheme<Color>(
-                  context,
-                  light: AppColors.black,
-                  dark: AppColors.white,
-                )!
-              : null,
+          color: isSelected ? secondaryThemeColor(context) : null,
           borderRadius: BorderRadius.circular(40),
           border: Border.all(
-            color: valueBasedOnTheme<Color>(
-              context,
-              light: AppColors.black,
-              dark: AppColors.white,
-            )!,
+            color: secondaryThemeColor(context),
             width: 2,
           ),
         ),
@@ -50,11 +41,7 @@ class FundAmountButton extends StatelessWidget {
                     light: AppColors.white,
                     dark: AppColors.prussianBlue,
                   )!
-                : valueBasedOnTheme<Color>(
-                    context,
-                    light: AppColors.black,
-                    dark: AppColors.white,
-                  )!,
+                : secondaryThemeColor(context),
           ),
           textDirection: TextDirection.ltr,
         ),

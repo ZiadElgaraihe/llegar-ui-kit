@@ -6,7 +6,7 @@ import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_icons.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
-import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 
 class LocationItem extends StatelessWidget {
   const LocationItem({
@@ -44,11 +44,7 @@ class LocationItem extends StatelessWidget {
               child: SvgPicture.asset(
                 AppIcons.location,
                 colorFilter: ColorFilter.mode(
-                  valueBasedOnTheme<Color>(
-                    context,
-                    light: AppColors.prussianBlue,
-                    dark: AppColors.orange,
-                  )!,
+                  mainThemeColor(context),
                   BlendMode.srcATop,
                 ),
               ),

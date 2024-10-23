@@ -8,8 +8,8 @@ import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/enums/notification_type.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
-import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class NotificationItemContainer extends StatelessWidget {
   const NotificationItemContainer({
@@ -41,11 +41,7 @@ class NotificationItemContainer extends StatelessWidget {
                     height: 71,
                     width: 71,
                     decoration: BoxDecoration(
-                      color: valueBasedOnTheme<Color>(
-                        context,
-                        light: AppColors.prussianBlue,
-                        dark: AppColors.orange,
-                      ),
+                      color: mainThemeColor(context),
                       shape: BoxShape.circle,
                     ),
                     child: Center(

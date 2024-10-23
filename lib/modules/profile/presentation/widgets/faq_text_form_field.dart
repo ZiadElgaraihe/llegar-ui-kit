@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
-import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class FaqTextFormField extends StatelessWidget {
   const FaqTextFormField({
@@ -22,17 +22,9 @@ class FaqTextFormField extends StatelessWidget {
       controller: controller,
       minLines: 7,
       maxLines: 10,
-      cursorColor: valueBasedOnTheme<Color>(
-        context,
-        light: AppColors.prussianBlue,
-        dark: AppColors.orange,
-      )!,
+      cursorColor: mainThemeColor(context),
       style: AppTextStyles.bold20(context).copyWith(
-        color: valueBasedOnTheme<Color>(
-          context,
-          light: AppColors.black,
-          dark: AppColors.white,
-        )!,
+        color: secondaryThemeColor(context),
       ),
       onSaved: onSaved,
       validator: validator,
@@ -46,22 +38,14 @@ class FaqTextFormField extends StatelessWidget {
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20),
           borderSide: BorderSide(
-            color: valueBasedOnTheme<Color>(
-              context,
-              light: AppColors.prussianBlue,
-              dark: AppColors.orange,
-            )!,
+            color: mainThemeColor(context),
             width: 3,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20),
           borderSide: BorderSide(
-            color: valueBasedOnTheme<Color>(
-              context,
-              light: AppColors.prussianBlue,
-              dark: AppColors.orange,
-            )!,
+            color: mainThemeColor(context),
             width: 3,
           ),
         ),

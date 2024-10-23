@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:llegar/core/presentation/widgets/custom_secondary_elevated_button.dart';
 import 'package:llegar/core/domain/entities/payment_method_entity.dart';
+import 'package:llegar/core/presentation/widgets/custom_secondary_elevated_button.dart';
 import 'package:llegar/core/presentation/widgets/payment_methods_column.dart';
-import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_icons.dart';
 import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
@@ -81,11 +81,7 @@ class _CustomPaymentSectionState extends State<CustomPaymentSection> {
           child: Text(
             translate(context).selectThePaymentMethodYouWantToUse,
             style: AppTextStyles.medium16(context).copyWith(
-              color: valueBasedOnTheme<Color>(
-                context,
-                light: AppColors.black,
-                dark: AppColors.white,
-              ),
+              color: secondaryThemeColor(context),
             ),
           ),
         ),

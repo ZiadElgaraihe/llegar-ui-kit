@@ -6,6 +6,7 @@ import 'package:llegar/shared/constants/app_icons.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_strings.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
@@ -22,12 +23,7 @@ class HomeAppBarTitleSection extends StatelessWidget {
         ProfilePhoto(
           size: 45,
           side: BorderSide(
-            color: valueBasedOnTheme<Color>(
-              context,
-              listen: true,
-              light: AppColors.prussianBlue,
-              dark: AppColors.orange,
-            )!,
+            color: mainThemeColor(context),
             width: 2,
           ),
         ),
@@ -44,11 +40,7 @@ class HomeAppBarTitleSection extends StatelessWidget {
                       _getGreeting(context),
                       style: AppTextStyles.regular14(context).copyWith(
                         fontFamily: AppStrings.urbanistFontFamily,
-                        color: valueBasedOnTheme<Color>(
-                          context,
-                          light: AppColors.prussianBlue,
-                          dark: AppColors.orange,
-                        ),
+                        color: mainThemeColor(context),
                       ),
                     ),
                     AppSizes.width8,
@@ -69,11 +61,7 @@ class HomeAppBarTitleSection extends StatelessWidget {
                 'Nour Mohamed',
                 style: AppTextStyles.bold16(context).copyWith(
                   fontFamily: AppStrings.urbanistFontFamily,
-                  color: valueBasedOnTheme<Color>(
-                    context,
-                    light: AppColors.prussianBlue,
-                    dark: AppColors.orange,
-                  ),
+                  color: mainThemeColor(context),
                 ),
               ),
             ],

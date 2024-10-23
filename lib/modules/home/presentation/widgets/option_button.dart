@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
-import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 
 class OptionButton extends StatelessWidget {
   const OptionButton({
@@ -27,20 +27,10 @@ class OptionButton extends StatelessWidget {
           horizontal: 20,
         ),
         decoration: BoxDecoration(
-          color: isSelected
-              ? valueBasedOnTheme<Color>(
-                  context,
-                  light: AppColors.prussianBlue,
-                  dark: AppColors.orange,
-                )!
-              : null,
+          color: isSelected ? mainThemeColor(context) : null,
           borderRadius: BorderRadius.circular(22),
           border: Border.all(
-            color: valueBasedOnTheme<Color>(
-              context,
-              light: AppColors.prussianBlue,
-              dark: AppColors.orange,
-            )!,
+            color: mainThemeColor(context),
             width: 2,
           ),
         ),

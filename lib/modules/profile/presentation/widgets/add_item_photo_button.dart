@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
-import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class AddItemPhotoButton extends StatelessWidget {
   const AddItemPhotoButton({
@@ -31,11 +31,7 @@ class AddItemPhotoButton extends StatelessWidget {
                 children: [
                   Icon(
                     Icons.add_box_rounded,
-                    color: valueBasedOnTheme<Color>(
-                      context,
-                      light: AppColors.prussianBlue,
-                      dark: AppColors.orange,
-                    ),
+                    color: mainThemeColor(context),
                     size: 32,
                   ),
                   Text(

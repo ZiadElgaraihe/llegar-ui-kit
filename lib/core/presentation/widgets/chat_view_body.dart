@@ -6,9 +6,9 @@ import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_strings.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 import 'package:llegar/shared/utils/functions/value_based_on_locale.dart';
-import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class ChatViewBody extends StatefulWidget {
   const ChatViewBody({
@@ -148,11 +148,7 @@ class _ChatViewBodyState extends State<ChatViewBody> {
       messageDecorationBuilder: (message, previousMessage, nextMessage) {
         if (message.user.id == '0') {
           return BoxDecoration(
-            color: valueBasedOnTheme<Color>(
-              context,
-              light: AppColors.prussianBlue,
-              dark: AppColors.orange,
-            ),
+            color: mainThemeColor(context),
             borderRadius: const BorderRadiusDirectional.only(
               topStart: Radius.circular(10),
               bottomEnd: Radius.circular(10),

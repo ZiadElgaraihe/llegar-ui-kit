@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_icons.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class ChatInputTrailing extends StatelessWidget {
@@ -65,11 +66,7 @@ class ChatInputTrailing extends StatelessWidget {
         onPressed: onSendPressed,
         icon: Icon(
           Icons.send_rounded,
-          color: valueBasedOnTheme<Color>(
-            context,
-            light: AppColors.prussianBlue,
-            dark: AppColors.orange,
-          ),
+          color: mainThemeColor(context),
           size: 32,
         ),
       ),

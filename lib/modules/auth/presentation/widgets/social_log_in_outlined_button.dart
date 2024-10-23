@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:llegar/modules/auth/domain/entities/social_auth_entity.dart';
-import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/utils/functions/future_delayed_navigator.dart';
-import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 
 class SocialLogInOutlinedButton extends StatefulWidget {
   const SocialLogInOutlinedButton({
@@ -25,7 +24,7 @@ class SocialLogInOutlinedButton extends StatefulWidget {
 class _SocialLogInOutlinedButtonState extends State<SocialLogInOutlinedButton> {
   bool _isLoading = false;
 
-  Future<void> _onFuturePressed() async{
+  Future<void> _onFuturePressed() async {
     futureDelayedNavigator(
       () async {
         setState(() {
@@ -56,11 +55,7 @@ class _SocialLogInOutlinedButtonState extends State<SocialLogInOutlinedButton> {
           ],
         ),
         secondChild: SpinKitFadingCircle(
-          color: valueBasedOnTheme<Color>(
-            context,
-            light: AppColors.prussianBlue,
-            dark: AppColors.orange,
-          ),
+          color: mainThemeColor(context),
           size: 35,
         ),
         crossFadeState:

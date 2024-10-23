@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/modules/home/presentation/widgets/clear_all_recent_search_list_tile.dart';
 import 'package:llegar/modules/home/presentation/widgets/recent_search_list_tile.dart';
-import 'package:llegar/shared/constants/app_colors.dart';
-import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 
 class RecentSearchSection extends StatelessWidget {
   const RecentSearchSection({
@@ -17,11 +16,7 @@ class RecentSearchSection extends StatelessWidget {
           onClearAllPressed: () {},
         ),
         Divider(
-          color: valueBasedOnTheme<Color>(
-            context,
-            light: AppColors.black,
-            dark: AppColors.white,
-          ),
+          color: secondaryThemeColor(context),
           indent: 0,
           endIndent: 0,
           height: 32,

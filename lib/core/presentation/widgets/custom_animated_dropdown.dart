@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_strings.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class CustomAnimatedDropdown<ItemsType> extends StatelessWidget {
@@ -57,19 +58,11 @@ class CustomAnimatedDropdown<ItemsType> extends StatelessWidget {
           ),
           headerStyle: AppTextStyles.medium14(context).copyWith(
             fontFamily: AppStrings.interFontFamily,
-            color: valueBasedOnTheme<Color>(
-              context,
-              light: AppColors.prussianBlue,
-              dark: AppColors.orange,
-            ),
+            color: mainThemeColor(context),
           ),
           listItemStyle: AppTextStyles.medium14(context).copyWith(
             fontFamily: AppStrings.interFontFamily,
-            color: valueBasedOnTheme<Color>(
-              context,
-              light: AppColors.prussianBlue,
-              dark: AppColors.orange,
-            ),
+            color: mainThemeColor(context),
           ),
           closedSuffixIcon: const Icon(
             Icons.arrow_drop_down_rounded,

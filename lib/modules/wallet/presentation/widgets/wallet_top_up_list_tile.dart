@@ -4,6 +4,7 @@ import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_icons.dart';
 import 'package:llegar/shared/constants/app_strings.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
@@ -43,22 +44,14 @@ class WalletTopUpListTile extends StatelessWidget {
         'Jan 14, 2023 | 03:16 PM',
         style: AppTextStyles.regular16(context).copyWith(
           fontFamily: AppStrings.interFontFamily,
-          color: valueBasedOnTheme<Color>(
-            context,
-            light: AppColors.black,
-            dark: AppColors.white,
-          ),
+          color: secondaryThemeColor(context),
         ),
       ),
       trailing: Text(
         '\$140.00',
         style: AppTextStyles.medium20(context).copyWith(
           fontFamily: AppStrings.interFontFamily,
-          color: valueBasedOnTheme<Color>(
-            context,
-            light: AppColors.black,
-            dark: AppColors.white,
-          ),
+          color: secondaryThemeColor(context),
         ),
         textDirection: TextDirection.ltr,
       ),

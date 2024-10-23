@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_icons.dart';
 import 'package:llegar/shared/constants/app_images.dart';
-import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 
 class IdPhoto extends StatelessWidget {
   const IdPhoto({
@@ -27,11 +26,7 @@ class IdPhoto extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: valueBasedOnTheme<Color>(
-                        context,
-                        light: AppColors.prussianBlue,
-                        dark: AppColors.orange,
-                      )!,
+                      color: mainThemeColor(context),
                       width: 4,
                     ),
                     image: const DecorationImage(
@@ -46,11 +41,7 @@ class IdPhoto extends StatelessWidget {
               end: 0,
               child: Container(
                 decoration: BoxDecoration(
-                  color: valueBasedOnTheme<Color>(
-                    context,
-                    light: AppColors.prussianBlue,
-                    dark: AppColors.orange,
-                  )!,
+                  color: mainThemeColor(context),
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Material(

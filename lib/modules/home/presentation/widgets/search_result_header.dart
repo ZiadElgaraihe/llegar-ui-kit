@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_strings.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
-import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
 class SearchResultsHeader extends StatelessWidget {
   const SearchResultsHeader({
@@ -23,22 +22,14 @@ class SearchResultsHeader extends StatelessWidget {
         text: TextSpan(
           style: AppTextStyles.bold20(context).copyWith(
             fontFamily: AppStrings.urbanistFontFamily,
-            color: valueBasedOnTheme<Color>(
-              context,
-              light: AppColors.prussianBlue,
-              dark: AppColors.orange,
-            ),
+            color: mainThemeColor(context),
           ),
           children: [
             TextSpan(text: translate(context).resultsFor),
             TextSpan(
               text: ' "$searchText"',
               style: TextStyle(
-                color: valueBasedOnTheme<Color>(
-                  context,
-                  light: AppColors.black,
-                  dark: AppColors.white,
-                ),
+                color: secondaryThemeColor(context),
               ),
             ),
           ],
@@ -49,11 +40,7 @@ class SearchResultsHeader extends StatelessWidget {
       trailing: Text(
         '$numberOfResults ${translate(context).found}',
         style: AppTextStyles.bold14(context).copyWith(
-          color: valueBasedOnTheme<Color>(
-            context,
-            light: AppColors.black,
-            dark: AppColors.white,
-          ),
+          color: secondaryThemeColor(context),
         ),
       ),
     );

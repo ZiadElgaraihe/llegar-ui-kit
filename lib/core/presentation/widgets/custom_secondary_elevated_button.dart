@@ -3,7 +3,7 @@ import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/functions/future_delayed_navigator.dart';
-import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
+import 'package:llegar/shared/utils/functions/theme_colors.dart';
 
 class CustomSecondaryElevatedButton extends StatelessWidget {
   const CustomSecondaryElevatedButton({
@@ -42,12 +42,7 @@ class CustomSecondaryElevatedButton extends StatelessWidget {
         child: Text(
           title,
           style: AppTextStyles.bold20(context).copyWith(
-            color: textColor ??
-                valueBasedOnTheme<Color>(
-                  context,
-                  light: AppColors.prussianBlue,
-                  dark: AppColors.orange,
-                ),
+            color: textColor ?? mainThemeColor(context),
           ),
         ),
       ),
