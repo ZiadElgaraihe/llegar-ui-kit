@@ -715,9 +715,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get shippingAddress => 'Shipping Address';
 
   @override
-  String get homeLocation => 'Home';
-
-  @override
   String get item => 'Item';
 
   @override
@@ -743,4 +740,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get unfortunatelyTheRentalProcessCouldNotBeCompleted => 'Unfortunately, the rental process could not be completed';
+
+  @override
+  String get confirm => 'Confirm';
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:llegar/core/domain/entities/address_entity.dart';
 import 'package:llegar/core/presentation/widgets/edit_button.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_icons.dart';
@@ -10,14 +11,17 @@ import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 class LocationItem extends StatelessWidget {
   const LocationItem({
     super.key,
-    required this.location,
-    required this.onEditTapped,
-    required this.title,
-  });
+    required this.address,
+    this.onEditTapped,
+    this.trailing,
+  }) : assert(
+          (onEditTapped != null || trailing != null),
+          'Either "onEditTapped" or "trailing" must be provided. Both cannot be null to ensure proper user interaction.',
+        );
 
-  final String location;
-  final VoidCallback onEditTapped;
-  final String title;
+  final AddressEntity address;
+  final VoidCallback? onEditTapped;
+  final Widget? trailing;
 
   @override
   Widget build(BuildContext context) {
@@ -56,11 +60,11 @@ class LocationItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  title,
+                  address.title,
                   style: AppTextStyles.semiBold20(context),
                 ),
                 Text(
-                  location,
+                  address.address,
                   style: AppTextStyles.semiBold11(context).copyWith(
                     color: AppColors.black,
                   ),
@@ -69,9 +73,10 @@ class LocationItem extends StatelessWidget {
             ),
           ),
           AppSizes.width16,
-          EditButton(
-            onTap: onEditTapped,
-          ),
+          trailing ??
+              EditButton(
+                onTap: onEditTapped!,
+              ),
         ],
       ),
     );

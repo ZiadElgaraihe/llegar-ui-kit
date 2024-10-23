@@ -19,6 +19,7 @@ import 'package:llegar/modules/home/presentation/views/my_wishlist_view.dart';
 import 'package:llegar/modules/home/presentation/views/notification_view.dart';
 import 'package:llegar/modules/home/presentation/views/offer_result_view.dart';
 import 'package:llegar/modules/home/presentation/views/search_view.dart';
+import 'package:llegar/modules/home/presentation/views/shipping_address_view.dart';
 import 'package:llegar/modules/home/presentation/views/special_offers_view.dart';
 import 'package:llegar/modules/home/presentation/views/top_deals_view.dart';
 import 'package:llegar/modules/profile/domain/entities/premium_package_entity.dart';
@@ -72,6 +73,7 @@ abstract class AppRoutes {
   static const String reviewSummaryView = '/ReviewSummaryView';
   static const String searchView = '/SearchView';
   static const String securityView = '/SecurityView';
+  static const String shippingAddressView = '/ShippingAddressView';
   static const String signUpIdentificationView = '/SignUpIdentificationView';
   static const String signUpProfileInfoView = '/SignUpProfileInfoView';
   static const String signUpView = '/SignUpView';
@@ -242,6 +244,10 @@ abstract class AppRoutes {
       case checkoutPaymentView:
         return SideSlideTransition(
           page: const CheckoutPaymentView(),
+        );
+      case shippingAddressView:
+        return SideSlideTransition(
+          page: const ShippingAddressView(),
         );
     }
     return null;

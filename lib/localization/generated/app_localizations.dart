@@ -1511,12 +1511,6 @@ abstract class AppLocalizations {
   /// **'Shipping Address'**
   String get shippingAddress;
 
-  /// No description provided for @homeLocation.
-  ///
-  /// In en, this message translates to:
-  /// **'Home'**
-  String get homeLocation;
-
   /// No description provided for @item.
   ///
   /// In en, this message translates to:
@@ -1570,6 +1564,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Unfortunately, the rental process could not be completed'**
   String get unfortunatelyTheRentalProcessCouldNotBeCompleted;
+
+  /// No description provided for @confirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get confirm;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

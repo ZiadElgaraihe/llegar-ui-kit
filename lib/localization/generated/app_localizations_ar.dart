@@ -715,9 +715,6 @@ class AppLocalizationsAr extends AppLocalizations {
   String get shippingAddress => 'عنوان الشحن';
 
   @override
-  String get homeLocation => 'المنزل';
-
-  @override
   String get item => 'السلعة';
 
   @override
@@ -743,4 +740,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get unfortunatelyTheRentalProcessCouldNotBeCompleted => 'للأسف، لم يتم استكمال عملية الإيجار';
+
+  @override
+  String get confirm => 'تأكيد';
 }

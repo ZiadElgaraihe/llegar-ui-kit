@@ -235,7 +235,6 @@
     "proceedToCheckout": "Proceed to Checkout",
     "checkout": "Checkout",
     "shippingAddress": "Shipping Address",
-    "homeLocation": "Home",
     "item": "Item",
     "continueToPayment": "Continue to Payment",
     "shipping": "Shipping",
@@ -244,5 +243,6 @@
     "rentSuccessful": "Rent Successful",
     "youHaveSuccessfullyMadeRent": "You have successfully made Rent",
     "rentFailed": "Rent Failed",
-    "unfortunatelyTheRentalProcessCouldNotBeCompleted": "Unfortunately, the rental process could not be completed"
+    "unfortunatelyTheRentalProcessCouldNotBeCompleted": "Unfortunately, the rental process could not be completed",
+    "confirm": "Confirm"
 }

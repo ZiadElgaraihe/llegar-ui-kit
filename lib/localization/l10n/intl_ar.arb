@@ -235,7 +235,6 @@
     "proceedToCheckout": "المتابعة إلى الدفع",
     "checkout": "الدفع",
     "shippingAddress": "عنوان الشحن",
-    "homeLocation": "المنزل",
     "item": "السلعة",
     "continueToPayment": "إستكمال عملية الدفع",
     "shipping": "الشحن",
@@ -244,5 +243,6 @@
     "rentSuccessful": "تم الإيجار بنجاح",
     "youHaveSuccessfullyMadeRent": "لقد أكملت عملية الإيجار بنجاح",
     "rentFailed": "فشل الإيجار",
-    "unfortunatelyTheRentalProcessCouldNotBeCompleted": "للأسف، لم يتم استكمال عملية الإيجار"
+    "unfortunatelyTheRentalProcessCouldNotBeCompleted": "للأسف، لم يتم استكمال عملية الإيجار",
+    "confirm": "تأكيد"
 }

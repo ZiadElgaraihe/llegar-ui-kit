@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/core/domain/entities/address_entity.dart';
 import 'package:llegar/core/presentation/widgets/custom_sliver_fill_remaining_footer.dart';
 import 'package:llegar/core/presentation/widgets/item_widget.dart';
 import 'package:llegar/core/presentation/widgets/location_item.dart';
@@ -31,9 +32,13 @@ class CheckoutViewBody extends StatelessWidget {
                 ),
                 AppSizes.height16,
                 LocationItem(
-                  location: '"123 Main St, Apt 4B, Anytown, State 12345"',
-                  onEditTapped: () {},
-                  title: translate(context).homeLocation,
+                  address: const AddressEntity(
+                    address: '"123 Main St, Apt 4B, Anytown, State 12345"',
+                    title: 'Home',
+                  ),
+                  onEditTapped: () {
+                    _onEditShippingAddressTapped(context);
+                  },
                 ),
                 AppSizes.height24,
                 Align(
@@ -67,6 +72,10 @@ class CheckoutViewBody extends StatelessWidget {
         ),
       ],
     );
+  }
+
+  void _onEditShippingAddressTapped(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.shippingAddressView);
   }
 
   void _onContinueToPaymentPressed(BuildContext context) {
