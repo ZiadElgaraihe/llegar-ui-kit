@@ -3,6 +3,7 @@ import 'package:llegar/core/domain/entities/chat_entity.dart';
 import 'package:llegar/core/domain/entities/success_view_entity.dart';
 import 'package:llegar/core/presentation/views/add_new_card_view.dart';
 import 'package:llegar/core/presentation/views/chat_view.dart';
+import 'package:llegar/core/presentation/views/item_details_view.dart';
 import 'package:llegar/core/presentation/views/nav_bar_view.dart';
 import 'package:llegar/core/presentation/views/reset_password_view.dart';
 import 'package:llegar/core/presentation/views/success_view.dart';
@@ -58,6 +59,7 @@ abstract class AppRoutes {
   static const String fundMyWalletView = '/FundMyWalletView';
   static const String helpCenterView = '/HelpCenterView';
   static const String howDidYouKnowUsView = '/HowDidYouKnowUsView';
+  static const String itemDetailsView = '/ItemDetailsView';
   static const String languageView = '/LanguageView';
   static const String logInView = '/LogInView';
   static const String myActivitiesView = '/MyActivitiesView';
@@ -248,6 +250,10 @@ abstract class AppRoutes {
       case shippingAddressView:
         return SideSlideTransition(
           page: const ShippingAddressView(),
+        );
+      case itemDetailsView:
+        return SideSlideTransition(
+          page: const ItemDetailsView(),
         );
     }
     return null;

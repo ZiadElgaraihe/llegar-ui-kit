@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/modules/home/presentation/widgets/home_section_header.dart';
+import 'package:llegar/modules/home/presentation/widgets/options_bar.dart';
 import 'package:llegar/modules/home/presentation/widgets/responsive_items_sliver_list.dart';
 import 'package:llegar/modules/home/presentation/widgets/search_text_field.dart';
 import 'package:llegar/modules/home/presentation/widgets/special_offers_section.dart';
-import 'package:llegar/modules/home/presentation/widgets/options_bar.dart';
 import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_strings.dart';
@@ -59,7 +59,11 @@ class HomeViewBody extends StatelessWidget {
             onSelectCategory: (value) {},
           ),
         ),
-        const ReponsiveItemsSliverList(),
+        ReponsiveItemsSliverList(
+          onTap: (index) {
+            Navigator.pushNamed(context, AppRoutes.itemDetailsView);
+          },
+        ),
       ],
     );
   }
