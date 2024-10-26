@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:llegar/core/presentation/manager/cubits/locale_cubit/locale_cubit.dart';
 import 'package:llegar/core/presentation/manager/cubits/theme_cubit/theme_cubit.dart';
+import 'package:llegar/core/presentation/views/nav_bar_view.dart';
 import 'package:llegar/localization/generated/app_localizations.dart';
 import 'package:llegar/modules/splash/presentation/views/splash_view.dart';
 import 'package:llegar/shared/constants/app_images.dart';
@@ -57,7 +58,7 @@ class _LlegarState extends State<Llegar> {
             localizationsDelegates: AppLocalizations.localizationsDelegates,
             supportedLocales: AppLocalizations.supportedLocales,
             onGenerateRoute: AppRoutes.generate,
-            home: const SplashView(),
+            home: const NavBarView(),
           ),
         );
       },

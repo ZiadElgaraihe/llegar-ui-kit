@@ -21,7 +21,7 @@ class CheckoutContainer extends StatelessWidget {
         children: [
           CheckoutItem(
             title: translate(context).amount,
-            price: '\$230',
+            price: '\$50',
           ),
           AppSizes.height16,
           CheckoutItem(
@@ -36,7 +36,7 @@ class CheckoutContainer extends StatelessWidget {
           AppSizes.height16,
           CheckoutItem(
             title: translate(context).total,
-            price: '\$240',
+            price: '\$60',
           ),
         ],
       ),

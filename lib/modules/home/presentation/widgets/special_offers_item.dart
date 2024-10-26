@@ -49,7 +49,7 @@ class SpecialOffersItem extends StatelessWidget {
           AppSizes.width8,
           Expanded(
             child: Image.asset(
-              AppImages.advertisementCar,
+              AppImages.car,
               fit: BoxFit.scaleDown,
             ),
           ),

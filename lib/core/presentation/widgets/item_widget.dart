@@ -36,8 +36,8 @@ class ItemWidget extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(24),
                 child: Image.asset(
-                  AppImages.car,
-                  fit: BoxFit.fill,
+                  AppImages.camera,
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
@@ -63,7 +63,7 @@ class ItemWidget extends StatelessWidget {
           children: [
             Expanded(
               child: Text(
-                'Car, Giza',
+                'Canon EOS R6, cairo',
                 style: AppTextStyles.bold20(context),
               ),
             ),
@@ -72,7 +72,7 @@ class ItemWidget extends StatelessWidget {
         ),
         AppSizes.height8,
         Text(
-          'This spacious BMW is perfect for long drives and local errands.',
+          'It features a full-frame CMOS sensor with a resolution of 20.1 megapixels and is capable of shooting up to 12 frames per second with the mechanical shutter or up to 20 frames per second with the electronic shutter.',
           style: AppTextStyles.semiBold16(context).copyWith(
             color: secondaryThemeColor(context),
           ),
@@ -81,7 +81,7 @@ class ItemWidget extends StatelessWidget {
         ),
         AppSizes.height4,
         Text(
-          '\$230 /${translate(context).day}',
+          '\$50 /${translate(context).day}',
           style: AppTextStyles.bold20(context),
         ),
       ],
