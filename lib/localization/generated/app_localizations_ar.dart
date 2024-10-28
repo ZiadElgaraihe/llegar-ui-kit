@@ -743,4 +743,31 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get confirm => 'تأكيد';
+
+  @override
+  String get reviews => 'مراجعة';
+
+  @override
+  String get available => 'متاح';
+
+  @override
+  String get notAvailable => 'غير متاح';
+
+  @override
+  String get notNegotiable => 'غير قابل للتفاوض';
+
+  @override
+  String get seeHisPage => 'عرض صفحته';
+
+  @override
+  String get showComments => 'عرض التعليقات';
+
+  @override
+  String get price => 'سعر';
+
+  @override
+  String get rentNow => 'استأجر الأن';
+
+  @override
+  String get makeAnOffer => 'تقديم عرض';
 }

@@ -60,8 +60,14 @@ class HomeViewBody extends StatelessWidget {
           ),
         ),
         ReponsiveItemsSliverList(
+          prefixHeroTag: AppStrings.homeItemHeroTag,
           onTap: (index) {
-            Navigator.pushNamed(context, AppRoutes.itemDetailsView);
+            Navigator.pushNamed(
+              context,
+              AppRoutes.itemDetailsView,
+              // This is item details image hero tag,
+              arguments: '${AppStrings.homeItemHeroTag}$index',
+            );
           },
         ),
       ],

@@ -244,5 +244,14 @@
     "youHaveSuccessfullyMadeRent": "لقد أكملت عملية الإيجار بنجاح",
     "rentFailed": "فشل الإيجار",
     "unfortunatelyTheRentalProcessCouldNotBeCompleted": "للأسف، لم يتم استكمال عملية الإيجار",
-    "confirm": "تأكيد"
+    "confirm": "تأكيد",
+    "reviews": "مراجعة",
+    "available": "متاح",
+    "notAvailable": "غير متاح",
+    "notNegotiable": "غير قابل للتفاوض",
+    "seeHisPage": "عرض صفحته",
+    "showComments": "عرض التعليقات",
+    "price": "سعر",
+    "rentNow": "استأجر الأن",
+    "makeAnOffer": "تقديم عرض"
 }

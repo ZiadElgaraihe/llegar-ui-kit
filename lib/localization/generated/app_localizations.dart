@@ -1570,6 +1570,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Confirm'**
   String get confirm;
+
+  /// No description provided for @reviews.
+  ///
+  /// In en, this message translates to:
+  /// **'reviews'**
+  String get reviews;
+
+  /// No description provided for @available.
+  ///
+  /// In en, this message translates to:
+  /// **'Available'**
+  String get available;
+
+  /// No description provided for @notAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Not Available'**
+  String get notAvailable;
+
+  /// No description provided for @notNegotiable.
+  ///
+  /// In en, this message translates to:
+  /// **'Not Negotiable'**
+  String get notNegotiable;
+
+  /// No description provided for @seeHisPage.
+  ///
+  /// In en, this message translates to:
+  /// **'See His Page'**
+  String get seeHisPage;
+
+  /// No description provided for @showComments.
+  ///
+  /// In en, this message translates to:
+  /// **'Show Comments'**
+  String get showComments;
+
+  /// No description provided for @price.
+  ///
+  /// In en, this message translates to:
+  /// **'Price'**
+  String get price;
+
+  /// No description provided for @rentNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Rent Now'**
+  String get rentNow;
+
+  /// No description provided for @makeAnOffer.
+  ///
+  /// In en, this message translates to:
+  /// **'Make an offer'**
+  String get makeAnOffer;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -743,4 +743,31 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get confirm => 'Confirm';
+
+  @override
+  String get reviews => 'reviews';
+
+  @override
+  String get available => 'Available';
+
+  @override
+  String get notAvailable => 'Not Available';
+
+  @override
+  String get notNegotiable => 'Not Negotiable';
+
+  @override
+  String get seeHisPage => 'See His Page';
+
+  @override
+  String get showComments => 'Show Comments';
+
+  @override
+  String get price => 'Price';
+
+  @override
+  String get rentNow => 'Rent Now';
+
+  @override
+  String get makeAnOffer => 'Make an offer';
 }

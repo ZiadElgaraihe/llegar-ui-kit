@@ -253,7 +253,9 @@ abstract class AppRoutes {
         );
       case itemDetailsView:
         return SideSlideTransition(
-          page: const ItemDetailsView(),
+          page: ItemDetailsView(
+            heroTag: routeSettings.arguments as String?,
+          ),
         );
     }
     return null;

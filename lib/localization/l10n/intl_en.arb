@@ -244,5 +244,14 @@
     "youHaveSuccessfullyMadeRent": "You have successfully made Rent",
     "rentFailed": "Rent Failed",
     "unfortunatelyTheRentalProcessCouldNotBeCompleted": "Unfortunately, the rental process could not be completed",
-    "confirm": "Confirm"
+    "confirm": "Confirm",
+    "reviews": "reviews",
+    "available": "Available",
+    "notAvailable": "Not Available",
+    "notNegotiable": "Not Negotiable",
+    "seeHisPage": "See His Page",
+    "showComments": "Show Comments",
+    "price": "Price",
+    "rentNow": "Rent Now",
+    "makeAnOffer": "Make an offer"
 }

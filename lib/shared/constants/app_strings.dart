@@ -10,6 +10,15 @@ abstract class AppStrings {
   ///English
   static const String english = 'English';
 
+  ///home item
+  static const String homeItemHeroTag = 'home item';
+
+  ///my orders item
+  static const String myOrdersItemHeroTag = 'my orders item';
+
+  ///my wishlist item
+  static const String myWishlistItemHeroTag = 'my wishlist item';
+
   ///search
   static const String searchHeroTag = 'search';
 

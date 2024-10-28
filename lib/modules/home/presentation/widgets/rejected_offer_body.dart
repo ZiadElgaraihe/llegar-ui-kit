@@ -53,7 +53,9 @@ class RejectedOfferBody extends StatelessWidget {
                 const Expanded(child: AppSizes.height24),
                 CustomElevatedButton(
                   title: translate(context).makeAnOfferAgain,
-                  onPressed: () {},
+                  onPressed: () {
+                    _onMakeAnOfferAgainPressed(context);
+                  },
                 ),
                 AppSizes.height16,
                 CustomSecondaryElevatedButton(
@@ -69,6 +71,10 @@ class RejectedOfferBody extends StatelessWidget {
         ),
       ],
     );
+  }
+
+  void _onMakeAnOfferAgainPressed(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.itemDetailsView);
   }
 
   void _onBackToHomePressed(BuildContext context) {

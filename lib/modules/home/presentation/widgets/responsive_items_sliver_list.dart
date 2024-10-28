@@ -7,10 +7,12 @@ class ReponsiveItemsSliverList extends StatelessWidget {
     super.key,
     this.onLikeTapped,
     this.onTap,
+    this.prefixHeroTag,
   });
 
   final void Function(bool isLiked, int index)? onLikeTapped;
   final void Function(int index)? onTap;
+  final String? prefixHeroTag;
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +22,7 @@ class ReponsiveItemsSliverList extends StatelessWidget {
         sliver: SliverList.separated(
           itemCount: 10,
           itemBuilder: (context, index) => ItemWidget(
+            heroTag: '$prefixHeroTag$index',
             onLikeTapped: (onLikeTapped != null)
                 ? (isLiked) {
                     onLikeTapped!(isLiked, index);
@@ -46,6 +49,7 @@ class ReponsiveItemsSliverList extends StatelessWidget {
           ),
           itemCount: 10,
           itemBuilder: (context, index) => ItemWidget(
+            heroTag: '$prefixHeroTag$index',
             onLikeTapped: (onLikeTapped != null)
                 ? (isLiked) {
                     onLikeTapped!(isLiked, index);

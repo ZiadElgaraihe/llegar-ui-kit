@@ -17,10 +17,12 @@ class ItemWidget extends StatelessWidget {
     this.isLiked = false,
     this.onLikeTapped,
     this.onTap,
+    this.heroTag,
   });
 
   final bool appearLeaveReviewButton;
   final bool appearLikeButton;
+  final String? heroTag;
 
   ///This is initial value you can get current value from onLikeTapped
   final bool isLiked;
@@ -46,11 +48,14 @@ class ItemWidget extends StatelessWidget {
               children: [
                 AspectRatio(
                   aspectRatio: 382 / 307,
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(24),
-                    child: Image.asset(
-                      AppImages.camera,
-                      fit: BoxFit.cover,
+                  child: Hero(
+                    tag: '$heroTag',
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(24),
+                      child: Image.asset(
+                        AppImages.camera,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),
