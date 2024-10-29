@@ -7,6 +7,7 @@ import 'package:llegar/core/presentation/widgets/item_images_section.dart';
 import 'package:llegar/core/presentation/widgets/item_location_section.dart';
 import 'package:llegar/core/presentation/widgets/item_negotiability_section.dart';
 import 'package:llegar/core/presentation/widgets/item_owner_section.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
@@ -48,7 +49,9 @@ class ItemDetailsViewBody extends StatelessWidget {
               // Users can only leave comments on items they have already rented.
               // This feature will be accessible in the "My Orders" view.
               ItemDetailsOutlinedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, AppRoutes.itemReviewsView);
+                },
                 title: translate(context).showComments,
               ),
             ],
