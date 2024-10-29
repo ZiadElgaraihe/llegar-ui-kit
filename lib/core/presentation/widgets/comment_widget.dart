@@ -24,7 +24,7 @@ class CommentWidget extends StatelessWidget {
             AppSizes.width12,
             Expanded(
               child: Text(
-                'Abdalrahman Abdelaziz',
+                'Mohamed Galal',
                 style: AppTextStyles.semiBold20(context).copyWith(
                   color: mainThemeColor(context),
                   fontFamily: AppStrings.interFontFamily,
