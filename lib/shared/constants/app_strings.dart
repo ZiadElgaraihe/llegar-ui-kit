@@ -22,6 +22,9 @@ abstract class AppStrings {
   ///search
   static const String searchHeroTag = 'search';
 
+  ///my wishlist item
+  static const String topDealsItemHeroTag = 'top deals item';
+
   /******************************language codes******************************/
   ///ar
   static const String arabicLanguageCode = 'ar';
