@@ -7,8 +7,8 @@ import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 import 'package:llegar/shared/utils/functions/value_based_on_theme.dart';
 
-class FilterRatingItem extends StatelessWidget {
-  const FilterRatingItem({
+class OptionsRatingItem extends StatelessWidget {
+  const OptionsRatingItem({
     super.key,
     required this.isSelected,
     required this.item,

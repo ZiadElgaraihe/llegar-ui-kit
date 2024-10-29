@@ -39,7 +39,7 @@ class ItemDetailsSection extends StatelessWidget {
                 ),
                 AppSizes.width8,
                 Text(
-                  '4.5 (70 ${translate(context).reviews})',
+                  '4 (70 ${translate(context).reviews})',
                   style: AppTextStyles.semiBold20(context).copyWith(
                     color: secondaryThemeColor(context),
                   ),
