@@ -14,7 +14,7 @@ class MyOrdersViewBody extends StatelessWidget {
       appearLeaveReviewButton: true,
       appearLikeButton: true,
       itemCount: 10,
-      heroTag: AppStrings.myOrdersItemHeroTag,
+      prefixHeroTag: AppStrings.myOrdersItemHeroTag,
       onTap: (index) {
         Navigator.pushNamed(
           context,

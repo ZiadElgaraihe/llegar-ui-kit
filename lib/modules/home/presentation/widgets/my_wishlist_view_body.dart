@@ -13,14 +13,11 @@ class MyWishlistViewBody extends StatelessWidget {
     return ResponsiveItemsList(
       itemCount: 10,
       isLiked: true,
-      heroTag: AppStrings.myWishlistItemHeroTag,
+      prefixHeroTag: AppStrings.myWishlistItemHeroTag,
       onTap: (index) {
-        Navigator.pushNamed(
-          context,
-          AppRoutes.itemDetailsView,
-          // This is item details image hero tag,
-          arguments: '${AppStrings.myWishlistItemHeroTag}$index'
-        );
+        Navigator.pushNamed(context, AppRoutes.itemDetailsView,
+            // This is item details image hero tag,
+            arguments: '${AppStrings.myWishlistItemHeroTag}$index');
       },
     );
   }

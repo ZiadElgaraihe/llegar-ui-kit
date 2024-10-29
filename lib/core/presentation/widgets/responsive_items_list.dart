@@ -8,7 +8,7 @@ class ResponsiveItemsList extends StatelessWidget {
     required this.itemCount,
     this.appearLikeButton = true,
     this.appearLeaveReviewButton = false,
-    this.heroTag,
+    this.prefixHeroTag,
     this.isLiked = false,
     this.onLikeTapped,
     this.onTap,
@@ -17,7 +17,7 @@ class ResponsiveItemsList extends StatelessWidget {
 
   final bool appearLeaveReviewButton;
   final bool appearLikeButton;
-  final String? heroTag;
+  final String? prefixHeroTag;
   final bool isLiked;
   final int itemCount;
   final void Function(bool isLiked, int index)? onLikeTapped;
@@ -33,7 +33,7 @@ class ResponsiveItemsList extends StatelessWidget {
         itemBuilder: (context, index) => ItemWidget(
           appearLeaveReviewButton: appearLeaveReviewButton,
           appearLikeButton: appearLikeButton,
-          heroTag: '$heroTag$index',
+          heroTag: '$prefixHeroTag$index',
           isLiked: isLiked,
           onLikeTapped: (onLikeTapped != null)
               ? (isLiked) {
@@ -61,7 +61,7 @@ class ResponsiveItemsList extends StatelessWidget {
         itemBuilder: (context, index) => ItemWidget(
           appearLeaveReviewButton: appearLeaveReviewButton,
           appearLikeButton: appearLikeButton,
-          heroTag: '$heroTag$index',
+          heroTag: '$prefixHeroTag$index',
           isLiked: isLiked,
           onLikeTapped: (onLikeTapped != null)
               ? (isLiked) {
