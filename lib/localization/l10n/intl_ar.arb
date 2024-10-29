@@ -253,5 +253,8 @@
     "showComments": "عرض التعليقات",
     "price": "سعر",
     "rentNow": "استأجر الأن",
-    "makeAnOffer": "تقديم عرض"
+    "makeAnOffer": "تقديم عرض",
+    "enterYourOfferAmount": "أدخل مبلغ العرض الخاص بك",
+    "textMessage": "رسالة نصية",
+    "sendOffer": "إرسال العرض"
 }

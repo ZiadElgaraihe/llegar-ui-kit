@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_strings.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
@@ -42,17 +43,40 @@ class ItemDetailsFooterSection extends StatelessWidget {
               ),
             ],
           ),
+
           //This button will be hidden if the item is unavailable.
+          
+          //if item is negotiable use this code
+          // SizedBox(
+          //   width: 180,
+          //   child: CustomElevatedButton(
+          //     title: translate(context).makeAnOffer,
+          //     onPressed: () {
+          //       _onMakeAnOfferPressed(context);
+          //     },
+          //   ),
+          // ),
+
+          //if item is not negotiable use this code
           SizedBox(
             width: 180,
             child: CustomElevatedButton(
-              //if item is negotiable make title "translate(context).makeAnOffer"
               title: translate(context).rentNow,
-              onPressed: () {},
+              onPressed: () {
+                _onRentNowPressed(context);
+              },
             ),
-          )
+          ),
         ],
       ),
     );
+  }
+
+  // void _onMakeAnOfferPressed(BuildContext context) {
+  //   Navigator.pushNamed(context, AppRoutes.makeAnOfferView);
+  // }
+
+  void _onRentNowPressed(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.checkoutView);
   }
 }

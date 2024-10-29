@@ -253,5 +253,8 @@
     "showComments": "Show Comments",
     "price": "Price",
     "rentNow": "Rent Now",
-    "makeAnOffer": "Make an offer"
+    "makeAnOffer": "Make an offer",
+    "enterYourOfferAmount": "Enter your offer amount",
+    "textMessage": "Text Message",
+    "sendOffer": "Send Offer"
 }

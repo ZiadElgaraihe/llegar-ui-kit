@@ -770,4 +770,13 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get makeAnOffer => 'تقديم عرض';
+
+  @override
+  String get enterYourOfferAmount => 'أدخل مبلغ العرض الخاص بك';
+
+  @override
+  String get textMessage => 'رسالة نصية';
+
+  @override
+  String get sendOffer => 'إرسال العرض';
 }

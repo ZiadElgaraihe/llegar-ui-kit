@@ -5,6 +5,7 @@ import 'package:llegar/core/presentation/views/add_new_card_view.dart';
 import 'package:llegar/core/presentation/views/chat_view.dart';
 import 'package:llegar/core/presentation/views/item_details_view.dart';
 import 'package:llegar/core/presentation/views/item_reviews_view.dart';
+import 'package:llegar/core/presentation/views/make_an_offer_view.dart';
 import 'package:llegar/core/presentation/views/nav_bar_view.dart';
 import 'package:llegar/core/presentation/views/reset_password_view.dart';
 import 'package:llegar/core/presentation/views/success_view.dart';
@@ -64,6 +65,7 @@ abstract class AppRoutes {
   static const String itemReviewsView = '/ItemReviewsView';
   static const String languageView = '/LanguageView';
   static const String logInView = '/LogInView';
+  static const String makeAnOfferView = '/MakeAnOfferView';
   static const String myActivitiesView = '/MyActivitiesView';
   static const String myWishlistView = '/MyWishlistView';
   static const String myitemsView = '/MyItemsView';
@@ -262,6 +264,10 @@ abstract class AppRoutes {
       case itemReviewsView:
         return SideSlideTransition(
           page: const ItemReviewsView(),
+        );
+      case makeAnOfferView:
+        return SideSlideTransition(
+          page: const MakeAnOfferView(),
         );
     }
     return null;

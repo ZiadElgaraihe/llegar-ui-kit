@@ -770,4 +770,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get makeAnOffer => 'Make an offer';
+
+  @override
+  String get enterYourOfferAmount => 'Enter your offer amount';
+
+  @override
+  String get textMessage => 'Text Message';
+
+  @override
+  String get sendOffer => 'Send Offer';
 }

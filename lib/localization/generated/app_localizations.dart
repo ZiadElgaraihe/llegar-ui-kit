@@ -1624,6 +1624,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Make an offer'**
   String get makeAnOffer;
+
+  /// No description provided for @enterYourOfferAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your offer amount'**
+  String get enterYourOfferAmount;
+
+  /// No description provided for @textMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Text Message'**
+  String get textMessage;
+
+  /// No description provided for @sendOffer.
+  ///
+  /// In en, this message translates to:
+  /// **'Send Offer'**
+  String get sendOffer;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

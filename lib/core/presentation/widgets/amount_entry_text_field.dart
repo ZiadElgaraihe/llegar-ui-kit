@@ -4,8 +4,8 @@ import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/functions/theme_colors.dart';
 
-class FundWalletTextField extends StatelessWidget {
-  const FundWalletTextField({
+class AmountEntryTextField extends StatelessWidget {
+  const AmountEntryTextField({
     super.key,
     required this.controller,
   });
