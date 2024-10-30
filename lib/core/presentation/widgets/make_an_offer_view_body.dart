@@ -6,42 +6,8 @@ import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
-class MakeAnOfferViewBody extends StatefulWidget {
+class MakeAnOfferViewBody extends StatelessWidget {
   const MakeAnOfferViewBody({super.key});
-
-  @override
-  State<MakeAnOfferViewBody> createState() => _MakeAnOfferViewBodyState();
-}
-
-class _MakeAnOfferViewBodyState extends State<MakeAnOfferViewBody> {
-  late TextEditingController _controller;
-
-  @override
-  void initState() {
-    super.initState();
-    _controller = TextEditingController(text: '\$');
-    _controller.addListener(_controllerListener);
-  }
-
-  @override
-  void dispose() {
-    _controller.removeListener(_controllerListener);
-    _controller.dispose();
-    super.dispose();
-  }
-
-  void _controllerListener() {
-    _enforceDollarPrefix();
-  }
-
-  ///Ensure that the user adheres to the requirement of commencing
-  ///the text input with the symbol "$"
-  void _enforceDollarPrefix() {
-    if (!_controller.text.startsWith('\$')) {
-      _controller.text = '\$${_controller.text}';
-      _controller.selection = const TextSelection.collapsed(offset: 1);
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -58,9 +24,7 @@ class _MakeAnOfferViewBodyState extends State<MakeAnOfferViewBody> {
                   style: AppTextStyles.bold16(context),
                 ),
                 AppSizes.height16,
-                AmountEntryTextField(
-                  controller: _controller,
-                ),
+                const AmountEntryTextField(),
                 AppSizes.height24,
                 CustomTextFormField(
                   hintText: translate(context).textMessage,

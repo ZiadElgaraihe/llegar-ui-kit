@@ -17,50 +17,30 @@ class FundMyWalletViewBody extends StatefulWidget {
 }
 
 class _FundMyWalletViewBodyState extends State<FundMyWalletViewBody> {
-  late TextEditingController _controller;
   late ValueNotifier<String?> _selectedAmount;
 
   @override
   void initState() {
     super.initState();
     _selectedAmount = ValueNotifier(null);
-    _controller = TextEditingController(text: '\$');
-    _controller.addListener(_controllerListener);
   }
 
   @override
   void dispose() {
-    _controller.removeListener(_controllerListener);
-    _controller.dispose();
     _selectedAmount.dispose();
     super.dispose();
   }
 
-  void _controllerListener() {
-    _enforceDollarPrefix();
-    _deselectAmount();
-  }
-
-  ///Ensure that the user adheres to the requirement of commencing
-  ///the text input with the symbol "$"
-  void _enforceDollarPrefix() {
-    if (!_controller.text.startsWith('\$')) {
-      _controller.text = '\$${_controller.text}';
-      _controller.selection = const TextSelection.collapsed(offset: 1);
-    }
-  }
-
   /// Deselect the selected amount if the user manually changes the text
-  void _deselectAmount() {
+  void _deselectAmount(String value) {
     if (_selectedAmount.value != null &&
-        _controller.text != '\$${_selectedAmount.value}') {
+        '\$${_selectedAmount.value}' != value) {
       _selectedAmount.value = null;
     }
   }
 
-  void _onFundAmountButtonTapped(selected) {
-    _controller.text = selected;
-    _selectedAmount.value = selected;
+  void _onFundAmountButtonTapped(String selectedAmount) {
+    _selectedAmount.value = selectedAmount;
   }
 
   @override
@@ -79,7 +59,8 @@ class _FundMyWalletViewBodyState extends State<FundMyWalletViewBody> {
                 ),
                 AppSizes.height16,
                 AmountEntryTextField(
-                  controller: _controller,
+                  onChanged: _deselectAmount,
+                  setValue: _setControllerValue,
                 ),
                 AppSizes.height24,
                 ValueListenableBuilder(
@@ -96,11 +77,29 @@ class _FundMyWalletViewBodyState extends State<FundMyWalletViewBody> {
           CustomSliverFillRemainingFooter(
             buttonTitle: translate(context).continueText,
             onPressed: () {
-              Navigator.pushNamed(context, AppRoutes.topUpElectronicWalletView);
+              _onContinuePressed(context);
             },
           ),
         ],
       ),
     );
+  }
+
+  /// Create listener to change controller text value every time 
+  /// _selectedAmount value changed
+  void _setControllerValue(TextEditingController controller) {
+    _selectedAmount.addListener(
+      () {
+        _selectedAmountListener(controller);
+      },
+    );
+  }
+
+  void _selectedAmountListener(TextEditingController controller) {
+    controller.text = _selectedAmount.value ?? '';
+  }
+
+  void _onContinuePressed(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.topUpElectronicWalletView);
   }
 }
