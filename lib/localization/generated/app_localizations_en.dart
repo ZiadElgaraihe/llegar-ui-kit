@@ -779,4 +779,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get sendOffer => 'Send Offer';
+
+  @override
+  String get yourOfferIsBeingProcessed => 'Your offer is being processed';
+
+  @override
+  String get pleaseCheckNotificationsPeriodically => 'Please check notifications periodically to see if your offer was accepted or rejected by the owner';
 }

@@ -45,7 +45,7 @@ class ItemDetailsFooterSection extends StatelessWidget {
           ),
 
           //This button will be hidden if the item is unavailable.
-          
+
           //if item is negotiable use this code
           // SizedBox(
           //   width: 180,
@@ -62,8 +62,8 @@ class ItemDetailsFooterSection extends StatelessWidget {
             width: 180,
             child: CustomElevatedButton(
               title: translate(context).rentNow,
-              onPressed: () {
-                _onRentNowPressed(context);
+              onFuturePressed: () async {
+                await _onRentNowPressed(context);
               },
             ),
           ),
@@ -76,7 +76,15 @@ class ItemDetailsFooterSection extends StatelessWidget {
   //   Navigator.pushNamed(context, AppRoutes.makeAnOfferView);
   // }
 
-  void _onRentNowPressed(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.checkoutView);
+  Future<void> _onRentNowPressed(BuildContext context) async {
+    //remove this & add your logic
+    await Future.delayed(const Duration(seconds: 2));
+
+    if (!context.mounted) return;
+    Navigator.pushNamedAndRemoveUntil(
+      context,
+      AppRoutes.offerProcessingView,
+      (route) => false,
+    );
   }
 }

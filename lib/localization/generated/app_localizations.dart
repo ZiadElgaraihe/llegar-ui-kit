@@ -1642,6 +1642,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Send Offer'**
   String get sendOffer;
+
+  /// No description provided for @yourOfferIsBeingProcessed.
+  ///
+  /// In en, this message translates to:
+  /// **'Your offer is being processed'**
+  String get yourOfferIsBeingProcessed;
+
+  /// No description provided for @pleaseCheckNotificationsPeriodically.
+  ///
+  /// In en, this message translates to:
+  /// **'Please check notifications periodically to see if your offer was accepted or rejected by the owner'**
+  String get pleaseCheckNotificationsPeriodically;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

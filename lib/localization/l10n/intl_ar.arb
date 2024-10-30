@@ -256,5 +256,7 @@
     "makeAnOffer": "تقديم عرض",
     "enterYourOfferAmount": "أدخل مبلغ العرض الخاص بك",
     "textMessage": "رسالة نصية",
-    "sendOffer": "إرسال العرض"
+    "sendOffer": "إرسال العرض",
+    "yourOfferIsBeingProcessed": "عرضك قيد المراجعة",
+    "pleaseCheckNotificationsPeriodically": "يُرجى التحقق من الإشعارات بشكل دوري لمعرفة ما إذا كان المالك قد قام بقبول عرضك أو رفضه"
 }

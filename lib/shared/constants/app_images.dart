@@ -66,6 +66,14 @@ abstract class AppImages {
   static const String offerAcceptedDark =
       'assets/images/dark/offer_accepted_dark.svg';
 
+  ///assets/images/light/offer_processing.svg
+  static const String offerProcessing =
+      'assets/images/light/offer_processing.svg';
+
+  ///assets/images/dark/offer_processing_dark.svg
+  static const String offerProcessingDark =
+      'assets/images/dark/offer_processing_dark.svg';
+
   ///assets/images/light/offer_rejected.svg
   static const String offerRejected = 'assets/images/light/offer_rejected.svg';
 

@@ -779,4 +779,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get sendOffer => 'إرسال العرض';
+
+  @override
+  String get yourOfferIsBeingProcessed => 'عرضك قيد المراجعة';
+
+  @override
+  String get pleaseCheckNotificationsPeriodically => 'يُرجى التحقق من الإشعارات بشكل دوري لمعرفة ما إذا كان المالك قد قام بقبول عرضك أو رفضه';
 }
