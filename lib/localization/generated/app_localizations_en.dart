@@ -785,4 +785,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get pleaseCheckNotificationsPeriodically => 'Please check notifications periodically to see if your offer was accepted or rejected by the owner';
+
+  @override
+  String get yourItem => 'Your Item';
+
+  @override
+  String get reject => 'Reject';
+
+  @override
+  String get accept => 'Accept';
+
+  @override
+  String get doYouReallyWantToRejectThisOffer => 'Do you really want to reject this offer?';
+
+  @override
+  String get doYouReallyWantToAcceptThisOffer => 'Do you really want to accept this offer?';
 }

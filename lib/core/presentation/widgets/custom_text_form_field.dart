@@ -8,7 +8,9 @@ import 'package:llegar/shared/constants/app_text_styles.dart';
 class CustomTextFormField extends StatelessWidget {
   const CustomTextFormField({
     super.key,
+    this.contentPadding,
     this.controller,
+    this.enabled,
     this.hintText,
     this.icon,
     this.inputFormatters,
@@ -18,11 +20,14 @@ class CustomTextFormField extends StatelessWidget {
     this.onSaved,
     this.readOnly = false,
     this.suffixIcon,
+    this.textAlign = TextAlign.start,
     this.textDirection,
     this.validator,
   });
 
+  final EdgeInsetsGeometry? contentPadding;
   final TextEditingController? controller;
+  final bool? enabled;
   final String? hintText;
   final String? icon;
   final List<TextInputFormatter>? inputFormatters;
@@ -32,6 +37,7 @@ class CustomTextFormField extends StatelessWidget {
   final void Function(String? newValue)? onSaved;
   final bool readOnly;
   final Widget? suffixIcon;
+  final TextAlign textAlign;
   final TextDirection? textDirection;
   final String? Function(String? value)? validator;
 
@@ -42,7 +48,9 @@ class CustomTextFormField extends StatelessWidget {
       readOnly: readOnly,
       minLines: minLines,
       maxLines: maxLines,
+      enabled: enabled,
       keyboardType: keyboardType,
+      textAlign: textAlign,
       textDirection: textDirection,
       obscureText: false,
       cursorColor: AppColors.prussianBlue,
@@ -54,6 +62,7 @@ class CustomTextFormField extends StatelessWidget {
       onSaved: onSaved,
       validator: validator,
       decoration: InputDecoration(
+        contentPadding: contentPadding,
         hintText: hintText,
         prefixIcon: (icon != null)
             ? Padding(

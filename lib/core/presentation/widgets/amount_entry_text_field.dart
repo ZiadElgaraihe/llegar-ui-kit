@@ -7,11 +7,14 @@ import 'package:llegar/shared/utils/functions/theme_colors.dart';
 class AmountEntryTextField extends StatefulWidget {
   const AmountEntryTextField({
     super.key,
+    this.enabled,
     this.onChanged,
     this.setValue,
   });
 
+  final bool? enabled;
   final void Function(String value)? onChanged;
+
   /// This method is used to set controller value
   final void Function(TextEditingController controller)? setValue;
 
@@ -27,7 +30,7 @@ class _AmountEntryTextFieldState extends State<AmountEntryTextField> {
     super.initState();
     _controller = TextEditingController(text: '\$');
     _controller.addListener(_controllerListener);
-    if(widget.setValue != null){
+    if (widget.setValue != null) {
       widget.setValue!(_controller);
     }
   }
@@ -56,6 +59,7 @@ class _AmountEntryTextFieldState extends State<AmountEntryTextField> {
   Widget build(BuildContext context) {
     return TextField(
       controller: _controller,
+      enabled: widget.enabled,
       textAlign: TextAlign.center,
       textDirection: TextDirection.ltr,
       keyboardType: TextInputType.number,
@@ -80,6 +84,7 @@ class _AmountEntryTextFieldState extends State<AmountEntryTextField> {
         ),
         enabledBorder: _getBorderStyle(context),
         focusedBorder: _getBorderStyle(context),
+        disabledBorder: _getBorderStyle(context),
       ),
     );
   }

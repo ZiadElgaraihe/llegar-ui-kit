@@ -785,4 +785,19 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get pleaseCheckNotificationsPeriodically => 'يُرجى التحقق من الإشعارات بشكل دوري لمعرفة ما إذا كان المالك قد قام بقبول عرضك أو رفضه';
+
+  @override
+  String get yourItem => 'العنصر الخاص بك';
+
+  @override
+  String get reject => 'رفض';
+
+  @override
+  String get accept => 'قبول';
+
+  @override
+  String get doYouReallyWantToRejectThisOffer => 'هل ترغب حقاً في رفض هذا العرض ؟';
+
+  @override
+  String get doYouReallyWantToAcceptThisOffer => 'هل ترغب حقاً في قبول هذا العرض ؟';
 }

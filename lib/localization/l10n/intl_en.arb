@@ -258,5 +258,10 @@
     "textMessage": "Text Message",
     "sendOffer": "Send Offer",
     "yourOfferIsBeingProcessed": "Your offer is being processed",
-    "pleaseCheckNotificationsPeriodically": "Please check notifications periodically to see if your offer was accepted or rejected by the owner"
+    "pleaseCheckNotificationsPeriodically": "Please check notifications periodically to see if your offer was accepted or rejected by the owner",
+    "yourItem": "Your Item",
+    "reject": "Reject",
+    "accept": "Accept",
+    "doYouReallyWantToRejectThisOffer": "Do you really want to reject this offer?",
+    "doYouReallyWantToAcceptThisOffer": "Do you really want to accept this offer?"
 }

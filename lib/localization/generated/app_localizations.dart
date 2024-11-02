@@ -1654,6 +1654,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Please check notifications periodically to see if your offer was accepted or rejected by the owner'**
   String get pleaseCheckNotificationsPeriodically;
+
+  /// No description provided for @yourItem.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Item'**
+  String get yourItem;
+
+  /// No description provided for @reject.
+  ///
+  /// In en, this message translates to:
+  /// **'Reject'**
+  String get reject;
+
+  /// No description provided for @accept.
+  ///
+  /// In en, this message translates to:
+  /// **'Accept'**
+  String get accept;
+
+  /// No description provided for @doYouReallyWantToRejectThisOffer.
+  ///
+  /// In en, this message translates to:
+  /// **'Do you really want to reject this offer?'**
+  String get doYouReallyWantToRejectThisOffer;
+
+  /// No description provided for @doYouReallyWantToAcceptThisOffer.
+  ///
+  /// In en, this message translates to:
+  /// **'Do you really want to accept this offer?'**
+  String get doYouReallyWantToAcceptThisOffer;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

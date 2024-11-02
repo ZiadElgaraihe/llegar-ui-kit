@@ -21,6 +21,7 @@ import 'package:llegar/modules/home/presentation/views/checkout_payment_view.dar
 import 'package:llegar/modules/home/presentation/views/checkout_view.dart';
 import 'package:llegar/modules/home/presentation/views/my_wishlist_view.dart';
 import 'package:llegar/modules/home/presentation/views/notification_view.dart';
+import 'package:llegar/modules/home/presentation/views/offer_recieved_view.dart';
 import 'package:llegar/modules/home/presentation/views/offer_result_view.dart';
 import 'package:llegar/modules/home/presentation/views/search_view.dart';
 import 'package:llegar/modules/home/presentation/views/shipping_address_view.dart';
@@ -72,11 +73,12 @@ abstract class AppRoutes {
   static const String myitemsView = '/MyItemsView';
   static const String navBarView = '/NavBarView';
   static const String notificationView = '/NotificationView';
+  static const String offerProcessingView = '/OfferProcessingView';
+  static const String offerRecievedView = '/OfferRecievedView';
   static const String offerResultView = '/OfferResultView';
   static const String otpView = '/OtpView';
   static const String premiumPackagePaymentView = '/PremiumPackagePaymentView';
   static const String privacyPolicyView = '/PrivacyPolicyView';
-  static const String offerProcessingView = '/OfferProcessingView';
   static const String resetPasswordView = '/ResetPasswordView';
   static const String reviewSummaryView = '/ReviewSummaryView';
   static const String searchView = '/SearchView';
@@ -274,6 +276,10 @@ abstract class AppRoutes {
       case offerProcessingView:
         return BottomSlideTransition(
           page: const OfferProcessingView(),
+        );
+      case offerRecievedView:
+        return SideSlideTransition(
+          page: const OfferRecievedView(),
         );
     }
     return null;

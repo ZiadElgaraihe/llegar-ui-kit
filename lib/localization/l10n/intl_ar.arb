@@ -258,5 +258,10 @@
     "textMessage": "رسالة نصية",
     "sendOffer": "إرسال العرض",
     "yourOfferIsBeingProcessed": "عرضك قيد المراجعة",
-    "pleaseCheckNotificationsPeriodically": "يُرجى التحقق من الإشعارات بشكل دوري لمعرفة ما إذا كان المالك قد قام بقبول عرضك أو رفضه"
+    "pleaseCheckNotificationsPeriodically": "يُرجى التحقق من الإشعارات بشكل دوري لمعرفة ما إذا كان المالك قد قام بقبول عرضك أو رفضه",
+    "yourItem": "العنصر الخاص بك",
+    "reject": "رفض",
+    "accept": "قبول",
+    "doYouReallyWantToRejectThisOffer": "هل ترغب حقاً في رفض هذا العرض ؟",
+    "doYouReallyWantToAcceptThisOffer": "هل ترغب حقاً في قبول هذا العرض ؟"
 }
