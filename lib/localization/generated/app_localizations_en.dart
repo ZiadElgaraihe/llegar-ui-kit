@@ -743,4 +743,85 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get confirm => 'Confirm';
+
+  @override
+  String get reviews => 'reviews';
+
+  @override
+  String get available => 'Available';
+
+  @override
+  String get notAvailable => 'Not Available';
+
+  @override
+  String get notNegotiable => 'Not Negotiable';
+
+  @override
+  String get seeHisPage => 'See His Page';
+
+  @override
+  String get showComments => 'Show Comments';
+
+  @override
+  String get price => 'Price';
+
+  @override
+  String get rentNow => 'Rent Now';
+
+  @override
+  String get makeAnOffer => 'Make an offer';
+
+  @override
+  String get enterYourOfferAmount => 'Enter your offer amount';
+
+  @override
+  String get textMessage => 'Text Message';
+
+  @override
+  String get sendOffer => 'Send Offer';
+
+  @override
+  String get yourOfferIsBeingProcessed => 'Your offer is being processed';
+
+  @override
+  String get pleaseCheckNotificationsPeriodically => 'Please check notifications periodically to see if your offer was accepted or rejected by the owner';
+
+  @override
+  String get yourItem => 'Your Item';
+
+  @override
+  String get reject => 'Reject';
+
+  @override
+  String get accept => 'Accept';
+
+  @override
+  String get doYouReallyWantToRejectThisOffer => 'Do you really want to reject this offer?';
+
+  @override
+  String get doYouReallyWantToAcceptThisOffer => 'Do you really want to accept this offer?';
+
+  @override
+  String get madeDeposit => 'Made a Deposit';
+
+  @override
+  String get notMadeDeposit => 'Not Made a Deposit';
+
+  @override
+  String get paymentVerified => 'Payment Verified';
+
+  @override
+  String get paymentNotVerified => 'Payment Not Verified';
+
+  @override
+  String get emailVerified => 'Email Verified';
+
+  @override
+  String get emailNotVerified => 'Email Not Verified';
+
+  @override
+  String get hasCompleteProfile => 'Has Complete Profile';
+
+  @override
+  String get hasNotCompleteProfile => 'Has Not Complete Profile';
 }

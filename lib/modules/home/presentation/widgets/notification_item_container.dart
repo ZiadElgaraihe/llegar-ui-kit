@@ -8,6 +8,7 @@ import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/enums/notification_type.dart';
+import 'package:llegar/shared/utils/functions/future_delayed_navigator.dart';
 import 'package:llegar/shared/utils/functions/theme_colors.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
@@ -79,7 +80,9 @@ class NotificationItemContainer extends StatelessWidget {
             AppSizes.height12,
             OutlinedButton(
               onPressed: () {
-                _onViewDetailsPressed(context);
+                futureDelayedNavigator(() {
+                  _onViewDetailsPressed(context);
+                });
               },
               style: OutlinedButton.styleFrom(
                 fixedSize: const Size(155, 42),
@@ -100,6 +103,7 @@ class NotificationItemContainer extends StatelessWidget {
 
   void _onViewDetailsPressed(BuildContext context) {
     if (notification.notificationType == NotificationType.receivedOffer) {
+      Navigator.pushNamed(context, AppRoutes.offerRecievedView);
     } else {
       Navigator.pushNamed(
         context,

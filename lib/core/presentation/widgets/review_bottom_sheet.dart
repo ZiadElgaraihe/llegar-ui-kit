@@ -58,7 +58,13 @@ class ReviewBottomSheet extends StatelessWidget {
                       AppSizes.width36,
                       Flexible(
                         child: CustomElevatedButton(
-                          onFuturePressed: () async {},
+                          onFuturePressed: () async {
+                            //remove this & add your logic
+                            await Future.delayed(const Duration(seconds: 2));
+
+                            if (!context.mounted) return;
+                            Navigator.pop(context);
+                          },
                           title: translate(context).submit,
                         ),
                       ),

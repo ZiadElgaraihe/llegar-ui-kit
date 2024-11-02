@@ -1570,6 +1570,168 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Confirm'**
   String get confirm;
+
+  /// No description provided for @reviews.
+  ///
+  /// In en, this message translates to:
+  /// **'reviews'**
+  String get reviews;
+
+  /// No description provided for @available.
+  ///
+  /// In en, this message translates to:
+  /// **'Available'**
+  String get available;
+
+  /// No description provided for @notAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Not Available'**
+  String get notAvailable;
+
+  /// No description provided for @notNegotiable.
+  ///
+  /// In en, this message translates to:
+  /// **'Not Negotiable'**
+  String get notNegotiable;
+
+  /// No description provided for @seeHisPage.
+  ///
+  /// In en, this message translates to:
+  /// **'See His Page'**
+  String get seeHisPage;
+
+  /// No description provided for @showComments.
+  ///
+  /// In en, this message translates to:
+  /// **'Show Comments'**
+  String get showComments;
+
+  /// No description provided for @price.
+  ///
+  /// In en, this message translates to:
+  /// **'Price'**
+  String get price;
+
+  /// No description provided for @rentNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Rent Now'**
+  String get rentNow;
+
+  /// No description provided for @makeAnOffer.
+  ///
+  /// In en, this message translates to:
+  /// **'Make an offer'**
+  String get makeAnOffer;
+
+  /// No description provided for @enterYourOfferAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your offer amount'**
+  String get enterYourOfferAmount;
+
+  /// No description provided for @textMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Text Message'**
+  String get textMessage;
+
+  /// No description provided for @sendOffer.
+  ///
+  /// In en, this message translates to:
+  /// **'Send Offer'**
+  String get sendOffer;
+
+  /// No description provided for @yourOfferIsBeingProcessed.
+  ///
+  /// In en, this message translates to:
+  /// **'Your offer is being processed'**
+  String get yourOfferIsBeingProcessed;
+
+  /// No description provided for @pleaseCheckNotificationsPeriodically.
+  ///
+  /// In en, this message translates to:
+  /// **'Please check notifications periodically to see if your offer was accepted or rejected by the owner'**
+  String get pleaseCheckNotificationsPeriodically;
+
+  /// No description provided for @yourItem.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Item'**
+  String get yourItem;
+
+  /// No description provided for @reject.
+  ///
+  /// In en, this message translates to:
+  /// **'Reject'**
+  String get reject;
+
+  /// No description provided for @accept.
+  ///
+  /// In en, this message translates to:
+  /// **'Accept'**
+  String get accept;
+
+  /// No description provided for @doYouReallyWantToRejectThisOffer.
+  ///
+  /// In en, this message translates to:
+  /// **'Do you really want to reject this offer?'**
+  String get doYouReallyWantToRejectThisOffer;
+
+  /// No description provided for @doYouReallyWantToAcceptThisOffer.
+  ///
+  /// In en, this message translates to:
+  /// **'Do you really want to accept this offer?'**
+  String get doYouReallyWantToAcceptThisOffer;
+
+  /// No description provided for @madeDeposit.
+  ///
+  /// In en, this message translates to:
+  /// **'Made a Deposit'**
+  String get madeDeposit;
+
+  /// No description provided for @notMadeDeposit.
+  ///
+  /// In en, this message translates to:
+  /// **'Not Made a Deposit'**
+  String get notMadeDeposit;
+
+  /// No description provided for @paymentVerified.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment Verified'**
+  String get paymentVerified;
+
+  /// No description provided for @paymentNotVerified.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment Not Verified'**
+  String get paymentNotVerified;
+
+  /// No description provided for @emailVerified.
+  ///
+  /// In en, this message translates to:
+  /// **'Email Verified'**
+  String get emailVerified;
+
+  /// No description provided for @emailNotVerified.
+  ///
+  /// In en, this message translates to:
+  /// **'Email Not Verified'**
+  String get emailNotVerified;
+
+  /// No description provided for @hasCompleteProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Has Complete Profile'**
+  String get hasCompleteProfile;
+
+  /// No description provided for @hasNotCompleteProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Has Not Complete Profile'**
+  String get hasNotCompleteProfile;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

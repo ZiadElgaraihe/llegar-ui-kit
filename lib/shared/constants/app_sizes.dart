@@ -27,7 +27,7 @@ abstract class AppSizes {
       );
 
   ///if width < 600 then padding is 16 horizontally
-  ///else then padding is 24 horizontally, 
+  ///else then padding is 24 horizontally,
   ///24 vertically
   static EdgeInsets bodySymmetricPadding(BuildContext context) =>
       EdgeInsets.symmetric(

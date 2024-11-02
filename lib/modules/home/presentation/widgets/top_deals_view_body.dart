@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/responsive_items_list.dart';
 import 'package:llegar/modules/home/presentation/widgets/options_bar.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
+import 'package:llegar/shared/constants/app_strings.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
 class TopDealsViewBody extends StatelessWidget {
@@ -35,6 +37,15 @@ class TopDealsViewBody extends StatelessWidget {
               bottom: 24,
             ),
             itemCount: 10,
+            prefixHeroTag: AppStrings.topDealsItemHeroTag,
+            onTap: (index) {
+              Navigator.pushNamed(
+                context,
+                AppRoutes.itemDetailsView,
+                // This is item details image hero tag,
+                arguments: '${AppStrings.topDealsItemHeroTag}$index',
+              );
+            },
           ),
         ),
       ],

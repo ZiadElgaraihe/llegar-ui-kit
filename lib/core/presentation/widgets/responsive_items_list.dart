@@ -8,16 +8,20 @@ class ResponsiveItemsList extends StatelessWidget {
     required this.itemCount,
     this.appearLikeButton = true,
     this.appearLeaveReviewButton = false,
+    this.prefixHeroTag,
     this.isLiked = false,
     this.onLikeTapped,
+    this.onTap,
     this.padding,
   });
 
   final bool appearLeaveReviewButton;
   final bool appearLikeButton;
+  final String? prefixHeroTag;
   final bool isLiked;
   final int itemCount;
-  final void Function(bool isLiked)? onLikeTapped;
+  final void Function(bool isLiked, int index)? onLikeTapped;
+  final void Function(int index)? onTap;
   final EdgeInsets? padding;
 
   @override
@@ -29,8 +33,18 @@ class ResponsiveItemsList extends StatelessWidget {
         itemBuilder: (context, index) => ItemWidget(
           appearLeaveReviewButton: appearLeaveReviewButton,
           appearLikeButton: appearLikeButton,
+          heroTag: '$prefixHeroTag$index',
           isLiked: isLiked,
-          onLikeTapped: onLikeTapped,
+          onLikeTapped: (onLikeTapped != null)
+              ? (isLiked) {
+                  onLikeTapped!(isLiked, index);
+                }
+              : null,
+          onTap: (onTap != null)
+              ? () {
+                  onTap!(index);
+                }
+              : null,
         ),
         separatorBuilder: (context, index) => AppSizes.height24,
       );
@@ -47,8 +61,18 @@ class ResponsiveItemsList extends StatelessWidget {
         itemBuilder: (context, index) => ItemWidget(
           appearLeaveReviewButton: appearLeaveReviewButton,
           appearLikeButton: appearLikeButton,
+          heroTag: '$prefixHeroTag$index',
           isLiked: isLiked,
-          onLikeTapped: onLikeTapped,
+          onLikeTapped: (onLikeTapped != null)
+              ? (isLiked) {
+                  onLikeTapped!(isLiked, index);
+                }
+              : null,
+          onTap: (onTap != null)
+              ? () {
+                  onTap!(index);
+                }
+              : null,
         ),
       );
     }

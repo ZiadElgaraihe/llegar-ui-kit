@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
 import 'package:llegar/core/presentation/widgets/custom_secondary_elevated_button.dart';
 import 'package:llegar/modules/home/presentation/widgets/filter_price_range_section.dart';
-import 'package:llegar/modules/home/presentation/widgets/filter_rating_item.dart';
 import 'package:llegar/modules/home/presentation/widgets/filter_section.dart';
+import 'package:llegar/core/presentation/widgets/options_rating_item.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
@@ -63,7 +63,7 @@ class FilterBottomSheet extends StatelessWidget {
                 ],
                 onSelectCategory: (value) {},
                 title: translate(context).rating,
-                builder: (item, isSelected) => FilterRatingItem(
+                builder: (item, isSelected) => OptionsRatingItem(
                   item: item,
                   isSelected: isSelected,
                 ),

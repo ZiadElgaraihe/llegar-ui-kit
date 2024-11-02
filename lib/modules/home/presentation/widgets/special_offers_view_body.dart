@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/modules/home/presentation/widgets/special_offers_container.dart';
 import 'package:llegar/modules/home/presentation/widgets/special_offers_item.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 
 class SpecialOffersViewBody extends StatelessWidget {
@@ -14,9 +15,14 @@ class SpecialOffersViewBody extends StatelessWidget {
       return ListView.separated(
         padding: AppSizes.bodySymmetricPadding(context),
         itemCount: 4,
-        itemBuilder: (context, index) => const Center(
-          child: SpecialOffersConatiner(
-            child: SpecialOffersItem(),
+        itemBuilder: (context, index) => Center(
+          child: GestureDetector(
+            onTap: () {
+              _onItemTapped(context);
+            },
+            child: const SpecialOffersConatiner(
+              child: SpecialOffersItem(),
+            ),
           ),
         ),
         separatorBuilder: (context, index) => AppSizes.height24,
@@ -31,10 +37,19 @@ class SpecialOffersViewBody extends StatelessWidget {
         ),
         padding: AppSizes.bodySymmetricPadding(context),
         itemCount: 4,
-        itemBuilder: (context, index) => const SpecialOffersConatiner(
-          child: SpecialOffersItem(),
+        itemBuilder: (context, index) => GestureDetector(
+          onTap: () {
+            _onItemTapped(context);
+          },
+          child: const SpecialOffersConatiner(
+            child: SpecialOffersItem(),
+          ),
         ),
       );
     }
+  }
+
+  void _onItemTapped(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.itemDetailsView);
   }
 }

@@ -5,6 +5,7 @@ import 'package:llegar/core/presentation/widgets/rating_row_widget.dart';
 import 'package:llegar/shared/constants/app_images.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
+import 'package:llegar/shared/utils/functions/future_delayed_navigator.dart';
 import 'package:llegar/shared/utils/functions/theme_colors.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
@@ -15,76 +16,95 @@ class ItemWidget extends StatelessWidget {
     this.appearLikeButton = true,
     this.isLiked = false,
     this.onLikeTapped,
+    this.onTap,
+    this.heroTag,
   });
 
   final bool appearLeaveReviewButton;
   final bool appearLikeButton;
+  final String? heroTag;
 
   ///This is initial value you can get current value from onLikeTapped
   final bool isLiked;
   final void Function(bool isLiked)? onLikeTapped;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Stack(
+    return MouseRegion(
+      cursor: (onTap != null)
+          ? WidgetStateMouseCursor.clickable
+          : MouseCursor.defer,
+      child: GestureDetector(
+        onTap: (onTap != null)
+            ? () {
+                futureDelayedNavigator(onTap!);
+              }
+            : null,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            AspectRatio(
-              aspectRatio: 382 / 307,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(24),
-                child: Image.asset(
-                  AppImages.car,
-                  fit: BoxFit.fill,
+            Stack(
+              children: [
+                AspectRatio(
+                  aspectRatio: 382 / 307,
+                  child: Hero(
+                    tag: '$heroTag',
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(24),
+                      child: Image.asset(
+                        AppImages.camera,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
                 ),
-              ),
+                if (appearLikeButton)
+                  PositionedDirectional(
+                    top: 16,
+                    end: 16,
+                    child: CustomLikeButton(
+                      isLiked: isLiked,
+                      onLikeTapped: onLikeTapped,
+                    ),
+                  ),
+                if (appearLeaveReviewButton)
+                  const PositionedDirectional(
+                    top: 16,
+                    start: 16,
+                    child: LeaveReviewButton(),
+                  ),
+              ],
             ),
-            if (appearLikeButton)
-              PositionedDirectional(
-                top: 16,
-                end: 16,
-                child: CustomLikeButton(
-                  isLiked: isLiked,
-                  onLikeTapped: onLikeTapped,
+            AppSizes.height8,
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    'Canon EOS R6, cairo',
+                    style: AppTextStyles.bold20(context),
+                  ),
                 ),
+                const RatingRowWidget(),
+              ],
+            ),
+            AppSizes.height8,
+            Text(
+              'It features a full-frame CMOS sensor with a resolution of 20.1 megapixels and is capable of shooting up to 12 frames per second with the mechanical shutter or up to 20 frames per second with the electronic shutter.',
+              style: AppTextStyles.semiBold16(context).copyWith(
+                color: secondaryThemeColor(context),
               ),
-            if (appearLeaveReviewButton)
-              const PositionedDirectional(
-                top: 16,
-                start: 16,
-                child: LeaveReviewButton(),
-              ),
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+            ),
+            AppSizes.height4,
+            Text(
+              '\$50 /${translate(context).day}',
+              style: AppTextStyles.bold20(context),
+            ),
           ],
         ),
-        AppSizes.height8,
-        Row(
-          children: [
-            Expanded(
-              child: Text(
-                'Car, Giza',
-                style: AppTextStyles.bold20(context),
-              ),
-            ),
-            const RatingRowWidget(),
-          ],
-        ),
-        AppSizes.height8,
-        Text(
-          'This spacious BMW is perfect for long drives and local errands.',
-          style: AppTextStyles.semiBold16(context).copyWith(
-            color: secondaryThemeColor(context),
-          ),
-          maxLines: 2,
-          overflow: TextOverflow.ellipsis,
-        ),
-        AppSizes.height4,
-        Text(
-          '\$230 /${translate(context).day}',
-          style: AppTextStyles.bold20(context),
-        ),
-      ],
+      ),
     );
   }
 }

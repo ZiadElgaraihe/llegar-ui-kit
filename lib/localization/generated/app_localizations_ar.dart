@@ -743,4 +743,85 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get confirm => 'تأكيد';
+
+  @override
+  String get reviews => 'مراجعة';
+
+  @override
+  String get available => 'متاح';
+
+  @override
+  String get notAvailable => 'غير متاح';
+
+  @override
+  String get notNegotiable => 'غير قابل للتفاوض';
+
+  @override
+  String get seeHisPage => 'عرض صفحته';
+
+  @override
+  String get showComments => 'عرض التعليقات';
+
+  @override
+  String get price => 'سعر';
+
+  @override
+  String get rentNow => 'استأجر الأن';
+
+  @override
+  String get makeAnOffer => 'تقديم عرض';
+
+  @override
+  String get enterYourOfferAmount => 'أدخل مبلغ العرض الخاص بك';
+
+  @override
+  String get textMessage => 'رسالة نصية';
+
+  @override
+  String get sendOffer => 'إرسال العرض';
+
+  @override
+  String get yourOfferIsBeingProcessed => 'عرضك قيد المراجعة';
+
+  @override
+  String get pleaseCheckNotificationsPeriodically => 'يُرجى التحقق من الإشعارات بشكل دوري لمعرفة ما إذا كان المالك قد قام بقبول عرضك أو رفضه';
+
+  @override
+  String get yourItem => 'العنصر الخاص بك';
+
+  @override
+  String get reject => 'رفض';
+
+  @override
+  String get accept => 'قبول';
+
+  @override
+  String get doYouReallyWantToRejectThisOffer => 'هل ترغب حقاً في رفض هذا العرض ؟';
+
+  @override
+  String get doYouReallyWantToAcceptThisOffer => 'هل ترغب حقاً في قبول هذا العرض ؟';
+
+  @override
+  String get madeDeposit => 'قام بعمل إيداع';
+
+  @override
+  String get notMadeDeposit => 'لم يقم بعمل إيداع';
+
+  @override
+  String get paymentVerified => 'تم التحقق من وسيلة الدفع';
+
+  @override
+  String get paymentNotVerified => 'لم يتم التحقق من وسيلة الدفع';
+
+  @override
+  String get emailVerified => 'تم التحقق من البريد الإلكتروني';
+
+  @override
+  String get emailNotVerified => 'لم يتم التحقق من البريد الإلكتروني';
+
+  @override
+  String get hasCompleteProfile => 'ملف شخصي مكتمل';
+
+  @override
+  String get hasNotCompleteProfile => 'ملف شخصي غير مكتمل';
 }

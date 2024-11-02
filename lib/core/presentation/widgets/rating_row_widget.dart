@@ -14,6 +14,7 @@ class RatingRowWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisSize: MainAxisSize.min,
       children: [
         SvgPicture.asset(
           AppIcons.star,
@@ -27,7 +28,7 @@ class RatingRowWidget extends StatelessWidget {
         ),
         AppSizes.width4,
         Text(
-          '4.5',
+          '4',
           style: AppTextStyles.semiBold20(context),
         ),
       ],

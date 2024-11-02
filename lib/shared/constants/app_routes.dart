@@ -3,7 +3,12 @@ import 'package:llegar/core/domain/entities/chat_entity.dart';
 import 'package:llegar/core/domain/entities/success_view_entity.dart';
 import 'package:llegar/core/presentation/views/add_new_card_view.dart';
 import 'package:llegar/core/presentation/views/chat_view.dart';
+import 'package:llegar/core/presentation/views/item_details_view.dart';
+import 'package:llegar/core/presentation/views/item_reviews_view.dart';
+import 'package:llegar/core/presentation/views/make_an_offer_view.dart';
 import 'package:llegar/core/presentation/views/nav_bar_view.dart';
+import 'package:llegar/core/presentation/views/offer_processing_view.dart';
+import 'package:llegar/core/presentation/views/profile_summary_view.dart';
 import 'package:llegar/core/presentation/views/reset_password_view.dart';
 import 'package:llegar/core/presentation/views/success_view.dart';
 import 'package:llegar/modules/auth/presentation/views/forget_password_view.dart';
@@ -17,6 +22,7 @@ import 'package:llegar/modules/home/presentation/views/checkout_payment_view.dar
 import 'package:llegar/modules/home/presentation/views/checkout_view.dart';
 import 'package:llegar/modules/home/presentation/views/my_wishlist_view.dart';
 import 'package:llegar/modules/home/presentation/views/notification_view.dart';
+import 'package:llegar/modules/home/presentation/views/offer_recieved_view.dart';
 import 'package:llegar/modules/home/presentation/views/offer_result_view.dart';
 import 'package:llegar/modules/home/presentation/views/search_view.dart';
 import 'package:llegar/modules/home/presentation/views/shipping_address_view.dart';
@@ -58,17 +64,23 @@ abstract class AppRoutes {
   static const String fundMyWalletView = '/FundMyWalletView';
   static const String helpCenterView = '/HelpCenterView';
   static const String howDidYouKnowUsView = '/HowDidYouKnowUsView';
+  static const String itemDetailsView = '/ItemDetailsView';
+  static const String itemReviewsView = '/ItemReviewsView';
   static const String languageView = '/LanguageView';
   static const String logInView = '/LogInView';
+  static const String makeAnOfferView = '/MakeAnOfferView';
   static const String myActivitiesView = '/MyActivitiesView';
   static const String myWishlistView = '/MyWishlistView';
   static const String myitemsView = '/MyItemsView';
   static const String navBarView = '/NavBarView';
   static const String notificationView = '/NotificationView';
+  static const String offerProcessingView = '/OfferProcessingView';
+  static const String offerRecievedView = '/OfferRecievedView';
   static const String offerResultView = '/OfferResultView';
   static const String otpView = '/OtpView';
   static const String premiumPackagePaymentView = '/PremiumPackagePaymentView';
   static const String privacyPolicyView = '/PrivacyPolicyView';
+  static const String profileSummaryView = '/ProfileSummaryView';
   static const String resetPasswordView = '/ResetPasswordView';
   static const String reviewSummaryView = '/ReviewSummaryView';
   static const String searchView = '/SearchView';
@@ -248,6 +260,34 @@ abstract class AppRoutes {
       case shippingAddressView:
         return SideSlideTransition(
           page: const ShippingAddressView(),
+        );
+      case itemDetailsView:
+        return SideSlideTransition(
+          page: ItemDetailsView(
+            heroTag: routeSettings.arguments as String?,
+          ),
+        );
+      case itemReviewsView:
+        return SideSlideTransition(
+          page: const ItemReviewsView(),
+        );
+      case makeAnOfferView:
+        return SideSlideTransition(
+          page: const MakeAnOfferView(),
+        );
+      case offerProcessingView:
+        return BottomSlideTransition(
+          page: const OfferProcessingView(),
+        );
+      case offerRecievedView:
+        return SideSlideTransition(
+          page: const OfferRecievedView(),
+        );
+      case profileSummaryView:
+        return SideSlideTransition(
+          page: ProfileSummaryView(
+            title: routeSettings.arguments as String,
+          ),
         );
     }
     return null;
