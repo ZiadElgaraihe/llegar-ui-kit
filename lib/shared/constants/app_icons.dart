@@ -55,6 +55,9 @@ abstract class AppIcons {
   static const String contactUsWhatsapp =
       'assets/icons/contact_us_whatsapp.svg';
 
+  ///assets/icons/credit_card.svg
+  static const String creditCard = 'assets/icons/credit_card.svg';
+
   ///assets/icons/crown.svg
   static const String crown = 'assets/icons/crown.svg';
 
@@ -145,6 +148,9 @@ abstract class AppIcons {
 
   ///assets/icons/password.svg
   static const String password = 'assets/icons/password.svg';
+
+  ///assets/icons/payment_dollar.svg
+  static const String paymentDollar = 'assets/icons/payment_dollar.svg';
 
   ///assets/icons/paypal.svg
   static const String paypal = 'assets/icons/paypal.svg';

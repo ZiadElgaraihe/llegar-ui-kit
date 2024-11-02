@@ -800,4 +800,28 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get doYouReallyWantToAcceptThisOffer => 'Do you really want to accept this offer?';
+
+  @override
+  String get madeDeposit => 'Made a Deposit';
+
+  @override
+  String get notMadeDeposit => 'Not Made a Deposit';
+
+  @override
+  String get paymentVerified => 'Payment Verified';
+
+  @override
+  String get paymentNotVerified => 'Payment Not Verified';
+
+  @override
+  String get emailVerified => 'Email Verified';
+
+  @override
+  String get emailNotVerified => 'Email Not Verified';
+
+  @override
+  String get hasCompleteProfile => 'Has Complete Profile';
+
+  @override
+  String get hasNotCompleteProfile => 'Has Not Complete Profile';
 }

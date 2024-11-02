@@ -8,6 +8,7 @@ import 'package:llegar/core/presentation/views/item_reviews_view.dart';
 import 'package:llegar/core/presentation/views/make_an_offer_view.dart';
 import 'package:llegar/core/presentation/views/nav_bar_view.dart';
 import 'package:llegar/core/presentation/views/offer_processing_view.dart';
+import 'package:llegar/core/presentation/views/profile_summary_view.dart';
 import 'package:llegar/core/presentation/views/reset_password_view.dart';
 import 'package:llegar/core/presentation/views/success_view.dart';
 import 'package:llegar/modules/auth/presentation/views/forget_password_view.dart';
@@ -79,6 +80,7 @@ abstract class AppRoutes {
   static const String otpView = '/OtpView';
   static const String premiumPackagePaymentView = '/PremiumPackagePaymentView';
   static const String privacyPolicyView = '/PrivacyPolicyView';
+  static const String profileSummaryView = '/ProfileSummaryView';
   static const String resetPasswordView = '/ResetPasswordView';
   static const String reviewSummaryView = '/ReviewSummaryView';
   static const String searchView = '/SearchView';
@@ -280,6 +282,12 @@ abstract class AppRoutes {
       case offerRecievedView:
         return SideSlideTransition(
           page: const OfferRecievedView(),
+        );
+      case profileSummaryView:
+        return SideSlideTransition(
+          page: ProfileSummaryView(
+            title: routeSettings.arguments as String,
+          ),
         );
     }
     return null;

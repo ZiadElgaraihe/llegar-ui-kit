@@ -5,7 +5,6 @@ import 'package:llegar/core/presentation/widgets/options_rating_item.dart';
 import 'package:llegar/modules/home/presentation/widgets/options_bar.dart';
 import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
-import 'package:llegar/shared/utils/functions/future_delayed_navigator.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
 class ItemReviewsViewBody extends StatelessWidget {
@@ -43,19 +42,11 @@ class ItemReviewsViewBody extends StatelessWidget {
               bottom: 24,
             ),
             itemCount: 10,
-            itemBuilder: (context, index) => InkWell(
+            itemBuilder: (context, index) => CommentWidget(
+              comment: 'This camera is awesome and give more details of picture.',
               onTap: () {
-                futureDelayedNavigator(
-                  () {
-                    _onCommentTapped(context);
-                  },
-                );
+                _onCommentTapped(context);
               },
-              borderRadius: BorderRadius.circular(18),
-              child: const Padding(
-                padding: EdgeInsets.all(8.0),
-                child: CommentWidget(),
-              ),
             ),
             separatorBuilder: (context, index) => AppSizes.height24,
           ),

@@ -1684,6 +1684,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Do you really want to accept this offer?'**
   String get doYouReallyWantToAcceptThisOffer;
+
+  /// No description provided for @madeDeposit.
+  ///
+  /// In en, this message translates to:
+  /// **'Made a Deposit'**
+  String get madeDeposit;
+
+  /// No description provided for @notMadeDeposit.
+  ///
+  /// In en, this message translates to:
+  /// **'Not Made a Deposit'**
+  String get notMadeDeposit;
+
+  /// No description provided for @paymentVerified.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment Verified'**
+  String get paymentVerified;
+
+  /// No description provided for @paymentNotVerified.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment Not Verified'**
+  String get paymentNotVerified;
+
+  /// No description provided for @emailVerified.
+  ///
+  /// In en, this message translates to:
+  /// **'Email Verified'**
+  String get emailVerified;
+
+  /// No description provided for @emailNotVerified.
+  ///
+  /// In en, this message translates to:
+  /// **'Email Not Verified'**
+  String get emailNotVerified;
+
+  /// No description provided for @hasCompleteProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Has Complete Profile'**
+  String get hasCompleteProfile;
+
+  /// No description provided for @hasNotCompleteProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Has Not Complete Profile'**
+  String get hasNotCompleteProfile;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

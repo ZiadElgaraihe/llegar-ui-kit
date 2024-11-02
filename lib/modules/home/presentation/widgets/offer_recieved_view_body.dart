@@ -4,6 +4,7 @@ import 'package:llegar/core/presentation/widgets/item_widget.dart';
 import 'package:llegar/core/presentation/widgets/profile_photo.dart';
 import 'package:llegar/modules/home/presentation/widgets/offer_info_section.dart';
 import 'package:llegar/modules/home/presentation/widgets/offer_recieved_actions_section.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_strings.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
@@ -34,7 +35,13 @@ class OfferRecievedViewBody extends StatelessWidget {
           Align(
             alignment: AlignmentDirectional.centerStart,
             child: ItemDetailsOutlinedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(
+                  context,
+                  AppRoutes.profileSummaryView,
+                  arguments: 'Atef Khaled',
+                );
+              },
               title: translate(context).seeHisPage,
             ),
           ),

@@ -263,5 +263,13 @@
     "reject": "رفض",
     "accept": "قبول",
     "doYouReallyWantToRejectThisOffer": "هل ترغب حقاً في رفض هذا العرض ؟",
-    "doYouReallyWantToAcceptThisOffer": "هل ترغب حقاً في قبول هذا العرض ؟"
+    "doYouReallyWantToAcceptThisOffer": "هل ترغب حقاً في قبول هذا العرض ؟",
+    "madeDeposit": "قام بعمل إيداع",
+    "notMadeDeposit": "لم يقم بعمل إيداع",
+    "paymentVerified": "تم التحقق من وسيلة الدفع",
+    "paymentNotVerified": "لم يتم التحقق من وسيلة الدفع",
+    "emailVerified": "تم التحقق من البريد الإلكتروني",
+    "emailNotVerified": "لم يتم التحقق من البريد الإلكتروني",
+    "hasCompleteProfile": "ملف شخصي مكتمل",
+    "hasNotCompleteProfile": "ملف شخصي غير مكتمل"
 }

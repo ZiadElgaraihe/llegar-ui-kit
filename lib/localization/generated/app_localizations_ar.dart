@@ -800,4 +800,28 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get doYouReallyWantToAcceptThisOffer => 'هل ترغب حقاً في قبول هذا العرض ؟';
+
+  @override
+  String get madeDeposit => 'قام بعمل إيداع';
+
+  @override
+  String get notMadeDeposit => 'لم يقم بعمل إيداع';
+
+  @override
+  String get paymentVerified => 'تم التحقق من وسيلة الدفع';
+
+  @override
+  String get paymentNotVerified => 'لم يتم التحقق من وسيلة الدفع';
+
+  @override
+  String get emailVerified => 'تم التحقق من البريد الإلكتروني';
+
+  @override
+  String get emailNotVerified => 'لم يتم التحقق من البريد الإلكتروني';
+
+  @override
+  String get hasCompleteProfile => 'ملف شخصي مكتمل';
+
+  @override
+  String get hasNotCompleteProfile => 'ملف شخصي غير مكتمل';
 }

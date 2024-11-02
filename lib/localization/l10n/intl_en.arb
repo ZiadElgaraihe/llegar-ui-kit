@@ -263,5 +263,13 @@
     "reject": "Reject",
     "accept": "Accept",
     "doYouReallyWantToRejectThisOffer": "Do you really want to reject this offer?",
-    "doYouReallyWantToAcceptThisOffer": "Do you really want to accept this offer?"
+    "doYouReallyWantToAcceptThisOffer": "Do you really want to accept this offer?",
+    "madeDeposit": "Made a Deposit",
+    "notMadeDeposit": "Not Made a Deposit",
+    "paymentVerified": "Payment Verified",
+    "paymentNotVerified": "Payment Not Verified",
+    "emailVerified": "Email Verified",
+    "emailNotVerified": "Email Not Verified",
+    "hasCompleteProfile": "Has Complete Profile",
+    "hasNotCompleteProfile": "Has Not Complete Profile"
 }
