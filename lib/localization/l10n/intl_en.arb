@@ -271,5 +271,6 @@
     "emailVerified": "Email Verified",
     "emailNotVerified": "Email Not Verified",
     "hasCompleteProfile": "Has Complete Profile",
-    "hasNotCompleteProfile": "Has Not Complete Profile"
+    "hasNotCompleteProfile": "Has Not Complete Profile",
+    "addNewLocation": "Add New Location"
 }

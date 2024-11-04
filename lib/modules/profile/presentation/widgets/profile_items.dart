@@ -101,9 +101,10 @@ class _ProfileItemsState extends State<ProfileItems> {
       ),
       ProfileItemEntity(
         icon: AppIcons.location,
-        initialValue: false,
-        onChanged: (value) {},
-        profileItemType: ProfileItemType.switchButton,
+        onTap: () {
+          Navigator.pushNamed(context, AppRoutes.locationView);
+        },
+        profileItemType: ProfileItemType.button,
         title: translate(context).location,
       ),
       ProfileItemEntity(

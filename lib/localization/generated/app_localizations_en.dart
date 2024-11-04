@@ -824,4 +824,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get hasNotCompleteProfile => 'Has Not Complete Profile';
+
+  @override
+  String get addNewLocation => 'Add New Location';
 }

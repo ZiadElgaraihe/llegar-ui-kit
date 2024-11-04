@@ -271,5 +271,6 @@
     "emailVerified": "تم التحقق من البريد الإلكتروني",
     "emailNotVerified": "لم يتم التحقق من البريد الإلكتروني",
     "hasCompleteProfile": "ملف شخصي مكتمل",
-    "hasNotCompleteProfile": "ملف شخصي غير مكتمل"
+    "hasNotCompleteProfile": "ملف شخصي غير مكتمل",
+    "addNewLocation": "إضافة موقع جديد"
 }

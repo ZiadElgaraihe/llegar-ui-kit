@@ -1732,6 +1732,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Has Not Complete Profile'**
   String get hasNotCompleteProfile;
+
+  /// No description provided for @addNewLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Add New Location'**
+  String get addNewLocation;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

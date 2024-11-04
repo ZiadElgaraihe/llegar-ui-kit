@@ -824,4 +824,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get hasNotCompleteProfile => 'ملف شخصي غير مكتمل';
+
+  @override
+  String get addNewLocation => 'إضافة موقع جديد';
 }

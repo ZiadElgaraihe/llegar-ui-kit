@@ -22,6 +22,8 @@ class ProfileItemEntity {
   }): assert(
     (profileItemType == ProfileItemType.switchButton && initialValue != null && onChanged != null && onTap == null) ||
     (profileItemType != ProfileItemType.switchButton && initialValue == null && onChanged == null && onTap != null),
-    'ProfileItemType must have the correct properties set based on the conditions.'
+    'Invalid properties for ProfileItemType $profileItemType: '
+    'For ProfileItemType.switchButton, set initialValue and onChanged (do not set onTap). '
+    'For other types, set onTap (do not set initialValue or onChanged).',
   );
 }
