@@ -10,20 +10,21 @@ class LocationsSection extends StatelessWidget {
 
   static const List<AddressEntity> _addresses = <AddressEntity>[
     AddressEntity(
-      address: '"123 Main St, Apt 4B, Anytown, State 12345"',
       title: 'Home',
+      isDefault: true,
+      address: '"123 Main St, Apt 4B, Anytown, State 12345"',
     ),
     AddressEntity(
-      address: '"789 Oak St, Unit 3B, Anytown, State 12345"',
       title: 'Office',
+      address: '"789 Oak St, Unit 3B, Anytown, State 12345"',
     ),
     AddressEntity(
-      address: '"123 Main St, Apt 4B, Anytown, State 12345"',
       title: 'Apartment',
+      address: '"123 Main St, Apt 4B, Anytown, State 12345"',
     ),
     AddressEntity(
-      address: '"123 Main St, Apt 4B, Anytown, State 12345"',
       title: 'Parent\'s House',
+      address: '"123 Main St, Apt 4B, Anytown, State 12345"',
     ),
   ];
 

@@ -827,4 +827,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get addNewLocation => 'إضافة موقع جديد';
+
+  @override
+  String get defaultText => 'إفتراضي';
 }

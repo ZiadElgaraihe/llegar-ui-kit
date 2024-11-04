@@ -1738,6 +1738,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Add New Location'**
   String get addNewLocation;
+
+  /// No description provided for @defaultText.
+  ///
+  /// In en, this message translates to:
+  /// **'Default'**
+  String get defaultText;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

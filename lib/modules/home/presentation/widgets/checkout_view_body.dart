@@ -35,6 +35,7 @@ class CheckoutViewBody extends StatelessWidget {
                   address: const AddressEntity(
                     address: '"123 Main St, Apt 4B, Anytown, State 12345"',
                     title: 'Home',
+                    isDefault: true,
                   ),
                   onEditTapped: () {
                     _onEditShippingAddressTapped(context);

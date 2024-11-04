@@ -17,6 +17,14 @@ abstract class AppTextStyles {
         fontWeight: FontWeight.w500,
       );
 
+  static TextStyle semiBold10(BuildContext context,
+          {bool responsive = false}) =>
+      TextStyle(
+        fontSize:
+            responsive ? _getResponsiveFontSize(context, fontSize: 10) : 10,
+        fontWeight: FontWeight.w600,
+      );
+
   static TextStyle regular11(BuildContext context, {bool responsive = false}) =>
       TextStyle(
         fontSize:
@@ -196,7 +204,7 @@ abstract class AppTextStyles {
             responsive ? _getResponsiveFontSize(context, fontSize: 32) : 32,
         fontWeight: FontWeight.w700,
       );
-  
+
   static TextStyle bold40(BuildContext context, {bool responsive = false}) =>
       TextStyle(
         fontSize:

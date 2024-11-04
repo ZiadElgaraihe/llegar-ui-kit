@@ -827,4 +827,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get addNewLocation => 'Add New Location';
+
+  @override
+  String get defaultText => 'Default';
 }

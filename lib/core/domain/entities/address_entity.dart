@@ -1,10 +1,12 @@
 class AddressEntity {
-  final String title;
   final String address;
+  final bool isDefault;
+  final String title;
   // final LatLng coordinates;
 
   const AddressEntity({
-    required this.title,
     required this.address,
+    required this.title,
+    this.isDefault = false,
   });
 }

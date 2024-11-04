@@ -20,20 +20,21 @@ class _ShippingAddressChoicesState extends State<ShippingAddressChoices> {
   int _selectedIndex = 0;
   final List<AddressEntity> _addresses = <AddressEntity>[
     const AddressEntity(
-      address: '"123 Main St, Apt 4B, Anytown, State 12345"',
       title: 'Home',
+      address: '"123 Main St, Apt 4B, Anytown, State 12345"',
+      isDefault: true,
     ),
     const AddressEntity(
-      address: '"789 Oak St, Unit 3B, Anytown, State 12345"',
       title: 'Office',
+      address: '"789 Oak St, Unit 3B, Anytown, State 12345"',
     ),
     const AddressEntity(
-      address: '"123 Main St, Apt 4B, Anytown, State 12345"',
       title: 'Apartment',
+      address: '"123 Main St, Apt 4B, Anytown, State 12345"',
     ),
     const AddressEntity(
-      address: '"123 Main St, Apt 4B, Anytown, State 12345"',
       title: 'Parent\'s House',
+      address: '"123 Main St, Apt 4B, Anytown, State 12345"',
     ),
   ];
   @override
