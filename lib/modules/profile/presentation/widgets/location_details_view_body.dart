@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
+import 'package:llegar/core/domain/entities/address_entity.dart';
 import 'package:llegar/modules/profile/presentation/widgets/location_draggable_sheet.dart';
 import 'package:llegar/modules/profile/presentation/widgets/location_map.dart';
 
 class LocationDetailsViewBody extends StatefulWidget {
   const LocationDetailsViewBody({
     super.key,
+    this.addressEntity,
   });
+
+  final AddressEntity? addressEntity;
 
   @override
   State<LocationDetailsViewBody> createState() =>
@@ -37,6 +41,7 @@ class _LocationDetailsViewBodyState extends State<LocationDetailsViewBody> {
       children: [
         LocationMap(
           mapController: _mapController,
+          initialLocation: widget.addressEntity?.coordinates,
           onTap: (tapPosition, point) {
             _draggableController.animateTo(
               0.6,
@@ -45,7 +50,10 @@ class _LocationDetailsViewBodyState extends State<LocationDetailsViewBody> {
             );
           },
         ),
-        LocationDraggableSheet(draggableController: _draggableController),
+        LocationDraggableSheet(
+          addressEntity: widget.addressEntity,
+          draggableController: _draggableController,
+        ),
         PositionedDirectional(
           top: 20,
           end: 12,

@@ -8,8 +8,10 @@ class LocationMap extends StatefulWidget {
     super.key,
     required this.mapController,
     required this.onTap,
+    this.initialLocation,
   });
 
+  final LatLng? initialLocation;
   final MapController mapController;
   final void Function(TapPosition tapPosition, LatLng point) onTap;
 
@@ -23,7 +25,7 @@ class _LocationMapState extends State<LocationMap> {
   @override
   void initState() {
     super.initState();
-    _latLng = ValueNotifier(null);
+    _latLng = ValueNotifier(widget.initialLocation);
   }
 
   @override
@@ -39,7 +41,8 @@ class _LocationMapState extends State<LocationMap> {
       child: FlutterMap(
         mapController: widget.mapController,
         options: MapOptions(
-          initialCenter: const LatLng(30.044170, 31.235665),
+          initialCenter:
+              widget.initialLocation ?? const LatLng(30.044170, 31.235665),
           initialZoom: 6,
           maxZoom: 18,
           minZoom: 6,

@@ -276,5 +276,6 @@
     "defaultText": "إفتراضي",
     "locationDetails": "تفاصيل الموقع",
     "locationName": "اسم الموقع",
-    "makeThisAsTheDefaultLocation": "اجعل هذا هو الموقع الافتراضي"
+    "makeThisAsTheDefaultLocation": "اجعل هذا هو الموقع الافتراضي",
+    "edit": "تعديل"
 }

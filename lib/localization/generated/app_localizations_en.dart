@@ -839,4 +839,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get makeThisAsTheDefaultLocation => 'Make this as the default location';
+
+  @override
+  String get edit => 'Edit';
 }

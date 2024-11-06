@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/core/domain/entities/address_entity.dart';
 import 'package:llegar/core/domain/entities/chat_entity.dart';
 import 'package:llegar/core/domain/entities/success_view_entity.dart';
 import 'package:llegar/core/presentation/views/add_new_card_view.dart';
@@ -299,7 +300,9 @@ abstract class AppRoutes {
         );
       case locationDetailsView:
         return SideSlideTransition(
-          page: const LocationDetailsView(),
+          page: LocationDetailsView(
+            addressEntity: routeSettings.arguments as AddressEntity?,
+          ),
         );
     }
     return null;

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/core/domain/entities/address_entity.dart';
 import 'package:llegar/core/presentation/widgets/custom_checkbox.dart';
 import 'package:llegar/core/presentation/widgets/custom_sliver_fill_remaining_footer.dart';
-import 'package:llegar/core/presentation/widgets/custom_text_form_field.dart';
+import 'package:llegar/modules/profile/presentation/widgets/location_details_data_section.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/functions/theme_colors.dart';
@@ -11,15 +12,17 @@ class LocationDraggableSheet extends StatelessWidget {
   const LocationDraggableSheet({
     super.key,
     required this.draggableController,
+    this.addressEntity,
   });
 
+  final AddressEntity? addressEntity;
   final DraggableScrollableController draggableController;
 
   @override
   Widget build(BuildContext context) {
     return DraggableScrollableSheet(
       controller: draggableController,
-      initialChildSize: 0.3,
+      initialChildSize: (addressEntity != null) ? 0.6 : 0.3,
       minChildSize: 0.3,
       maxChildSize: 0.6,
       builder: (context, scrollController) => Container(
@@ -54,33 +57,24 @@ class LocationDraggableSheet extends StatelessWidget {
                     AppSizes.height8,
                     const Divider(),
                     AppSizes.height16,
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          translate(context).locationName,
-                          style: AppTextStyles.bold16(context),
-                        ),
-                        AppSizes.height12,
-                        const CustomTextFormField(),
-                      ],
+                    LocationDetailsDataSection(
+                      controller: (addressEntity != null)
+                          ? TextEditingController(text: addressEntity!.title)
+                          : null,
+                      title: translate(context).locationName,
                     ),
                     AppSizes.height16,
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          translate(context).locationDetails,
-                          style: AppTextStyles.bold16(context),
-                        ),
-                        AppSizes.height12,
-                        const CustomTextFormField(),
-                      ],
+                    LocationDetailsDataSection(
+                      controller: (addressEntity != null)
+                          ? TextEditingController(text: addressEntity!.address)
+                          : null,
+                      title: translate(context).locationDetails,
                     ),
                     AppSizes.height16,
                     Row(
                       children: [
                         CustomCheckbox(
+                          initialValue: addressEntity?.isDefault,
                           onChanged: (isChecked) {},
                         ),
                         AppSizes.width8,
@@ -101,7 +95,9 @@ class LocationDraggableSheet extends StatelessWidget {
             CustomSliverFillRemainingFooter(
               padding: AppSizes.bodyHorizontalPadding(context),
               onFuturePressed: () async {},
-              buttonTitle: translate(context).add,
+              buttonTitle: (addressEntity != null)
+                  ? translate(context).edit
+                  : translate(context).add,
             ),
           ],
         ),

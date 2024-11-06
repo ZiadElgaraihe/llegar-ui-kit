@@ -276,5 +276,6 @@
     "defaultText": "Default",
     "locationDetails": "Location Details",
     "locationName": "Location Name",
-    "makeThisAsTheDefaultLocation": "Make this as the default location"
+    "makeThisAsTheDefaultLocation": "Make this as the default location",
+    "edit": "Edit"
 }

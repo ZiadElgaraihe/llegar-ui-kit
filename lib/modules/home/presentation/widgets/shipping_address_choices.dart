@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:latlong2/latlong.dart';
 import 'package:llegar/core/domain/entities/address_entity.dart';
 import 'package:llegar/core/presentation/widgets/location_item.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
@@ -23,18 +24,22 @@ class _ShippingAddressChoicesState extends State<ShippingAddressChoices> {
       title: 'Home',
       address: '"123 Main St, Apt 4B, Anytown, State 12345"',
       isDefault: true,
+      coordinates: LatLng(30.044170, 31.235665),
     ),
     const AddressEntity(
       title: 'Office',
       address: '"789 Oak St, Unit 3B, Anytown, State 12345"',
+      coordinates: LatLng(31.191403, 29.904067),
     ),
     const AddressEntity(
       title: 'Apartment',
       address: '"123 Main St, Apt 4B, Anytown, State 12345"',
+      coordinates: LatLng(30.044170, 31.235665),
     ),
     const AddressEntity(
       title: 'Parent\'s House',
       address: '"123 Main St, Apt 4B, Anytown, State 12345"',
+      coordinates: LatLng(29.977410, 32.530895),
     ),
   ];
   @override

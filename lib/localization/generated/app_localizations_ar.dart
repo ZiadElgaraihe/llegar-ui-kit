@@ -839,4 +839,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get makeThisAsTheDefaultLocation => 'اجعل هذا هو الموقع الافتراضي';
+
+  @override
+  String get edit => 'تعديل';
 }
