@@ -273,5 +273,8 @@
     "hasCompleteProfile": "Has Complete Profile",
     "hasNotCompleteProfile": "Has Not Complete Profile",
     "addNewLocation": "Add New Location",
-    "defaultText": "Default"
+    "defaultText": "Default",
+    "locationDetails": "Location Details",
+    "locationName": "Location Name",
+    "makeThisAsTheDefaultLocation": "Make this as the default location"
 }

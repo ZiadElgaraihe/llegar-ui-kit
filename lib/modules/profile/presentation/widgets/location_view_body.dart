@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/presentation/widgets/custom_sliver_fill_remaining_footer.dart';
 import 'package:llegar/modules/profile/presentation/widgets/locations_section.dart';
+import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
@@ -27,7 +28,9 @@ class LocationViewBody extends StatelessWidget {
         CustomSliverFillRemainingFooter(
           padding: AppSizes.bodyHorizontalPadding(context),
           buttonTitle: translate(context).addNewLocation,
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, AppRoutes.locationDetailsView);
+          },
         ),
       ],
     );

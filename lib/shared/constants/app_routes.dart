@@ -35,6 +35,7 @@ import 'package:llegar/modules/profile/presentation/views/contact_us_view.dart';
 import 'package:llegar/modules/profile/presentation/views/edit_profile_view.dart';
 import 'package:llegar/modules/profile/presentation/views/help_center_view.dart';
 import 'package:llegar/modules/profile/presentation/views/language_view.dart';
+import 'package:llegar/modules/profile/presentation/views/location_details_view.dart';
 import 'package:llegar/modules/profile/presentation/views/location_view.dart';
 import 'package:llegar/modules/profile/presentation/views/my_activities_view.dart';
 import 'package:llegar/modules/profile/presentation/views/my_items_view.dart';
@@ -68,6 +69,7 @@ abstract class AppRoutes {
   static const String itemDetailsView = '/ItemDetailsView';
   static const String itemReviewsView = '/ItemReviewsView';
   static const String languageView = '/LanguageView';
+  static const String locationDetailsView = '/LocationDetailsView';
   static const String locationView = '/LocationView';
   static const String logInView = '/LogInView';
   static const String makeAnOfferView = '/MakeAnOfferView';
@@ -294,6 +296,10 @@ abstract class AppRoutes {
       case locationView:
         return SideSlideTransition(
           page: const LocationView(),
+        );
+      case locationDetailsView:
+        return SideSlideTransition(
+          page: const LocationDetailsView(),
         );
     }
     return null;

@@ -273,5 +273,8 @@
     "hasCompleteProfile": "ملف شخصي مكتمل",
     "hasNotCompleteProfile": "ملف شخصي غير مكتمل",
     "addNewLocation": "إضافة موقع جديد",
-    "defaultText": "إفتراضي"
+    "defaultText": "إفتراضي",
+    "locationDetails": "تفاصيل الموقع",
+    "locationName": "اسم الموقع",
+    "makeThisAsTheDefaultLocation": "اجعل هذا هو الموقع الافتراضي"
 }

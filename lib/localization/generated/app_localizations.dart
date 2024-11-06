@@ -1744,6 +1744,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Default'**
   String get defaultText;
+
+  /// No description provided for @locationDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Location Details'**
+  String get locationDetails;
+
+  /// No description provided for @locationName.
+  ///
+  /// In en, this message translates to:
+  /// **'Location Name'**
+  String get locationName;
+
+  /// No description provided for @makeThisAsTheDefaultLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Make this as the default location'**
+  String get makeThisAsTheDefaultLocation;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
