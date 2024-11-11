@@ -63,7 +63,7 @@ class _ProfileNameAndEmailState extends State<ProfileNameAndEmail> {
           Text(
             'nour_elagwany@gmail.com',
             style: AppTextStyles.medium16(context).copyWith(
-              color: secondaryThemeColor(context),
+              color: secondaryThemeColor(context, listen: true),
             ),
           ),
         ],

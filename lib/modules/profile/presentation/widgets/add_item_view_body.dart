@@ -103,7 +103,8 @@ class AddItemViewBody extends StatelessWidget {
       message: translate(context).yourItemHasBeenAddedSuccessfully,
     ).then(
       (value) {
-        //Add here code you want to execute when dialog is closed
+        if (!context.mounted) return;
+        Navigator.pop(context);
       },
     );
 
