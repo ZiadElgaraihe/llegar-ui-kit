@@ -13,6 +13,9 @@ abstract class AppStrings {
   ///home item
   static const String homeItemHeroTag = 'home item';
 
+  ///my items
+  static const String myItemsHeroTag = 'my items';
+
   ///my orders item
   static const String myOrdersItemHeroTag = 'my orders item';
 

@@ -14,13 +14,20 @@ import 'package:llegar/shared/utils/functions/translate.dart';
 class AddItemViewBody extends StatelessWidget {
   const AddItemViewBody({
     super.key,
+    required this.isEdit,
   });
+
+  final bool isEdit;
 
   @override
   Widget build(BuildContext context) {
     return ListView(
       padding: AppSizes.bodySymmetricPadding(context),
       children: [
+        // Enables the addition of multiple images.
+        // The `Center` widget is utilized to manage the maximum width property
+        // of the button, set to 500. It is advisable to retain the `Center`
+        // widget for maintaining design integrity on wider devices.
         const Center(child: AddItemPhotoButton()),
         AppSizes.height24,
         CustomAnimatedDropdown<String>(
@@ -38,6 +45,7 @@ class AddItemViewBody extends StatelessWidget {
         AddItemDataSection(title: translate(context).title),
         AddItemDataSection(
           title: translate(context).description,
+          keyboardType: TextInputType.multiline,
           minLines: 1,
           maxLines: 5,
         ),
@@ -73,7 +81,7 @@ class AddItemViewBody extends StatelessWidget {
         AppSizes.height24,
         Center(
           child: CustomElevatedButton(
-            title: translate(context).share,
+            title: isEdit ? translate(context).edit : translate(context).share,
             onFuturePressed: () async {
               await _onShareItemPressed(context);
             },

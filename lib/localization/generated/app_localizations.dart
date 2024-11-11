@@ -803,6 +803,12 @@ abstract class AppLocalizations {
   /// **'Add Item'**
   String get addItem;
 
+  /// No description provided for @editItem.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Item'**
+  String get editItem;
+
   /// No description provided for @addPhoto.
   ///
   /// In en, this message translates to:

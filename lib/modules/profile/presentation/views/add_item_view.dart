@@ -4,7 +4,12 @@ import 'package:llegar/modules/profile/presentation/widgets/add_item_view_body.d
 import 'package:llegar/shared/utils/functions/translate.dart';
 
 class AddItemView extends StatelessWidget {
-  const AddItemView({super.key});
+  const AddItemView({
+    super.key,
+    required this.isEdit,
+  });
+
+  final bool isEdit;
 
   @override
   Widget build(BuildContext context) {
@@ -12,9 +17,11 @@ class AddItemView extends StatelessWidget {
       onTap: () => FocusManager.instance.primaryFocus!.unfocus(),
       child: Scaffold(
         appBar: CustomAppBar(
-          title: translate(context).addItem,
+          title: isEdit
+          ? translate(context).editItem
+          : translate(context).addItem,
         ),
-        body: const AddItemViewBody(),
+        body: AddItemViewBody(isEdit: isEdit),
       ),
     );
   }

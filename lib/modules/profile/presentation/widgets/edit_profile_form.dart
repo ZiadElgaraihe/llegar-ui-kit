@@ -31,10 +31,15 @@ class EditProfileForm extends StatelessWidget {
           AppSizes.height12,
           CustomTextFormField(
             hintText: translate(context).email,
+            keyboardType: TextInputType.emailAddress,
           ),
           AppSizes.height12,
+          // Utilize the `inputFormatters` property to restrict user input
+          // to valid phone numbers based on the specific requirements 
+          // of your use case.
           CustomTextFormField(
             hintText: translate(context).phoneNumber,
+            keyboardType: TextInputType.phone,
             textDirection: TextDirection.ltr,
           ),
           AppSizes.height12,

@@ -7,12 +7,18 @@ class ReponsiveItemsSliverList extends StatelessWidget {
     super.key,
     this.onLikeTapped,
     this.onTap,
-    this.prefixHeroTag,
+    this.heroTag,
   });
 
   final void Function(bool isLiked, int index)? onLikeTapped;
+  // Replace the index varaible with the same unique variable used in heroTag
   final void Function(int index)? onTap;
-  final String? prefixHeroTag;
+  // The `heroTag` function allows for setting a unique hero tag for each element.
+  // Developers can replace the parameter `index` with any other unique variable
+  // (item id for example) to ensure the uniqueness of hero tags and prevent
+  // conflicts when multiple instances are present on the same page.
+  /// Example of use: (index) => 'prefixHeroTag$index'
+  final String Function(int index)? heroTag;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +28,7 @@ class ReponsiveItemsSliverList extends StatelessWidget {
         sliver: SliverList.separated(
           itemCount: 10,
           itemBuilder: (context, index) => ItemWidget(
-            heroTag: '$prefixHeroTag$index',
+            heroTag: (heroTag != null) ? heroTag!(index) : null,
             onLikeTapped: (onLikeTapped != null)
                 ? (isLiked) {
                     onLikeTapped!(isLiked, index);
@@ -49,7 +55,7 @@ class ReponsiveItemsSliverList extends StatelessWidget {
           ),
           itemCount: 10,
           itemBuilder: (context, index) => ItemWidget(
-            heroTag: '$prefixHeroTag$index',
+            heroTag: (heroTag != null) ? heroTag!(index) : null,
             onLikeTapped: (onLikeTapped != null)
                 ? (isLiked) {
                     onLikeTapped!(isLiked, index);

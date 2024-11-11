@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/core/domain/entities/item_details_entity.dart';
 import 'package:llegar/core/presentation/widgets/responsive_items_list.dart';
 import 'package:llegar/shared/constants/app_routes.dart';
 import 'package:llegar/shared/constants/app_strings.dart';
@@ -13,11 +14,15 @@ class MyWishlistViewBody extends StatelessWidget {
     return ResponsiveItemsList(
       itemCount: 10,
       isLiked: true,
-      prefixHeroTag: AppStrings.myWishlistItemHeroTag,
+      heroTag: (index) => '${AppStrings.myWishlistItemHeroTag}$index',
       onTap: (index) {
-        Navigator.pushNamed(context, AppRoutes.itemDetailsView,
-            // This is item details image hero tag,
-            arguments: '${AppStrings.myWishlistItemHeroTag}$index');
+        Navigator.pushNamed(
+          context,
+          AppRoutes.itemDetailsView,
+          arguments: ItemDetailsEntity(
+            heroTag: '${AppStrings.myWishlistItemHeroTag}$index',
+          ),
+        );
       },
     );
   }

@@ -10,7 +10,10 @@ import 'package:llegar/shared/utils/functions/translate.dart';
 class ItemDetailsFooterSection extends StatelessWidget {
   const ItemDetailsFooterSection({
     super.key,
+    required this.isMyItem,
   });
+
+  final bool isMyItem;
 
   @override
   Widget build(BuildContext context) {
@@ -44,47 +47,48 @@ class ItemDetailsFooterSection extends StatelessWidget {
             ],
           ),
 
-          //This button will be hidden if the item is unavailable.
+          //This button will be hidden if the item is unavailable or is my item.
 
           //if item is negotiable use this code
+          if (!isMyItem)
+            SizedBox(
+              width: 180,
+              child: CustomElevatedButton(
+                title: translate(context).makeAnOffer,
+                onPressed: () {
+                  _onMakeAnOfferPressed(context);
+                },
+              ),
+            ),
+
+          //if item is not negotiable use this code
           // SizedBox(
           //   width: 180,
           //   child: CustomElevatedButton(
-          //     title: translate(context).makeAnOffer,
-          //     onPressed: () {
-          //       _onMakeAnOfferPressed(context);
+          //     title: translate(context).rentNow,
+          //     onFuturePressed: () async {
+          //       await _onRentNowPressed(context);
           //     },
           //   ),
           // ),
-
-          //if item is not negotiable use this code
-          SizedBox(
-            width: 180,
-            child: CustomElevatedButton(
-              title: translate(context).rentNow,
-              onFuturePressed: () async {
-                await _onRentNowPressed(context);
-              },
-            ),
-          ),
         ],
       ),
     );
   }
 
-  // void _onMakeAnOfferPressed(BuildContext context) {
-  //   Navigator.pushNamed(context, AppRoutes.makeAnOfferView);
-  // }
-
-  Future<void> _onRentNowPressed(BuildContext context) async {
-    //remove this & add your logic
-    await Future.delayed(const Duration(seconds: 2));
-
-    if (!context.mounted) return;
-    Navigator.pushNamedAndRemoveUntil(
-      context,
-      AppRoutes.offerProcessingView,
-      (route) => false,
-    );
+  void _onMakeAnOfferPressed(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.makeAnOfferView);
   }
+
+  // Future<void> _onRentNowPressed(BuildContext context) async {
+  //   //remove this & add your logic
+  //   await Future.delayed(const Duration(seconds: 2));
+
+  //   if (!context.mounted) return;
+  //   Navigator.pushNamedAndRemoveUntil(
+  //     context,
+  //     AppRoutes.offerProcessingView,
+  //     (route) => false,
+  //   );
+  // }
 }

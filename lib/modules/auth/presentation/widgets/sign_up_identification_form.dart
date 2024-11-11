@@ -23,6 +23,9 @@ class SignUpIdentificationForm extends StatelessWidget {
       child: Column(
         children: [
           AppSizes.height24,
+          // Utilize the `inputFormatters` property to restrict user input
+          // to valid phone numbers based on the specific requirements
+          // of your use case.
           CustomTextFormField(
             hintText: translate(context).phoneNumber,
             keyboardType: TextInputType.phone,

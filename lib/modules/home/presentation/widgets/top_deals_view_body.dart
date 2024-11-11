@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/core/domain/entities/item_details_entity.dart';
 import 'package:llegar/core/presentation/widgets/responsive_items_list.dart';
 import 'package:llegar/modules/home/presentation/widgets/options_bar.dart';
 import 'package:llegar/shared/constants/app_routes.dart';
@@ -37,13 +38,14 @@ class TopDealsViewBody extends StatelessWidget {
               bottom: 24,
             ),
             itemCount: 10,
-            prefixHeroTag: AppStrings.topDealsItemHeroTag,
+            heroTag: (index) => '${AppStrings.topDealsItemHeroTag}$index',
             onTap: (index) {
               Navigator.pushNamed(
                 context,
                 AppRoutes.itemDetailsView,
-                // This is item details image hero tag,
-                arguments: '${AppStrings.topDealsItemHeroTag}$index',
+                arguments: ItemDetailsEntity(
+                  heroTag: '${AppStrings.topDealsItemHeroTag}$index',
+                ),
               );
             },
           ),

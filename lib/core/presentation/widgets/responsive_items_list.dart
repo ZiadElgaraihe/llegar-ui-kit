@@ -8,7 +8,7 @@ class ResponsiveItemsList extends StatelessWidget {
     required this.itemCount,
     this.appearLikeButton = true,
     this.appearLeaveReviewButton = false,
-    this.prefixHeroTag,
+    this.heroTag,
     this.isLiked = false,
     this.onLikeTapped,
     this.onTap,
@@ -17,10 +17,16 @@ class ResponsiveItemsList extends StatelessWidget {
 
   final bool appearLeaveReviewButton;
   final bool appearLikeButton;
-  final String? prefixHeroTag;
+  // The `heroTag` function allows for setting a unique hero tag for each element.
+  // Developers can replace the parameter `index` with any other unique variable
+  // (item id for example) to ensure the uniqueness of hero tags and prevent 
+  // conflicts when multiple instances are present on the same page.
+  /// Example of use: (index) => 'prefixHeroTag$index'
+  final String Function(int index)? heroTag;
   final bool isLiked;
   final int itemCount;
   final void Function(bool isLiked, int index)? onLikeTapped;
+  // Replace the index varaible with the same unique variable used in heroTag
   final void Function(int index)? onTap;
   final EdgeInsets? padding;
 
@@ -33,7 +39,7 @@ class ResponsiveItemsList extends StatelessWidget {
         itemBuilder: (context, index) => ItemWidget(
           appearLeaveReviewButton: appearLeaveReviewButton,
           appearLikeButton: appearLikeButton,
-          heroTag: '$prefixHeroTag$index',
+          heroTag: (heroTag != null) ? heroTag!(index) : null,
           isLiked: isLiked,
           onLikeTapped: (onLikeTapped != null)
               ? (isLiked) {
@@ -61,7 +67,7 @@ class ResponsiveItemsList extends StatelessWidget {
         itemBuilder: (context, index) => ItemWidget(
           appearLeaveReviewButton: appearLeaveReviewButton,
           appearLikeButton: appearLikeButton,
-          heroTag: '$prefixHeroTag$index',
+          heroTag: (heroTag != null) ? heroTag!(index) : null,
           isLiked: isLiked,
           onLikeTapped: (onLikeTapped != null)
               ? (isLiked) {
