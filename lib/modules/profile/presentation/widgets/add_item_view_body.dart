@@ -21,6 +21,10 @@ class AddItemViewBody extends StatelessWidget {
     return ListView(
       padding: AppSizes.bodySymmetricPadding(context),
       children: [
+        // Enables the addition of multiple images.
+        // The `Center` widget is utilized to manage the maximum width property
+        // of the button, set to 500. It is advisable to retain the `Center` 
+        // widget for maintaining design integrity on wider devices.
         const Center(child: AddItemPhotoButton()),
         AppSizes.height24,
         CustomAnimatedDropdown<String>(
@@ -38,6 +42,7 @@ class AddItemViewBody extends StatelessWidget {
         AddItemDataSection(title: translate(context).title),
         AddItemDataSection(
           title: translate(context).description,
+          keyboardType: TextInputType.multiline,
           minLines: 1,
           maxLines: 5,
         ),

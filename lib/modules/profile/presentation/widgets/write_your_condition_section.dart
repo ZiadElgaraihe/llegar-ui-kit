@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/core/presentation/widgets/custom_text_form_field.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
@@ -13,13 +14,11 @@ class WriteYourConditionSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        TextFormField(
+        CustomTextFormField(
           minLines: 3,
           maxLines: 5,
-          cursorColor: AppColors.prussianBlue,
-          decoration: InputDecoration(
-            hintText: translate(context).writeYourCondition,
-          ),
+          hintText: translate(context).writeYourCondition,
+          keyboardType: TextInputType.multiline,
         ),
         Text(
           translate(context).notRequired,
