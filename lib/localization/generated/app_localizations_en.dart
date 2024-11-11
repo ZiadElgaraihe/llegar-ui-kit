@@ -824,4 +824,22 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get hasNotCompleteProfile => 'Has Not Complete Profile';
+
+  @override
+  String get addNewLocation => 'Add New Location';
+
+  @override
+  String get defaultText => 'Default';
+
+  @override
+  String get locationDetails => 'Location Details';
+
+  @override
+  String get locationName => 'Location Name';
+
+  @override
+  String get makeThisAsTheDefaultLocation => 'Make this as the default location';
+
+  @override
+  String get edit => 'Edit';
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:latlong2/latlong.dart';
 import 'package:llegar/core/domain/entities/address_entity.dart';
 import 'package:llegar/core/presentation/widgets/custom_sliver_fill_remaining_footer.dart';
 import 'package:llegar/core/presentation/widgets/item_widget.dart';
@@ -35,6 +36,8 @@ class CheckoutViewBody extends StatelessWidget {
                   address: const AddressEntity(
                     address: '"123 Main St, Apt 4B, Anytown, State 12345"',
                     title: 'Home',
+                    isDefault: true,
+                    coordinates: LatLng(30.044170, 31.235665),
                   ),
                   onEditTapped: () {
                     _onEditShippingAddressTapped(context);

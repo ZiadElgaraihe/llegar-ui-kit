@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/core/domain/entities/address_entity.dart';
 import 'package:llegar/core/domain/entities/chat_entity.dart';
 import 'package:llegar/core/domain/entities/success_view_entity.dart';
 import 'package:llegar/core/presentation/views/add_new_card_view.dart';
@@ -35,6 +36,8 @@ import 'package:llegar/modules/profile/presentation/views/contact_us_view.dart';
 import 'package:llegar/modules/profile/presentation/views/edit_profile_view.dart';
 import 'package:llegar/modules/profile/presentation/views/help_center_view.dart';
 import 'package:llegar/modules/profile/presentation/views/language_view.dart';
+import 'package:llegar/modules/profile/presentation/views/location_details_view.dart';
+import 'package:llegar/modules/profile/presentation/views/location_view.dart';
 import 'package:llegar/modules/profile/presentation/views/my_activities_view.dart';
 import 'package:llegar/modules/profile/presentation/views/my_items_view.dart';
 import 'package:llegar/modules/profile/presentation/views/premium_package_payment_view.dart';
@@ -67,6 +70,8 @@ abstract class AppRoutes {
   static const String itemDetailsView = '/ItemDetailsView';
   static const String itemReviewsView = '/ItemReviewsView';
   static const String languageView = '/LanguageView';
+  static const String locationDetailsView = '/LocationDetailsView';
+  static const String locationView = '/LocationView';
   static const String logInView = '/LogInView';
   static const String makeAnOfferView = '/MakeAnOfferView';
   static const String myActivitiesView = '/MyActivitiesView';
@@ -287,6 +292,16 @@ abstract class AppRoutes {
         return SideSlideTransition(
           page: ProfileSummaryView(
             title: routeSettings.arguments as String,
+          ),
+        );
+      case locationView:
+        return SideSlideTransition(
+          page: const LocationView(),
+        );
+      case locationDetailsView:
+        return SideSlideTransition(
+          page: LocationDetailsView(
+            addressEntity: routeSettings.arguments as AddressEntity?,
           ),
         );
     }

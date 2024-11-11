@@ -28,9 +28,9 @@ abstract class AppColors {
 
   ///#E57373
   static const Color lightRed = Color(0xFFE57373);
-  
+
   ///#D9D9D9
-  static const Color lightSliver = Color(0xFFD9D9D9);
+  static const Color lightSilver = Color(0xFFD9D9D9);
 
   ///#F39A4A (orange text)
   static const Color orange = Color(0xFFF39A4A);

@@ -7,6 +7,7 @@ import 'package:llegar/shared/constants/app_icons.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/functions/theme_colors.dart';
+import 'package:llegar/shared/utils/functions/translate.dart';
 
 class LocationItem extends StatelessWidget {
   const LocationItem({
@@ -38,7 +39,7 @@ class LocationItem extends StatelessWidget {
             width: 65,
             decoration: const BoxDecoration(
               shape: BoxShape.circle,
-              color: AppColors.lightSliver,
+              color: AppColors.lightSilver,
             ),
             child: Center(
               child: SvgPicture.asset(
@@ -55,9 +56,28 @@ class LocationItem extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  address.title,
-                  style: AppTextStyles.semiBold20(context),
+                Wrap(
+                  spacing: 8,
+                  children: [
+                    Text(
+                      address.title,
+                      style: AppTextStyles.semiBold20(context),
+                    ),
+                    if (address.isDefault)
+                      Container(
+                        height: 23,
+                        width: 56,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: AppColors.lightSilver,
+                          borderRadius: BorderRadius.circular(6),
+                        ),
+                        child: Text(
+                          translate(context).defaultText,
+                          style: AppTextStyles.semiBold10(context),
+                        ),
+                      ),
+                  ],
                 ),
                 Text(
                   address.address,

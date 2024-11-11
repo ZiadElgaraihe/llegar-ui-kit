@@ -310,6 +310,10 @@ abstract class AppThemes {
           activeTickMarkColor: Colors.transparent,
           inactiveTickMarkColor: Colors.transparent,
         ),
+        floatingActionButtonTheme: const FloatingActionButtonThemeData(
+          foregroundColor: AppColors.prussianBlue,
+          backgroundColor: AppColors.white,
+        ),
       );
 
   static ThemeData darkTheme(BuildContext context) => ThemeData.dark().copyWith(
@@ -614,6 +618,10 @@ abstract class AppThemes {
           ),
           activeTickMarkColor: Colors.transparent,
           inactiveTickMarkColor: Colors.transparent,
+        ),
+        floatingActionButtonTheme: const FloatingActionButtonThemeData(
+          foregroundColor: AppColors.orange,
+          backgroundColor: AppColors.prussianBlue,
         ),
       );
 }

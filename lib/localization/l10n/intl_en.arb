@@ -271,5 +271,11 @@
     "emailVerified": "Email Verified",
     "emailNotVerified": "Email Not Verified",
     "hasCompleteProfile": "Has Complete Profile",
-    "hasNotCompleteProfile": "Has Not Complete Profile"
+    "hasNotCompleteProfile": "Has Not Complete Profile",
+    "addNewLocation": "Add New Location",
+    "defaultText": "Default",
+    "locationDetails": "Location Details",
+    "locationName": "Location Name",
+    "makeThisAsTheDefaultLocation": "Make this as the default location",
+    "edit": "Edit"
 }

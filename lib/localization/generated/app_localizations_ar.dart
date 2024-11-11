@@ -824,4 +824,22 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get hasNotCompleteProfile => 'ملف شخصي غير مكتمل';
+
+  @override
+  String get addNewLocation => 'إضافة موقع جديد';
+
+  @override
+  String get defaultText => 'إفتراضي';
+
+  @override
+  String get locationDetails => 'تفاصيل الموقع';
+
+  @override
+  String get locationName => 'اسم الموقع';
+
+  @override
+  String get makeThisAsTheDefaultLocation => 'اجعل هذا هو الموقع الافتراضي';
+
+  @override
+  String get edit => 'تعديل';
 }
