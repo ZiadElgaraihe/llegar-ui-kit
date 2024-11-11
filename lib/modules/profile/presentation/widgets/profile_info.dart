@@ -15,7 +15,7 @@ class ProfileInfo extends StatelessWidget {
       alignment: MainAxisAlignment.start,
       overflowAlignment: OverflowBarAlignment.center,
       children: [
-        ProfilePhoto(size: 100),
+        ProfilePhoto(size: 100, listenOnThemeChange: true),
         ProfileNameAndEmail(),
       ],
     );

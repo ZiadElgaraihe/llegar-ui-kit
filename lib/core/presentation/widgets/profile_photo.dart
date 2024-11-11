@@ -7,10 +7,14 @@ class ProfilePhoto extends StatelessWidget {
     super.key,
     required this.size,
     this.side,
+    this.listenOnThemeChange = false,
   });
 
   final double size;
   final BorderSide? side;
+  /// This variable is used only in profile view to change 
+  /// border side color when theme change
+  final bool listenOnThemeChange;
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +25,7 @@ class ProfilePhoto extends StatelessWidget {
         shape: CircleBorder(
           side: side ??
               BorderSide(
-                color: mainThemeColor(context),
+                color: mainThemeColor(context, listen: listenOnThemeChange),
                 width: 4,
               ),
         ),
