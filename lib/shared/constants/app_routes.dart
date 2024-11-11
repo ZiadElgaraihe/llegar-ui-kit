@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/core/domain/entities/address_entity.dart';
 import 'package:llegar/core/domain/entities/chat_entity.dart';
+import 'package:llegar/core/domain/entities/item_details_entity.dart';
 import 'package:llegar/core/domain/entities/success_view_entity.dart';
 import 'package:llegar/core/presentation/views/add_new_card_view.dart';
 import 'package:llegar/core/presentation/views/chat_view.dart';
@@ -190,7 +191,9 @@ abstract class AppRoutes {
         );
       case addItemView:
         return SideSlideTransition(
-          page: const AddItemView(),
+          page: AddItemView(
+            isEdit: routeSettings.arguments as bool? ?? false,
+          ),
         );
       case subscribeToPremiumView:
         return SideSlideTransition(
@@ -269,7 +272,7 @@ abstract class AppRoutes {
       case itemDetailsView:
         return SideSlideTransition(
           page: ItemDetailsView(
-            heroTag: routeSettings.arguments as String?,
+            itemDetailsEntity: routeSettings.arguments as ItemDetailsEntity?,
           ),
         );
       case itemReviewsView:

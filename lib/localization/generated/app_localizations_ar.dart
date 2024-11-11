@@ -361,6 +361,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get addItem => 'إضافة عنصر';
 
   @override
+  String get editItem => 'تعديل عنصر';
+
+  @override
   String get addPhoto => 'إضافة صورة';
 
   @override

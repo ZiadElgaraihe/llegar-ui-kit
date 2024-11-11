@@ -14,36 +14,36 @@ class ItemNegotiabilitySection extends StatelessWidget {
     return Row(
       children: [
         const Icon(
-          Icons.cancel_rounded,
-          color: AppColors.red,
+          Icons.check_circle_rounded,
+          color: AppColors.green,
           size: 24,
         ),
         AppSizes.width8,
         Expanded(
           child: Text(
-            translate(context).notNegotiable,
+            translate(context).negotiable,
             style: AppTextStyles.medium20(context).copyWith(
-              color: AppColors.red,
+              color: AppColors.green,
             ),
           ),
         ),
       ],
     );
 
-    //todo: Use This code if item is Negotiable
+    //todo: Use This code if item is not Negotiable
     // return Row(
     //   children: [
     //     const Icon(
-    //       Icons.check_circle_rounded,
-    //       color: AppColors.green,
+    //       Icons.cancel_rounded,
+    //       color: AppColors.red,
     //       size: 24,
     //     ),
     //     AppSizes.width8,
     //     Expanded(
     //       child: Text(
-    //         translate(context).negotiable,
+    //         translate(context).notNegotiable,
     //         style: AppTextStyles.medium20(context).copyWith(
-    //           color: AppColors.green,
+    //           color: AppColors.red,
     //         ),
     //       ),
     //     ),

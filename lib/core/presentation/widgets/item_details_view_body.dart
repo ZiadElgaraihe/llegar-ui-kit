@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/core/domain/entities/item_details_entity.dart';
 import 'package:llegar/core/presentation/widgets/item_conditions_section.dart';
 import 'package:llegar/core/presentation/widgets/item_details_footer_section.dart';
 import 'package:llegar/core/presentation/widgets/item_details_outlined_button.dart';
@@ -18,17 +19,17 @@ import 'package:llegar/shared/utils/functions/translate.dart';
 class ItemDetailsViewBody extends StatelessWidget {
   const ItemDetailsViewBody({
     super.key,
-    required this.heroTag,
+    required this.itemDetailsEntity,
   });
 
-  final String? heroTag;
+  final ItemDetailsEntity? itemDetailsEntity;
 
   @override
   Widget build(BuildContext context) {
     return ListView(
       children: [
         Center(
-          child: ItemImagesSection(heroTag: heroTag),
+          child: ItemImagesSection(heroTag: itemDetailsEntity?.heroTag),
         ),
         Padding(
           padding: AppSizes.bodySymmetricPadding(context),
@@ -38,7 +39,9 @@ class ItemDetailsViewBody extends StatelessWidget {
               const ItemDetailsSection(),
               AppSizes.height24,
               //user should accept all conditions before moving to the next step
-              const ItemConditionsSection(),
+              ItemConditionsSection(
+                isMyItem: itemDetailsEntity?.isMyItem ?? false,
+              ),
               AppSizes.height16,
               const ItemNegotiabilitySection(),
               AppSizes.height24,
@@ -57,7 +60,9 @@ class ItemDetailsViewBody extends StatelessWidget {
             ],
           ),
         ),
-        const ItemDetailsFooterSection(),
+        ItemDetailsFooterSection(
+          isMyItem: itemDetailsEntity?.isMyItem ?? false,
+        ),
       ],
     );
   }

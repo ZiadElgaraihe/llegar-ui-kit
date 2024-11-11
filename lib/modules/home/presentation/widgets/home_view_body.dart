@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/core/domain/entities/item_details_entity.dart';
 import 'package:llegar/modules/home/presentation/widgets/home_section_header.dart';
 import 'package:llegar/modules/home/presentation/widgets/options_bar.dart';
 import 'package:llegar/modules/home/presentation/widgets/responsive_items_sliver_list.dart';
@@ -60,13 +61,14 @@ class HomeViewBody extends StatelessWidget {
           ),
         ),
         ReponsiveItemsSliverList(
-          prefixHeroTag: AppStrings.homeItemHeroTag,
+          heroTag: (index) => '${AppStrings.homeItemHeroTag}$index',
           onTap: (index) {
             Navigator.pushNamed(
               context,
               AppRoutes.itemDetailsView,
-              // This is item details image hero tag,
-              arguments: '${AppStrings.homeItemHeroTag}$index',
+              arguments: ItemDetailsEntity(
+                heroTag: '${AppStrings.homeItemHeroTag}$index',
+              ),
             );
           },
         ),

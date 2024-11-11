@@ -9,9 +9,11 @@ class ItemCondition extends StatelessWidget {
     super.key,
     required this.onChanged,
     required this.title,
+    required this.isMyItem,
   });
 
   final void Function(bool? isChecked) onChanged;
+  final bool isMyItem;
   final String title;
 
   @override
@@ -19,9 +21,16 @@ class ItemCondition extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        CustomCheckbox(
-          onChanged: onChanged,
-        ),
+        (isMyItem)
+            ? Text(
+                '-',
+                style: AppTextStyles.medium20(context).copyWith(
+                  color: secondaryThemeColor(context),
+                ),
+              )
+            : CustomCheckbox(
+                onChanged: onChanged,
+              ),
         AppSizes.width8,
         Expanded(
           child: Text(
