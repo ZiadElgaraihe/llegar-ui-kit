@@ -25,6 +25,9 @@ abstract class AppStrings {
   ///search
   static const String searchHeroTag = 'search';
 
+  ///search item
+  static const String searchItemHeroTag = 'search item';
+
   ///my wishlist item
   static const String topDealsItemHeroTag = 'top deals item';
 
