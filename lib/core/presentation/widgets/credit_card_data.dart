@@ -35,7 +35,6 @@ class _CreditCardDataState extends State<CreditCardData> {
           child: Directionality(
             textDirection: TextDirection.ltr,
             child: CreditCardWidget(
-              enableFloatingCard: true,
               glassmorphismConfig: Glassmorphism(
                 blurX: 0,
                 blurY: 0,
