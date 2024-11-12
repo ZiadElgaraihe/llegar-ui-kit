@@ -929,6 +929,12 @@ abstract class AppLocalizations {
   /// **'Your item has been added successfully.'**
   String get yourItemHasBeenAddedSuccessfully;
 
+  /// No description provided for @yourItemHasBeenModifiedSuccessfully.
+  ///
+  /// In en, this message translates to:
+  /// **'Your item has been modified successfully.'**
+  String get yourItemHasBeenModifiedSuccessfully;
+
   /// No description provided for @anErrorOccurredWhileProcessingYourRequestPleaseTryAgain.
   ///
   /// In en, this message translates to:
@@ -1606,6 +1612,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'See His Page'**
   String get seeHisPage;
+
+  /// No description provided for @seeMyPage.
+  ///
+  /// In en, this message translates to:
+  /// **'See My Page'**
+  String get seeMyPage;
 
   /// No description provided for @showComments.
   ///

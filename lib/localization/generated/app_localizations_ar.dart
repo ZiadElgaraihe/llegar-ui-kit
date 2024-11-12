@@ -424,6 +424,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get yourItemHasBeenAddedSuccessfully => 'تمت إضافة العنصر بنجاح.';
 
   @override
+  String get yourItemHasBeenModifiedSuccessfully => 'تم تعديل العنصر بنجاح.';
+
+  @override
   String get anErrorOccurredWhileProcessingYourRequestPleaseTryAgain => 'حدث خطأ أثناء معالجة طلبك. الرجاء المحاولة مرة أخرى.';
 
   @override
@@ -761,6 +764,9 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get seeHisPage => 'عرض صفحته';
+
+  @override
+  String get seeMyPage => 'عرض صفحتي';
 
   @override
   String get showComments => 'عرض التعليقات';

@@ -100,7 +100,9 @@ class AddItemViewBody extends StatelessWidget {
       context,
       messageType: MessageType.success,
       title: translate(context).success,
-      message: translate(context).yourItemHasBeenAddedSuccessfully,
+      message: isEdit
+          ? translate(context).yourItemHasBeenModifiedSuccessfully
+          : translate(context).yourItemHasBeenAddedSuccessfully,
     ).then(
       (value) {
         if (!context.mounted) return;

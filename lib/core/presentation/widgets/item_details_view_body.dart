@@ -47,7 +47,9 @@ class ItemDetailsViewBody extends StatelessWidget {
               AppSizes.height24,
               const ItemLocationSection(),
               AppSizes.height16,
-              const ItemOwnerSection(),
+              ItemOwnerSection(
+                isMyItem: itemDetailsEntity?.isMyItem ?? false,
+              ),
               AppSizes.height24,
               // Users can only leave comments on items they have already rented.
               // This feature will be accessible in the "My Orders" view.

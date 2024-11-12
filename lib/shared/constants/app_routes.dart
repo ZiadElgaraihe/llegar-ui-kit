@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:llegar/core/domain/entities/address_entity.dart';
 import 'package:llegar/core/domain/entities/chat_entity.dart';
 import 'package:llegar/core/domain/entities/item_details_entity.dart';
+import 'package:llegar/core/domain/entities/profile_summary_entity.dart';
 import 'package:llegar/core/domain/entities/success_view_entity.dart';
 import 'package:llegar/core/presentation/views/add_new_card_view.dart';
 import 'package:llegar/core/presentation/views/chat_view.dart';
@@ -294,7 +295,7 @@ abstract class AppRoutes {
       case profileSummaryView:
         return SideSlideTransition(
           page: ProfileSummaryView(
-            title: routeSettings.arguments as String,
+            profileSummaryEntity: routeSettings.arguments as ProfileSummaryEntity,
           ),
         );
       case locationView:

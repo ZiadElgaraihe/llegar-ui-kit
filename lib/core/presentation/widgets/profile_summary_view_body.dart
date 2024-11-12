@@ -15,7 +15,10 @@ import 'package:llegar/shared/utils/functions/translate.dart';
 class ProfileSummaryViewBody extends StatelessWidget {
   const ProfileSummaryViewBody({
     super.key,
+    required this.isMyItem,
   });
+
+  final bool isMyItem;
 
   @override
   Widget build(BuildContext context) {
@@ -28,35 +31,39 @@ class ProfileSummaryViewBody extends StatelessWidget {
               children: [
                 AppSizes.height24,
                 const ProfileSummaryInfoSection(),
-                AppSizes.height24,
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    SizedBox(
-                      width: 174,
-                      child: CustomElevatedButton(
-                        title: translate(context).message,
-                        onPressed: () {
-                          _onMessagePressed(context);
-                        },
-                      ),
-                    ),
-                    // This button should only appear for profiles
-                    // you have rented from before
-                    IconButton(
-                      onPressed: () {
-                        _onLeaveReviewPressed(context);
-                      },
-                      icon: SvgPicture.asset(
-                        AppIcons.leaveReview,
-                        colorFilter: ColorFilter.mode(
-                          mainThemeColor(context),
-                          BlendMode.srcATop,
+                // Display message button (which navigate to chat view)
+                // and review button if item is not my item
+                if (!isMyItem) ...[
+                  AppSizes.height24,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      SizedBox(
+                        width: 174,
+                        child: CustomElevatedButton(
+                          title: translate(context).message,
+                          onPressed: () {
+                            _onMessagePressed(context);
+                          },
                         ),
                       ),
-                    ),
-                  ],
-                ),
+                      // This button should only appear for profiles
+                      // you have rented from before
+                      IconButton(
+                        onPressed: () {
+                          _onLeaveReviewPressed(context);
+                        },
+                        icon: SvgPicture.asset(
+                          AppIcons.leaveReview,
+                          colorFilter: ColorFilter.mode(
+                            mainThemeColor(context),
+                            BlendMode.srcATop,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ],
             ),
           ),
@@ -83,7 +90,7 @@ class ProfileSummaryViewBody extends StatelessWidget {
       context,
       AppRoutes.chatView,
       arguments: ChatEntity(
-        appBarTitle: 'Atef Khaled',
+        appBarTitle: 'Fareed Khaled',
         messages: [],
       ),
     );

@@ -424,6 +424,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get yourItemHasBeenAddedSuccessfully => 'Your item has been added successfully.';
 
   @override
+  String get yourItemHasBeenModifiedSuccessfully => 'Your item has been modified successfully.';
+
+  @override
   String get anErrorOccurredWhileProcessingYourRequestPleaseTryAgain => 'An error occurred while processing your request. Please try again.';
 
   @override
@@ -761,6 +764,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get seeHisPage => 'See His Page';
+
+  @override
+  String get seeMyPage => 'See My Page';
 
   @override
   String get showComments => 'Show Comments';
