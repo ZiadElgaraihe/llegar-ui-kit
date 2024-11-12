@@ -42,13 +42,19 @@ class _SearchViewBodyState extends State<SearchViewBody> {
 
   void _focusListener() {
     if ((!_focusNode.hasFocus) && _controller.text.isEmpty) {
-      Navigator.pop(context);
+      // This condition verifies whether the user is attempting to navigate 
+      // back from the current view using the system back button, 
+      // thereby preventing double popping of the view.
+      if (ModalRoute.of(context)?.isCurrent == true) {
+        Navigator.pop(context);
+      }
     }
   }
 
   @override
   void dispose() {
     _focusNode.removeListener(_focusListener);
+    _controller.removeListener(_controllerListener);
     _focusNode.dispose();
     _controller.dispose();
     _searchText.dispose();
@@ -78,7 +84,9 @@ class _SearchViewBodyState extends State<SearchViewBody> {
                   ? const RecentSearchSection()
                   : SearchResultSection(
                       numberOfResults:
-                          'cameras'.startsWith(searchText.toLowerCase()) ? 10 : 0,
+                          'cameras'.startsWith(searchText.toLowerCase())
+                              ? 10
+                              : 0,
                       searchText: searchText,
                     ),
             ),
