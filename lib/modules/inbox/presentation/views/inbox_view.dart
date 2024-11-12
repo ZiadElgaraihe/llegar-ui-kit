@@ -6,27 +6,25 @@ import 'package:llegar/shared/utils/functions/translate.dart';
 class InboxView extends StatelessWidget {
   const InboxView({
     super.key,
-    required this.pageController,
+    required this.onBackPressed,
   });
 
-  final PageController pageController;
+  final VoidCallback onBackPressed;
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: CustomAppBar(
-        title: translate(context).inbox,
-        onBackPressed: _onBackPressed,
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (didPop, result) {
+        onBackPressed();
+      },
+      child: Scaffold(
+        appBar: CustomAppBar(
+          title: translate(context).inbox,
+          onBackPressed: onBackPressed,
+        ),
+        body: const InboxViewBody(),
       ),
-      body: const InboxViewBody(),
-    );
-  }
-
-  void _onBackPressed() {
-    pageController.animateToPage(
-      0,
-      duration: const Duration(milliseconds: 300),
-      curve: Curves.easeIn,
     );
   }
 }
