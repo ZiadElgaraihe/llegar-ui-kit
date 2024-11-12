@@ -3,6 +3,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:llegar/modules/home/presentation/widgets/filter_bottom_sheet.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
 import 'package:llegar/shared/constants/app_icons.dart';
+import 'package:llegar/shared/constants/app_strings.dart';
+import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/functions/show_custom_modal_bottom_sheet.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
@@ -34,7 +36,12 @@ class SearchTextField extends StatelessWidget {
           onTap: onTap,
           onChanged: onChanged,
           cursorColor: AppColors.prussianBlue,
+          style: AppTextStyles.medium15(context).copyWith(
+            color: AppColors.black,
+            fontFamily: AppStrings.interFontFamily,
+          ),
           decoration: InputDecoration(
+            contentPadding: EdgeInsets.zero,
             hintText: translate(context).search,
             prefixIcon: Padding(
               padding: const EdgeInsets.all(8.0),
