@@ -46,7 +46,9 @@ class LogInViewBody extends StatelessWidget {
         ),
         const LogInForm(),
         AppSizes.height16,
-        const RememberMeRow(),
+        RememberMeRow(
+          onChanged: (value) {},
+        ),
         AppSizes.height16,
         //wrap custom elevated button with center to apply the max width
         Center(

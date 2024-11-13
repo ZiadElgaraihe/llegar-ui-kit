@@ -1,54 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/core/presentation/widgets/custom_checkbox.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_strings.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/functions/theme_colors.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
-class RememberMeRow extends StatefulWidget {
+class RememberMeRow extends StatelessWidget {
   const RememberMeRow({
     super.key,
-    this.onChanged,
+    required this.onChanged,
   });
 
-  final void Function(bool value)? onChanged;
-
-  @override
-  State<RememberMeRow> createState() => _RememberMeRowState();
-}
-
-class _RememberMeRowState extends State<RememberMeRow> {
-  late ValueNotifier<bool> _rememberMe;
-
-  @override
-  void dispose() {
-    _rememberMe.dispose();
-    super.dispose();
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    _rememberMe = ValueNotifier<bool>(false);
-  }
-
-  void _onChanged(value) {
-    _rememberMe.value = value!;
-    if (widget.onChanged != null) widget.onChanged!(value);
-  }
+  final void Function(bool value) onChanged;
 
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        ValueListenableBuilder(
-          valueListenable: _rememberMe,
-          builder: (context, rememberMe, child) => Checkbox(
-            value: rememberMe,
-            onChanged: _onChanged,
-          ),
-        ),
+        CustomCheckbox(onChanged: onChanged),
         AppSizes.width8,
         Text(
           translate(context).rememberMe,
