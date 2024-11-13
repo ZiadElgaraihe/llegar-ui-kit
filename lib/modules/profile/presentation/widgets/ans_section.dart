@@ -10,7 +10,7 @@ class AnsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
-      padding: const EdgeInsets.symmetric(vertical: 24),
+      padding: AppSizes.bodySymmetricPadding(context),
       itemCount: 3,
       itemBuilder: (context, index) => AnsContainer(answerNumber: index + 1),
       separatorBuilder: (context, index) => AppSizes.height16,

@@ -11,24 +11,24 @@ class HelpCenterViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: AppSizes.bodyHorizontalPadding(context),
-      child: const DefaultTabController(
-        length: 2,
-        child: Column(
-          children: [
-            AppSizes.height24,
-            HelpCenterTabBar(),
-            Expanded(
-              child: TabBarView(
-                children: [
-                  FaqSection(),
-                  AnsSection(),
-                ],
-              ),
+    return DefaultTabController(
+      length: 2,
+      child: Column(
+        children: [
+          AppSizes.height24,
+          Padding(
+            padding: AppSizes.bodyHorizontalPadding(context),
+            child: const HelpCenterTabBar(),
+          ),
+          const Expanded(
+            child: TabBarView(
+              children: [
+                FaqSection(),
+                AnsSection(),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
