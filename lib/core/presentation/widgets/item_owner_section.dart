@@ -19,7 +19,7 @@ class ItemOwnerSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const ItemOwnerContainer(),
+        ItemOwnerContainer(isMyItem: isMyItem),
         AppSizes.height24,
         ItemDetailsOutlinedButton(
           onPressed: () {
