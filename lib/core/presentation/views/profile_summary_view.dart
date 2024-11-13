@@ -18,7 +18,7 @@ class ProfileSummaryView extends StatelessWidget {
         title: profileSummaryEntity.appBarTitle,
       ),
       body: ProfileSummaryViewBody(
-        isMyItem: profileSummaryEntity.isMyItem,
+        profileSummaryEntity: profileSummaryEntity,
       ),
     );
   }

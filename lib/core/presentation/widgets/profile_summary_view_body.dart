@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:llegar/core/domain/entities/chat_entity.dart';
+import 'package:llegar/core/domain/entities/profile_summary_entity.dart';
 import 'package:llegar/core/presentation/widgets/comment_widget.dart';
 import 'package:llegar/core/presentation/widgets/custom_elevated_button.dart';
 import 'package:llegar/core/presentation/widgets/profile_summary_info_section.dart';
@@ -15,10 +16,10 @@ import 'package:llegar/shared/utils/functions/translate.dart';
 class ProfileSummaryViewBody extends StatelessWidget {
   const ProfileSummaryViewBody({
     super.key,
-    required this.isMyItem,
+    required this.profileSummaryEntity,
   });
 
-  final bool isMyItem;
+  final ProfileSummaryEntity profileSummaryEntity;
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +34,7 @@ class ProfileSummaryViewBody extends StatelessWidget {
                 const ProfileSummaryInfoSection(),
                 // Display message button (which navigate to chat view)
                 // and review button if item is not my item
-                if (!isMyItem) ...[
+                if (!profileSummaryEntity.isMyItem) ...[
                   AppSizes.height24,
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -90,7 +91,7 @@ class ProfileSummaryViewBody extends StatelessWidget {
       context,
       AppRoutes.chatView,
       arguments: ChatEntity(
-        appBarTitle: 'Fareed Khaled',
+        appBarTitle: profileSummaryEntity.appBarTitle,
         messages: [],
       ),
     );

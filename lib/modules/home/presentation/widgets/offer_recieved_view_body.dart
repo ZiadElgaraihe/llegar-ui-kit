@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:llegar/core/domain/entities/profile_summary_entity.dart';
 import 'package:llegar/core/presentation/widgets/item_details_outlined_button.dart';
 import 'package:llegar/core/presentation/widgets/item_widget.dart';
 import 'package:llegar/core/presentation/widgets/profile_photo.dart';
@@ -39,7 +40,9 @@ class OfferRecievedViewBody extends StatelessWidget {
                 Navigator.pushNamed(
                   context,
                   AppRoutes.profileSummaryView,
-                  arguments: 'Atef Khaled',
+                  arguments: const ProfileSummaryEntity(
+                    appBarTitle: 'Atef Khaled',
+                  ),
                 );
               },
               title: translate(context).seeHisPage,
