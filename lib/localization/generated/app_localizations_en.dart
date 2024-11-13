@@ -283,7 +283,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get disclosureOfYourPersonalData => 'Disclosure of Your Personal Data';
 
   @override
-  String get weMayShareYourInformationWith => 'We may share your information with:\n\n• Service Providers: To help us provide and maintain our Services, we may share your information with trusted third-party service providers.\n\n• Legal Compliance: We may disclose your information if required by law or to protect our legal rights.\n\n• Business Transfers: If we are involved in a merger, acquisition, or sale of assets, your information may be transferred.';
+  String get weMayShareYourInformationWith => 'We may share your information with:\n\n• Service Providers: To help us provide and maintain our Services, we may share your information with trusted third-party service providers.\n\n• Business Transfers: If we are involved in a merger, acquisition, or sale of assets, your information may be transferred.';
 
   @override
   String get dataSecurity => 'Data Security';
