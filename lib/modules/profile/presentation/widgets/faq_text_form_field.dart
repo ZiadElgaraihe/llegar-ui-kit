@@ -28,6 +28,7 @@ class FaqTextFormField extends StatelessWidget {
       ),
       onSaved: onSaved,
       validator: validator,
+      keyboardType: TextInputType.multiline,
       decoration: InputDecoration(
         contentPadding: const EdgeInsets.all(24),
         filled: false,

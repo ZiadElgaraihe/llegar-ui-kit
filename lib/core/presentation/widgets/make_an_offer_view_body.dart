@@ -29,6 +29,7 @@ class MakeAnOfferViewBody extends StatelessWidget {
                 AppSizes.height24,
                 CustomTextFormField(
                   hintText: translate(context).textMessage,
+                  keyboardType: TextInputType.multiline,
                   minLines: 5,
                   maxLines: 7,
                 ),
