@@ -112,6 +112,7 @@ class _ProfileItemsState extends State<ProfileItems> {
         onTap: () {
           showCustomModalBottomSheet(
             context,
+            height: 255,
             builder: (context) => const LogOutBottomSheet(),
           );
         },
