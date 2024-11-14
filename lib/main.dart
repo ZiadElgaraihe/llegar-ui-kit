@@ -1,4 +1,3 @@
-import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -13,19 +12,16 @@ void main() {
 
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]).then(
     (value) => runApp(
-      DevicePreview(
-        enabled: false,
-        builder: (context) => MultiBlocProvider(
-          providers: [
-            BlocProvider<ThemeCubit>(
-              create: (context) => ThemeCubit()..setUpThemeMode(),
-            ),
-            BlocProvider<LocaleCubit>(
-              create: (context) => LocaleCubit()..setUpLocale(),
-            ),
-          ],
-          child: const Llegar(),
-        ),
+      MultiBlocProvider(
+        providers: [
+          BlocProvider<ThemeCubit>(
+            create: (context) => ThemeCubit()..setUpThemeMode(),
+          ),
+          BlocProvider<LocaleCubit>(
+            create: (context) => LocaleCubit()..setUpLocale(),
+          ),
+        ],
+        child: const Llegar(),
       ),
     ),
   );

@@ -16,7 +16,6 @@ dependencies:
   carousel_slider: ^5.0.0
   cupertino_icons: ^1.0.6
   dash_chat_2: ^0.0.21
-  device_preview: ^1.2.0
   expandable_page_view: ^1.0.17
   flutter:
     sdk: flutter
@@ -95,4 +94,4 @@ flutter:
           weight: 900
 
 flutter_intl:
-  enabled: true
+  enabled: false
