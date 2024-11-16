@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:llegar/core/domain/entities/address_entity.dart';
 import 'package:llegar/core/presentation/widgets/custom_checkbox.dart';
@@ -18,12 +19,21 @@ class LocationDraggableSheet extends StatelessWidget {
   final AddressEntity? addressEntity;
   final DraggableScrollableController draggableController;
 
+  /// Determines whether the current device is a desktop platform.
+  bool get _isDesktop => (defaultTargetPlatform == TargetPlatform.linux ||
+      defaultTargetPlatform == TargetPlatform.macOS ||
+      defaultTargetPlatform == TargetPlatform.windows);
+
   @override
   Widget build(BuildContext context) {
     return DraggableScrollableSheet(
       controller: draggableController,
-      initialChildSize: (addressEntity != null) ? 0.6 : 0.3,
-      minChildSize: 0.3,
+      initialChildSize: _isDesktop
+          ? 0.6
+          : (addressEntity != null)
+              ? 0.6
+              : 0.3,
+      minChildSize: _isDesktop ? 0.6 : 0.3,
       maxChildSize: 0.6,
       builder: (context, scrollController) => Container(
         padding: const EdgeInsets.only(top: 12.0),
