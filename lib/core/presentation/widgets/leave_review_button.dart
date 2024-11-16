@@ -30,7 +30,7 @@ class LeaveReviewButton extends StatelessWidget {
     futureDelayedNavigator(() {
       showCustomModalBottomSheet(
         context,
-        height: 500,
+        isConstraintsSpecified: false,
         builder: (context) => const ReviewBottomSheet(),
       );
     });

@@ -3,12 +3,14 @@ import 'package:flutter/material.dart';
 Future<T?> showCustomModalBottomSheet<T>(
   BuildContext context, {
   required Widget Function(BuildContext context) builder,
+  bool isConstraintsSpecified = true,
   double height = 250,
 }) {
   return showModalBottomSheet(
     context: context,
     isScrollControlled: true,
-    constraints: BoxConstraints.expand(height: height),
+    constraints:
+        isConstraintsSpecified ? BoxConstraints.expand(height: height) : null,
     enableDrag: true,
     sheetAnimationStyle: AnimationStyle(
       duration: const Duration(milliseconds: 500),
