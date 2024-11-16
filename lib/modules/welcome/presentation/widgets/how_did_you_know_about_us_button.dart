@@ -6,8 +6,8 @@ import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/functions/theme_colors.dart';
 
-class HowDidYouKnowUsMobileLayoutButton extends StatelessWidget {
-  const HowDidYouKnowUsMobileLayoutButton({
+class HowDidYouKnowUsButton extends StatelessWidget {
+  const HowDidYouKnowUsButton({
     super.key,
     required this.howDidYouKnowUsItemEntity,
     required this.isActive,

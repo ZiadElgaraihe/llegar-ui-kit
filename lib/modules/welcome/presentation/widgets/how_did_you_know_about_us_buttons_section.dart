@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/modules/welcome/domain/entities/how_did_you_know_us_item_entity.dart';
-import 'package:llegar/modules/welcome/presentation/widgets/how_did_you_know__about_us_tablet_layout_buttons_section.dart';
-import 'package:llegar/modules/welcome/presentation/widgets/how_did_you_know_about_us_mobile_layout_buttons_section.dart';
+import 'package:llegar/modules/welcome/presentation/widgets/how_did_you_know_about_us_button.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 
 class HowDidYouKnowAboutUsButtonsSection extends StatelessWidget {
@@ -18,21 +17,22 @@ class HowDidYouKnowAboutUsButtonsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.sizeOf(context).width;
     return ValueListenableBuilder(
       valueListenable: currentIndexValueNotifier,
-      builder: (context, currentIndex, child) =>
-          (width < AppSizes.expandedBreakpoint)
-              ? HowDidYouKnowUsMobileLayoutButtonsSection(
-                  currentIndex: currentIndex,
-                  items: items,
-                  onTap: onItemSelected,
-                )
-              : HowDidYouKnowUsTabletLayoutButtonsSection(
-                  currentIndex: currentIndex,
-                  items: items,
-                  onTap: onItemSelected,
-                ),
+      builder: (context, currentIndex, child) => Column(
+        children: [
+          for (int index = 0; index < items.length; index++) ...[
+            HowDidYouKnowUsButton(
+              howDidYouKnowUsItemEntity: items[index],
+              isActive: currentIndex == index,
+              onTap: () {
+                onItemSelected(index);
+              },
+            ),
+            if (index < items.length - 1) AppSizes.height12,
+          ],
+        ],
+      ),
     );
   }
 }
