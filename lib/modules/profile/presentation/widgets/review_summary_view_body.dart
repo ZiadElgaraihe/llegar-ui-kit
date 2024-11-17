@@ -20,11 +20,11 @@ class ReviewSummaryViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: AppSizes.bodyHorizontalPadding(context),
-      child: CustomScrollView(
-        slivers: [
-          SliverToBoxAdapter(
+    return CustomScrollView(
+      slivers: [
+        SliverPadding(
+          padding: AppSizes.bodyHorizontalPadding(context),
+          sliver: SliverToBoxAdapter(
             child: Column(
               children: [
                 AppSizes.height12,
@@ -39,19 +39,20 @@ class ReviewSummaryViewBody extends StatelessWidget {
                 ),
                 AppSizes.height16,
                 PaymentMethodCard(
-                  paymentMethodEntity: reviewSummaryEntity.paymentMethodEntity,
+                  paymentMethodEntity:
+                      reviewSummaryEntity.paymentMethodEntity,
                 ),
               ],
             ),
           ),
-          CustomSliverFillRemainingFooter(
-            buttonTitle: translate(context).confirmPayment,
-            onFuturePressed: () async {
-              await _onConfirmPaymentPressed(context);
-            },
-          ),
-        ],
-      ),
+        ),
+        CustomSliverFillRemainingFooter(
+          buttonTitle: translate(context).confirmPayment,
+          onFuturePressed: () async {
+            await _onConfirmPaymentPressed(context);
+          },
+        ),
+      ],
     );
   }
 

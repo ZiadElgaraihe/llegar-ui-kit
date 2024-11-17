@@ -19,7 +19,7 @@ class CustomSliverFillRemainingFooter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverPadding(
-      padding: padding ?? EdgeInsets.zero,
+      padding: padding ?? AppSizes.bodyHorizontalPadding(context),
       sliver: SliverFillRemaining(
         hasScrollBody: false,
         child: Column(

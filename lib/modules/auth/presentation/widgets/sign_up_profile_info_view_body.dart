@@ -19,21 +19,21 @@ class SignUpProfileInfoViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: AppSizes.bodyHorizontalPadding(context),
-      child: CustomScrollView(
-        slivers: [
-          const SliverToBoxAdapter(
+    return CustomScrollView(
+      slivers: [
+        SliverPadding(
+          padding: AppSizes.bodyHorizontalPadding(context),
+          sliver: const SliverToBoxAdapter(
             child: SignUpProfileInfoForm(),
           ),
-          CustomSliverFillRemainingFooter(
-            buttonTitle: translate(context).continueText,
-            onPressed: () {
-              _onPressed(context);
-            },
-          )
-        ],
-      ),
+        ),
+        CustomSliverFillRemainingFooter(
+          buttonTitle: translate(context).continueText,
+          onPressed: () {
+            _onPressed(context);
+          },
+        )
+      ],
     );
   }
 }

@@ -13,32 +13,36 @@ class SignUpIdentificationViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: AppSizes.bodyHorizontalPadding(context),
-      child: CustomScrollView(
-        slivers: [
-          const SliverToBoxAdapter(
+    return CustomScrollView(
+      slivers: [
+        SliverPadding(
+          padding: AppSizes.bodyHorizontalPadding(context),
+          sliver: const SliverToBoxAdapter(
             child: SignUpIdentificationForm(),
           ),
-          CustomSliverFillRemainingFooter(
-            buttonTitle: translate(context).continueText,
-            onFuturePressed: () async {
-              //remove this & add your logic
-              await Future.delayed(const Duration(seconds: 2));
+        ),
+        CustomSliverFillRemainingFooter(
+          buttonTitle: translate(context).continueText,
+          onFuturePressed: () async {
+            await _onFuturePressed(context);
+          },
+        ),
+      ],
+    );
+  }
 
-              if (!context.mounted) return;
-              Navigator.pushNamedAndRemoveUntil(
-                context,
-                AppRoutes.successView,
-                (route) => false,
-                arguments: SuccessViewEntity(
-                  subTitle: translate(context).welcomeToLlegar,
-                  title: translate(context).successfulSignUp,
-                ),
-              );
-            },
-          ),
-        ],
+  Future<void> _onFuturePressed(BuildContext context) async {
+    //remove this & add your logic
+    await Future.delayed(const Duration(seconds: 2));
+
+    if (!context.mounted) return;
+    Navigator.pushNamedAndRemoveUntil(
+      context,
+      AppRoutes.successView,
+      (route) => false,
+      arguments: SuccessViewEntity(
+        subTitle: translate(context).welcomeToLlegar,
+        title: translate(context).successfulSignUp,
       ),
     );
   }

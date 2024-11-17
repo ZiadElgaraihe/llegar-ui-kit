@@ -38,7 +38,6 @@ class MakeAnOfferViewBody extends StatelessWidget {
           ),
         ),
         CustomSliverFillRemainingFooter(
-          padding: AppSizes.bodyHorizontalPadding(context),
           buttonTitle: translate(context).sendOffer,
           onFuturePressed: () async {
             await _onSendOfferPressed(context);

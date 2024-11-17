@@ -27,31 +27,35 @@ class _PremiumPackagePaymentViewBodyState
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: AppSizes.bodyHorizontalPadding(context),
-      child: CustomScrollView(
-        slivers: [
-          SliverToBoxAdapter(
+    return CustomScrollView(
+      slivers: [
+        SliverPadding(
+          padding: AppSizes.bodyHorizontalPadding(context),
+          sliver: SliverToBoxAdapter(
             child: CustomPaymentSection(
               onChanged: (paymentMethodEntity) {
                 _selectedPaymentMethod = paymentMethodEntity!;
               },
             ),
           ),
-          CustomSliverFillRemainingFooter(
-            buttonTitle: translate(context).continueText,
-            onPressed: () {
-              Navigator.pushNamed(
-                context,
-                AppRoutes.reviewSummaryView,
-                arguments: ReviewSummaryEntity(
-                  premiumPackageEntity: widget.premiumPackageEntity,
-                  paymentMethodEntity: _selectedPaymentMethod,
-                ),
-              );
-            },
-          ),
-        ],
+        ),
+        CustomSliverFillRemainingFooter(
+          buttonTitle: translate(context).continueText,
+          onPressed: () {
+            _onPressed(context);
+          },
+        ),
+      ],
+    );
+  }
+
+  void _onPressed(BuildContext context) {
+    Navigator.pushNamed(
+      context,
+      AppRoutes.reviewSummaryView,
+      arguments: ReviewSummaryEntity(
+        premiumPackageEntity: widget.premiumPackageEntity,
+        paymentMethodEntity: _selectedPaymentMethod,
       ),
     );
   }

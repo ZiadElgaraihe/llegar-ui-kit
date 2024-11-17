@@ -26,13 +26,16 @@ class LocationViewBody extends StatelessWidget {
           ),
         ),
         CustomSliverFillRemainingFooter(
-          padding: AppSizes.bodyHorizontalPadding(context),
           buttonTitle: translate(context).addNewLocation,
           onPressed: () {
-            Navigator.pushNamed(context, AppRoutes.locationDetailsView);
+            _onPressed(context);
           },
         ),
       ],
     );
+  }
+
+  void _onPressed(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.locationDetailsView);
   }
 }

@@ -20,11 +20,11 @@ class SuccessViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: AppSizes.bodyHorizontalPadding(context),
-      child: CustomScrollView(
-        slivers: [
-          SliverFillRemaining(
+    return CustomScrollView(
+      slivers: [
+        SliverPadding(
+          padding: AppSizes.bodyHorizontalPadding(context),
+          sliver: SliverFillRemaining(
             hasScrollBody: false,
             child: Column(
               children: [
@@ -58,19 +58,23 @@ class SuccessViewBody extends StatelessWidget {
                 CustomElevatedButton(
                   title: translate(context).getStarted,
                   onPressed: () {
-                    if (!context.mounted) return;
-                    Navigator.pushReplacementNamed(
-                      context,
-                      AppRoutes.navBarView,
-                    );
+                    _onPressed(context);
                   },
                 ),
                 AppSizes.height24
               ],
             ),
           ),
-        ],
-      ),
+        ),
+      ],
+    );
+  }
+
+  void _onPressed(BuildContext context) {
+    if (!context.mounted) return;
+    Navigator.pushReplacementNamed(
+      context,
+      AppRoutes.navBarView,
     );
   }
 }

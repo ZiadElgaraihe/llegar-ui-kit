@@ -45,11 +45,11 @@ class _FundMyWalletViewBodyState extends State<FundMyWalletViewBody> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: AppSizes.bodyHorizontalPadding(context),
-      child: CustomScrollView(
-        slivers: [
-          SliverToBoxAdapter(
+    return CustomScrollView(
+      slivers: [
+        SliverPadding(
+          padding: AppSizes.bodyHorizontalPadding(context),
+          sliver: SliverToBoxAdapter(
             child: Column(
               children: [
                 AppSizes.height16,
@@ -74,18 +74,18 @@ class _FundMyWalletViewBodyState extends State<FundMyWalletViewBody> {
               ],
             ),
           ),
-          CustomSliverFillRemainingFooter(
-            buttonTitle: translate(context).continueText,
-            onPressed: () {
-              _onContinuePressed(context);
-            },
-          ),
-        ],
-      ),
+        ),
+        CustomSliverFillRemainingFooter(
+          buttonTitle: translate(context).continueText,
+          onPressed: () {
+            _onContinuePressed(context);
+          },
+        ),
+      ],
     );
   }
 
-  /// Create listener to change controller text value every time 
+  /// Create listener to change controller text value every time
   /// _selectedAmount value changed
   void _setControllerValue(TextEditingController controller) {
     _selectedAmount.addListener(

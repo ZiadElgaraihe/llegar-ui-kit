@@ -21,14 +21,16 @@ class _AddNewCardViewBodyState extends State<AddNewCardViewBody> {
   Widget build(BuildContext context) {
     return CustomScrollView(
       slivers: [
-        SliverToBoxAdapter(
-          child: Padding(
-            padding: EdgeInsets.symmetric(
-              horizontal:
-                  MediaQuery.sizeOf(context).width < AppSizes.mediumtBreakpoint
-                      ? 0
-                      : 8,
-            ),
+        SliverPadding(
+          padding: EdgeInsets.symmetric(
+            // Used padding this way because credit card already has default
+            // horizontal padding 16
+            horizontal:
+                MediaQuery.sizeOf(context).width < AppSizes.mediumtBreakpoint
+                    ? 0
+                    : 8,
+          ),
+          sliver: SliverToBoxAdapter(
             child: CreditCardData(
               formKey: _formKey,
               onCreditCardModelChange: (CreditCardModel creditCardModel) {},
@@ -37,7 +39,6 @@ class _AddNewCardViewBodyState extends State<AddNewCardViewBody> {
         ),
         CustomSliverFillRemainingFooter(
           buttonTitle: translate(context).add,
-          padding: AppSizes.bodyHorizontalPadding(context),
           onFuturePressed: () async {
             await _onAddPressed(context);
           },

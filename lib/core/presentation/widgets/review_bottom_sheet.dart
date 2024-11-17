@@ -23,11 +23,11 @@ class ReviewBottomSheet extends StatelessWidget {
         height: 450,
         child: GestureDetector(
           onTap: () => FocusManager.instance.primaryFocus!.unfocus(),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24),
-            child: CustomScrollView(
-              slivers: [
-                SliverFillRemaining(
+          child: CustomScrollView(
+            slivers: [
+              SliverPadding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                sliver: SliverFillRemaining(
                   hasScrollBody: false,
                   child: Column(
                     children: [
@@ -66,12 +66,7 @@ class ReviewBottomSheet extends StatelessWidget {
                           Flexible(
                             child: CustomElevatedButton(
                               onFuturePressed: () async {
-                                //remove this & add your logic
-                                await Future.delayed(
-                                    const Duration(seconds: 2));
-
-                                if (!context.mounted) return;
-                                Navigator.pop(context);
+                                await _onFuturePressed(context);
                               },
                               title: translate(context).submit,
                             ),
@@ -82,11 +77,19 @@ class ReviewBottomSheet extends StatelessWidget {
                     ],
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
     );
+  }
+
+  Future<void> _onFuturePressed(BuildContext context) async {
+    //remove this & add your logic
+    await Future.delayed(const Duration(seconds: 2));
+
+    if (!context.mounted) return;
+    Navigator.pop(context);
   }
 }

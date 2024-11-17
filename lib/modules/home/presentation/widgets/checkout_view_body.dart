@@ -67,7 +67,6 @@ class CheckoutViewBody extends StatelessWidget {
           ),
         ),
         CustomSliverFillRemainingFooter(
-          padding: AppSizes.bodyHorizontalPadding(context),
           buttonTitle: translate(context).continueToPayment,
           onPressed: () {
             _onContinueToPaymentPressed(context);

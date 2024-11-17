@@ -103,7 +103,6 @@ class LocationDraggableSheet extends StatelessWidget {
               ),
             ),
             CustomSliverFillRemainingFooter(
-              padding: AppSizes.bodyHorizontalPadding(context),
               onFuturePressed: () async {},
               buttonTitle: (addressEntity != null)
                   ? translate(context).edit
