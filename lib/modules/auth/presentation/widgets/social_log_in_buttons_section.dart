@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/modules/auth/domain/entities/social_auth_entity.dart';
 import 'package:llegar/modules/auth/presentation/widgets/social_log_in_outlined_button.dart';
-import 'package:llegar/modules/auth/presentation/widgets/vertical_social_log_in_outlined_button.dart';
 import 'package:llegar/shared/constants/app_icons.dart';
 import 'package:llegar/shared/constants/app_sizes.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
@@ -21,8 +20,7 @@ class SocialLogInButtonsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (MediaQuery.sizeOf(context).width < AppSizes.expandedBreakpoint) {
-      return Column(
+    return Column(
         children: [
           SocialLogInOutlinedButton(
             onFuturePressed: onContinueWithFacebook,
@@ -53,44 +51,5 @@ class SocialLogInButtonsSection extends StatelessWidget {
           ),
         ],
       );
-    } else {
-      return Row(
-        children: [
-          Expanded(
-            child: VerticalSocialLogInOutlinedButton(
-              onFuturePressed: onContinueWithFacebook,
-              socialLogInButtonEntity: SocialAuthEntity(
-                icon: AppIcons.facebook,
-                title: translate(context).continueWithFacebook,
-              ),
-            ),
-          ),
-          AppSizes.width12,
-          Expanded(
-            child: VerticalSocialLogInOutlinedButton(
-              onFuturePressed: onContinueWithGoogle,
-              socialLogInButtonEntity: SocialAuthEntity(
-                icon: AppIcons.google,
-                title: translate(context).continueWithGoogle,
-              ),
-            ),
-          ),
-          AppSizes.width12,
-          Expanded(
-            child: VerticalSocialLogInOutlinedButton(
-              onFuturePressed: onContinueWithApple,
-              socialLogInButtonEntity: SocialAuthEntity(
-                icon: valueBasedOnTheme<String>(
-                  context,
-                  light: AppIcons.apple,
-                  dark: AppIcons.appleDark,
-                )!,
-                title: translate(context).continueWithApple,
-              ),
-            ),
-          ),
-        ],
-      );
-    }
   }
 }

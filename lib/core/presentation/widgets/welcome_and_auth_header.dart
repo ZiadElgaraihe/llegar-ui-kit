@@ -23,7 +23,7 @@ class WelcomeAndAuthHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        AppSizes.height12,
+        AppSizes.height24,
         SvgPicture.asset(headerImage),
         AppSizes.height12,
         Text(
