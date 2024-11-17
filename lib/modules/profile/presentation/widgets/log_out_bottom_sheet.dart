@@ -30,11 +30,14 @@ class LogOutBottomSheet extends StatelessWidget {
                   ),
                 ),
                 const Divider(height: 32),
-                FittedBox(
-                  fit: BoxFit.scaleDown,
-                  child: Text(
-                    translate(context).areYouSureYouWantToLogOut,
-                    style: AppTextStyles.bold20(context),
+                SizedBox(
+                  height: 28,
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      translate(context).areYouSureYouWantToLogOut,
+                      style: AppTextStyles.bold20(context),
+                    ),
                   ),
                 ),
                 const Expanded(child: AppSizes.height24),

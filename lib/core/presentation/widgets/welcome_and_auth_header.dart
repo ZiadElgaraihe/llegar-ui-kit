@@ -35,6 +35,7 @@ class WelcomeAndAuthHeader extends StatelessWidget {
               dark: AppColors.white,
             ),
           ),
+          textAlign: TextAlign.center,
         ),
         AppSizes.height24,
       ],
