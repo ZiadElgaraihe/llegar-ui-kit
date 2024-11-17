@@ -29,6 +29,7 @@ class MakeAnOfferViewBody extends StatelessWidget {
                 AppSizes.height24,
                 CustomTextFormField(
                   hintText: translate(context).textMessage,
+                  keyboardType: TextInputType.multiline,
                   minLines: 5,
                   maxLines: 7,
                 ),
@@ -37,7 +38,6 @@ class MakeAnOfferViewBody extends StatelessWidget {
           ),
         ),
         CustomSliverFillRemainingFooter(
-          padding: AppSizes.bodyHorizontalPadding(context),
           buttonTitle: translate(context).sendOffer,
           onFuturePressed: () async {
             await _onSendOfferPressed(context);

@@ -52,12 +52,6 @@ class _HowDidYouKnowUsViewBodyState extends State<HowDidYouKnowUsViewBody> {
   }
 
   @override
-  void dispose() {
-    _currentIndex.dispose();
-    super.dispose();
-  }
-
-  @override
   void initState() {
     super.initState();
     _currentIndex = ValueNotifier<int?>(null);
@@ -75,12 +69,18 @@ class _HowDidYouKnowUsViewBodyState extends State<HowDidYouKnowUsViewBody> {
   }
 
   @override
+  void dispose() {
+    _currentIndex.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: AppSizes.bodyHorizontalPadding(context),
-      child: CustomScrollView(
-        slivers: [
-          SliverToBoxAdapter(
+    return CustomScrollView(
+      slivers: [
+        SliverPadding(
+          padding: AppSizes.bodyHorizontalPadding(context),
+          sliver: SliverToBoxAdapter(
             child: Column(
               children: [
                 WelcomeAndAuthHeader(
@@ -99,12 +99,12 @@ class _HowDidYouKnowUsViewBodyState extends State<HowDidYouKnowUsViewBody> {
               ],
             ),
           ),
-          CustomSliverFillRemainingFooter(
-            buttonTitle: translate(context).continueText,
-            onPressed: _onContinuePressed,
-          ),
-        ],
-      ),
+        ),
+        CustomSliverFillRemainingFooter(
+          buttonTitle: translate(context).continueText,
+          onPressed: _onContinuePressed,
+        ),
+      ],
     );
   }
 }

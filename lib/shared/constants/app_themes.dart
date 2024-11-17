@@ -10,6 +10,9 @@ abstract class AppThemes {
       ThemeData.light().copyWith(
         scaffoldBackgroundColor: AppColors.white,
         colorScheme: ColorScheme.fromSeed(seedColor: AppColors.prussianBlue),
+        textSelectionTheme: const TextSelectionThemeData(
+          selectionHandleColor: AppColors.prussianBlue,
+        ),
         dividerTheme: const DividerThemeData(
           color: AppColors.antiFlashWhite,
           thickness: 1,
@@ -319,6 +322,9 @@ abstract class AppThemes {
   static ThemeData darkTheme(BuildContext context) => ThemeData.dark().copyWith(
         scaffoldBackgroundColor: AppColors.prussianBlue,
         colorScheme: ColorScheme.fromSeed(seedColor: AppColors.prussianBlue),
+        textSelectionTheme: const TextSelectionThemeData(
+          selectionHandleColor: AppColors.orange,
+        ),
         dividerTheme: const DividerThemeData(
           color: AppColors.antiFlashWhite,
           thickness: 1,

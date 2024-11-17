@@ -13,19 +13,22 @@ class FaqSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomScrollView(
       slivers: [
-        SliverFillRemaining(
-          hasScrollBody: false,
-          child: Column(
-            children: [
-              const Expanded(child: AppSizes.height24),
-              const FaqTextFormField(),
-              const Expanded(flex: 2, child: AppSizes.height24),
-              CustomElevatedButton(
-                title: translate(context).send,
-                onFuturePressed: () async {},
-              ),
-              AppSizes.height24,
-            ],
+        SliverPadding(
+          padding: AppSizes.bodyHorizontalPadding(context),
+          sliver: SliverFillRemaining(
+            hasScrollBody: false,
+            child: Column(
+              children: [
+                const Expanded(child: AppSizes.height24),
+                const FaqTextFormField(),
+                const Expanded(flex: 2, child: AppSizes.height24),
+                CustomElevatedButton(
+                  title: translate(context).send,
+                  onFuturePressed: () async {},
+                ),
+                AppSizes.height24,
+              ],
+            ),
           ),
         ),
       ],

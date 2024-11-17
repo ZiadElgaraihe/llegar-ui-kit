@@ -17,17 +17,22 @@ class LanguageListTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      title: Text(
-        languageEntity.title,
-        style: AppTextStyles.semiBold20(context).copyWith(
-          color: secondaryThemeColor(context),
+    return GestureDetector(
+      onTap: () {
+        onChanged(languageEntity.value);
+      },
+      child: ListTile(
+        title: Text(
+          languageEntity.title,
+          style: AppTextStyles.semiBold20(context).copyWith(
+            color: secondaryThemeColor(context),
+          ),
         ),
-      ),
-      trailing: Radio(
-        value: languageEntity.value,
-        groupValue: groupValue,
-        onChanged: onChanged,
+        trailing: Radio(
+          value: languageEntity.value,
+          groupValue: groupValue,
+          onChanged: onChanged,
+        ),
       ),
     );
   }

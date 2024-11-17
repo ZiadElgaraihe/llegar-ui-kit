@@ -15,11 +15,11 @@ class ResetPasswordViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: AppSizes.bodyHorizontalPadding(context),
-      child: CustomScrollView(
-        slivers: [
-          SliverToBoxAdapter(
+    return CustomScrollView(
+      slivers: [
+        SliverPadding(
+          padding: AppSizes.bodyHorizontalPadding(context),
+          sliver: SliverToBoxAdapter(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -33,25 +33,29 @@ class ResetPasswordViewBody extends StatelessWidget {
               ],
             ),
           ),
-          CustomSliverFillRemainingFooter(
-            buttonTitle: translate(context).continueText,
-            onFuturePressed: () async {
-              //remove this & add your logic
-              await Future.delayed(const Duration(seconds: 2));
+        ),
+        CustomSliverFillRemainingFooter(
+          buttonTitle: translate(context).continueText,
+          onFuturePressed: () async {
+            await _onFuturePressed(context);
+          },
+        ),
+      ],
+    );
+  }
 
-              if (!context.mounted) return;
-              Navigator.pushNamedAndRemoveUntil(
-                context,
-                AppRoutes.successView,
-                (route) => false,
-                arguments: SuccessViewEntity(
-                  subTitle: translate(context).yourPasswordHasBeenUpdated,
-                  title: translate(context).passwordChangedSuccessfully,
-                ),
-              );
-            },
-          ),
-        ],
+  Future<void> _onFuturePressed(BuildContext context) async {
+    //remove this & add your logic
+    await Future.delayed(const Duration(seconds: 2));
+
+    if (!context.mounted) return;
+    Navigator.pushNamedAndRemoveUntil(
+      context,
+      AppRoutes.successView,
+      (route) => false,
+      arguments: SuccessViewEntity(
+        subTitle: translate(context).yourPasswordHasBeenUpdated,
+        title: translate(context).passwordChangedSuccessfully,
       ),
     );
   }

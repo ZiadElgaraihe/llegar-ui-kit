@@ -40,7 +40,9 @@ class SignUpViewBody extends StatelessWidget {
         ),
         const SignUpForm(),
         AppSizes.height16,
-        const RememberMeRow(),
+        RememberMeRow(
+          onChanged: (value) {},
+        ),
         AppSizes.height16,
         //wrap custom elevated button with center to apply the max width
         Center(

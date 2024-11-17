@@ -14,54 +14,64 @@ class LogOutBottomSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: AppSizes.bodyHorizontalPadding(context),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Text(
-            translate(context).logOut,
-            style: AppTextStyles.bold24(context).copyWith(
-              color: AppColors.red,
+    return CustomScrollView(
+      slivers: [
+        SliverPadding(
+          padding: AppSizes.bodyHorizontalPadding(context),
+          sliver: SliverFillRemaining(
+            hasScrollBody: false,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(
+                  translate(context).logOut,
+                  style: AppTextStyles.bold24(context).copyWith(
+                    color: AppColors.red,
+                  ),
+                ),
+                const Divider(height: 32),
+                SizedBox(
+                  height: 28,
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      translate(context).areYouSureYouWantToLogOut,
+                      style: AppTextStyles.bold20(context),
+                    ),
+                  ),
+                ),
+                const Expanded(child: AppSizes.height24),
+                Row(
+                  children: [
+                    Flexible(
+                      child: CustomSecondaryElevatedButton(
+                        title: translate(context).cancel,
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                      ),
+                    ),
+                    AppSizes.width36,
+                    Flexible(
+                      child: CustomElevatedButton(
+                        title: translate(context).yes,
+                        onPressed: () {
+                          Navigator.pushNamedAndRemoveUntil(
+                            context,
+                            AppRoutes.socialLogInView,
+                            (route) => false,
+                          );
+                        },
+                      ),
+                    ),
+                  ],
+                ),
+                AppSizes.height24,
+              ],
             ),
           ),
-          const Divider(height: 32),
-          FittedBox(
-            fit: BoxFit.scaleDown,
-            child: Text(
-              translate(context).areYouSureYouWantToLogOut,
-              style: AppTextStyles.bold20(context),
-            ),
-          ),
-          const Spacer(),
-          Row(
-            children: [
-              Flexible(
-                child: CustomSecondaryElevatedButton(
-                  title: translate(context).cancel,
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                ),
-              ),
-              AppSizes.width36,
-              Flexible(
-                child: CustomElevatedButton(
-                  title: translate(context).yes,
-                  onPressed: () {
-                    Navigator.pushNamedAndRemoveUntil(
-                      context,
-                      AppRoutes.socialLogInView,
-                      (route) => false,
-                    );
-                  },
-                ),
-              ),
-            ],
-          ),
-          AppSizes.height24,
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

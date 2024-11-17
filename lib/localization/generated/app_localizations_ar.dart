@@ -283,7 +283,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get disclosureOfYourPersonalData => 'الكشف عن بياناتك الشخصية';
 
   @override
-  String get weMayShareYourInformationWith => 'قد نشارك معلوماتك مع:\n\n• مقدمي الخدمات: لمساعدتنا في تقديم خدماتنا والحفاظ عليها، قد نشارك معلوماتك مع مقدمي خدمات موثوق بهم.\n\n• الامتثال القانوني: قد نفصح عن معلوماتك إذا كان ذلك مطلوبًا بموجب القانون أو لحماية حقوقنا القانونية.\n\n• نقل الأعمال: في حالة اندماج أو استحواذ أو بيع أصول، قد يتم نقل معلوماتك.';
+  String get weMayShareYourInformationWith => 'قد نشارك معلوماتك مع:\n\n• مقدمي الخدمات: لمساعدتنا في تقديم خدماتنا والحفاظ عليها، قد نشارك معلوماتك مع مقدمي خدمات موثوق بهم.\n\n• نقل الأعمال: في حالة اندماج أو استحواذ أو بيع أصول، قد يتم نقل معلوماتك.';
 
   @override
   String get dataSecurity => 'أمن البيانات';
@@ -422,6 +422,9 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get yourItemHasBeenAddedSuccessfully => 'تمت إضافة العنصر بنجاح.';
+
+  @override
+  String get yourItemHasBeenModifiedSuccessfully => 'تم تعديل العنصر بنجاح.';
 
   @override
   String get anErrorOccurredWhileProcessingYourRequestPleaseTryAgain => 'حدث خطأ أثناء معالجة طلبك. الرجاء المحاولة مرة أخرى.';
@@ -761,6 +764,9 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get seeHisPage => 'عرض صفحته';
+
+  @override
+  String get seeMyPage => 'عرض صفحتي';
 
   @override
   String get showComments => 'عرض التعليقات';

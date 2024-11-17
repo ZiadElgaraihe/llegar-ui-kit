@@ -106,11 +106,11 @@ class _WelcomeViewBodyState extends State<WelcomeViewBody> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: AppSizes.bodyHorizontalPadding(context),
-      child: CustomScrollView(
-        slivers: [
-          SliverFillRemaining(
+    return CustomScrollView(
+      slivers: [
+        SliverPadding(
+          padding: AppSizes.bodyHorizontalPadding(context),
+          sliver: SliverFillRemaining(
             hasScrollBody: false,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -150,8 +150,8 @@ class _WelcomeViewBodyState extends State<WelcomeViewBody> {
               ],
             ),
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

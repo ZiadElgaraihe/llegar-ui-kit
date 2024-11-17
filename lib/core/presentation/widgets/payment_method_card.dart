@@ -19,45 +19,52 @@ class PaymentMethodCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      elevation: 4,
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: ListTile(
-          leading: SvgPicture.asset(paymentMethodEntity.icon),
-          title: Row(
-            children: [
-              Expanded(
-                child: Text(
-                  paymentMethodEntity.title,
-                  style: AppTextStyles.bold20(context).copyWith(
-                    color: secondaryThemeColor(context),
-                  ),
-                  textAlign: valueBasedOnLocale<TextAlign>(
-                    context,
-                    ltr: TextAlign.start,
-                    rtl: TextAlign.end,
-                  ),
-                  textDirection: TextDirection.ltr,
-                ),
-              ),
-              if (paymentMethodEntity.walletMoney != null)
+    return GestureDetector(
+      onTap: () {
+        if (onChanged != null) {
+          onChanged!(paymentMethodEntity);
+        }
+      },
+      child: Card(
+        elevation: 4,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: ListTile(
+            leading: SvgPicture.asset(paymentMethodEntity.icon),
+            title: Row(
+              children: [
                 Expanded(
                   child: Text(
-                    '\$${paymentMethodEntity.walletMoney}',
-                    style: AppTextStyles.bold20(context),
-                    textAlign: TextAlign.end,
+                    paymentMethodEntity.title,
+                    style: AppTextStyles.bold20(context).copyWith(
+                      color: secondaryThemeColor(context),
+                    ),
+                    textAlign: valueBasedOnLocale<TextAlign>(
+                      context,
+                      ltr: TextAlign.start,
+                      rtl: TextAlign.end,
+                    ),
+                    textDirection: TextDirection.ltr,
                   ),
                 ),
-            ],
+                if (paymentMethodEntity.walletMoney != null)
+                  Expanded(
+                    child: Text(
+                      '\$${paymentMethodEntity.walletMoney}',
+                      style: AppTextStyles.bold20(context),
+                      textAlign: TextAlign.end,
+                    ),
+                  ),
+              ],
+            ),
+            trailing: (onChanged != null)
+                ? Radio<PaymentMethodEntity>(
+                    value: paymentMethodEntity,
+                    groupValue: groupValue,
+                    onChanged: onChanged,
+                  )
+                : null,
           ),
-          trailing: (onChanged != null)
-              ? Radio<PaymentMethodEntity>(
-                  value: paymentMethodEntity,
-                  groupValue: groupValue,
-                  onChanged: onChanged,
-                )
-              : null,
         ),
       ),
     );

@@ -13,11 +13,11 @@ class MyWalletViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: AppSizes.bodyHorizontalPadding(context),
-      child: CustomScrollView(
-        slivers: [
-          const SliverToBoxAdapter(
+    return CustomScrollView(
+      slivers: [
+        SliverPadding(
+          padding: AppSizes.bodyHorizontalPadding(context),
+          sliver: const SliverToBoxAdapter(
             child: Column(
               children: [
                 AppSizes.height16,
@@ -27,14 +27,18 @@ class MyWalletViewBody extends StatelessWidget {
               ],
             ),
           ),
-          CustomSliverFillRemainingFooter(
-            buttonTitle: translate(context).topUp,
-            onPressed: () {
-              Navigator.pushNamed(context, AppRoutes.fundMyWalletView);
-            },
-          ),
-        ],
-      ),
+        ),
+        CustomSliverFillRemainingFooter(
+          buttonTitle: translate(context).topUp,
+          onPressed: () {
+            _onPressed(context);
+          },
+        ),
+      ],
     );
+  }
+
+  void _onPressed(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.fundMyWalletView);
   }
 }

@@ -25,7 +25,6 @@ class CheckoutPaymentViewBody extends StatelessWidget {
           ),
         ),
         CustomSliverFillRemainingFooter(
-          padding: AppSizes.bodyHorizontalPadding(context),
           buttonTitle: translate(context).continueText,
           onFuturePressed: () async {
             await _onContinuePressed(context);

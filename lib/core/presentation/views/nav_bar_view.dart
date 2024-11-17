@@ -43,25 +43,25 @@ class _NavBarViewState extends State<NavBarView> {
         label: translate(context).orders,
         icon: AppIcons.ordersOutlined,
         activeIcon: AppIcons.orders,
-        page: MyOrdersView(pageController: _pageController),
+        page: MyOrdersView(onBackPressed: _onBackPressed),
       ),
       NavBarEntity(
         label: translate(context).inbox,
         icon: AppIcons.inboxOutlined,
         activeIcon: AppIcons.inbox,
-        page: InboxView(pageController: _pageController),
+        page: InboxView(onBackPressed: _onBackPressed),
       ),
       NavBarEntity(
         label: translate(context).wallet,
         icon: AppIcons.walletOutlined,
         activeIcon: AppIcons.wallet,
-        page: MyWalletView(pageController: _pageController),
+        page: MyWalletView(onBackPressed: _onBackPressed),
       ),
       NavBarEntity(
         label: translate(context).profile,
         icon: AppIcons.profileOutlined,
         activeIcon: AppIcons.profile,
-        page: const ProfileView(),
+        page: ProfileView(onBackPressed: _onBackPressed),
       ),
     ];
   }
@@ -71,6 +71,15 @@ class _NavBarViewState extends State<NavBarView> {
     _currentIndex.dispose();
     _pageController.dispose();
     super.dispose();
+  }
+
+  /// Animate to home view on back pressed
+  void _onBackPressed() {
+    _pageController.animateToPage(
+      0,
+      duration: const Duration(milliseconds: 300),
+      curve: Curves.easeIn,
+    );
   }
 
   @override

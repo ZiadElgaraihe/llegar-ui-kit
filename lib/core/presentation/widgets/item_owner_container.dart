@@ -10,7 +10,10 @@ import 'package:llegar/shared/utils/functions/value_based_on_locale.dart';
 class ItemOwnerContainer extends StatelessWidget {
   const ItemOwnerContainer({
     super.key,
+    required this.isMyItem,
   });
+
+  final bool isMyItem;
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +48,7 @@ class ItemOwnerContainer extends StatelessWidget {
           Column(
             children: [
               Text(
-                'Fareed Khaled',
+                isMyItem ? 'Nour Mohamed' : 'Fareed Khaled',
                 style: AppTextStyles.regular20(context).copyWith(
                   fontFamily: AppStrings.interFontFamily,
                 ),

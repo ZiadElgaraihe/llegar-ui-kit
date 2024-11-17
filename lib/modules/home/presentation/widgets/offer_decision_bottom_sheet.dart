@@ -21,50 +21,57 @@ class OfferDecisionBottomSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: AppSizes.bodyHorizontalPadding(context),
-      child: Column(
-        children: [
-          Text(
-            title,
-            style: AppTextStyles.semiBold24(context).copyWith(
-              fontFamily: AppStrings.interFontFamily,
-              color: mainThemeColor(context),
+    return CustomScrollView(
+      slivers: [
+        SliverPadding(
+          padding: AppSizes.bodyHorizontalPadding(context),
+          sliver: SliverFillRemaining(
+            hasScrollBody: false,
+            child: Column(
+              children: [
+                Text(
+                  title,
+                  style: AppTextStyles.semiBold24(context).copyWith(
+                    fontFamily: AppStrings.interFontFamily,
+                    color: mainThemeColor(context),
+                  ),
+                ),
+                AppSizes.height16,
+                Text(
+                  message,
+                  style: AppTextStyles.semiBold16(context).copyWith(
+                    fontFamily: AppStrings.interFontFamily,
+                    color: secondaryThemeColor(context),
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                const Expanded(child: AppSizes.height24),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Flexible(
+                      child: CustomSecondaryElevatedButton(
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        title: translate(context).cancel,
+                      ),
+                    ),
+                    AppSizes.width36,
+                    Flexible(
+                      child: CustomElevatedButton(
+                        onFuturePressed: onFuturePressed,
+                        title: title,
+                      ),
+                    ),
+                  ],
+                ),
+                AppSizes.height24,
+              ],
             ),
           ),
-          AppSizes.height16,
-          Text(
-            message,
-            style: AppTextStyles.semiBold16(context).copyWith(
-              fontFamily: AppStrings.interFontFamily,
-              color: secondaryThemeColor(context),
-            ),
-            textAlign: TextAlign.center,
-          ),
-          const Spacer(),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Flexible(
-                child: CustomSecondaryElevatedButton(
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                  title: translate(context).cancel,
-                ),
-              ),
-              AppSizes.width36,
-              Flexible(
-                child: CustomElevatedButton(
-                  onFuturePressed: onFuturePressed,
-                  title: title,
-                ),
-              ),
-            ],
-          ),
-          AppSizes.height24,
-        ],
-      ),
+        )
+      ],
     );
   }
 }

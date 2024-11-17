@@ -20,6 +20,7 @@ class ReviewCommentTextFormField extends StatelessWidget {
       maxLines: 5,
       onSaved: onSaved,
       cursorColor: AppColors.prussianBlue,
+      keyboardType: TextInputType.multiline,
       decoration: InputDecoration(
         hintText: translate(context).leaveYourComment,
         enabledBorder: OutlineInputBorder(

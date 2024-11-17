@@ -57,7 +57,11 @@ class ItemImagesSection extends StatelessWidget {
       context: context,
       builder: (context) => AlertDialog(
         contentPadding: EdgeInsets.zero,
-        content: Image.asset(AppImages.camera),
+        content: InteractiveViewer(
+          minScale: 0.5,
+          maxScale: 2.0,
+          child: Image.asset(AppImages.camera),
+        ),
       ),
     );
   }

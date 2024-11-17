@@ -12,11 +12,11 @@ class EditProfileViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: AppSizes.bodyHorizontalPadding(context),
-      child: CustomScrollView(
-        slivers: [
-          const SliverToBoxAdapter(
+    return CustomScrollView(
+      slivers: [
+        SliverPadding(
+          padding: AppSizes.bodyHorizontalPadding(context),
+          sliver: const SliverToBoxAdapter(
             child: Column(
               children: [
                 AppSizes.height24,
@@ -26,12 +26,12 @@ class EditProfileViewBody extends StatelessWidget {
               ],
             ),
           ),
-          CustomSliverFillRemainingFooter(
-            buttonTitle: translate(context).update,
-            onFuturePressed: () async {},
-          ),
-        ],
-      ),
+        ),
+        CustomSliverFillRemainingFooter(
+          buttonTitle: translate(context).update,
+          onFuturePressed: () async {},
+        ),
+      ],
     );
   }
 }

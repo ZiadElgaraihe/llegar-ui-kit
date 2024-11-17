@@ -12,19 +12,22 @@ class SplashViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const FittedBox(
-            fit: BoxFit.scaleDown,
-            child: SplashLogo(),
-          ),
-          AppSizes.height48,
-          SpinKitCircle(
-            color: mainThemeColor(context),
-            size: 60,
-          ),
-        ],
+      child: Padding(
+        padding: AppSizes.bodyHorizontalPadding(context),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const FittedBox(
+              fit: BoxFit.scaleDown,
+              child: SplashLogo(),
+            ),
+            AppSizes.height48,
+            SpinKitCircle(
+              color: mainThemeColor(context),
+              size: 60,
+            ),
+          ],
+        ),
       ),
     );
   }

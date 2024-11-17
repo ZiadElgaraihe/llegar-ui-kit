@@ -47,15 +47,15 @@ class _ShippingAddressChoicesState extends State<ShippingAddressChoices> {
     return Column(
       children: [
         for (int i = 0; i < _addresses.length; i++) ...[
-          LocationItem(
-            address: _addresses[i],
-            trailing: GestureDetector(
-              onTap: () {
-                widget.onSelectAddress(_addresses[i]);
-                _selectedIndex = i;
-                setState(() {});
-              },
-              child: Icon(
+          GestureDetector(
+            onTap: () {
+              widget.onSelectAddress(_addresses[i]);
+              _selectedIndex = i;
+              setState(() {});
+            },
+            child: LocationItem(
+              address: _addresses[i],
+              trailing: Icon(
                 (_selectedIndex == i)
                     ? Icons.check_box_rounded
                     : Icons.check_box_outlined,

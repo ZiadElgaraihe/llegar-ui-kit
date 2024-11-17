@@ -14,24 +14,24 @@ class TopUpElectronicWalletViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: AppSizes.bodyHorizontalPadding(context),
-      child: CustomScrollView(
-        slivers: [
-          SliverToBoxAdapter(
+    return CustomScrollView(
+      slivers: [
+        SliverPadding(
+          padding: AppSizes.bodyHorizontalPadding(context),
+          sliver: SliverToBoxAdapter(
             child: CustomPaymentSection(
               appearMyWallet: false,
               onChanged: (paymentMethodEntity) {},
             ),
           ),
-          CustomSliverFillRemainingFooter(
-            buttonTitle: translate(context).continueText,
-            onFuturePressed: () async {
-              await _onContinuePressed(context);
-            },
-          ),
-        ],
-      ),
+        ),
+        CustomSliverFillRemainingFooter(
+          buttonTitle: translate(context).continueText,
+          onFuturePressed: () async {
+            await _onContinuePressed(context);
+          },
+        ),
+      ],
     );
   }
 

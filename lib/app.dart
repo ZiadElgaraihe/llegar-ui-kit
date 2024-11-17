@@ -1,4 +1,3 @@
-import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
@@ -43,24 +42,18 @@ class _LlegarState extends State<Llegar> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<LocaleCubit, LocaleState>(
-      builder: (context, state) {
-        return BlocBuilder<ThemeCubit, ThemeState>(
-          builder: (context, state) => MaterialApp(
-            title: AppStrings.appName,
-            builder: DevicePreview.appBuilder,
-            debugShowCheckedModeBanner: false,
-            themeMode: BlocProvider.of<ThemeCubit>(context).themeMode,
-            theme: AppThemes.lightTheme(context),
-            darkTheme: AppThemes.darkTheme(context),
-            locale: BlocProvider.of<LocaleCubit>(context).locale,
-            localizationsDelegates: AppLocalizations.localizationsDelegates,
-            supportedLocales: AppLocalizations.supportedLocales,
-            onGenerateRoute: AppRoutes.generate,
-            home: const SplashView(),
-          ),
-        );
-      },
+
+    return MaterialApp(
+      title: AppStrings.appName,
+      debugShowCheckedModeBanner: false,
+      themeMode: BlocProvider.of<ThemeCubit>(context, listen: true).themeMode,
+      theme: AppThemes.lightTheme(context),
+      darkTheme: AppThemes.darkTheme(context),
+      locale: BlocProvider.of<LocaleCubit>(context, listen: true).locale,
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
+      onGenerateRoute: AppRoutes.generate,
+      home: const SplashView(),
     );
   }
 }

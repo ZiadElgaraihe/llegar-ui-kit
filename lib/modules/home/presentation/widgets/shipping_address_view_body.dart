@@ -27,7 +27,6 @@ class ShippingAddressViewBody extends StatelessWidget {
           ),
         ),
         CustomSliverFillRemainingFooter(
-          padding: AppSizes.bodyHorizontalPadding(context),
           buttonTitle: translate(context).confirm,
           onPressed: () {
             _onConfirmPressed(context);

@@ -8,7 +8,7 @@ class CustomCheckbox extends StatefulWidget {
   });
 
   final bool? initialValue;
-  final void Function(bool? isChecked) onChanged;
+  final void Function(bool isChecked) onChanged;
 
   @override
   State<CustomCheckbox> createState() => _CustomCheckboxState();
@@ -16,7 +16,7 @@ class CustomCheckbox extends StatefulWidget {
 
 class _CustomCheckboxState extends State<CustomCheckbox> {
   late bool _isChecked;
-  
+
   @override
   void initState() {
     super.initState();
@@ -28,8 +28,9 @@ class _CustomCheckboxState extends State<CustomCheckbox> {
     return Checkbox(
       value: _isChecked,
       onChanged: (value) {
+        widget.onChanged(value!);
         setState(() {
-          _isChecked = value!;
+          _isChecked = value;
         });
       },
     );
