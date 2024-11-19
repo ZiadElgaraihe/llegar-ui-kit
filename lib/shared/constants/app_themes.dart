@@ -222,6 +222,37 @@ abstract class AppThemes {
           unselectedItemColor: AppColors.prussianBlue,
           type: BottomNavigationBarType.fixed,
         ),
+        navigationRailTheme: NavigationRailThemeData(
+          backgroundColor: AppColors.white,
+          labelType: NavigationRailLabelType.all,
+          selectedLabelTextStyle: AppTextStyles.regular11(context).copyWith(
+            fontFamily: AppStrings.interFontFamily,
+            color: AppColors.prussianBlue,
+            fontWeight: FontWeight.w700,
+          ),
+          unselectedLabelTextStyle: AppTextStyles.regular11(context).copyWith(
+            fontFamily: AppStrings.interFontFamily,
+            color: AppColors.prussianBlue,
+          ),
+        ),
+        navigationDrawerTheme: NavigationDrawerThemeData(
+          backgroundColor: AppColors.white,
+          labelTextStyle: WidgetStateProperty.resolveWith(
+            (states) {
+              if (states.contains(WidgetState.selected)) {
+                return AppTextStyles.regular12(context).copyWith(
+                  fontFamily: AppStrings.interFontFamily,
+                  color: AppColors.prussianBlue,
+                  fontWeight: FontWeight.w700,
+                );
+              }
+              return AppTextStyles.regular12(context).copyWith(
+                fontFamily: AppStrings.interFontFamily,
+                color: AppColors.prussianBlue,
+              );
+            },
+          ),
+        ),
         switchTheme: SwitchThemeData(
           materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
           thumbColor: const WidgetStatePropertyAll(AppColors.white),
@@ -533,6 +564,39 @@ abstract class AppThemes {
           selectedItemColor: AppColors.orange,
           unselectedItemColor: AppColors.orange,
           type: BottomNavigationBarType.fixed,
+        ),
+        navigationRailTheme: NavigationRailThemeData(
+          backgroundColor: AppColors.prussianBlue,
+          labelType: NavigationRailLabelType.all,
+          selectedLabelTextStyle: AppTextStyles.regular11(context).copyWith(
+            fontFamily: AppStrings.interFontFamily,
+            color: AppColors.orange,
+            fontWeight: FontWeight.w700,
+          ),
+          unselectedLabelTextStyle: AppTextStyles.regular11(context).copyWith(
+            fontFamily: AppStrings.interFontFamily,
+            color: AppColors.orange,
+          ),
+        ),
+        navigationDrawerTheme: NavigationDrawerThemeData(
+          backgroundColor: AppColors.prussianBlue,
+          surfaceTintColor: AppColors.prussianBlue,
+
+          labelTextStyle: WidgetStateProperty.resolveWith(
+            (states) {
+              if (states.contains(WidgetState.selected)) {
+                return AppTextStyles.regular12(context).copyWith(
+                  fontFamily: AppStrings.interFontFamily,
+                  color: AppColors.orange,
+                  fontWeight: FontWeight.w700,
+                );
+              }
+              return AppTextStyles.regular12(context).copyWith(
+                fontFamily: AppStrings.interFontFamily,
+                color: AppColors.orange,
+              );
+            },
+          ),
         ),
         switchTheme: SwitchThemeData(
           materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
