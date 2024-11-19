@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:llegar/shared/constants/app_colors.dart';
+import 'package:llegar/shared/constants/app_strings.dart';
+import 'package:llegar/shared/constants/app_text_styles.dart';
 import 'package:llegar/shared/utils/functions/translate.dart';
 
 class ReviewCommentTextFormField extends StatelessWidget {
@@ -21,6 +23,10 @@ class ReviewCommentTextFormField extends StatelessWidget {
       onSaved: onSaved,
       cursorColor: AppColors.prussianBlue,
       keyboardType: TextInputType.multiline,
+      style: AppTextStyles.medium15(context).copyWith(
+        color: AppColors.black,
+        fontFamily: AppStrings.interFontFamily,
+      ),
       decoration: InputDecoration(
         hintText: translate(context).leaveYourComment,
         enabledBorder: OutlineInputBorder(

@@ -9,12 +9,12 @@ class NavBar extends StatelessWidget {
     super.key,
     required this.currentIndex,
     required this.items,
-    required this.pageController,
+    required this.onTap,
   });
 
   final ValueNotifier<int> currentIndex;
   final List<NavBarEntity> items;
-  final PageController pageController;
+  final void Function(int currentIndex) onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -22,13 +22,7 @@ class NavBar extends StatelessWidget {
       valueListenable: currentIndex,
       builder: (context, currentIndex, child) => BottomNavigationBar(
         currentIndex: currentIndex,
-        onTap: (value) {
-          pageController.animateToPage(
-            value,
-            duration: const Duration(milliseconds: 300),
-            curve: Curves.easeIn,
-          );
-        },
+        onTap: onTap,
         items: items
             .map(
               (item) => BottomNavigationBarItem(

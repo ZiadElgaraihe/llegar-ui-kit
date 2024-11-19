@@ -10,9 +10,11 @@ class OfferInfoSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.sizeOf(context).width;
-    if (width < AppSizes.expandedBreakpoint) {
-      return Column(
+    return ConstrainedBox(
+      constraints: const BoxConstraints(
+        maxWidth: AppSizes.expandedBreakpoint,
+      ),
+      child: Column(
         children: [
           AmountEntryTextField(
             enabled: false,
@@ -30,30 +32,7 @@ class OfferInfoSection extends StatelessWidget {
             maxLines: 7,
           ),
         ],
-      );
-    } else {
-      return Row(
-        children: [
-          Expanded(
-            child: AmountEntryTextField(
-              enabled: false,
-              setValue: (controller) {
-                controller.text = '45';
-              },
-            ),
-          ),
-          AppSizes.width24,
-          Expanded(
-            child: CustomTextFormField(
-              controller: TextEditingController(
-                text: 'My offer is \$45 and i will take it for 2 weeks.',
-              ),
-              enabled: false,
-              minLines: 5,
-            ),
-          ),
-        ],
-      );
-    }
+      ),
+    );
   }
 }

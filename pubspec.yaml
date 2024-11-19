@@ -92,6 +92,3 @@ flutter:
           weight: 800
         - asset: assets/fonts/Inter/Inter-Black.ttf
           weight: 900
-
-flutter_intl:
-  enabled: false
