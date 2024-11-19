@@ -12,7 +12,7 @@ class SplashViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Padding(
+      child: SingleChildScrollView(
         padding: AppSizes.bodyHorizontalPadding(context),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
