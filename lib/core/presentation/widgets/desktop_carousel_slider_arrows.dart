@@ -30,7 +30,6 @@ class _DesktopCarouselSliderArrowsState
     _sliderController = _isDesktop ? CarouselSliderController() : null;
   }
 
-
   /// Determines whether the current device is a desktop platform.
   bool get _isDesktop => (defaultTargetPlatform == TargetPlatform.linux ||
       defaultTargetPlatform == TargetPlatform.macOS ||
@@ -41,18 +40,21 @@ class _DesktopCarouselSliderArrowsState
     return Row(
       children: [
         if (_isDesktop) ...[
-          GestureDetector(
-            onTap: () {
-              _sliderController!.previousPage();
-            },
-            child: Icon(
-              valueBasedOnLocale<IconData>(
-                context,
-                ltr: Icons.arrow_circle_left_rounded,
-                rtl: Icons.arrow_circle_right_rounded,
+          MouseRegion(
+            cursor: WidgetStateMouseCursor.clickable,
+            child: GestureDetector(
+              onTap: () {
+                _sliderController!.previousPage();
+              },
+              child: Icon(
+                valueBasedOnLocale<IconData>(
+                  context,
+                  ltr: Icons.arrow_circle_left_rounded,
+                  rtl: Icons.arrow_circle_right_rounded,
+                ),
+                size: 36,
+                color: mainThemeColor(context),
               ),
-              size: 36,
-              color: mainThemeColor(context),
             ),
           ),
           AppSizes.width8,
@@ -62,18 +64,21 @@ class _DesktopCarouselSliderArrowsState
         ),
         if (_isDesktop) ...[
           AppSizes.width8,
-          GestureDetector(
-            onTap: () {
-              _sliderController!.nextPage();
-            },
-            child: Icon(
-              valueBasedOnLocale<IconData>(
-                context,
-                ltr: Icons.arrow_circle_right_rounded,
-                rtl: Icons.arrow_circle_left_rounded,
+          MouseRegion(
+            cursor: WidgetStateMouseCursor.clickable,
+            child: GestureDetector(
+              onTap: () {
+                _sliderController!.nextPage();
+              },
+              child: Icon(
+                valueBasedOnLocale<IconData>(
+                  context,
+                  ltr: Icons.arrow_circle_right_rounded,
+                  rtl: Icons.arrow_circle_left_rounded,
+                ),
+                size: 36,
+                color: mainThemeColor(context),
               ),
-              size: 36,
-              color: mainThemeColor(context),
             ),
           ),
         ],
