@@ -223,7 +223,7 @@ abstract class AppThemes {
           type: BottomNavigationBarType.fixed,
         ),
         navigationRailTheme: NavigationRailThemeData(
-          backgroundColor: AppColors.white,
+          backgroundColor: Colors.transparent,
           labelType: NavigationRailLabelType.all,
           selectedLabelTextStyle: AppTextStyles.regular11(context).copyWith(
             fontFamily: AppStrings.interFontFamily,
@@ -236,7 +236,7 @@ abstract class AppThemes {
           ),
         ),
         navigationDrawerTheme: NavigationDrawerThemeData(
-          backgroundColor: AppColors.white,
+          backgroundColor: Colors.transparent,
           labelTextStyle: WidgetStateProperty.resolveWith(
             (states) {
               if (states.contains(WidgetState.selected)) {
@@ -566,7 +566,7 @@ abstract class AppThemes {
           type: BottomNavigationBarType.fixed,
         ),
         navigationRailTheme: NavigationRailThemeData(
-          backgroundColor: AppColors.prussianBlue,
+          backgroundColor: Colors.transparent,
           labelType: NavigationRailLabelType.all,
           selectedLabelTextStyle: AppTextStyles.regular11(context).copyWith(
             fontFamily: AppStrings.interFontFamily,
@@ -579,9 +579,7 @@ abstract class AppThemes {
           ),
         ),
         navigationDrawerTheme: NavigationDrawerThemeData(
-          backgroundColor: AppColors.prussianBlue,
-          surfaceTintColor: AppColors.prussianBlue,
-
+          backgroundColor: Colors.transparent,
           labelTextStyle: WidgetStateProperty.resolveWith(
             (states) {
               if (states.contains(WidgetState.selected)) {
