@@ -13,7 +13,7 @@ class SplashViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: SingleChildScrollView(
-        padding: AppSizes.bodyHorizontalPadding(context),
+        padding: AppSizes.bodySymmetricPadding(context),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
