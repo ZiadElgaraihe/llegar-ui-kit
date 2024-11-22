@@ -45,3 +45,4 @@ If you have any questions or comments, please feel free to contact me at:
 
     • Gmail: ziadelgaraihe301@gmail.com
     • LinkedIn: https://www.linkedin.com/in/ziad-elgaraihe-b346a6267
+    • WhatsApp: https://api.whatsapp.com/send/?phone=201211911941
